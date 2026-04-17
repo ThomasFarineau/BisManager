@@ -1,0 +1,8 @@
+package-as: BisManager
+
+ignore:
+  - .github
+  - .gitignore
+  - README.md
+  - tools
+
