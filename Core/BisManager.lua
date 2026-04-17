@@ -1202,8 +1202,8 @@ function BisManager:PLAYER_REGEN_ENABLED()
 end
 
 SLASH_BisManager1 = "/bis"
-SLASH_BisManager2 = "/gear"
-SLASH_BisManager3 = "/BisManager"
+SLASH_BisManager2 = "/bm"
+SLASH_BisManager3 = "/bismanager"
 SlashCmdList.BisManager = function(msg)
     BisManager:HandleSlashCommand(msg)
 end

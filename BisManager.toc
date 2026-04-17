@@ -4,7 +4,7 @@
 ## Notes-frFR: Affiche des objets BiS configurables autour des emplacements d'equipement du personnage, avec affichage d'ilvl.
 ## Author: Thomas Farineau (Arckene)
 ## Version: 1.0.0
-## IconTexture: Interface\AddOns\GearManager\Assets\Icon
+## IconTexture: Interface\AddOns\BisManager\Assets\Icon
 ## OptionalDeps: LibStub, CallbackHandler-1.0, LibDataBroker-1.1, LibDBIcon-1.0
 ## SavedVariablesPerCharacter: BisManagerDB
 
@@ -13,10 +13,10 @@ Locales/enUS.lua
 Locales/frFR.lua
 
 Core/BisManager.lua
-Modules/GearManagerBiS.lua
-Modules/GearManagerIlvl.lua
-Modules/GearManagerEnchant.lua
-Modules/GearManagerGroupReport.lua
-Modules/GearManagerConfig.lua
+Modules/BisManagerBiS.lua
+Modules/BisManagerIlvl.lua
+Modules/BisManagerEnchant.lua
+Modules/BisManagerGroupReport.lua
+Modules/BisManagerConfig.lua
 Data/GeneratedBiS.lua
-Modules/GearManagerGenerated.lua
+Modules/BisManagerGenerated.lua
