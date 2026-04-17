@@ -1,0 +1,1203 @@
+{
+  "key": "MONK",
+  "specs": {
+    "BREWMASTER": {
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            249302,
+            245771,
+            193723,
+            249278
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            252420,
+            249343,
+            249339,
+            249345,
+            264507
+          ],
+          "FINGER": [
+            251513,
+            249336,
+            151308,
+            193708
+          ],
+          "HEAD": [
+            250015,
+            251177
+          ],
+          "NECK": [
+            240950,
+            249627
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            249335,
+            49823,
+            251161
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            250011,
+            244576
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            249314,
+            251082,
+            244573
+          ],
+          "LEGS": [
+            250014,
+            151314
+          ],
+          "FEET": [
+            258577,
+            151317,
+            244569,
+            251121
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            245771,
+            237847,
+            193723
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            252420,
+            264507,
+            249339,
+            249343
+          ],
+          "FINGER": [
+            251513,
+            151308,
+            193708,
+            251217,
+            249336
+          ],
+          "HEAD": [
+            250015,
+            251177
+          ],
+          "NECK": [
+            240950,
+            265740,
+            249627,
+            50228
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            49823,
+            251161
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            251103,
+            250011,
+            50264,
+            249644,
+            193714
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            251082,
+            263267,
+            49806
+          ],
+          "LEGS": [
+            250014,
+            151314,
+            251087
+          ],
+          "FEET": [
+            258577,
+            151317,
+            249638,
+            251121
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/brewmaster/monk/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/brewmaster/monk/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-17T14:13:11.538Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            240950
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WAIST": [
+            244573,
+            249314,
+            251082
+          ],
+          "LEGS": [
+            151314,
+            244574,
+            250014,
+            260373
+          ],
+          "FEET": [
+            151317,
+            251121,
+            258577,
+            260372
+          ],
+          "WRIST": [
+            250011
+          ],
+          "HANDS": [
+            250016
+          ],
+          "FINGER": [
+            151308,
+            193708,
+            240949,
+            249336,
+            251513
+          ],
+          "TRINKET": [
+            249339,
+            249343,
+            252420,
+            260235,
+            264507
+          ],
+          "BACK": [
+            49823,
+            249335,
+            251161
+          ],
+          "MAINHAND": [
+            237847,
+            245771,
+            249302
+          ]
+        },
+        "mythicplusUrl": "https://murlok.io/monk/brewmaster/m+",
+        "scrapedAt": "2026-04-17T14:13:42.001Z"
+      },
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            249302,
+            251207,
+            251175
+          ],
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            240950,
+            245792,
+            251490
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            249335
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            250011
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            251082
+          ],
+          "LEGS": [
+            151314
+          ],
+          "FEET": [
+            151317
+          ],
+          "FINGER": [
+            249336,
+            251513
+          ],
+          "TRINKET": [
+            249806,
+            249343,
+            249339,
+            151312
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/monk/brewmaster/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-17T14:18:56.758Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            240950
+          ],
+          "SHOULDER": [
+            249333
+          ],
+          "BACK": [
+            249335
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            244576
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            249314
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            249382
+          ],
+          "FINGER": [
+            249336,
+            251513
+          ],
+          "TRINKET": [
+            249343,
+            249806
+          ],
+          "MAINHAND": [
+            249302
+          ],
+          "OFFHAND": [
+            249293
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            240950
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            251206
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            244576
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            251082
+          ],
+          "LEGS": [
+            151314
+          ],
+          "FEET": [
+            151317
+          ],
+          "FINGER": [
+            251513,
+            151308
+          ],
+          "TRINKET": [
+            151312,
+            252418
+          ],
+          "MAINHAND": [
+            193723
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            240950
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            249335
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            244576
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            251082
+          ],
+          "LEGS": [
+            151314
+          ],
+          "FEET": [
+            151317
+          ],
+          "FINGER": [
+            249336,
+            251513
+          ],
+          "TRINKET": [
+            249343,
+            249806
+          ],
+          "MAINHAND": [
+            193723
+          ],
+          "OFFHAND": [
+            251207
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/brewmaster-monk/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/brewmaster-monk/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/brewmaster-monk/gearing#overall_table",
+        "scrapedAt": "2026-04-17T14:16:46.334Z"
+      }
+    },
+    "MISTWEAVER": {
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            249808,
+            264507,
+            250256,
+            249343,
+            249341
+          ],
+          "FINGER": [
+            49812,
+            251217,
+            151311,
+            240949,
+            251093
+          ],
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            50228,
+            265739,
+            249337
+          ],
+          "SHOULDER": [
+            250013,
+            244572
+          ],
+          "BACK": [
+            250010,
+            260312,
+            239656
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            50264,
+            244576,
+            249327
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            249374,
+            49806,
+            244573
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            250017,
+            244569,
+            249334,
+            251210
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            250256,
+            264507,
+            249808,
+            250144,
+            249341
+          ],
+          "FINGER": [
+            49812,
+            251217,
+            151311,
+            251093
+          ],
+          "HEAD": [
+            250015,
+            266430
+          ],
+          "NECK": [
+            265739,
+            50228,
+            251096
+          ],
+          "SHOULDER": [
+            250013,
+            249642
+          ],
+          "BACK": [
+            260312,
+            193712
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            50264,
+            251103,
+            244576
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            49806,
+            251166,
+            249374
+          ],
+          "LEGS": [
+            250014,
+            251087
+          ],
+          "FEET": [
+            251210
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/mistweaver/monk/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/mistweaver/monk/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-17T14:13:11.539Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            50228,
+            151309,
+            249337,
+            251096
+          ],
+          "SHOULDER": [
+            244572,
+            249333,
+            250013
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WAIST": [
+            49806,
+            244573,
+            249374,
+            251166
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            244569,
+            249334,
+            250017,
+            251210
+          ],
+          "WRIST": [
+            50264,
+            244576,
+            249327,
+            251103
+          ],
+          "HANDS": [
+            250016
+          ],
+          "FINGER": [
+            49812,
+            151308,
+            151311,
+            240949,
+            251217
+          ],
+          "TRINKET": [
+            249341,
+            249343,
+            249808,
+            249811,
+            250256,
+            264507
+          ],
+          "BACK": [
+            193712,
+            239656,
+            250010,
+            260312
+          ],
+          "MAINHAND": [
+            245770
+          ]
+        },
+        "mythicplusUrl": "https://murlok.io/monk/mistweaver/m+",
+        "scrapedAt": "2026-04-17T14:13:42.001Z"
+      },
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            258050
+          ],
+          "OFFHAND": [
+            249276
+          ],
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            50228
+          ],
+          "SHOULDER": [
+            249333
+          ],
+          "BACK": [
+            260312
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            249327
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            249374
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            250017
+          ],
+          "FINGER": [
+            249920,
+            49812
+          ],
+          "TRINKET": [
+            249808,
+            249343
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/monk/mistweaver/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-17T14:18:56.759Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            249337
+          ],
+          "SHOULDER": [
+            249333
+          ],
+          "BACK": [
+            249335
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            249327
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            249374
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            249334
+          ],
+          "FINGER": [
+            249920,
+            249336
+          ],
+          "TRINKET": [
+            249808,
+            249343
+          ],
+          "MAINHAND": [
+            249293
+          ],
+          "OFFHAND": [
+            249276
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            251177
+          ],
+          "NECK": [
+            251173
+          ],
+          "SHOULDER": [
+            251223
+          ],
+          "BACK": [
+            260312
+          ],
+          "CHEST": [
+            251226
+          ],
+          "WRIST": [
+            251135
+          ],
+          "HANDS": [
+            251124
+          ],
+          "WAIST": [
+            251166
+          ],
+          "LEGS": [
+            251087
+          ],
+          "FEET": [
+            251153
+          ],
+          "FINGER": [
+            251217,
+            251148
+          ],
+          "TRINKET": [
+            250144,
+            250256
+          ],
+          "MAINHAND": [
+            251123
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            249337
+          ],
+          "SHOULDER": [
+            251223
+          ],
+          "BACK": [
+            250010
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            251135
+          ],
+          "HANDS": [
+            250016
+          ],
+          "WAIST": [
+            251166
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            251153
+          ],
+          "FINGER": [
+            249920,
+            251217
+          ],
+          "TRINKET": [
+            249808,
+            249343
+          ],
+          "MAINHAND": [
+            245770
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/mistweaver-monk/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/mistweaver-monk/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/mistweaver-monk/gearing#overall_table",
+        "scrapedAt": "2026-04-17T14:16:46.334Z"
+      }
+    },
+    "WINDWALKER": {
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            249302,
+            237845,
+            249278,
+            245771
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            193701,
+            249343,
+            264507
+          ],
+          "FINGER": [
+            251513,
+            251093,
+            49812,
+            251115,
+            251217,
+            193708
+          ],
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            50228,
+            240950
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            250010,
+            260312,
+            258575,
+            239656
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            249327,
+            50264,
+            193714,
+            244576
+          ],
+          "HANDS": [
+            249321,
+            250016,
+            251113,
+            151318
+          ],
+          "WAIST": [
+            249374,
+            250012,
+            49806,
+            244573,
+            251082
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            250017,
+            258577,
+            249382
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            237845
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            193701,
+            264507,
+            249343,
+            252420,
+            250256
+          ],
+          "FINGER": [
+            251513,
+            251093,
+            251217,
+            49812,
+            251115,
+            193708
+          ],
+          "HEAD": [
+            250015,
+            266430
+          ],
+          "NECK": [
+            265739,
+            50228
+          ],
+          "SHOULDER": [
+            250013,
+            249642
+          ],
+          "BACK": [
+            260312,
+            258575,
+            257174
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            50264,
+            249644,
+            193714,
+            249327,
+            251103
+          ],
+          "HANDS": [
+            250016,
+            251113,
+            151318
+          ],
+          "WAIST": [
+            49806,
+            263267,
+            249374,
+            251082
+          ],
+          "LEGS": [
+            250014,
+            249641
+          ],
+          "FEET": [
+            258577,
+            249638,
+            251210,
+            250017
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/windwalker/monk/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/windwalker/monk/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-17T14:13:11.539Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            50228,
+            240950
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WAIST": [
+            49806,
+            244573,
+            249374,
+            250012
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            244569,
+            249382,
+            250017,
+            258577
+          ],
+          "WRIST": [
+            50264,
+            193714,
+            244576,
+            249327
+          ],
+          "HANDS": [
+            151318,
+            249321,
+            250016,
+            251113
+          ],
+          "FINGER": [
+            193708,
+            251093,
+            251115,
+            251217,
+            251513
+          ],
+          "TRINKET": [
+            193701,
+            249343,
+            250256,
+            252420
+          ],
+          "BACK": [
+            239656,
+            250010,
+            260312
+          ],
+          "MAINHAND": [
+            245771,
+            249278,
+            249302
+          ]
+        },
+        "mythicplusUrl": "https://murlok.io/monk/windwalker/m+",
+        "scrapedAt": "2026-04-17T14:13:42.001Z"
+      },
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            250010
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            249327
+          ],
+          "HANDS": [
+            249321
+          ],
+          "WAIST": [
+            251082
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            250017
+          ],
+          "FINGER": [
+            251513,
+            249920
+          ],
+          "MAINHAND": [
+            251162,
+            260423,
+            237845
+          ],
+          "TRINKET": [
+            249343,
+            193701
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-17T14:18:56.759Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            249368
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            250010
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            249327
+          ],
+          "HANDS": [
+            249321
+          ],
+          "WAIST": [
+            250012
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            250017
+          ],
+          "FINGER": [
+            249919,
+            249920
+          ],
+          "TRINKET": [
+            249806,
+            249343
+          ],
+          "MAINHAND": [
+            237845
+          ],
+          "OFFHAND": [
+            237845
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            258575
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            193714
+          ],
+          "HANDS": [
+            251113
+          ],
+          "WAIST": [
+            251082
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            109787
+          ],
+          "FINGER": [
+            251115,
+            251513
+          ],
+          "TRINKET": [
+            193701,
+            250256
+          ],
+          "MAINHAND": [
+            251122
+          ],
+          "OFFHAND": [
+            237845
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "BACK": [
+            250010
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WRIST": [
+            249327
+          ],
+          "HANDS": [
+            249321
+          ],
+          "WAIST": [
+            251082
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            250017
+          ],
+          "FINGER": [
+            251513,
+            249920
+          ],
+          "TRINKET": [
+            193701,
+            249343
+          ],
+          "MAINHAND": [
+            251122
+          ],
+          "OFFHAND": [
+            237845
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/windwalker-monk/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/windwalker-monk/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/windwalker-monk/gearing#overall_table",
+        "scrapedAt": "2026-04-17T14:16:46.334Z"
+      }
+    }
+  }
+}

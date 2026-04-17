@@ -1,0 +1,22 @@
+## Interface: 120001, 120005
+## Title: BisManager
+## Notes: Displays configurable BiS items around the player's equipment slots, with item level overlays.
+## Notes-frFR: Affiche des objets BiS configurables autour des emplacements d'equipement du personnage, avec affichage d'ilvl.
+## Author: Thomas Farineau (Arckene)
+## Version: 1.0.0
+## IconTexture: Interface\AddOns\GearManager\Assets\Icon
+## OptionalDeps: LibStub, CallbackHandler-1.0, LibDataBroker-1.1, LibDBIcon-1.0
+## SavedVariablesPerCharacter: BisManagerDB
+
+Core/Locales.lua
+Locales/enUS.lua
+Locales/frFR.lua
+
+Core/BisManager.lua
+Modules/GearManagerBiS.lua
+Modules/GearManagerIlvl.lua
+Modules/GearManagerEnchant.lua
+Modules/GearManagerGroupReport.lua
+Modules/GearManagerConfig.lua
+Data/GeneratedBiS.lua
+Modules/GearManagerGenerated.lua
