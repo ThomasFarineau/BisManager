@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Scrape WoW Bis",
   "scripts": {
-    "scrape": "tsx src/scrape.ts",
+    "n": "tsx src/scrape.ts",
     "generate": "tsx src/generate.ts",
     "build": "tsc"
   },
