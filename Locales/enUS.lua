@@ -205,4 +205,11 @@ L["group_report_out_of_range"] = "Out of range"
 
 L["btn_reset_profiles"] = "Reset all profiles"
 L["popup_reset_profiles"] = "Delete ALL profiles and reload defaults from BiS data?"
+L["profile_section_generated"] = "Generated Profiles (BiS Presets)"
+L["profile_section_user"] = "User Profiles"
+L["btn_new_profile"] = "New Profile"
+L["btn_reset_generated"] = "Reset generated profiles"
+L["popup_reset_generated"] = "Regenerate all BiS preset profiles from data?\nThis will overwrite existing generated profiles."
+L["profile_no_generated"] = "No BiS presets found for your class/spec."
+L["profile_no_user"] = "No user profiles. Create one below."
 

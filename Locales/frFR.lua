@@ -198,4 +198,11 @@ L["group_report_out_of_range"] = "Hors de portee"
 
 L["btn_reset_profiles"] = "Reset tous les profils"
 L["popup_reset_profiles"] = "Supprimer TOUS les profils et recharger les presets BiS par defaut ?"
+L["profile_section_generated"] = "Profils generes (Presets BiS)"
+L["profile_section_user"] = "Profils utilisateur"
+L["btn_new_profile"] = "Nouveau profil"
+L["btn_reset_generated"] = "Reset profils generes"
+L["popup_reset_generated"] = "Regenerer tous les profils BiS depuis les donnees ?\nCela ecrasera les profils generes existants."
+L["profile_no_generated"] = "Aucun preset BiS pour votre classe/spec."
+L["profile_no_user"] = "Aucun profil utilisateur. Creez-en un ci-dessous."
 

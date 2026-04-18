@@ -1,68 +1,9 @@
 -- BisManagerGenerated.lua
 -- Provides API to load generated BiS presets into profiles
--- DB structure: BisManagerBiSDB[CLASS][SPEC][presetLabel] = { HEAD = {...}, ... }
+-- DB structure: GearManagerBiSDB[CLASS][SPEC][presetLabel] = { HEAD = {...}, ... }
 
 local BisManager = _G.BisManager
 if not BisManager then return end
-
-------------------------------------------------------------------------
--- SpecID → spec key mapping (locale-independent)
-------------------------------------------------------------------------
-
-local SPEC_ID_MAP = {
-    -- Death Knight
-    [250] = { class = "DEATHKNIGHT", spec = "BLOOD" },
-    [251] = { class = "DEATHKNIGHT", spec = "FROST" },
-    [252] = { class = "DEATHKNIGHT", spec = "UNHOLY" },
-    -- Demon Hunter
-    [577] = { class = "DEMONHUNTER", spec = "HAVOC" },
-    [581] = { class = "DEMONHUNTER", spec = "VENGEANCE" },
-    -- Druid
-    [102] = { class = "DRUID", spec = "BALANCE" },
-    [103] = { class = "DRUID", spec = "FERAL" },
-    [104] = { class = "DRUID", spec = "GUARDIAN" },
-    [105] = { class = "DRUID", spec = "RESTORATION" },
-    -- Evoker
-    [1467] = { class = "EVOKER", spec = "DEVASTATION" },
-    [1468] = { class = "EVOKER", spec = "PRESERVATION" },
-    [1473] = { class = "EVOKER", spec = "AUGMENTATION" },
-    -- Hunter
-    [253] = { class = "HUNTER", spec = "BEASTMASTERY" },
-    [254] = { class = "HUNTER", spec = "MARKSMANSHIP" },
-    [255] = { class = "HUNTER", spec = "SURVIVAL" },
-    -- Mage
-    [62]  = { class = "MAGE", spec = "ARCANE" },
-    [63]  = { class = "MAGE", spec = "FIRE" },
-    [64]  = { class = "MAGE", spec = "FROST" },
-    -- Monk
-    [268] = { class = "MONK", spec = "BREWMASTER" },
-    [270] = { class = "MONK", spec = "MISTWEAVER" },
-    [269] = { class = "MONK", spec = "WINDWALKER" },
-    -- Paladin
-    [65]  = { class = "PALADIN", spec = "HOLY" },
-    [66]  = { class = "PALADIN", spec = "PROTECTION" },
-    [70]  = { class = "PALADIN", spec = "RETRIBUTION" },
-    -- Priest
-    [256] = { class = "PRIEST", spec = "DISCIPLINE" },
-    [257] = { class = "PRIEST", spec = "HOLY" },
-    [258] = { class = "PRIEST", spec = "SHADOW" },
-    -- Rogue
-    [259] = { class = "ROGUE", spec = "ASSASSINATION" },
-    [260] = { class = "ROGUE", spec = "OUTLAW" },
-    [261] = { class = "ROGUE", spec = "SUBTLETY" },
-    -- Shaman
-    [262] = { class = "SHAMAN", spec = "ELEMENTAL" },
-    [263] = { class = "SHAMAN", spec = "ENHANCEMENT" },
-    [264] = { class = "SHAMAN", spec = "RESTORATION" },
-    -- Warlock
-    [265] = { class = "WARLOCK", spec = "AFFLICTION" },
-    [266] = { class = "WARLOCK", spec = "DEMONOLOGY" },
-    [267] = { class = "WARLOCK", spec = "DESTRUCTION" },
-    -- Warrior
-    [71]  = { class = "WARRIOR", spec = "ARMS" },
-    [72]  = { class = "WARRIOR", spec = "FURY" },
-    [73]  = { class = "WARRIOR", spec = "PROTECTION" },
-}
 
 ------------------------------------------------------------------------
 -- Detect current player class/spec
@@ -75,6 +16,7 @@ function BisManager:GetPlayerClassSpecKey()
     local specID = GetSpecializationInfo(specIndex)
     if not specID then return nil, nil end
 
+    local SPEC_ID_MAP = self.SPEC_ID_MAP or {}
     local entry = SPEC_ID_MAP[specID]
     if entry then
         return entry.class, entry.spec
@@ -86,15 +28,30 @@ function BisManager:GetPlayerClassSpecKey()
     return classKey, nil
 end
 
+--- Returns specID, classKey, specKey for debug/display purposes
+function BisManager:GetPlayerSpecInfo()
+    local specIndex = GetSpecialization()
+    if not specIndex then return nil, nil, nil end
+    local specID = GetSpecializationInfo(specIndex)
+    if not specID then return nil, nil, nil end
+    local SPEC_ID_MAP = self.SPEC_ID_MAP or {}
+    local entry = SPEC_ID_MAP[specID]
+    if entry then
+        return specID, entry.class, entry.spec
+    end
+    local _, classFile = UnitClass("player")
+    return specID, classFile and classFile:upper():gsub(" ", "") or "?", "?"
+end
+
 ------------------------------------------------------------------------
--- Get the player's preset table: BisManagerBiSDB[class][spec]
+-- Get the player's preset table: GearManagerBiSDB[class][spec]
 ------------------------------------------------------------------------
 
 function BisManager:GetPlayerPresets()
-    if type(BisManagerBiSDB) ~= "table" then return nil end
+    if type(GearManagerBiSDB) ~= "table" then return nil end
     local classKey, specKey = self:GetPlayerClassSpecKey()
     if not classKey or not specKey then return nil end
-    local classData = BisManagerBiSDB[classKey]
+    local classData = GearManagerBiSDB[classKey]
     if type(classData) ~= "table" then return nil end
     return classData[specKey]
 end
