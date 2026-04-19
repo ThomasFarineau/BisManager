@@ -15,6 +15,7 @@ local DEFAULT_ICON = 134400
 local ADDON_ICON = "Interface/AddOns/BisManager/Assets/GameIcon"
 local MINIMAP_ICON = "Interface/AddOns/BisManager/Assets/GameIcon"
 local BIS_BONUS_IDS = { "13335", "12806" }
+local sourceTooltipScanner = CreateFrame("GameTooltip", "BisManagerSourceScanner", UIParent, "GameTooltipTemplate")
 
 ------------------------------------------------------------------------
 -- Slot definitions (no SHIRT/TABARD, merged FINGER/TRINKET)
@@ -38,6 +39,66 @@ local function chatPrint(msg)
     DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. msg)
 end
 
+function BisManager:OpenExternalUrl(url, parent, title)
+    if not url or url == "" then
+        return false
+    end
+
+    if ChatFrame_OpenExternalLink then
+        ChatFrame_OpenExternalLink(url)
+        return true
+    end
+
+    local host = parent or UIParent
+    if host.BisManagerUrlPopup then
+        host.BisManagerUrlPopup:Hide()
+    end
+
+    local popup = CreateFrame("Frame", nil, host, BackdropTemplateMixin and "BackdropTemplate" or nil)
+    popup:SetSize(460, 92)
+    popup:SetPoint("CENTER", host, "CENTER", 0, 0)
+    popup:SetFrameStrata("TOOLTIP")
+    if popup.SetBackdrop then
+        popup:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = 1 })
+        popup:SetBackdropColor(0.08, 0.08, 0.08, 0.98)
+        popup:SetBackdropBorderColor(0.4, 0.4, 0.4, 1)
+    end
+
+    popup.label = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+    popup.label:SetPoint("TOPLEFT", 12, -10)
+    popup.label:SetText(title or "Lien")
+
+    popup.editBox = CreateFrame("EditBox", nil, popup, "InputBoxTemplate")
+    popup.editBox:SetSize(430, 24)
+    popup.editBox:SetPoint("TOPLEFT", 12, -34)
+    popup.editBox:SetAutoFocus(true)
+    popup.editBox:SetText(url)
+    popup.editBox:HighlightText()
+    popup.editBox:SetCursorPosition(0)
+    popup.editBox:SetScript("OnEscapePressed", function(self)
+        self:ClearFocus()
+        popup:Hide()
+    end)
+
+    popup.closeBtn = CreateFrame("Button", nil, popup, "UIPanelButtonTemplate")
+    popup.closeBtn:SetSize(80, 22)
+    popup.closeBtn:SetPoint("BOTTOMRIGHT", -12, 10)
+    popup.closeBtn:SetText(CLOSE or "Fermer")
+    popup.closeBtn:SetScript("OnClick", function()
+        popup:Hide()
+    end)
+
+    popup:SetScript("OnHide", function(self)
+        if self.editBox then
+            self.editBox:ClearFocus()
+        end
+    end)
+
+    host.BisManagerUrlPopup = popup
+    popup:Show()
+    return true
+end
+
 local function copyEntries(entries)
     local copied = {}
     if type(entries) ~= "table" then
@@ -45,7 +106,11 @@ local function copyEntries(entries)
     end
     for _, entry in ipairs(entries) do
         if type(entry) == "table" and tonumber(entry.itemID) then
-            copied[#copied + 1] = { itemID = tonumber(entry.itemID), source = entry.source }
+            copied[#copied + 1] = {
+                itemID = tonumber(entry.itemID),
+                source = entry.source,
+                sourceType = entry.sourceType,
+            }
         end
     end
     return copied
@@ -275,6 +340,394 @@ function BisManager:GetBiSItemText(itemID)
     return self:GetBiSItemLink(itemID) or self:GetItemText(itemID)
 end
 
+local function parseItemIDFromLink(link)
+    if type(link) ~= "string" then
+        return nil
+    end
+    return tonumber(link:match("item:(%d+)"))
+end
+
+local function GetSourceTooltipLines(itemLink)
+    if not itemLink then
+        return {}
+    end
+
+    sourceTooltipScanner:SetOwner(UIParent, "ANCHOR_NONE")
+    sourceTooltipScanner:ClearLines()
+    sourceTooltipScanner:SetHyperlink(itemLink)
+
+    local lines = {}
+    local numLines = sourceTooltipScanner:NumLines() or 0
+    for index = 1, numLines do
+        local leftRegion = _G["BisManagerSourceScannerTextLeft" .. index]
+        if leftRegion then
+            lines[#lines + 1] = leftRegion:GetText()
+        end
+    end
+    return lines
+end
+
+function BisManager:EnsureItemSourceResolverState()
+    self.itemSourceCache = self.itemSourceCache or {}
+    self.itemSourceInfoCache = self.itemSourceInfoCache or {}
+    self.itemSourcePending = self.itemSourcePending or {}
+    self.itemSourceQueue = self.itemSourceQueue or {}
+    self.itemSpecialSourceCache = self.itemSpecialSourceCache or {}
+end
+
+function BisManager:IsItemSourceLookupPending(itemID)
+    itemID = tonumber(itemID)
+    if not itemID then
+        return false
+    end
+    self:EnsureItemSourceResolverState()
+    return self.itemSourcePending[itemID] == true
+end
+
+function BisManager:FormatEncounterJournalSource(encounterName, instanceName)
+    if encounterName and encounterName ~= "" and instanceName and instanceName ~= "" then
+        return encounterName .. " - " .. instanceName
+    end
+    if encounterName and encounterName ~= "" then
+        return encounterName
+    end
+    if instanceName and instanceName ~= "" then
+        return instanceName
+    end
+    return nil
+end
+
+function BisManager:GetSpecialItemSource(itemID)
+    itemID = tonumber(itemID)
+    if not itemID then
+        return nil
+    end
+
+    self:EnsureItemSourceResolverState()
+    local cached = self.itemSpecialSourceCache[itemID]
+    if cached ~= nil then
+        return cached or nil
+    end
+
+    local itemName
+    local setID
+    if C_Item and C_Item.GetItemInfo then
+        itemName = C_Item.GetItemInfo(itemID)
+        setID = select(16, C_Item.GetItemInfo(itemID))
+    else
+        itemName = GetItemInfo(itemID)
+        setID = select(16, GetItemInfo(itemID))
+    end
+
+    if not itemName then
+        if C_Item and C_Item.RequestLoadItemDataByID then
+            C_Item.RequestLoadItemDataByID(itemID)
+        end
+        return nil
+    end
+
+    if tonumber(setID) and tonumber(setID) > 0 then
+        self.itemSpecialSourceCache[itemID] = L["source_set"]
+        return self.itemSpecialSourceCache[itemID]
+    end
+
+    local itemLink = self:GetItemText(itemID)
+    if itemLink and itemLink ~= "" then
+        for _, line in ipairs(GetSourceTooltipLines(itemLink)) do
+            local text = tostring(line or "")
+            if text ~= "" then
+                if text:find("Crafted", 1, true)
+                    or text:find("Crafting", 1, true)
+                    or text:find("Fabri", 1, true)
+                    or text:find("Confection", 1, true)
+                    or text:find("Artisanat", 1, true)
+                then
+                    self.itemSpecialSourceCache[itemID] = L["source_crafting"]
+                    return self.itemSpecialSourceCache[itemID]
+                end
+            end
+        end
+    end
+
+    self.itemSpecialSourceCache[itemID] = false
+    return nil
+end
+
+function BisManager:CollectEncounterJournalSource(itemID)
+    if not EJ_GetNumSearchResults or not EJ_GetSearchResult then
+        return nil
+    end
+
+    local results = {}
+    local seen = {}
+    local numResults = EJ_GetNumSearchResults() or 0
+    for index = 1, numResults do
+        local lootID, resultType, _, journalInstanceID, encounterID, itemLink = EJ_GetSearchResult(index)
+        if resultType == 0 then
+            local resultItemID = parseItemIDFromLink(itemLink)
+            if not resultItemID and C_EncounterJournal and C_EncounterJournal.GetLootInfo then
+                local info = C_EncounterJournal.GetLootInfo(lootID)
+                resultItemID = info and info.itemID or nil
+            elseif not resultItemID and EJ_GetLootInfo then
+                resultItemID = select(1, EJ_GetLootInfo(lootID))
+            end
+
+            if tonumber(resultItemID) == tonumber(itemID) then
+                local encounterName = encounterID and EJ_GetEncounterInfo and EJ_GetEncounterInfo(encounterID) or nil
+                local instanceName = journalInstanceID and EJ_GetInstanceInfo and EJ_GetInstanceInfo(journalInstanceID) or nil
+                local label = self:FormatEncounterJournalSource(encounterName, instanceName)
+                if label and not seen[label] then
+                    results[#results + 1] = {
+                        label = label,
+                        encounterID = encounterID,
+                        journalInstanceID = journalInstanceID,
+                        itemID = tonumber(itemID),
+                    }
+                    seen[label] = true
+                end
+            end
+        end
+    end
+
+    if #results == 0 then
+        return nil
+    end
+
+    table.sort(results, function(a, b)
+        return (a.label or "") < (b.label or "")
+    end)
+
+    local labels = {}
+    for index, result in ipairs(results) do
+        labels[index] = result.label
+    end
+
+    local primary = results[1]
+    return {
+        label = table.concat(labels, "; "),
+        encounterID = #results == 1 and primary.encounterID or nil,
+        journalInstanceID = #results == 1 and primary.journalInstanceID or nil,
+        itemID = tonumber(itemID),
+    }
+end
+
+function BisManager:CompleteItemSourceLookup(itemID, resolvedSource)
+    self:EnsureItemSourceResolverState()
+    local sourceLabel = type(resolvedSource) == "table" and resolvedSource.label or resolvedSource
+    self.itemSourceCache[itemID] = sourceLabel or false
+    self.itemSourceInfoCache[itemID] = type(resolvedSource) == "table" and resolvedSource or false
+    self.itemSourcePending[itemID] = nil
+    self.itemSourceActive = nil
+
+    if EJ_EndSearch then
+        pcall(EJ_EndSearch)
+    elseif EJ_ClearSearch then
+        pcall(EJ_ClearSearch)
+    end
+
+    self:RefreshAll()
+
+    local tooltipOwner = GameTooltip and GameTooltip:GetOwner() or nil
+    if tooltipOwner and tooltipOwner.slotKey and self.ShowBadgeTooltip then
+        self:ShowBadgeTooltip(tooltipOwner)
+    end
+
+    self:ProcessItemSourceQueue()
+end
+
+function BisManager:PollItemSourceLookup()
+    local active = self.itemSourceActive
+    if not active then
+        return
+    end
+
+    local isFinished = true
+    if EJ_IsSearchFinished then
+        local ok, finished = pcall(EJ_IsSearchFinished)
+        isFinished = ok and finished or false
+    end
+
+    local now = GetTime and GetTime() or 0
+    if not isFinished and now - active.startedAt < 1.5 then
+        C_Timer.After(0.1, function()
+            if BisManager then
+                BisManager:PollItemSourceLookup()
+            end
+        end)
+        return
+    end
+
+    self:CompleteItemSourceLookup(active.itemID, self:CollectEncounterJournalSource(active.itemID))
+end
+
+function BisManager:ProcessItemSourceQueue()
+    self:EnsureItemSourceResolverState()
+    if self.itemSourceActive or #self.itemSourceQueue == 0 then
+        return
+    end
+    if not EJ_SetSearch or not EJ_GetSearchResult then
+        while #self.itemSourceQueue > 0 do
+            local skippedItemID = table.remove(self.itemSourceQueue, 1)
+            self.itemSourcePending[skippedItemID] = nil
+            self.itemSourceCache[skippedItemID] = false
+            self.itemSourceInfoCache[skippedItemID] = false
+        end
+        return
+    end
+
+    local itemID = table.remove(self.itemSourceQueue, 1)
+    if self.itemSourceCache[itemID] ~= nil then
+        self.itemSourcePending[itemID] = nil
+        self:ProcessItemSourceQueue()
+        return
+    end
+
+    local itemName = GetItemInfo(itemID)
+    if not itemName then
+        self.itemSourcePending[itemID] = nil
+        if C_Item and C_Item.RequestLoadItemDataByID then
+            C_Item.RequestLoadItemDataByID(itemID)
+        end
+        self:ProcessItemSourceQueue()
+        return
+    end
+
+    self.itemSourceActive = {
+        itemID = itemID,
+        startedAt = GetTime and GetTime() or 0,
+    }
+
+    if EJ_EndSearch then
+        pcall(EJ_EndSearch)
+    elseif EJ_ClearSearch then
+        pcall(EJ_ClearSearch)
+    end
+
+    local ok = pcall(EJ_SetSearch, itemName)
+    if not ok then
+        self:CompleteItemSourceLookup(itemID, nil)
+        return
+    end
+
+    self:PollItemSourceLookup()
+end
+
+function BisManager:QueueItemSourceLookup(itemID)
+    itemID = tonumber(itemID)
+    if not itemID then
+        return
+    end
+
+    self:EnsureItemSourceResolverState()
+    if self.itemSourceCache[itemID] ~= nil or self.itemSourcePending[itemID] then
+        return
+    end
+
+    self.itemSourcePending[itemID] = true
+    self.itemSourceQueue[#self.itemSourceQueue + 1] = itemID
+    self:ProcessItemSourceQueue()
+end
+
+function BisManager:GetEncounterJournalSource(itemID)
+    itemID = tonumber(itemID)
+    if not itemID then
+        return nil
+    end
+
+    self:EnsureItemSourceResolverState()
+    local cached = self.itemSourceCache[itemID]
+    if cached ~= nil then
+        return cached or nil
+    end
+
+    self:QueueItemSourceLookup(itemID)
+    return nil
+end
+
+function BisManager:GetEncounterJournalSourceInfo(itemID)
+    itemID = tonumber(itemID)
+    if not itemID then
+        return nil
+    end
+
+    self:EnsureItemSourceResolverState()
+    local cached = self.itemSourceInfoCache[itemID]
+    if cached ~= nil then
+        return cached or nil
+    end
+
+    self:QueueItemSourceLookup(itemID)
+    return nil
+end
+
+function BisManager:GetDisplayItemSourceData(entry, profile)
+    if type(entry) ~= "table" then
+        return nil
+    end
+
+    profile = profile or self:GetProfile()
+    local rawSource = type(entry.source) == "string" and entry.source or nil
+    local generatedProfile = profile and (profile.autoGenerated or profile.generatedPresetKey)
+    local isLikelyManualSource = rawSource and rawSource ~= "" and (
+        entry.sourceType == "manual"
+        or (entry.sourceType ~= "generated" and not generatedProfile)
+    )
+
+    if isLikelyManualSource then
+        local sourceUrl = rawSource:match("^https?://") and rawSource or nil
+        if not sourceUrl and profile and profile.sourceUrl and profile.sourceUrl ~= "" then
+            sourceUrl = profile.sourceUrl
+        end
+        return {
+            label = rawSource,
+            url = sourceUrl,
+            kind = "manual",
+        }
+    end
+
+    local specialSource = self:GetSpecialItemSource(entry.itemID)
+    if specialSource and specialSource ~= "" then
+        return {
+            label = specialSource,
+            kind = "special",
+        }
+    end
+
+    local resolvedSource = self:GetEncounterJournalSourceInfo(entry.itemID)
+    if resolvedSource and resolvedSource.label and resolvedSource.label ~= "" then
+        resolvedSource.kind = "encounter_journal"
+        return resolvedSource
+    end
+    if self:IsItemSourceLookupPending(entry.itemID) then
+        return {
+            label = L["source_loading"],
+            kind = "loading",
+        }
+    end
+    return nil
+end
+
+function BisManager:GetDisplayItemSource(entry, profile)
+    local data = self:GetDisplayItemSourceData(entry, profile)
+    return data and data.label or nil
+end
+
+function BisManager:OpenEncounterJournalSource(sourceInfo)
+    if type(sourceInfo) ~= "table" or not sourceInfo.journalInstanceID then
+        return false
+    end
+
+    if not EncounterJournal or not EncounterJournal_OpenJournal then
+        local ok = pcall(UIParentLoadAddOn, "Blizzard_EncounterJournal")
+        if not ok or not EncounterJournal_OpenJournal then
+            return false
+        end
+    end
+
+    local ok = pcall(EncounterJournal_OpenJournal, nil, sourceInfo.journalInstanceID, sourceInfo.encounterID, nil, nil, sourceInfo.itemID)
+    return ok
+end
+
 function BisManager:GetItemIcon(itemID)
     if not itemID then
         return DEFAULT_ICON
@@ -473,7 +926,11 @@ function BisManager:AddSlotItem(slotKey, itemID, source)
             return false
         end
     end
-    entries[#entries + 1] = { itemID = tonumber(itemID), source = source }
+    entries[#entries + 1] = {
+        itemID = tonumber(itemID),
+        source = source,
+        sourceType = (source and source ~= "") and "manual" or nil,
+    }
     self:RefreshAll()
     return true
 end
@@ -518,7 +975,13 @@ function BisManager:SetItemSource(slotKey, itemID, source)
     if not entries then return false end
     for _, e in ipairs(entries) do
         if e.itemID == itemID then
-            e.source = (source and source ~= "") and source or nil
+            if source and source ~= "" then
+                e.source = source
+                e.sourceType = "manual"
+            else
+                e.source = nil
+                e.sourceType = nil
+            end
             return true
         end
     end
@@ -530,7 +993,7 @@ function BisManager:GetItemSource(slotKey, itemID)
     if not entries then return nil end
     for _, e in ipairs(entries) do
         if e.itemID == itemID then
-            return e.source
+            return self:GetDisplayItemSource(e)
         end
     end
     return nil

@@ -25,7 +25,7 @@ function BisManager:CreateBadge(slotButton, slotKey, side)
     badge.side = side
     badge:SetFrameStrata(slotButton:GetFrameStrata())
     badge:SetFrameLevel(slotButton:GetFrameLevel() + 5)
-    badge:RegisterForClicks("LeftButtonUp")
+    badge:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 
     if side == "LEFT" then
         badge:SetPoint("LEFT", slotButton, "RIGHT", 6, 0)
@@ -78,8 +78,19 @@ function BisManager:CreateBadge(slotButton, slotKey, side)
         BisManager:ShowBadgeTooltip(frame)
     end)
     badge:SetScript("OnLeave", GameTooltip_Hide)
-    badge:SetScript("OnClick", function(frame)
-        BisManager:ShowBadgeTooltip(frame)
+    badge:SetScript("OnClick", function(frame, button)
+        if button == "RightButton" then
+            local entries = BisManager:GetEntries(frame.slotKey)
+            if entries and #entries > 0 then
+                local itemID = entries[1].itemID
+                local wowheadUrl = "https://www.wowhead.com/item=" .. itemID
+                BisManager:OpenExternalUrl(wowheadUrl, CharacterFrame, "Lien Wowhead")
+            end
+        else
+            if BisManager.OpenConfigForSlot then
+                BisManager:OpenConfigForSlot(frame.slotKey)
+            end
+        end
     end)
     badge:Hide()
     return badge
@@ -102,7 +113,7 @@ function BisManager:ShowBadgeTooltip(badge)
     local anchor = (badge.side == "LEFT") and "ANCHOR_RIGHT" or "ANCHOR_LEFT"
     GameTooltip:SetOwner(badge, anchor)
     GameTooltip:ClearLines()
-    GameTooltip:AddLine("BisManager - " .. slotDef.label, 0.36, 0.78, 1)
+    GameTooltip:AddLine("BiS - " .. slotDef.label, 0.36, 0.78, 1)
     if slotDef.requiredCount then
         GameTooltip:AddLine(L["required_fmt"]:format(slotDef.requiredCount), 0.6, 0.6, 0.6)
     end
@@ -128,6 +139,7 @@ function BisManager:ShowBadgeTooltip(badge)
 
     GameTooltip:AddLine(" ")
     GameTooltip:AddLine(L["bis_configured"], 1, 1, 1)
+    local profile = self:GetProfile()
     for index, entry in ipairs(entries) do
         local isEquipped = false
         for _, slotID in ipairs(slotIDs) do
@@ -138,10 +150,15 @@ function BisManager:ShowBadgeTooltip(badge)
         end
         local color = isEquipped and { 0.3, 1, 0.3 } or { 1, 1, 1 }
         GameTooltip:AddLine(("%d. %s"):format(index, self:GetBiSItemText(entry.itemID)), color[1], color[2], color[3], true)
+        local displaySource = self:GetDisplayItemSource(entry, profile)
+        if displaySource and displaySource ~= "" then
+            GameTooltip:AddLine(L["badge_source_fmt"]:format(displaySource), 1, 1, 1, true)
+        end
     end
 
     GameTooltip:AddLine(" ")
-    GameTooltip:AddLine(L["commands_hint"] .. string.lower(slotDef.key), 0.6, 0.6, 0.6)
+    GameTooltip:AddLine(L["badge_click_config"], 0.6, 0.6, 0.6)
+    GameTooltip:AddLine(L["badge_click_wowhead"], 0.6, 0.6, 0.6)
     GameTooltip:Show()
 end
 

@@ -113,56 +113,7 @@ StaticPopupDialogs["BisManager_CONFIRM_RESET_GENERATED"] = {
 local BD_TEMPLATE = BackdropTemplateMixin and "BackdropTemplate" or nil
 
 local function OpenExternalUrl(url)
-    if not url or url == "" then
-        return
-    end
-    if ChatFrame_OpenExternalLink then
-        ChatFrame_OpenExternalLink(url)
-        return
-    end
-    if not configFrame or not configFrame.profilesPanel then
-        return
-    end
-    local pp = configFrame.profilesPanel
-    if pp.urlPopup then
-        pp.urlPopup:Hide()
-    end
-
-    local popup = CreateFrame("Frame", nil, pp, BD_TEMPLATE)
-    popup:SetSize(460, 92)
-    popup:SetPoint("CENTER", pp, "CENTER", 0, 0)
-    popup:SetFrameStrata("TOOLTIP")
-    if popup.SetBackdrop then
-        popup:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = 1 })
-        popup:SetBackdropColor(0.08, 0.08, 0.08, 0.98)
-        popup:SetBackdropBorderColor(0.4, 0.4, 0.4, 1)
-    end
-
-    popup.label = popup:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    popup.label:SetPoint("TOPLEFT", 12, -10)
-    popup.label:SetText("URL du profil")
-
-    popup.editBox = CreateFrame("EditBox", nil, popup, "InputBoxTemplate")
-    popup.editBox:SetSize(430, 24)
-    popup.editBox:SetPoint("TOPLEFT", 12, -34)
-    popup.editBox:SetAutoFocus(true)
-    popup.editBox:SetText(url)
-    popup.editBox:HighlightText()
-    popup.editBox:SetCursorPosition(0)
-    popup.editBox:SetScript("OnEscapePressed", function(self)
-        self:ClearFocus()
-        popup:Hide()
-    end)
-
-    popup.closeBtn = CreateFrame("Button", nil, popup, "UIPanelButtonTemplate")
-    popup.closeBtn:SetSize(80, 22)
-    popup.closeBtn:SetPoint("BOTTOMRIGHT", -12, 10)
-    popup.closeBtn:SetText(CLOSE or "Fermer")
-    popup.closeBtn:SetScript("OnClick", function()
-        popup:Hide()
-    end)
-
-    pp.urlPopup = popup
+    BisManager:OpenExternalUrl(url, configFrame and configFrame.profilesPanel, "URL du profil")
 end
 
 local function CreateSimpleSlider(parent, label, minVal, maxVal, step, defaultVal)
@@ -277,27 +228,43 @@ end
 
 local function CreateSlotButton(parent, index, slotDef)
     local btn = CreateFrame("Button", nil, parent)
-    btn:SetSize(172, 30); btn:SetPoint("TOPLEFT", 0, -(index - 1) * 32)
+    btn:SetSize(172, 38); btn:SetPoint("TOPLEFT", 0, -(index - 1) * 40)
     btn.slotKey = slotDef.key
 
     btn.selectedBg = btn:CreateTexture(nil, "BACKGROUND"); btn.selectedBg:SetAllPoints()
-    btn.selectedBg:SetColorTexture(0.36, 0.78, 1, 0.2); btn.selectedBg:Hide()
-    btn.hl = btn:CreateTexture(nil, "HIGHLIGHT"); btn.hl:SetAllPoints(); btn.hl:SetColorTexture(1, 1, 1, 0.07)
+    btn.selectedBg:SetColorTexture(0.16, 0.36, 0.52, 0.55); btn.selectedBg:Hide()
+    btn.hl = btn:CreateTexture(nil, "HIGHLIGHT"); btn.hl:SetAllPoints(); btn.hl:SetColorTexture(1, 1, 1, 0.05)
+    btn.separator = btn:CreateTexture(nil, "BORDER")
+    btn.separator:SetPoint("BOTTOMLEFT", 10, 0)
+    btn.separator:SetPoint("BOTTOMRIGHT", -8, 0)
+    btn.separator:SetHeight(1)
+    btn.separator:SetColorTexture(1, 1, 1, 0.06)
 
-    btn.dot = btn:CreateTexture(nil, "OVERLAY"); btn.dot:SetSize(8, 8); btn.dot:SetPoint("LEFT", 4, 0)
+    btn.dot = btn:CreateTexture(nil, "OVERLAY"); btn.dot:SetSize(8, 8); btn.dot:SetPoint("LEFT", 8, 0)
     btn.dot:SetColorTexture(0.4, 0.4, 0.4, 1)
 
-    btn.icon = btn:CreateTexture(nil, "ARTWORK"); btn.icon:SetSize(22, 22)
-    btn.icon:SetPoint("LEFT", btn.dot, "RIGHT", 4, 0)
+    btn.icon = btn:CreateTexture(nil, "ARTWORK"); btn.icon:SetSize(24, 24)
+    btn.icon:SetPoint("LEFT", btn.dot, "RIGHT", 6, 0)
     btn.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92); btn.icon:SetTexture(DEFAULT_ICON)
 
     btn.label = btn:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    btn.label:SetPoint("LEFT", btn.icon, "RIGHT", 6, 0); btn.label:SetPoint("RIGHT", -36, 0)
+    btn.label:SetPoint("TOPLEFT", btn.icon, "TOPRIGHT", 8, -6); btn.label:SetPoint("RIGHT", -48, 0)
     btn.label:SetText(slotDef.label); btn.label:SetJustifyH("LEFT"); btn.label:SetWordWrap(false)
 
-    btn.ilvlText = btn:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    btn.ilvlText:SetPoint("RIGHT", -4, 0); btn.ilvlText:SetJustifyH("RIGHT")
-    btn.ilvlText:SetTextColor(0.6, 0.8, 1); btn.ilvlText:SetText("")
+
+    btn.countBadge = CreateFrame("Frame", nil, btn, BD_TEMPLATE)
+    btn.countBadge:SetSize(28, 18)
+    btn.countBadge:SetPoint("RIGHT", -8, 0)
+    if btn.countBadge.SetBackdrop then
+        btn.countBadge:SetBackdrop({ bgFile = "Interface\\Buttons\\WHITE8x8", edgeFile = "Interface\\Buttons\\WHITE8x8", edgeSize = 1 })
+        btn.countBadge:SetBackdropColor(0.08, 0.08, 0.08, 0.85)
+        btn.countBadge:SetBackdropBorderColor(0.35, 0.35, 0.35, 0.9)
+    end
+    btn.countBadge.text = btn.countBadge:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    btn.countBadge.text:SetAllPoints()
+    btn.countBadge.text:SetJustifyH("CENTER")
+    btn.countBadge.text:SetText("")
+    btn.countBadge:Hide()
 
     btn:SetScript("OnClick", function()
         selectedSlotKey = slotDef.key; RefreshSlotList(); RefreshDetailPanel()
@@ -325,16 +292,20 @@ end
 
 local function CreateItemRow(parent, index)
     local row = CreateFrame("Frame", nil, parent)
-    row:SetSize(380, 40); row:SetPoint("TOPLEFT", 0, -(index - 1) * 42)
+    row:SetSize(380, 48); row:SetPoint("TOPLEFT", 0, -(index - 1) * 50)
+
+    row.bg = row:CreateTexture(nil, "BACKGROUND")
+    row.bg:SetAllPoints()
+    row.bg:SetColorTexture(1, 1, 1, index % 2 == 0 and 0.035 or 0.02)
 
     row.indexText = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    row.indexText:SetPoint("TOPLEFT", 0, -2); row.indexText:SetWidth(18); row.indexText:SetJustifyH("RIGHT")
+    row.indexText:SetPoint("TOPLEFT", 8, -8); row.indexText:SetWidth(18); row.indexText:SetJustifyH("RIGHT")
 
-    row.icon = row:CreateTexture(nil, "ARTWORK"); row.icon:SetSize(20, 20)
-    row.icon:SetPoint("TOPLEFT", 22, -1); row.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+    row.icon = row:CreateTexture(nil, "ARTWORK"); row.icon:SetSize(24, 24)
+    row.icon:SetPoint("TOPLEFT", 30, -6); row.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
 
     row.nameBtn = CreateFrame("Button", nil, row)
-    row.nameBtn:SetPoint("LEFT", row.icon, "RIGHT", 4, 0); row.nameBtn:SetPoint("RIGHT", -28, 0)
+    row.nameBtn:SetPoint("TOPLEFT", row.icon, "TOPRIGHT", 8, 0); row.nameBtn:SetPoint("RIGHT", -52, 0)
     row.nameBtn:SetHeight(20)
     row.nameText = row.nameBtn:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
     row.nameText:SetAllPoints(); row.nameText:SetJustifyH("LEFT"); row.nameText:SetWordWrap(false)
@@ -348,20 +319,36 @@ local function CreateItemRow(parent, index)
     row.nameBtn:SetScript("OnLeave", GameTooltip_Hide)
 
     -- Source line
-    row.sourceText = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-    row.sourceText:SetPoint("TOPLEFT", row.icon, "BOTTOMLEFT", 0, -2)
-    row.sourceText:SetPoint("RIGHT", -28, 0)
-    row.sourceText:SetJustifyH("LEFT"); row.sourceText:SetTextColor(0.7, 0.7, 0.5)
+    row.sourceBtnHit = CreateFrame("Button", nil, row)
+    row.sourceBtnHit:SetPoint("TOPLEFT", row.nameBtn, "BOTTOMLEFT", 0, -4)
+    row.sourceBtnHit:SetPoint("RIGHT", -52, 0)
+    row.sourceBtnHit:SetHeight(16)
+    row.sourceText = row.sourceBtnHit:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    row.sourceText:SetAllPoints()
+    row.sourceText:SetJustifyH("LEFT")
+    row.sourceText:SetTextColor(0.76, 0.76, 0.58)
+    row.sourceBtnHit:SetScript("OnEnter", function(self)
+        if (row.sourceUrl and row.sourceUrl ~= "") or row.sourceJournalInstanceID then
+            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+            GameTooltip:AddLine(row.sourceDisplayText or "", 1, 1, 1, true)
+            if row.sourceUrl and row.sourceUrl ~= "" then
+                GameTooltip:AddLine(" ")
+                GameTooltip:AddLine(row.sourceUrl, 0.36, 0.78, 1, true)
+            end
+            GameTooltip:Show()
+        end
+    end)
+    row.sourceBtnHit:SetScript("OnLeave", GameTooltip_Hide)
 
     -- Source edit button
     row.sourceBtn = CreateFrame("Button", nil, row)
-    row.sourceBtn:SetSize(16, 16); row.sourceBtn:SetPoint("LEFT", row.sourceText, "RIGHT", 2, 0)
+    row.sourceBtn:SetSize(18, 18); row.sourceBtn:SetPoint("TOPRIGHT", -28, -24)
     row.sourceBtn.text = row.sourceBtn:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
     row.sourceBtn.text:SetAllPoints(); row.sourceBtn.text:SetText("|cff5cc8ff+|r")
     row.sourceBtn.hl = row.sourceBtn:CreateTexture(nil, "HIGHLIGHT"); row.sourceBtn.hl:SetAllPoints()
     row.sourceBtn.hl:SetColorTexture(1, 1, 1, 0.1)
 
-    row.removeBtn = CreateFrame("Button", nil, row); row.removeBtn:SetSize(20, 20); row.removeBtn:SetPoint("TOPRIGHT", 0, -1)
+    row.removeBtn = CreateFrame("Button", nil, row); row.removeBtn:SetSize(20, 20); row.removeBtn:SetPoint("TOPRIGHT", -6, -6)
     row.removeBtn.text = row.removeBtn:CreateFontString(nil, "OVERLAY", "GameFontNormal")
     row.removeBtn.text:SetAllPoints(); row.removeBtn.text:SetText("|cffff6666x|r")
     row.removeBtn.hl = row.removeBtn:CreateTexture(nil, "HIGHLIGHT"); row.removeBtn.hl:SetAllPoints()
@@ -458,33 +445,18 @@ RefreshSlotList = function()
                 btn.dot:SetColorTexture(0.35, 0.35, 0.35, 1)
             end
 
-            if BisManager:IsIlvlDisplayAllowed() and btn.ilvlText then
-                if slotDef.subSlots then
-                    local parts = {}
-                    for _, sub in ipairs(slotDef.subSlots) do
-                        local ilvl = BisManager:GetItemLevel("player", sub.slotID)
-                        parts[#parts + 1] = ilvl and tostring(ilvl) or "-"
-                    end
-                    btn.ilvlText:SetText(table.concat(parts, "/"))
-                else
-                    local ilvl = BisManager:GetItemLevel("player", slotDef.slotID)
-                    btn.ilvlText:SetText(ilvl and tostring(ilvl) or "-")
-                end
-                btn.ilvlText:Show()
-            elseif btn.ilvlText then
-                btn.ilvlText:SetText("")
+            if hasEntries then
+                local count = #entries
+                btn.countBadge.text:SetText(tostring(count))
+                btn.countBadge:Show()
+            else
+                btn.countBadge:Hide()
             end
         end
     end
 
     if configFrame and configFrame.ilvlHeader then
-        if BisManager:IsIlvlDisplayAllowed() then
-            local eq, ov = BisManager:GetOverallItemLevel()
-            configFrame.ilvlHeader:SetText(("ilvl : |cffffffff%s|r  (max : |cffffffff%s|r)"):format(BisManager:FormatAverageItemLevel(eq), BisManager:FormatAverageItemLevel(ov)))
-            configFrame.ilvlHeader:Show()
-        else
-            configFrame.ilvlHeader:Hide()
-        end
+        configFrame.ilvlHeader:Hide()
     end
 
     -- Refresh profile dropdown
@@ -547,6 +519,7 @@ RefreshDetailPanel = function()
     -- BiS entries
     local entries = BisManager:GetEntries(slotDef.key)
     local count = entries and #entries or 0
+    local profile = BisManager:GetProfile()
 
     local equippedIDs = {}
     if slotDef.subSlots then
@@ -574,11 +547,37 @@ RefreshDetailPanel = function()
                 row.nameText:SetTextColor(1, 1, 1)
             end
             -- Source display
-            local src = entry.source or ""
+            local sourceData = BisManager:GetDisplayItemSourceData(entry, profile) or {}
+            local src = sourceData.label or ""
+            local sourceUrl = sourceData.url
+            local canOpenJournal = sourceData.journalInstanceID and true or false
+            row.sourceDisplayText = src
+            row.sourceUrl = sourceUrl
+            row.sourceJournalInstanceID = sourceData.journalInstanceID
+            row.sourceEncounterID = sourceData.encounterID
+            row.sourceItemID = sourceData.itemID
             if src ~= "" then
-                row.sourceText:SetText(L["source_label"] .. " " .. src)
+                if sourceUrl or canOpenJournal then
+                    row.sourceText:SetText("|cff5cc8ff" .. L["source_label"] .. " " .. src .. "|r")
+                else
+                    row.sourceText:SetText(L["source_label"] .. " " .. src)
+                end
+                row.sourceBtnHit:SetScript("OnClick", function()
+                    if row.sourceUrl and row.sourceUrl ~= "" then
+                        OpenExternalUrl(row.sourceUrl)
+                    elseif row.sourceJournalInstanceID then
+                        BisManager:OpenEncounterJournalSource({
+                            journalInstanceID = row.sourceJournalInstanceID,
+                            encounterID = row.sourceEncounterID,
+                            itemID = row.sourceItemID,
+                        })
+                    end
+                end)
+                row.sourceBtnHit:EnableMouse((sourceUrl and true or false) or canOpenJournal)
             else
                 row.sourceText:SetText("|cff666666" .. L["source_hint"] .. "|r")
+                row.sourceBtnHit:SetScript("OnClick", nil)
+                row.sourceBtnHit:EnableMouse(false)
             end
             -- Source edit button
             local ci = i
@@ -615,7 +614,7 @@ RefreshDetailPanel = function()
             end)
             row:Show()
         else
-            row.itemID = nil; row.itemLink = nil; row:Hide()
+            row.itemID = nil; row.itemLink = nil; row.sourceUrl = nil; row.sourceDisplayText = nil; row.sourceJournalInstanceID = nil; row.sourceEncounterID = nil; row.sourceItemID = nil; row:Hide()
         end
     end
     rp.emptyText:SetShown(count == 0)
@@ -1022,11 +1021,12 @@ CreateConfigFrame = function()
 
     configFrame.ilvlHeader = leftPanel:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
     configFrame.ilvlHeader:SetPoint("TOP", leftPanel, "TOP", 0, -5); configFrame.ilvlHeader:SetTextColor(1, 0.82, 0); configFrame.ilvlHeader:SetText("")
+    configFrame.ilvlHeader:Hide()
 
     local scrollFrame = CreateFrame("ScrollFrame", "BisManagerSlotScroll", leftPanel, "UIPanelScrollFrameTemplate")
-    scrollFrame:SetPoint("TOPLEFT", 4, -20); scrollFrame:SetPoint("BOTTOMRIGHT", -26, 4)
+    scrollFrame:SetPoint("TOPLEFT", 4, -6); scrollFrame:SetPoint("BOTTOMRIGHT", -26, 4)
     local scrollChild = CreateFrame("Frame", nil, scrollFrame)
-    scrollChild:SetSize(165, #SLOT_DEFINITIONS * 32 + 4); scrollFrame:SetScrollChild(scrollChild)
+    scrollChild:SetSize(165, #SLOT_DEFINITIONS * 40 + 4); scrollFrame:SetScrollChild(scrollChild)
     for i, sd in ipairs(SLOT_DEFINITIONS) do
         slotButtons[sd.key] = CreateSlotButton(scrollChild, i, sd)
     end
@@ -1044,20 +1044,20 @@ CreateConfigFrame = function()
     rightPanel.headerText:SetPoint("TOPLEFT", 14, -12); rightPanel.headerText:SetText(L["select_slot"]); rightPanel.headerText:SetTextColor(0.36, 0.78, 1)
 
     rightPanel.equippedLabel = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-    rightPanel.equippedLabel:SetPoint("TOPLEFT", 14, -36); rightPanel.equippedLabel:SetPoint("RIGHT", -14, 0)
+    rightPanel.equippedLabel:SetPoint("TOPLEFT", 14, -40); rightPanel.equippedLabel:SetPoint("RIGHT", -14, 0)
     rightPanel.equippedLabel:SetJustifyH("LEFT"); rightPanel.equippedLabel:SetWordWrap(false)
 
     rightPanel.equippedLabel2 = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
-    rightPanel.equippedLabel2:SetPoint("TOPLEFT", 14, -52); rightPanel.equippedLabel2:SetPoint("RIGHT", -14, 0)
+    rightPanel.equippedLabel2:SetPoint("TOPLEFT", 14, -58); rightPanel.equippedLabel2:SetPoint("RIGHT", -14, 0)
     rightPanel.equippedLabel2:SetJustifyH("LEFT"); rightPanel.equippedLabel2:SetWordWrap(false); rightPanel.equippedLabel2:Hide()
 
     rightPanel.bisLabel = rightPanel:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-    rightPanel.bisLabel:SetPoint("TOPLEFT", 14, -70); rightPanel.bisLabel:SetText(L["bis_configured"])
+    rightPanel.bisLabel:SetPoint("TOPLEFT", 14, -84); rightPanel.bisLabel:SetText(L["bis_configured"])
     rightPanel.bisLabel:SetTextColor(1, 0.82, 0); rightPanel.bisLabel:Hide()
 
     rightPanel.itemContainer = CreateFrame("Frame", nil, rightPanel)
-    rightPanel.itemContainer:SetPoint("TOPLEFT", 14, -90); rightPanel.itemContainer:SetPoint("RIGHT", -14, 0)
-    rightPanel.itemContainer:SetHeight(MAX_ITEM_ROWS * 42)
+    rightPanel.itemContainer:SetPoint("TOPLEFT", 14, -108); rightPanel.itemContainer:SetPoint("RIGHT", -14, 0)
+    rightPanel.itemContainer:SetHeight(MAX_ITEM_ROWS * 50)
     for i = 1, MAX_ITEM_ROWS do
         itemRows[i] = CreateItemRow(rightPanel.itemContainer, i)
     end
@@ -1505,6 +1505,15 @@ function BisManager:ToggleConfigUI()
     if not configFrame then CreateConfigFrame() end
     if configFrame:IsShown() then configFrame:Hide()
     else configFrame:Show(); SwitchTab("slots") end
+end
+
+function BisManager:OpenConfigForSlot(slotKey)
+    if not configFrame then CreateConfigFrame() end
+    configFrame:Show()
+    SwitchTab("slots")
+    selectedSlotKey = slotKey
+    RefreshSlotList()
+    RefreshDetailPanel()
 end
 
 function BisManager:RefreshConfigUI()
