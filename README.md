@@ -46,10 +46,19 @@
 
 ## Supported Languages
 
-| Language | Locale |
-|----------|--------|
-| English  | `enUS` |
-| French   | `frFR` |
+| Language              | Locale |
+|-----------------------|--------|
+| English               | `enUS` |
+| French                | `frFR` |
+| German                | `deDE` |
+| Spanish (Spain)       | `esES` |
+| Spanish (Mexico)      | `esMX` |
+| Italian               | `itIT` |
+| Korean                | `koKR` |
+| Portuguese (Brazil)   | `ptBR` |
+| Russian               | `ruRU` |
+| Chinese (Simplified)  | `zhCN` |
+| Chinese (Traditional) | `zhTW` |
 
 ---
 

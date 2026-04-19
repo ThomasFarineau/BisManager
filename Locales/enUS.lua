@@ -45,7 +45,7 @@ L["required_fmt"] = "(%d required)"
 L["badge_source_fmt"] = "   |cff999999Source: %s|r"
 L["badge_source_url"] = "|cff5cc8ffProfile source: %s|r"
 L["badge_click_config"] = "|cff4cff4cLeft-click|r: open config for this slot"
-L["badge_click_wowhead"] = "|cff4cff4cRight-click|r: post Wowhead link to chat"
+L["badge_click_wowhead"] = "|cff4cff4cRight-click|r: open Wowhead link"
 
 -- Config UI
 L["config_title"] = "|cff5cc8ffBisManager|r - Configuration"
@@ -177,8 +177,6 @@ L["chat_removed"] = "Option removed for %s."
 L["chat_remove_fail"] = "Cannot remove this entry from %s."
 L["chat_cmd_incomplete"] = "Incomplete command. Use /bis %s <slot> <itemLink|itemID>."
 L["chat_unknown_cmd"] = "Unknown command: %s"
-L["inspect_import_button"] = "GM: Import"
-
 -- Help lines
 L["help_main"] = "Main commands:"
 L["help_open"] = "/bis -> open configuration window"

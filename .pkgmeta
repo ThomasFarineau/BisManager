@@ -8,4 +8,5 @@ ignore:
   - .gitattributes
   - README.md
   - tools
+  - AGENTS.md
 
