@@ -57,32 +57,7 @@ local function GetLocalizedButtonText(key, fallback)
     return value
 end
 
-local EQUIP_LOC_TO_SLOT_IDS = {
-    INVTYPE_HEAD = { INVSLOT_HEAD },
-    INVTYPE_NECK = { INVSLOT_NECK },
-    INVTYPE_SHOULDER = { INVSLOT_SHOULDER },
-    INVTYPE_BODY = { INVSLOT_BODY },
-    INVTYPE_CHEST = { INVSLOT_CHEST },
-    INVTYPE_ROBE = { INVSLOT_CHEST },
-    INVTYPE_WAIST = { INVSLOT_WAIST },
-    INVTYPE_LEGS = { INVSLOT_LEGS },
-    INVTYPE_FEET = { INVSLOT_FEET },
-    INVTYPE_WRIST = { INVSLOT_WRIST },
-    INVTYPE_HAND = { INVSLOT_HAND },
-    INVTYPE_FINGER = { INVSLOT_FINGER1, INVSLOT_FINGER2 },
-    INVTYPE_TRINKET = { INVSLOT_TRINKET1, INVSLOT_TRINKET2 },
-    INVTYPE_CLOAK = { INVSLOT_BACK },
-    INVTYPE_WEAPON = { INVSLOT_MAINHAND, INVSLOT_OFFHAND },
-    INVTYPE_2HWEAPON = { INVSLOT_MAINHAND },
-    INVTYPE_WEAPONMAINHAND = { INVSLOT_MAINHAND },
-    INVTYPE_WEAPONOFFHAND = { INVSLOT_OFFHAND },
-    INVTYPE_SHIELD = { INVSLOT_OFFHAND },
-    INVTYPE_HOLDABLE = { INVSLOT_OFFHAND },
-    INVTYPE_RANGED = { INVSLOT_MAINHAND },
-    INVTYPE_RANGEDRIGHT = { INVSLOT_MAINHAND },
-    INVTYPE_THROWN = { INVSLOT_MAINHAND },
-    INVTYPE_RELIC = { INVSLOT_MAINHAND },
-}
+local EQUIP_LOC_TO_SLOT_IDS = { INVTYPE_HEAD = { INVSLOT_HEAD }, INVTYPE_NECK = { INVSLOT_NECK }, INVTYPE_SHOULDER = { INVSLOT_SHOULDER }, INVTYPE_BODY = { INVSLOT_BODY }, INVTYPE_CHEST = { INVSLOT_CHEST }, INVTYPE_ROBE = { INVSLOT_CHEST }, INVTYPE_WAIST = { INVSLOT_WAIST }, INVTYPE_LEGS = { INVSLOT_LEGS }, INVTYPE_FEET = { INVSLOT_FEET }, INVTYPE_WRIST = { INVSLOT_WRIST }, INVTYPE_HAND = { INVSLOT_HAND }, INVTYPE_FINGER = { INVSLOT_FINGER1, INVSLOT_FINGER2 }, INVTYPE_TRINKET = { INVSLOT_TRINKET1, INVSLOT_TRINKET2 }, INVTYPE_CLOAK = { INVSLOT_BACK }, INVTYPE_WEAPON = { INVSLOT_MAINHAND, INVSLOT_OFFHAND }, INVTYPE_2HWEAPON = { INVSLOT_MAINHAND }, INVTYPE_WEAPONMAINHAND = { INVSLOT_MAINHAND }, INVTYPE_WEAPONOFFHAND = { INVSLOT_OFFHAND }, INVTYPE_SHIELD = { INVSLOT_OFFHAND }, INVTYPE_HOLDABLE = { INVSLOT_OFFHAND }, INVTYPE_RANGED = { INVSLOT_MAINHAND }, INVTYPE_RANGEDRIGHT = { INVSLOT_MAINHAND }, INVTYPE_THROWN = { INVSLOT_MAINHAND }, INVTYPE_RELIC = { INVSLOT_MAINHAND }, }
 
 local function GetItemLevelData(itemLink)
     if not itemLink then
@@ -318,6 +293,49 @@ function BisManager:ClearTooltipInspectState(tooltip)
     end
 end
 
+local function SafeUnitExists(unit)
+    if not unit then
+        return false
+    end
+    local ok, result = pcall(UnitExists, unit)
+    return ok and result
+end
+
+local function SafeUnitGUID(unit)
+    if not unit then
+        return nil
+    end
+    local ok, result = pcall(UnitGUID, unit)
+    if ok and result then
+        return tostring(result)
+    end
+    return nil
+end
+
+local function SafeUnitIsPlayer(unit)
+    if not unit then
+        return false
+    end
+    local ok, result = pcall(UnitIsPlayer, unit)
+    return ok and result
+end
+
+local function SafeUnitIsUnit(unitA, unitB)
+    if not unitA or not unitB then
+        return false
+    end
+    local ok, result = pcall(UnitIsUnit, unitA, unitB)
+    return ok and result
+end
+
+local function SafeCanInspect(unit)
+    if not unit or not CanInspect then
+        return false
+    end
+    local ok, result = pcall(CanInspect, unit, false)
+    return ok and result
+end
+
 local function FindUnitByGUID(guid)
     if not guid then
         return nil
@@ -325,25 +343,25 @@ local function FindUnitByGUID(guid)
     guid = tostring(guid)
 
     for _, unit in ipairs(TOOLTIP_GUID_UNITS) do
-        if UnitExists(unit) and UnitGUID(unit) == guid then
+        if SafeUnitExists(unit) and SafeUnitGUID(unit) == guid then
             return unit
         end
     end
     for index = 1, 4 do
         local unit = "party" .. index
-        if UnitExists(unit) and UnitGUID(unit) == guid then
+        if SafeUnitExists(unit) and SafeUnitGUID(unit) == guid then
             return unit
         end
     end
     for index = 1, 40 do
         local unit = "raid" .. index
-        if UnitExists(unit) and UnitGUID(unit) == guid then
+        if SafeUnitExists(unit) and SafeUnitGUID(unit) == guid then
             return unit
         end
     end
     for index = 1, 40 do
         local unit = "nameplate" .. index
-        if UnitExists(unit) and UnitGUID(unit) == guid then
+        if SafeUnitExists(unit) and SafeUnitGUID(unit) == guid then
             return unit
         end
     end
@@ -378,16 +396,16 @@ function BisManager:HandleUnitTooltip(tooltip, tooltipData)
     local _, unit = tooltip:GetUnit()
     unit = unit and tostring(unit) or nil
     self:ClearTooltipInspectState(tooltip)
-    local guid = unit and UnitExists(unit) and UnitGUID(unit) or nil
+    local guid = unit and SafeUnitExists(unit) and SafeUnitGUID(unit) or nil
     if not guid and tooltipData and tooltipData.guid then
         guid = tostring(tooltipData.guid)
         unit = FindUnitByGUID(guid)
     end
-    if not guid or not unit or not UnitExists(unit) or not UnitIsPlayer(unit) then
+    if not guid or not unit or not SafeUnitExists(unit) or not SafeUnitIsPlayer(unit) then
         return
     end
 
-    if UnitIsUnit(unit, "player") then
+    if SafeUnitIsUnit(unit, "player") then
         local averageItemLevel = self:GetAverageEquippedItemLevel("player")
         if averageItemLevel then
             self:ApplyTooltipUnitIlvl(tooltip, guid, averageItemLevel)
@@ -405,198 +423,187 @@ function BisManager:HandleUnitTooltip(tooltip, tooltipData)
         return
     end
 
-    if CanInspect and CanInspect(unit, false) and NotifyInspect then
+    if SafeCanInspect(unit) and NotifyInspect then
         self.tooltipInspectTooltip = tooltip
         self.tooltipInspectUnit = unit
         self.tooltipInspectGUID = guid
         NotifyInspect(unit)
     end
+end
 
-    function BisManager:HandleTooltipInspectReady(guid)
-        if not guid or guid ~= self.tooltipInspectGUID then
-            return
-        end
+function BisManager:HandleTooltipInspectReady(guid)
+    guid = guid and tostring(guid) or nil
+    if not guid or guid ~= self.tooltipInspectGUID then
+        return
+    end
 
-        local tooltip = self.tooltipInspectTooltip
-        local unit = self.tooltipInspectUnit
-        self.tooltipInspectTooltip = nil
-        self.tooltipInspectUnit = nil
-        self.tooltipInspectGUID = nil
+    local tooltip = self.tooltipInspectTooltip
+    local unit = self.tooltipInspectUnit
+    self.tooltipInspectTooltip = nil
+    self.tooltipInspectUnit = nil
+    self.tooltipInspectGUID = nil
 
-        if not tooltip or not tooltip:IsShown() or not unit or not UnitExists(unit) or UnitGUID(unit) ~= guid then
-            if ClearInspectPlayer then
-                ClearInspectPlayer()
-            end
-            return
-        end
-
-        local averageItemLevel = self:GetAverageEquippedItemLevel(unit)
-        if averageItemLevel then
-            self:SetCachedInspectAverageItemLevel(guid, averageItemLevel)
-            self:ApplyTooltipUnitIlvl(tooltip, guid, averageItemLevel)
-        end
-
+    if not tooltip or not tooltip:IsShown() or not unit or not SafeUnitExists(unit) or SafeUnitGUID(unit) ~= guid then
         if ClearInspectPlayer then
             ClearInspectPlayer()
         end
+        return
     end
 
-    function BisManager:InitializeTooltipIlvl()
-        if self.tooltipIlvlHooked then
-            return
-        end
-
-        local tooltip = GameTooltip
-        local hasTooltipDataProcessor = TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum and Enum.TooltipDataType and Enum.TooltipDataType.Unit
-        if tooltip then
-            tooltip:HookScript("OnHide", function(frame)
-                BisManager:ClearTooltipInspectState(frame)
-            end)
-            if not hasTooltipDataProcessor then
-                tooltip:HookScript("OnTooltipSetUnit", function(frame)
-                    BisManager:HandleUnitTooltip(frame)
-                end)
-            end
-        end
-        if hasTooltipDataProcessor then
-            TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(frame, tooltipData)
-                BisManager:HandleUnitTooltip(frame, tooltipData)
-            end)
-        end
-
-        self.tooltipIlvlHooked = true
+    local averageItemLevel = self:GetAverageEquippedItemLevel(unit)
+    if averageItemLevel then
+        self:SetCachedInspectAverageItemLevel(guid, averageItemLevel)
+        self:ApplyTooltipUnitIlvl(tooltip, guid, averageItemLevel)
     end
 
-    local function ResolveButtonBagSlot(button, fallbackBagID, fallbackSlotID)
-        if not button then
-            return fallbackBagID, fallbackSlotID
-        end
+    if ClearInspectPlayer then
+        ClearInspectPlayer()
+    end
+end
 
-        local bagID = fallbackBagID
-        if button.GetBagID then
-            local ok, value = pcall(button.GetBagID, button)
+function BisManager:InitializeTooltipIlvl()
+    if self.tooltipIlvlHooked then
+        return
+    end
+
+    local tooltip = GameTooltip
+    local hasTooltipDataProcessor = TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum and Enum.TooltipDataType and Enum.TooltipDataType.Unit
+    if tooltip then
+        tooltip:HookScript("OnHide", function(frame)
+            BisManager:ClearTooltipInspectState(frame)
+        end)
+        if not hasTooltipDataProcessor then
+            tooltip:HookScript("OnTooltipSetUnit", function(frame)
+                BisManager:HandleUnitTooltip(frame)
+            end)
+        end
+    end
+    if hasTooltipDataProcessor then
+        TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(frame, tooltipData)
+            BisManager:HandleUnitTooltip(frame, tooltipData)
+        end)
+    end
+
+    self.tooltipIlvlHooked = true
+end
+
+local function ResolveButtonBagSlot(button, fallbackBagID, fallbackSlotID)
+    if not button then
+        return fallbackBagID, fallbackSlotID
+    end
+
+    local bagID = fallbackBagID
+    if button.GetBagID then
+        local ok, value = pcall(button.GetBagID, button)
+        if ok and value ~= nil then
+            bagID = value
+        end
+    end
+    if bagID == nil then
+        bagID = button.bagID
+    end
+    if bagID == nil then
+        local parent = button:GetParent()
+        if parent and parent.GetBagID then
+            local ok, value = pcall(parent.GetBagID, parent)
             if ok and value ~= nil then
                 bagID = value
             end
         end
-        if bagID == nil then
-            bagID = button.bagID
-        end
-        if bagID == nil then
-            local parent = button:GetParent()
-            if parent and parent.GetBagID then
-                local ok, value = pcall(parent.GetBagID, parent)
-                if ok and value ~= nil then
-                    bagID = value
-                end
-            end
-        end
-
-        local slotID = fallbackSlotID
-        if button.GetID then
-            local ok, value = pcall(button.GetID, button)
-            if ok and value ~= nil and value > 0 then
-                slotID = value
-            end
-        end
-        if slotID == nil or slotID <= 0 then
-            slotID = button.slotIndex or button.slotID
-        end
-
-        return bagID, slotID
     end
 
-    local function GetBagItemLink(bagID, slotID)
-        if bagID == nil or slotID == nil then
-            return nil
+    local slotID = fallbackSlotID
+    if button.GetID then
+        local ok, value = pcall(button.GetID, button)
+        if ok and value ~= nil and value > 0 then
+            slotID = value
         end
-        if C_Container and C_Container.GetContainerItemLink then
-            local ok, link = pcall(C_Container.GetContainerItemLink, bagID, slotID)
-            if ok then
-                return link
-            end
-        elseif GetContainerItemLink then
-            local ok, link = pcall(GetContainerItemLink, bagID, slotID)
-            if ok then
-                return link
-            end
-        end
+    end
+    if slotID == nil or slotID <= 0 then
+        slotID = button.slotIndex or button.slotID
+    end
+
+    return bagID, slotID
+end
+
+local function GetBagItemLink(bagID, slotID)
+    if bagID == nil or slotID == nil then
         return nil
     end
-
-    local function IsEquippableItemLink(itemLink)
-        if not itemLink or not GetItemInfoInstant then
-            return false
+    if C_Container and C_Container.GetContainerItemLink then
+        local ok, link = pcall(C_Container.GetContainerItemLink, bagID, slotID)
+        if ok then
+            return link
         end
-        local _, _, _, equipLoc = GetItemInfoInstant(itemLink)
-        return equipLoc ~= nil and EQUIP_LOC_TO_SLOT_IDS[equipLoc] ~= nil
-    end
-
-    local function RefreshBagFrame(frame)
-        if not frame or not frame:IsShown() then
-            return
-        end
-
-        if frame.Items then
-            for _, button in pairs(frame.Items) do
-                if button and button.IsShown and button:IsShown() then
-                    BisManager:UpdateBagSlotOverlay(button)
-                end
-            end
-            return
-        end
-
-        local bagID
-        if frame.GetBagID then
-            bagID = frame:GetBagID()
-        elseif frame.GetID then
-            bagID = frame:GetID()
-        end
-        if bagID == nil then
-            return
-        end
-
-        local numSlots = 0
-        if C_Container and C_Container.GetContainerNumSlots then
-            numSlots = C_Container.GetContainerNumSlots(bagID) or 0
-        elseif GetContainerNumSlots then
-            numSlots = GetContainerNumSlots(bagID) or 0
-        end
-
-        for slotID = 1, numSlots do
-            local button = _G[frame:GetName() .. "Item" .. slotID]
-            if button and button:IsShown() then
-                BisManager:UpdateBagSlotOverlay(button, bagID, slotID)
-            end
+    elseif GetContainerItemLink then
+        local ok, link = pcall(GetContainerItemLink, bagID, slotID)
+        if ok then
+            return link
         end
     end
+    return nil
+end
 
-    function BisManager:RefreshIlvlOverlays(unit)
-        local overlays = (unit == "inspect") and self.inspectOverlays or self.ilvlOverlays
-        local show = self:IsIlvlDisplayAllowed()
-        local inventoryUnit = self:GetInventoryUnit(unit)
+local function IsEquippableItemLink(itemLink)
+    if not itemLink or not GetItemInfoInstant then
+        return false
+    end
+    local _, _, _, equipLoc = GetItemInfoInstant(itemLink)
+    return equipLoc ~= nil and EQUIP_LOC_TO_SLOT_IDS[equipLoc] ~= nil
+end
 
-        for _, slotDef in ipairs(SLOT_DEFINITIONS) do
-            if slotDef.subSlots then
-                for _, subSlot in ipairs(slotDef.subSlots) do
-                    local buttonName = (unit == "inspect") and subSlot.inspectButton or subSlot.button
-                    local overlay = overlays[buttonName]
-                    if overlay then
-                        if show then
-                            local link = GetInventoryItemLink(inventoryUnit, subSlot.slotID)
-                            local itemLevel, quality = GetItemLevelData(link)
-                            overlay:SetItemData(itemLevel, quality)
-                        else
-                            overlay:ClearItemData()
-                        end
-                    end
-                end
-            else
-                local buttonName = (unit == "inspect") and slotDef.inspectButton or slotDef.button
+local function RefreshBagFrame(frame)
+    if not frame or not frame:IsShown() then
+        return
+    end
+
+    if frame.Items then
+        for _, button in pairs(frame.Items) do
+            if button and button.IsShown and button:IsShown() then
+                BisManager:UpdateBagSlotOverlay(button)
+            end
+        end
+        return
+    end
+
+    local bagID
+    if frame.GetBagID then
+        bagID = frame:GetBagID()
+    elseif frame.GetID then
+        bagID = frame:GetID()
+    end
+    if bagID == nil then
+        return
+    end
+
+    local numSlots = 0
+    if C_Container and C_Container.GetContainerNumSlots then
+        numSlots = C_Container.GetContainerNumSlots(bagID) or 0
+    elseif GetContainerNumSlots then
+        numSlots = GetContainerNumSlots(bagID) or 0
+    end
+
+    for slotID = 1, numSlots do
+        local button = _G[frame:GetName() .. "Item" .. slotID]
+        if button and button:IsShown() then
+            BisManager:UpdateBagSlotOverlay(button, bagID, slotID)
+        end
+    end
+end
+
+function BisManager:RefreshIlvlOverlays(unit)
+    local overlays = (unit == "inspect") and self.inspectOverlays or self.ilvlOverlays
+    local show = self:IsIlvlDisplayAllowed()
+    local inventoryUnit = self:GetInventoryUnit(unit)
+
+    for _, slotDef in ipairs(SLOT_DEFINITIONS) do
+        if slotDef.subSlots then
+            for _, subSlot in ipairs(slotDef.subSlots) do
+                local buttonName = (unit == "inspect") and subSlot.inspectButton or subSlot.button
                 local overlay = overlays[buttonName]
                 if overlay then
                     if show then
-                        local link = GetInventoryItemLink(inventoryUnit, slotDef.slotID)
+                        local link = GetInventoryItemLink(inventoryUnit, subSlot.slotID)
                         local itemLevel, quality = GetItemLevelData(link)
                         overlay:SetItemData(itemLevel, quality)
                     else
@@ -604,301 +611,308 @@ function BisManager:HandleUnitTooltip(tooltip, tooltipData)
                     end
                 end
             end
+        else
+            local buttonName = (unit == "inspect") and slotDef.inspectButton or slotDef.button
+            local overlay = overlays[buttonName]
+            if overlay then
+                if show then
+                    local link = GetInventoryItemLink(inventoryUnit, slotDef.slotID)
+                    local itemLevel, quality = GetItemLevelData(link)
+                    overlay:SetItemData(itemLevel, quality)
+                else
+                    overlay:ClearItemData()
+                end
+            end
+        end
+    end
+end
+
+function BisManager:RefreshOverallIlvl()
+    if not self.db or not self.overallIlvlText then
+        return
+    end
+    if self:IsIlvlDisplayAllowed() then
+        local equippedIlvl = self:GetOverallItemLevel()
+        self.overallIlvlText:SetText(self:FormatAverageItemLevel(equippedIlvl))
+        self.overallIlvlText:Show()
+    else
+        self.overallIlvlText:Hide()
+    end
+end
+
+function BisManager:InitializeIlvlUI()
+    if self.ilvlUiReady or not CharacterFrame then
+        return
+    end
+
+    for _, slotDef in ipairs(SLOT_DEFINITIONS) do
+        if slotDef.subSlots then
+            for _, subSlot in ipairs(slotDef.subSlots) do
+                local button = _G[subSlot.button]
+                if button and not self.ilvlOverlays[subSlot.button] then
+                    self.ilvlOverlays[subSlot.button] = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
+                end
+            end
+        else
+            local button = _G[slotDef.button]
+            if button and not self.ilvlOverlays[slotDef.button] then
+                self.ilvlOverlays[slotDef.button] = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
+            end
         end
     end
 
-    function BisManager:RefreshOverallIlvl()
-        if not self.db or not self.overallIlvlText then
-            return
-        end
-        if self:IsIlvlDisplayAllowed() then
-            local equippedIlvl = self:GetOverallItemLevel()
-            self.overallIlvlText:SetText(self:FormatAverageItemLevel(equippedIlvl))
-            self.overallIlvlText:Show()
-        else
+    if not self.overallIlvlText then
+        local anchor = CharacterLevelText or CharacterFrameTitleText
+        if anchor then
+            self.overallIlvlText = CharacterFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+            self.overallIlvlText:SetPoint("BOTTOM", anchor, "TOP", 0, -6)
+            self.overallIlvlText:SetTextColor(1, 0.82, 0)
             self.overallIlvlText:Hide()
         end
     end
 
-    function BisManager:InitializeIlvlUI()
-        if self.ilvlUiReady or not CharacterFrame then
-            return
-        end
+    self.ilvlUiReady = true
+end
 
-        for _, slotDef in ipairs(SLOT_DEFINITIONS) do
-            if slotDef.subSlots then
-                for _, subSlot in ipairs(slotDef.subSlots) do
-                    local button = _G[subSlot.button]
-                    if button and not self.ilvlOverlays[subSlot.button] then
-                        self.ilvlOverlays[subSlot.button] = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
-                    end
-                end
-            else
-                local button = _G[slotDef.button]
-                if button and not self.ilvlOverlays[slotDef.button] then
-                    self.ilvlOverlays[slotDef.button] = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
-                end
-            end
-        end
+function BisManager:RefreshIlvlDisplay()
+    self:RefreshIlvlOverlays("player")
+    self:RefreshOverallIlvl()
+end
 
-        if not self.overallIlvlText then
-            local anchor = CharacterLevelText or CharacterFrameTitleText
-            if anchor then
-                self.overallIlvlText = CharacterFrame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-                self.overallIlvlText:SetPoint("BOTTOM", anchor, "TOP", 0, -6)
-                self.overallIlvlText:SetTextColor(1, 0.82, 0)
-                self.overallIlvlText:Hide()
-            end
-        end
-
-        self.ilvlUiReady = true
+function BisManager:UpdateBagSlotOverlay(button, bagID, slotID)
+    if not button then
+        return
     end
 
-    function BisManager:RefreshIlvlDisplay()
-        self:RefreshIlvlOverlays("player")
-        self:RefreshOverallIlvl()
+    if not button._gm_ilvl then
+        button._gm_ilvl = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
+    end
+    if not button._gm_upgradeBorder then
+        button._gm_upgradeBorder = CreateBagUpgradeBorder(button)
     end
 
-    function BisManager:UpdateBagSlotOverlay(button, bagID, slotID)
-        if not button then
-            return
-        end
-
-        if not button._gm_ilvl then
-            button._gm_ilvl = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
-        end
-        if not button._gm_upgradeBorder then
-            button._gm_upgradeBorder = CreateBagUpgradeBorder(button)
-        end
-
-        local overlay = button._gm_ilvl
-        local border = button._gm_upgradeBorder
-        if not self:IsIlvlDisplayAllowed() then
-            overlay:ClearItemData()
-            border:HideUpgrade()
-            return
-        end
-
-        bagID, slotID = ResolveButtonBagSlot(button, bagID, slotID)
-        local link = GetBagItemLink(bagID, slotID)
-        if not IsEquippableItemLink(link) then
-            overlay:ClearItemData()
-            border:HideUpgrade()
-            return
-        end
-
-        local itemLevel, quality = GetItemLevelData(link)
-        overlay:SetItemData(itemLevel, quality)
-        if IsBagItemUpgrade(link, itemLevel) then
-            border:ShowUpgrade()
-        else
-            border:HideUpgrade()
-        end
+    local overlay = button._gm_ilvl
+    local border = button._gm_upgradeBorder
+    if not self:IsIlvlDisplayAllowed() then
+        overlay:ClearItemData()
+        border:HideUpgrade()
+        return
     end
 
-    function BisManager:RefreshAllBagOverlays()
-        for index = 1, 20 do
-            RefreshBagFrame(_G["ContainerFrame" .. index])
-        end
-        RefreshBagFrame(_G["ContainerFrameCombinedBags"])
+    bagID, slotID = ResolveButtonBagSlot(button, bagID, slotID)
+    local link = GetBagItemLink(bagID, slotID)
+    if not IsEquippableItemLink(link) then
+        overlay:ClearItemData()
+        border:HideUpgrade()
+        return
     end
 
-    function BisManager:InitializeBags()
-        if self.bagsInitialized then
+    local itemLevel, quality = GetItemLevelData(link)
+    overlay:SetItemData(itemLevel, quality)
+    if IsBagItemUpgrade(link, itemLevel) then
+        border:ShowUpgrade()
+    else
+        border:HideUpgrade()
+    end
+end
+
+function BisManager:RefreshAllBagOverlays()
+    for index = 1, 20 do
+        RefreshBagFrame(_G["ContainerFrame" .. index])
+    end
+    RefreshBagFrame(_G["ContainerFrameCombinedBags"])
+end
+
+function BisManager:InitializeBags()
+    if self.bagsInitialized then
+        return
+    end
+
+    local function SafeHook(frame)
+        if not frame then
             return
         end
-
-        local function SafeHook(frame)
-            if not frame then
-                return
-            end
-            pcall(function()
-                frame:HookScript("OnShow", function()
-                    C_Timer.After(0.05, function()
-                        BisManager:RefreshAllBagOverlays()
-                    end)
+        pcall(function()
+            frame:HookScript("OnShow", function()
+                C_Timer.After(0.05, function()
+                    BisManager:RefreshAllBagOverlays()
                 end)
             end)
-        end
-
-        for index = 1, 20 do
-            SafeHook(_G["ContainerFrame" .. index])
-        end
-        SafeHook(_G["ContainerFrameCombinedBags"])
-
-        self.bagsInitialized = true
+        end)
     end
 
-    function BisManager:InitializeInspect()
-        if self.inspectHooked then
-            return
-        end
+    for index = 1, 20 do
+        SafeHook(_G["ContainerFrame" .. index])
+    end
+    SafeHook(_G["ContainerFrameCombinedBags"])
 
-        local inspectFrame = InspectFrame
-        if not inspectFrame then
-            return
-        end
+    self.bagsInitialized = true
+end
 
-        for _, slotDef in ipairs(SLOT_DEFINITIONS) do
-            if slotDef.subSlots then
-                for _, subSlot in ipairs(slotDef.subSlots) do
-                    local button = _G[subSlot.inspectButton]
-                    if button and not self.inspectOverlays[subSlot.inspectButton] then
-                        self.inspectOverlays[subSlot.inspectButton] = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
-                    end
-                end
-            elseif slotDef.inspectButton then
-                local button = _G[slotDef.inspectButton]
-                if button and not self.inspectOverlays[slotDef.inspectButton] then
-                    self.inspectOverlays[slotDef.inspectButton] = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
+function BisManager:InitializeInspect()
+    if self.inspectHooked then
+        return
+    end
+
+    local inspectFrame = InspectFrame
+    if not inspectFrame then
+        return
+    end
+
+    for _, slotDef in ipairs(SLOT_DEFINITIONS) do
+        if slotDef.subSlots then
+            for _, subSlot in ipairs(slotDef.subSlots) do
+                local button = _G[subSlot.inspectButton]
+                if button and not self.inspectOverlays[subSlot.inspectButton] then
+                    self.inspectOverlays[subSlot.inspectButton] = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
                 end
             end
-        end
-
-        local nameLabel = GetInspectNameLabel()
-        if nameLabel then
-            SetSingleLineLabelWidth(nameLabel, 220)
-        end
-
-        if not self.inspectImportBtn then
-            self.inspectImportBtn = CreateFrame("Button", nil, inspectFrame, "UIPanelButtonTemplate")
-            self.inspectImportBtn:SetSize(130, 22)
-            self.inspectImportBtn:SetPoint("TOPLEFT", inspectFrame, "BOTTOMLEFT", 12, -42)
-            self.inspectImportBtn:SetText(GetLocalizedButtonText("inspect_import_button", "Copier Equipement"))
-            self.inspectImportBtn:SetScript("OnClick", function()
-                local unit = BisManager.inspectUnit or (InspectFrame and InspectFrame.unit)
-                local profileName = unit and UnitName(unit) or nil
-                if not profileName or profileName == "" or not unit or not UnitExists(unit) then
-                    DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
-                    return
-                end
-
-                local guid = UnitGUID(unit)
-                local count = BisManager:ImportProfileFromUnit(profileName, unit)
-                if count > 0 then
-                    DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_success"]:format(profileName, profileName))
-                    return
-                end
-
-                if guid and CanInspect and NotifyInspect and CanInspect(unit, false) then
-                    BisManager.pendingInspectImport = {
-                        guid = guid,
-                        profileName = profileName,
-                        unit = unit,
-                        retries = 2,
-                    }
-                    NotifyInspect(unit)
-                else
-                    DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
-                end
-            end)
-        end
-
-        inspectFrame:HookScript("OnHide", function()
-            BisManager.inspectUnit = nil
-            BisManager.pendingInspectImport = nil
-            for _, overlay in pairs(self.inspectOverlays) do
-                overlay:ClearItemData()
+        elseif slotDef.inspectButton then
+            local button = _G[slotDef.inspectButton]
+            if button and not self.inspectOverlays[slotDef.inspectButton] then
+                self.inspectOverlays[slotDef.inspectButton] = CreateIlvlOverlay(button, "BOTTOM", 0, 2)
             end
-            BisManager:ClearInspectSummaryIlvl()
-            if BisManager.inspectImportBtn then
-                BisManager.inspectImportBtn:Hide()
+        end
+    end
+
+    local nameLabel = GetInspectNameLabel()
+    if nameLabel then
+        SetSingleLineLabelWidth(nameLabel, 220)
+    end
+
+    if not self.inspectImportBtn then
+        self.inspectImportBtn = CreateFrame("Button", nil, inspectFrame, "UIPanelButtonTemplate")
+        self.inspectImportBtn:SetSize(130, 22)
+        self.inspectImportBtn:SetPoint("TOPLEFT", inspectFrame, "BOTTOMLEFT", 12, -42)
+        self.inspectImportBtn:SetText(GetLocalizedButtonText("inspect_import_button", "Copier Equipement"))
+        self.inspectImportBtn:SetScript("OnClick", function()
+            local unit = BisManager.inspectUnit or (InspectFrame and InspectFrame.unit)
+            local profileName = unit and UnitName(unit) or nil
+            if not profileName or profileName == "" or not unit or not UnitExists(unit) then
+                DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
+                return
+            end
+
+            local guid = UnitGUID(unit)
+            local count = BisManager:ImportProfileFromUnit(profileName, unit)
+            if count > 0 then
+                DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_success"]:format(profileName, profileName))
+                return
+            end
+
+            if guid and CanInspect and NotifyInspect and CanInspect(unit, false) then
+                BisManager.pendingInspectImport = { guid = guid, profileName = profileName, unit = unit, retries = 2, }
+                NotifyInspect(unit)
+            else
+                DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
             end
         end)
-        inspectFrame:HookScript("OnShow", function(frame)
-            BisManager.inspectUnit = frame.unit or BisManager.inspectUnit
-            BisManager:ClearInspectSummaryIlvl()
-            if BisManager.inspectImportBtn then
-                BisManager.inspectImportBtn:Show()
-            end
-            C_Timer.After(0.1, function()
-                BisManager:RefreshInspect()
-            end)
+    end
+
+    inspectFrame:HookScript("OnHide", function()
+        BisManager.inspectUnit = nil
+        BisManager.pendingInspectImport = nil
+        for _, overlay in pairs(self.inspectOverlays) do
+            overlay:ClearItemData()
+        end
+        BisManager:ClearInspectSummaryIlvl()
+        if BisManager.inspectImportBtn then
+            BisManager.inspectImportBtn:Hide()
+        end
+    end)
+    inspectFrame:HookScript("OnShow", function(frame)
+        BisManager.inspectUnit = frame.unit or BisManager.inspectUnit
+        BisManager:ClearInspectSummaryIlvl()
+        if BisManager.inspectImportBtn then
+            BisManager.inspectImportBtn:Show()
+        end
+        C_Timer.After(0.1, function()
+            BisManager:RefreshInspect()
         end)
+    end)
 
-        self.inspectHooked = true
+    self.inspectHooked = true
+end
+
+function BisManager:RefreshInspect()
+    if not self:IsIlvlDisplayAllowed() then
+        self:ClearInspectSummaryIlvl()
+        return
     end
 
-    function BisManager:RefreshInspect()
-        if not self:IsIlvlDisplayAllowed() then
-            self:ClearInspectSummaryIlvl()
-            return
-        end
-
-        self.inspectUnit = (InspectFrame and InspectFrame.unit) or self.inspectUnit
-        if not self.inspectUnit or not UnitExists(self.inspectUnit) then
-            self:ClearInspectSummaryIlvl()
-            return
-        end
-
-        self:RefreshIlvlOverlays("inspect")
-
-        local averageItemLevel = self:GetAverageEquippedItemLevel("inspect")
-        if averageItemLevel then
-            local inspectGuid = self.inspectUnit and UnitExists(self.inspectUnit) and UnitGUID(self.inspectUnit) or nil
-            self:SetCachedInspectAverageItemLevel(inspectGuid, averageItemLevel)
-            self:SetInspectSummaryIlvl(averageItemLevel)
-        else
-            self:ClearInspectSummaryIlvl()
-        end
+    self.inspectUnit = (InspectFrame and InspectFrame.unit) or self.inspectUnit
+    if not self.inspectUnit or not UnitExists(self.inspectUnit) then
+        self:ClearInspectSummaryIlvl()
+        return
     end
 
-    function BisManager:HandleInspectImportReady(guid)
-        local pending = self.pendingInspectImport
-        if not pending or pending.guid ~= guid then
-            return
-        end
+    self:RefreshIlvlOverlays("inspect")
 
-        self.pendingInspectImport = nil
+    local averageItemLevel = self:GetAverageEquippedItemLevel("inspect")
+    if averageItemLevel then
+        local inspectGuid = self.inspectUnit and UnitExists(self.inspectUnit) and UnitGUID(self.inspectUnit) or nil
+        self:SetCachedInspectAverageItemLevel(inspectGuid, averageItemLevel)
+        self:SetInspectSummaryIlvl(averageItemLevel)
+    else
+        self:ClearInspectSummaryIlvl()
+    end
+end
 
-        local unit = pending.unit
-        if not unit or not UnitExists(unit) or UnitGUID(unit) ~= guid then
-            if ClearInspectPlayer then
-                ClearInspectPlayer()
-            end
-            DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
-            return
-        end
+function BisManager:HandleInspectImportReady(guid)
+    local pending = self.pendingInspectImport
+    if not pending or pending.guid ~= guid then
+        return
+    end
 
-        local currentCount = self:CountEquippedItemsForUnit(unit)
-        if currentCount == 0 and (pending.retries or 0) > 0 then
-            pending.retries = pending.retries - 1
-            self.pendingInspectImport = pending
-            C_Timer.After(0.2, function()
-                if BisManager.pendingInspectImport == pending and NotifyInspect and CanInspect and CanInspect(unit, false) then
-                    NotifyInspect(unit)
-                end
-            end)
-            return
-        end
+    self.pendingInspectImport = nil
 
-        local count = self:ImportProfileFromUnit(pending.profileName, unit)
-        if count == 0 and currentCount > 0 and (pending.retries or 0) > 0 then
-            pending.retries = pending.retries - 1
-            self.pendingInspectImport = pending
-            C_Timer.After(0.2, function()
-                if BisManager.pendingInspectImport == pending and NotifyInspect and CanInspect and CanInspect(unit, false) then
-                    NotifyInspect(unit)
-                end
-            end)
-            return
-        end
-
+    local unit = pending.unit
+    if not unit or not UnitExists(unit) or UnitGUID(unit) ~= guid then
         if ClearInspectPlayer then
             ClearInspectPlayer()
         end
-
-        if count > 0 then
-            DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_success"]:format(pending.profileName, pending.profileName))
-        else
-            DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
-        end
+        DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
+        return
     end
 
-    function BisManager:HandleIlvlCombatStateChanged()
-        if InCombatLockdown() then
-            self:ClearInspectSummaryIlvl()
-            self:ClearTooltipInspectState()
-        end
+    local currentCount = self:CountEquippedItemsForUnit(unit)
+    if currentCount == 0 and (pending.retries or 0) > 0 then
+        pending.retries = pending.retries - 1
+        self.pendingInspectImport = pending
+        C_Timer.After(0.2, function()
+            if BisManager.pendingInspectImport == pending and NotifyInspect and CanInspect and CanInspect(unit, false) then
+                NotifyInspect(unit)
+            end
+        end)
+        return
+    end
+
+    local count = self:ImportProfileFromUnit(pending.profileName, unit)
+    if count == 0 and currentCount > 0 and (pending.retries or 0) > 0 then
+        pending.retries = pending.retries - 1
+        self.pendingInspectImport = pending
+        C_Timer.After(0.2, function()
+            if BisManager.pendingInspectImport == pending and NotifyInspect and CanInspect and CanInspect(unit, false) then
+                NotifyInspect(unit)
+            end
+        end)
+        return
+    end
+
+    if ClearInspectPlayer then
+        ClearInspectPlayer()
+    end
+
+    if count > 0 then
+        DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_success"]:format(pending.profileName, pending.profileName))
+    else
+        DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
+    end
+end
+
+function BisManager:HandleIlvlCombatStateChanged()
+    if InCombatLockdown() then
+        self:ClearInspectSummaryIlvl()
+        self:ClearTooltipInspectState()
     end
 end
