@@ -307,9 +307,19 @@ local function SafeUnitGUID(unit)
     end
     local ok, result = pcall(UnitGUID, unit)
     if ok and result then
-        return tostring(result)
+        return result
     end
     return nil
+end
+
+local function SafeStringsEqual(left, right)
+    if left == nil or right == nil then
+        return false
+    end
+    local ok, result = pcall(function()
+        return left == right
+    end)
+    return ok and result
 end
 
 local function SafeUnitIsPlayer(unit)
@@ -340,28 +350,34 @@ local function FindUnitByGUID(guid)
     if not guid then
         return nil
     end
-    guid = tostring(guid)
+
+    if UnitTokenFromGUID then
+        local ok, unit = pcall(UnitTokenFromGUID, guid)
+        if ok and unit and SafeUnitExists(unit) then
+            return unit
+        end
+    end
 
     for _, unit in ipairs(TOOLTIP_GUID_UNITS) do
-        if SafeUnitExists(unit) and SafeUnitGUID(unit) == guid then
+        if SafeUnitExists(unit) and SafeStringsEqual(SafeUnitGUID(unit), guid) then
             return unit
         end
     end
     for index = 1, 4 do
         local unit = "party" .. index
-        if SafeUnitExists(unit) and SafeUnitGUID(unit) == guid then
+        if SafeUnitExists(unit) and SafeStringsEqual(SafeUnitGUID(unit), guid) then
             return unit
         end
     end
     for index = 1, 40 do
         local unit = "raid" .. index
-        if SafeUnitExists(unit) and SafeUnitGUID(unit) == guid then
+        if SafeUnitExists(unit) and SafeStringsEqual(SafeUnitGUID(unit), guid) then
             return unit
         end
     end
     for index = 1, 40 do
         local unit = "nameplate" .. index
-        if SafeUnitExists(unit) and SafeUnitGUID(unit) == guid then
+        if SafeUnitExists(unit) and SafeStringsEqual(SafeUnitGUID(unit), guid) then
             return unit
         end
     end
@@ -374,7 +390,7 @@ function BisManager:ApplyTooltipUnitIlvl(tooltip, guid, value)
     end
 
     local text = FormatTooltipItemLevel(value)
-    if tooltip._gmIlvlUnitGUID == guid and tooltip._gmIlvlText == text then
+    if SafeStringsEqual(tooltip._gmIlvlUnitGUID, guid) and tooltip._gmIlvlText == text then
         return
     end
 
@@ -394,11 +410,10 @@ function BisManager:HandleUnitTooltip(tooltip, tooltipData)
     end
 
     local _, unit = tooltip:GetUnit()
-    unit = unit and tostring(unit) or nil
     self:ClearTooltipInspectState(tooltip)
     local guid = unit and SafeUnitExists(unit) and SafeUnitGUID(unit) or nil
     if not guid and tooltipData and tooltipData.guid then
-        guid = tostring(tooltipData.guid)
+        guid = tooltipData.guid
         unit = FindUnitByGUID(guid)
     end
     if not guid or not unit or not SafeUnitExists(unit) or not SafeUnitIsPlayer(unit) then
@@ -432,8 +447,7 @@ function BisManager:HandleUnitTooltip(tooltip, tooltipData)
 end
 
 function BisManager:HandleTooltipInspectReady(guid)
-    guid = guid and tostring(guid) or nil
-    if not guid or guid ~= self.tooltipInspectGUID then
+    if not guid or not SafeStringsEqual(guid, self.tooltipInspectGUID) then
         return
     end
 
@@ -443,7 +457,7 @@ function BisManager:HandleTooltipInspectReady(guid)
     self.tooltipInspectUnit = nil
     self.tooltipInspectGUID = nil
 
-    if not tooltip or not tooltip:IsShown() or not unit or not SafeUnitExists(unit) or SafeUnitGUID(unit) ~= guid then
+    if not tooltip or not tooltip:IsShown() or not unit or not SafeUnitExists(unit) or not SafeStringsEqual(SafeUnitGUID(unit), guid) then
         if ClearInspectPlayer then
             ClearInspectPlayer()
         end
@@ -860,14 +874,14 @@ end
 
 function BisManager:HandleInspectImportReady(guid)
     local pending = self.pendingInspectImport
-    if not pending or pending.guid ~= guid then
+    if not pending or not SafeStringsEqual(pending.guid, guid) then
         return
     end
 
     self.pendingInspectImport = nil
 
     local unit = pending.unit
-    if not unit or not UnitExists(unit) or UnitGUID(unit) ~= guid then
+    if not unit or not UnitExists(unit) or not SafeStringsEqual(UnitGUID(unit), guid) then
         if ClearInspectPlayer then
             ClearInspectPlayer()
         end
