@@ -103,6 +103,23 @@ function BisManager:SetBadgeBorderColor(badge, r, g, b, a)
     badge.rightEdge:SetVertexColor(r, g, b, a)
 end
 
+function BisManager:RefreshCharacterToggleButtonState()
+    local button = self.charToggleBtn
+    if not button or not self.db or not self.db.display then
+        return
+    end
+
+    local enabled = self.db.display.enabled
+    button.icon:SetDesaturated(not enabled)
+    button.icon:SetAlpha(enabled and 1 or 0.4)
+    button.bg:SetColorTexture(0, 0, 0, enabled and 0.8 or 0.45)
+    local borderColor = enabled and { 0.36, 0.78, 1, 0.95 } or { 0.38, 0.38, 0.38, 0.8 }
+    button.border.top:SetColorTexture(borderColor[1], borderColor[2], borderColor[3], borderColor[4])
+    button.border.bottom:SetColorTexture(borderColor[1], borderColor[2], borderColor[3], borderColor[4])
+    button.border.left:SetColorTexture(borderColor[1], borderColor[2], borderColor[3], borderColor[4])
+    button.border.right:SetColorTexture(borderColor[1], borderColor[2], borderColor[3], borderColor[4])
+end
+
 function BisManager:ShowBadgeTooltip(badge)
     local slotDef = SLOT_BY_KEY[badge.slotKey]
     local entries = self:GetEntries(badge.slotKey)
@@ -216,12 +233,41 @@ function BisManager:InitializeBisUI()
 
     if not self.charToggleBtn then
         local modelParent = CharacterModelScene or CharacterModelFrame or CharacterFrame
-        local button = CreateFrame("Button", "BisManagerCharToggle", CharacterFrame, "UIPanelButtonTemplate")
-        button:SetSize(65, 20)
+        local button = CreateFrame("Button", "BisManagerCharToggle", CharacterFrame)
+        button:SetSize(20, 20)
         button:SetPoint("TOPLEFT", modelParent, "TOPLEFT", 0, 28)
         button:SetFrameStrata("HIGH")
-        button:SetText(L["bis_on"])
         button:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+
+        button.bg = button:CreateTexture(nil, "BACKGROUND")
+        button.bg:SetAllPoints()
+        button.bg:SetColorTexture(0, 0, 0, 0.8)
+
+        button.icon = button:CreateTexture(nil, "ARTWORK")
+        button.icon:SetPoint("TOPLEFT", 2, -2)
+        button.icon:SetPoint("BOTTOMRIGHT", -2, 2)
+        button.icon:SetTexture(BisManager.ADDON_ICON or "Interface\\Icons\\INV_Misc_QuestionMark")
+        button.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+
+        button.border = CreateFrame("Frame", nil, button)
+        button.border:SetAllPoints()
+        button.border.top = button.border:CreateTexture(nil, "OVERLAY")
+        button.border.top:SetPoint("TOPLEFT")
+        button.border.top:SetPoint("TOPRIGHT")
+        button.border.top:SetHeight(1)
+        button.border.bottom = button.border:CreateTexture(nil, "OVERLAY")
+        button.border.bottom:SetPoint("BOTTOMLEFT")
+        button.border.bottom:SetPoint("BOTTOMRIGHT")
+        button.border.bottom:SetHeight(1)
+        button.border.left = button.border:CreateTexture(nil, "OVERLAY")
+        button.border.left:SetPoint("TOPLEFT")
+        button.border.left:SetPoint("BOTTOMLEFT")
+        button.border.left:SetWidth(1)
+        button.border.right = button.border:CreateTexture(nil, "OVERLAY")
+        button.border.right:SetPoint("TOPRIGHT")
+        button.border.right:SetPoint("BOTTOMRIGHT")
+        button.border.right:SetWidth(1)
+
         button:SetScript("OnClick", function(_, mouseButton)
             if mouseButton == "RightButton" then
                 if BisManager.ToggleConfigUI then
@@ -238,13 +284,15 @@ function BisManager:InitializeBisUI()
         end)
         button:SetScript("OnEnter", function(frame)
             GameTooltip:SetOwner(frame, "ANCHOR_RIGHT")
-            GameTooltip:AddLine(L["toggle_title"])
+            local enabled = BisManager.db and BisManager.db.display and BisManager.db.display.enabled
+            GameTooltip:AddLine(enabled and L["bis_on"] or L["bis_off"], 0.36, 0.78, 1)
             GameTooltip:AddLine(L["toggle_desc"], 1, 1, 1, true)
             GameTooltip:AddLine(L["toggle_right_click"], 0.7, 0.7, 0.7, true)
             GameTooltip:Show()
         end)
         button:SetScript("OnLeave", GameTooltip_Hide)
         self.charToggleBtn = button
+        self:RefreshCharacterToggleButtonState()
     end
 
     self.bisUiReady = true
@@ -270,7 +318,5 @@ function BisManager:RefreshBisDisplay()
         end
     end
 
-    if self.charToggleBtn then
-        self.charToggleBtn:SetText(self.db.display.enabled and L["bis_on"] or L["bis_off"])
-    end
+    self:RefreshCharacterToggleButtonState()
 end

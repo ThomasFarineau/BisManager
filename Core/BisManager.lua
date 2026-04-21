@@ -217,6 +217,9 @@ function BisManager:InitializeDatabase()
     if type(self.db.profiles) ~= "table" then
         self.db.profiles = {}
     end
+    if type(self.db.ilvlCache) ~= "table" then
+        self.db.ilvlCache = {}
+    end
     if type(self.db.activeProfile) ~= "string" or self.db.activeProfile == "" then
         self.db.activeProfile = "Default"
     end

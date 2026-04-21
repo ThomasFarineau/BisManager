@@ -7,6 +7,7 @@ local L = BisManager.L
 local SLOT_DEFINITIONS = BisManager.SLOT_DEFINITIONS
 local ENCHANT_BUTTON_ICON = "Interface\\Icons\\Trade_Engraving"
 local tooltipScanner = CreateFrame("GameTooltip", "BisManagerEnchantScanner", UIParent, "GameTooltipTemplate")
+local gemTooltipScanner = CreateFrame("GameTooltip", "BisManagerGemScanner", UIParent, "GameTooltipTemplate")
 local SOCKET_LABELS = {
     EMPTY_SOCKET_PRISMATIC,
     EMPTY_SOCKET_RED,
@@ -18,17 +19,6 @@ local SOCKET_LABELS = {
     EMPTY_SOCKET_PUNCHCARDRED,
     EMPTY_SOCKET_PUNCHCARDYELLOW,
     EMPTY_SOCKET_PUNCHCARDBLUE,
-}
-
-local ENCHANTABLE_SLOT_IDS = {
-    [INVSLOT_BACK] = true,
-    [INVSLOT_CHEST] = true,
-    [INVSLOT_WRIST] = true,
-    [INVSLOT_FEET] = true,
-    [INVSLOT_FINGER1] = true,
-    [INVSLOT_FINGER2] = true,
-    [INVSLOT_MAINHAND] = true,
-    [INVSLOT_OFFHAND] = true,
 }
 
 local function GetInventoryUnit(unit)
@@ -61,7 +51,7 @@ local function GetEnchantIDFromLink(itemLink)
 end
 
 local function IsEnchantExpected(slotID)
-    return slotID and ENCHANTABLE_SLOT_IDS[slotID] or false
+    return slotID and BisManager:IsEnchantableSlot(slotID) or false
 end
 
 local function StripColorCodes(text)
@@ -81,6 +71,31 @@ local function GetTooltipLines(itemLink)
     local numLines = tooltipScanner:NumLines() or 0
     for index = 1, numLines do
         local leftRegion = _G["BisManagerEnchantScannerTextLeft" .. index]
+        if leftRegion then
+            lines[#lines + 1] = {
+                text = leftRegion:GetText(),
+                r = select(1, leftRegion:GetTextColor()),
+                g = select(2, leftRegion:GetTextColor()),
+                b = select(3, leftRegion:GetTextColor()),
+            }
+        end
+    end
+    return lines
+end
+
+local function GetTooltipLinesForScanner(scanner, textRegionPrefix, itemLink)
+    if not itemLink then
+        return {}
+    end
+
+    scanner:SetOwner(UIParent, "ANCHOR_NONE")
+    scanner:ClearLines()
+    scanner:SetHyperlink(itemLink)
+
+    local lines = {}
+    local numLines = scanner:NumLines() or 0
+    for index = 1, numLines do
+        local leftRegion = _G[textRegionPrefix .. index]
         if leftRegion then
             lines[#lines + 1] = {
                 text = leftRegion:GetText(),
@@ -134,6 +149,59 @@ local function GetSocketCountFromTooltip(itemLink)
     return count
 end
 
+-- Build the localized "Enchanted" prefix from the Blizzard global so we can
+-- reliably detect the enchant line across locales (frFR: "Enchanté : %s",
+-- enUS: "Enchanted: %s", deDE: "Verzaubert: %s", etc.).
+local function BuildEnchantPrefixes()
+    local prefixes = {}
+    local seen = {}
+    local function add(template)
+        if type(template) ~= "string" then
+            return
+        end
+        local prefix = template:match("^(.-)%%s")
+        if not prefix then
+            return
+        end
+        prefix = prefix:gsub("%s+$", "")
+        prefix = prefix:gsub("[:：]+%s*$", "")
+        prefix = prefix:gsub("%s+$", "")
+        if prefix ~= "" and not seen[prefix] then
+            seen[prefix] = true
+            prefixes[#prefixes + 1] = prefix
+        end
+    end
+    add(_G.ENCHANTED_TOOLTIP_LINE)
+    -- Safety fallbacks for the most common western clients.
+    for _, fallback in ipairs({ "Enchanted", "Enchant", "Enchanté", "Verzaubert", "Encantado", "Incantato", "Encantamento" }) do
+        if not seen[fallback] then
+            seen[fallback] = true
+            prefixes[#prefixes + 1] = fallback
+        end
+    end
+    return prefixes
+end
+
+local ENCHANT_PREFIXES = BuildEnchantPrefixes()
+
+local function ExtractEnchantName(text)
+    if not text or text == "" then
+        return nil
+    end
+    for _, prefix in ipairs(ENCHANT_PREFIXES) do
+        if text:sub(1, #prefix) == prefix then
+            local rest = text:sub(#prefix + 1)
+            -- Require an explicit ":" separator so we don't match stat lines
+            -- that merely start with the same letters.
+            local name = rest:match("^%s*[:：]%s*(.+)$")
+            if name and name ~= "" then
+                return (name:gsub("%s+$", ""))
+            end
+        end
+    end
+    return nil
+end
+
 local function GetEnchantName(itemLink)
     if not itemLink then
         return nil
@@ -141,34 +209,9 @@ local function GetEnchantName(itemLink)
 
     for index, line in ipairs(GetTooltipLines(itemLink)) do
         if index > 1 and line.text and line.text ~= "" then
-            local text = StripColorCodes(line.text)
-            local explicitEnchantName = text:match("^Enchant[^:]*:%s*(.+)$")
-            if explicitEnchantName and explicitEnchantName ~= "" then
-                return explicitEnchantName
-            end
-            explicitEnchantName = text:match("^Enchant[eé][^:]*:%s*(.+)$")
-            if explicitEnchantName and explicitEnchantName ~= "" then
-                return explicitEnchantName
-            end
-            explicitEnchantName = text:match("^Enchanted[^:]*:%s*(.+)$")
-            if explicitEnchantName and explicitEnchantName ~= "" then
-                return explicitEnchantName
-            end
-            if line.g and line.g > 0.75 and line.r and line.r < 0.5 then
-                if not text:find("Niveau d'objet", 1, true)
-                    and not text:find("Item Level", 1, true)
-                    and not text:find("Prix de vente", 1, true)
-                    and not text:find("Sell Price", 1, true)
-                    and not text:find("+%d+ Endurance")
-                    and not text:find("+%d+ Stamina")
-                    and not text:find("^%+%d+ ")
-                then
-                    return text
-                end
-
-                if text:find("^%+%d+ ") and not text:find("Endurance", 1, true) and not text:find("Stamina", 1, true) then
-                    return text
-                end
+            local name = ExtractEnchantName(StripColorCodes(line.text))
+            if name then
+                return name
             end
         end
     end
@@ -176,15 +219,69 @@ local function GetEnchantName(itemLink)
     return nil
 end
 
-local function GetGemNames(itemLink)
-    local names = {}
+local function IsGemBonusLine(line)
+    if not line or not line.text then
+        return false
+    end
+
+    local text = StripColorCodes(line.text)
+    if not text or text == "" then
+        return false
+    end
+
+    if text:find("^Item Level", 1, false)
+        or text:find("^Niveau d'objet", 1, false)
+        or text:find("^Prix de vente", 1, false)
+        or text:find("^Sell Price", 1, false)
+        or text:find("^Unique", 1, false)
+        or text:find("^Lié", 1, false)
+        or text:find("^Soulbound", 1, false)
+        or text:find("^Binds", 1, false)
+    then
+        return false
+    end
+
+    return text:find("^%+")
+        or text:find("^Equip:")
+        or text:find("^Use:")
+        or text:find("^Équipé")
+        or text:find("^Utiliser")
+        or ((line.g or 0) > 0.7 and (line.r or 1) < 0.8)
+end
+
+local function GetGemDetails(itemLink)
+    local gems = {}
     for _, gemID in ipairs(GetGemIDsFromLink(itemLink)) do
-        local gemName = GetItemInfo(gemID)
+        local gemName, gemLink, _, _, _, _, _, _, _, gemIcon = GetItemInfo(gemID)
         if gemName and gemName ~= "" then
-            names[#names + 1] = gemName
+            local bonuses = {}
+            local resolvedLink = gemLink or ("item:" .. gemID)
+            for index, line in ipairs(GetTooltipLinesForScanner(gemTooltipScanner, "BisManagerGemScannerTextLeft", resolvedLink)) do
+                if index > 1 and IsGemBonusLine(line) then
+                    bonuses[#bonuses + 1] = StripColorCodes(line.text)
+                end
+            end
+            gems[#gems + 1] = {
+                name = gemName,
+                icon = gemIcon,
+                bonuses = bonuses,
+            }
         end
     end
-    return names
+    return gems
+end
+
+local function BuildGemTooltipLine(gem)
+    if not gem then
+        return nil
+    end
+
+    local iconText = gem.icon and ("|T" .. gem.icon .. ":0|t ") or ""
+    local primaryText = gem.bonuses and gem.bonuses[1]
+    if primaryText and primaryText ~= "" then
+        return iconText .. primaryText
+    end
+    return iconText .. (gem.name or "")
 end
 
 local function CreateToggleButton(parent, anchor)
@@ -253,6 +350,11 @@ local function CreateToggleButton(parent, anchor)
         self.icon:SetDesaturated(not enabled)
         self.icon:SetAlpha(enabled and 1 or 0.4)
         self.bg:SetColorTexture(0, 0, 0, enabled and 0.8 or 0.45)
+        local borderColor = enabled and { 0.36, 0.78, 1, 0.95 } or { 0.38, 0.38, 0.38, 0.8 }
+        self.border.top:SetColorTexture(borderColor[1], borderColor[2], borderColor[3], borderColor[4])
+        self.border.bottom:SetColorTexture(borderColor[1], borderColor[2], borderColor[3], borderColor[4])
+        self.border.left:SetColorTexture(borderColor[1], borderColor[2], borderColor[3], borderColor[4])
+        self.border.right:SetColorTexture(borderColor[1], borderColor[2], borderColor[3], borderColor[4])
     end
 
     button:RefreshState()
@@ -293,10 +395,14 @@ local function CreateEnchantIndicator(parent)
             end
             if self.state.missingSockets and self.state.missingSockets > 0 then
                 GameTooltip:AddLine(("%s (%d)"):format(L["gems_missing"], self.state.missingSockets), 1, 0.25, 0.25, true)
-            elseif self.state.hasSockets then
-                GameTooltip:AddLine(L["gems_ok"], 0.3, 1, 0.3, true)
-                for _, gemName in ipairs(self.state.gemNames or {}) do
-                    GameTooltip:AddLine(gemName, 1, 1, 1, true)
+            end
+            for _, gem in ipairs(self.state.gems or {}) do
+                local gemLine = BuildGemTooltipLine(gem)
+                if gemLine then
+                    GameTooltip:AddLine(gemLine, 1, 1, 1, true)
+                end
+                for bonusIndex = 2, #(gem.bonuses or {}) do
+                    GameTooltip:AddLine(" - " .. gem.bonuses[bonusIndex], 0.75, 0.75, 0.75, true)
                 end
             end
         end
@@ -315,7 +421,7 @@ local function CreateEnchantIndicator(parent)
             self.text:SetText("|cffff4c4c!|r")
         elseif state.enchantExpected or state.hasSockets then
             self.bg:SetColorTexture(0.05, 0.2, 0.05, 0.85)
-            self.text:SetText("|cff4cff4cE|r")
+            self.text:SetText(state.enchantExpected and "|cff4cff4cE|r" or "|cff4cd2ffG|r")
         else
             self:Hide()
             return
@@ -329,31 +435,41 @@ end
 
 local function UpdateIndicator(indicator, unit, slotID)
     if not indicator then
-        return
+        return true
     end
     if not BisManager.db or not BisManager.db.display or not BisManager.db.display.showEnchants then
         indicator:SetState(nil)
-        return
+        return true
     end
     local inventoryUnit = GetInventoryUnit(unit)
     local itemLink = GetInventoryItemLink(inventoryUnit, slotID)
     if not itemLink then
-        indicator:SetState(nil)
-        return
+        if unit ~= "inspect" then
+            indicator:SetState(nil)
+        end
+        return false
     end
 
     local enchantExpected = IsEnchantExpected(slotID)
-    local hasEnchant = (GetEnchantIDFromLink(itemLink) or 0) > 0
-    local totalSockets = GetSocketCountFromTooltip(itemLink)
-    local gemNames = GetGemNames(itemLink)
-    local missingSockets = math.max(totalSockets - #gemNames, 0)
+    local enchantName = GetEnchantName(itemLink)
+    -- Some enchants (notably class runes and other consumable-applied effects)
+    -- do not populate the enchantID field of the item link on every client,
+    -- even though the tooltip clearly shows "Enchanté : ...". Treat either
+    -- signal as proof of an active enchant so the badge reflects reality.
+    local hasEnchant = ((GetEnchantIDFromLink(itemLink) or 0) > 0) or (enchantName ~= nil)
+    local gems = GetGemDetails(itemLink)
+    local emptySockets = GetSocketCountFromTooltip(itemLink)
+    local totalSockets = math.max(emptySockets, #gems)
+    local missingSockets = math.max(totalSockets - #gems, 0)
     local hasSockets = totalSockets > 0
-    local enchantName = hasEnchant and GetEnchantName(itemLink) or nil
+    if not hasEnchant then
+        enchantName = nil
+    end
     local hasIssue = (enchantExpected and not hasEnchant) or missingSockets > 0
 
     if not enchantExpected and not hasSockets then
         indicator:SetState(nil)
-        return
+        return true
     end
 
     indicator:SetState({
@@ -362,9 +478,10 @@ local function UpdateIndicator(indicator, unit, slotID)
         enchantName = enchantName,
         missingSockets = missingSockets,
         hasSockets = hasSockets,
-        gemNames = gemNames,
+        gems = gems,
         hasIssue = hasIssue,
     })
+    return true
 end
 
 function BisManager:InitializeEnchantUI()
@@ -449,18 +566,41 @@ function BisManager:ClearInspectEnchantDisplay()
     end
 end
 
+function BisManager:QueueInspectEnchantRefresh(delay)
+    if self.pendingInspectEnchantRefresh then
+        return
+    end
+
+    self.pendingInspectEnchantRefresh = true
+    C_Timer.After(delay or 0.2, function()
+        BisManager.pendingInspectEnchantRefresh = nil
+        if BisManager.RefreshEnchantInspectDisplay then
+            BisManager:RefreshEnchantInspectDisplay()
+        end
+    end)
+end
+
 function BisManager:RefreshEnchantInspectDisplay()
     if not self.inspectEnchantUiReady or not InspectFrame or not InspectFrame:IsShown() then
         return
     end
 
+    local refreshIncomplete = false
     for _, slotDef in ipairs(SLOT_DEFINITIONS) do
         if slotDef.subSlots then
             for _, subSlot in ipairs(slotDef.subSlots) do
-                UpdateIndicator(self.inspectEnchantIndicators[subSlot.inspectButton], "inspect", subSlot.slotID)
+                if not UpdateIndicator(self.inspectEnchantIndicators[subSlot.inspectButton], "inspect", subSlot.slotID) then
+                    refreshIncomplete = true
+                end
             end
         elseif slotDef.inspectButton and slotDef.slotID then
-            UpdateIndicator(self.inspectEnchantIndicators[slotDef.inspectButton], "inspect", slotDef.slotID)
+            if not UpdateIndicator(self.inspectEnchantIndicators[slotDef.inspectButton], "inspect", slotDef.slotID) then
+                refreshIncomplete = true
+            end
         end
+    end
+
+    if refreshIncomplete then
+        self:QueueInspectEnchantRefresh(0.2)
     end
 end

@@ -6,6 +6,36 @@ end
 local SLOT_DEFINITIONS = BisManager.SLOT_DEFINITIONS
 local TOOLTIP_GUID_UNITS = { "mouseover", "target", "focus", "player" }
 
+-- Returns true when Blizzard's InspectFrame is currently showing inspected gear.
+-- While that frame is up, calling ClearInspectPlayer() wipes the data that Blizzard
+-- is actively displaying, which causes items to disappear and their tooltips to break.
+local function IsBlizzardInspectActive()
+    local frame = _G.InspectFrame
+    return frame ~= nil and frame.IsShown and frame:IsShown()
+end
+
+-- Centralized guard around ClearInspectPlayer so the addon never races with
+-- the Blizzard inspect UI or with another of its own pending inspect requests.
+local function SafeClearInspectPlayer(owner)
+    if not ClearInspectPlayer then
+        return
+    end
+    if IsBlizzardInspectActive() then
+        return
+    end
+    if BisManager.tooltipInspectGUID and owner ~= "tooltip" then
+        return
+    end
+    if BisManager.groupInspectCurrentGUID and owner ~= "group" then
+        return
+    end
+    if BisManager.pendingInspectImport and owner ~= "import" then
+        return
+    end
+    ClearInspectPlayer()
+end
+BisManager.SafeClearInspectPlayer = SafeClearInspectPlayer
+
 local function GetItemQualityColor(quality)
     local color = quality and ITEM_QUALITY_COLORS and ITEM_QUALITY_COLORS[quality] or nil
     if color then
@@ -266,6 +296,9 @@ function BisManager:GetCachedInspectAverageItemLevel(guid)
     if not guid then
         return nil
     end
+    if self.db and type(self.db.ilvlCache) == "table" and self.db.ilvlCache[guid] then
+        return self.db.ilvlCache[guid]
+    end
     self.inspectIlvlCache = self.inspectIlvlCache or {}
     return self.inspectIlvlCache[guid]
 end
@@ -276,6 +309,23 @@ function BisManager:SetCachedInspectAverageItemLevel(guid, value)
     end
     self.inspectIlvlCache = self.inspectIlvlCache or {}
     self.inspectIlvlCache[guid] = value
+    if self.db and type(self.db.ilvlCache) == "table" then
+        self.db.ilvlCache[guid] = value
+    end
+end
+
+function BisManager:CacheUnitAverageItemLevel(unit)
+    unit = self:GetInventoryUnit(unit)
+    if not unit or not UnitExists(unit) then
+        return nil
+    end
+
+    local guid = UnitGUID(unit)
+    local averageItemLevel = self:GetAverageEquippedItemLevel(unit)
+    if guid and averageItemLevel then
+        self:SetCachedInspectAverageItemLevel(guid, averageItemLevel)
+    end
+    return averageItemLevel
 end
 
 function BisManager:ClearTooltipInspectState(tooltip)
@@ -284,12 +334,13 @@ function BisManager:ClearTooltipInspectState(tooltip)
         tooltip._gmIlvlText = nil
     end
     if self.tooltipInspectTooltip == tooltip or tooltip == nil then
-        if self.tooltipInspectGUID and ClearInspectPlayer then
-            ClearInspectPlayer()
-        end
+        local hadPending = self.tooltipInspectGUID ~= nil
         self.tooltipInspectTooltip = nil
         self.tooltipInspectUnit = nil
         self.tooltipInspectGUID = nil
+        if hadPending then
+            SafeClearInspectPlayer("tooltip")
+        end
     end
 end
 
@@ -421,7 +472,7 @@ function BisManager:HandleUnitTooltip(tooltip, tooltipData)
     end
 
     if SafeUnitIsUnit(unit, "player") then
-        local averageItemLevel = self:GetAverageEquippedItemLevel("player")
+        local averageItemLevel = self:CacheUnitAverageItemLevel("player")
         if averageItemLevel then
             self:ApplyTooltipUnitIlvl(tooltip, guid, averageItemLevel)
         end
@@ -438,11 +489,37 @@ function BisManager:HandleUnitTooltip(tooltip, tooltipData)
         return
     end
 
+    -- Don't race Blizzard's InspectFrame: firing NotifyInspect here would
+    -- preempt the inspect the user is actively looking at, wiping its items
+    -- and tooltips. Skip the on-demand fetch; the cache will fill naturally
+    -- once an inspect completes elsewhere (group report, manual inspect...).
+    if IsBlizzardInspectActive() then
+        return
+    end
+
+    -- Don't stomp on another pending inspect (group report, profile import).
+    if self.groupInspectCurrentGUID or self.pendingInspectImport then
+        return
+    end
+
     if SafeCanInspect(unit) and NotifyInspect then
         self.tooltipInspectTooltip = tooltip
         self.tooltipInspectUnit = unit
         self.tooltipInspectGUID = guid
         NotifyInspect(unit)
+
+        -- Watchdog: if INSPECT_READY never fires (target moved out of range,
+        -- logged out, ...), clean up stale state after a few seconds so later
+        -- tooltips can try again instead of being stuck.
+        local pendingGUID = guid
+        C_Timer.After(3, function()
+            if BisManager.tooltipInspectGUID == pendingGUID then
+                BisManager.tooltipInspectTooltip = nil
+                BisManager.tooltipInspectUnit = nil
+                BisManager.tooltipInspectGUID = nil
+                SafeClearInspectPlayer("tooltip")
+            end
+        end)
     end
 end
 
@@ -458,9 +535,7 @@ function BisManager:HandleTooltipInspectReady(guid)
     self.tooltipInspectGUID = nil
 
     if not tooltip or not tooltip:IsShown() or not unit or not SafeUnitExists(unit) or not SafeStringsEqual(SafeUnitGUID(unit), guid) then
-        if ClearInspectPlayer then
-            ClearInspectPlayer()
-        end
+        SafeClearInspectPlayer("tooltip")
         return
     end
 
@@ -470,9 +545,7 @@ function BisManager:HandleTooltipInspectReady(guid)
         self:ApplyTooltipUnitIlvl(tooltip, guid, averageItemLevel)
     end
 
-    if ClearInspectPlayer then
-        ClearInspectPlayer()
-    end
+    SafeClearInspectPlayer("tooltip")
 end
 
 function BisManager:InitializeTooltipIlvl()
@@ -691,6 +764,7 @@ end
 function BisManager:RefreshIlvlDisplay()
     self:RefreshIlvlOverlays("player")
     self:RefreshOverallIlvl()
+    self:CacheUnitAverageItemLevel("player")
 end
 
 function BisManager:UpdateBagSlotOverlay(button, bagID, slotID)
@@ -862,10 +936,8 @@ function BisManager:RefreshInspect()
 
     self:RefreshIlvlOverlays("inspect")
 
-    local averageItemLevel = self:GetAverageEquippedItemLevel("inspect")
+    local averageItemLevel = self:CacheUnitAverageItemLevel("inspect")
     if averageItemLevel then
-        local inspectGuid = self.inspectUnit and UnitExists(self.inspectUnit) and UnitGUID(self.inspectUnit) or nil
-        self:SetCachedInspectAverageItemLevel(inspectGuid, averageItemLevel)
         self:SetInspectSummaryIlvl(averageItemLevel)
     else
         self:ClearInspectSummaryIlvl()
@@ -882,9 +954,7 @@ function BisManager:HandleInspectImportReady(guid)
 
     local unit = pending.unit
     if not unit or not UnitExists(unit) or not SafeStringsEqual(UnitGUID(unit), guid) then
-        if ClearInspectPlayer then
-            ClearInspectPlayer()
-        end
+        SafeClearInspectPlayer("import")
         DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_fail"])
         return
     end
@@ -913,9 +983,7 @@ function BisManager:HandleInspectImportReady(guid)
         return
     end
 
-    if ClearInspectPlayer then
-        ClearInspectPlayer()
-    end
+    SafeClearInspectPlayer("import")
 
     if count > 0 then
         DEFAULT_CHAT_FRAME:AddMessage("|cff5cc8ffBisManager|r: " .. L["inspect_import_success"]:format(pending.profileName, pending.profileName))

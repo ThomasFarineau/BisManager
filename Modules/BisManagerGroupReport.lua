@@ -33,6 +33,11 @@ end
 
 local function AddMinimapTooltipLines(tooltip)
     tooltip:AddLine(L["minimap_tooltip_title"], 0.36, 0.78, 1)
+    local playerGuid = UnitGUID and UnitGUID("player") or nil
+    local cachedIlvl = playerGuid and BisManager.GetCachedInspectAverageItemLevel and BisManager:GetCachedInspectAverageItemLevel(playerGuid) or nil
+    if cachedIlvl then
+        tooltip:AddLine("iLvl " .. BisManager:FormatAverageItemLevel(cachedIlvl), 1, 0.82, 0)
+    end
     tooltip:AddLine(L["minimap_tooltip_desc"], 1, 1, 1, true)
     tooltip:AddLine(L["minimap_tooltip_right_click"], 0.8, 0.8, 0.8, true)
 end
@@ -464,7 +469,9 @@ function BisManager:ProcessGroupInspectQueue()
         if BisManager.groupInspectCurrentGUID == request.guid then
             BisManager.groupInspectCurrentGUID = nil
             BisManager.groupInspectCurrentUnit = nil
-            if ClearInspectPlayer then
+            if BisManager.SafeClearInspectPlayer then
+                BisManager.SafeClearInspectPlayer("group")
+            elseif ClearInspectPlayer then
                 ClearInspectPlayer()
             end
             if BisManager.groupReportFrame and BisManager.groupReportFrame:IsShown() then
@@ -479,7 +486,9 @@ function BisManager:HandleGroupReportCombatStateChanged()
     self.groupInspectQueue = {}
     self.groupInspectCurrentGUID = nil
     self.groupInspectCurrentUnit = nil
-    if ClearInspectPlayer then
+    if self.SafeClearInspectPlayer then
+        self.SafeClearInspectPlayer("group")
+    elseif ClearInspectPlayer then
         ClearInspectPlayer()
     end
     if self.groupReportFrame and self.groupReportFrame:IsShown() then
@@ -504,7 +513,9 @@ function BisManager:HandleGroupReportInspectReady(guid)
         end
     end
 
-    if ClearInspectPlayer then
+    if self.SafeClearInspectPlayer then
+        self.SafeClearInspectPlayer("group")
+    elseif ClearInspectPlayer then
         ClearInspectPlayer()
     end
 

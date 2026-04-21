@@ -24,6 +24,7 @@ Locales/zhTW.lua
 
 Core/BisManager.lua
 Mapping/SpecializationIds.lua
+Mapping/EnchantableSlots.lua
 Modules/BisManagerBiS.lua
 Modules/BisManagerIlvl.lua
 Modules/BisManagerEnchant.lua
