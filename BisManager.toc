@@ -5,6 +5,7 @@
 ## Author: Thomas Farineau (Arckene)
 ## Version: @project-version@
 ## X-Curse-Project-ID: 1516752
+## X-Wago-ID: rN4kpzGD
 ## IconTexture: Interface/AddOns/BisManager/Assets/Icon
 ## OptionalDeps: LibStub, CallbackHandler-1.0, LibDataBroker-1.1, LibDBIcon-1.0
 ## SavedVariablesPerCharacter: BisManagerDB
