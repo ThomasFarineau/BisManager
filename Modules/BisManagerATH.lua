@@ -4,6 +4,7 @@ if not BisManager then
 end
 
 local TOOLTIP_GUID_UNITS = { "mouseover", "target", "focus", "player" }
+local ATH_ICON = "Interface/AddOns/BisManager/Assets/GameIcon2"
 
 local function IsBlizzardInspectActive()
     local frame = _G.InspectFrame
@@ -175,10 +176,16 @@ function BisManager:EnsureTooltipATHWidget()
         widget:SetBackdropBorderColor(0.5, 0.5, 0.5, 1)
     end
 
+    widget.icon = widget:CreateTexture(nil, "ARTWORK")
+    widget.icon:SetSize(16, 16)
+    widget.icon:SetPoint("LEFT", 8, 0)
+    widget.icon:SetTexture(ATH_ICON)
+
     widget.text = widget:CreateFontString(nil, "ARTWORK", "GameTooltipText")
-    widget.text:SetPoint("TOPLEFT", 8, -6)
+    widget.text:SetPoint("LEFT", widget.icon, "RIGHT", 6, 0)
     widget.text:SetPoint("BOTTOMRIGHT", -8, 6)
     widget.text:SetJustifyH("LEFT")
+    widget.text:SetJustifyV("MIDDLE")
     widget.text:SetTextColor(1, 0.82, 0)
 
     widget:Hide()
@@ -194,8 +201,8 @@ function BisManager:ShowTooltipATH(tooltip, guid, value)
     local widget = self:EnsureTooltipATHWidget()
     local text = FormatTooltipATH(value)
     widget.text:SetText(text)
-    widget:SetWidth(math.max(tooltip:GetWidth(), widget.text:GetStringWidth() + 18))
-    widget:SetHeight(math.max(22, widget.text:GetStringHeight() + 12))
+    widget:SetWidth(math.max(tooltip:GetWidth(), widget.text:GetStringWidth() + 40))
+    widget:SetHeight(math.max(24, widget.text:GetStringHeight() + 12))
     widget:ClearAllPoints()
     widget:SetPoint("BOTTOMLEFT", tooltip, "TOPLEFT", 0, 2)
     widget:SetPoint("BOTTOMRIGHT", tooltip, "TOPRIGHT", 0, 2)
