@@ -4,8 +4,6 @@ if not BisManager then
 end
 
 local SLOT_DEFINITIONS = BisManager.SLOT_DEFINITIONS
-local TOOLTIP_GUID_UNITS = { "mouseover", "target", "focus", "player" }
-
 -- Returns true when Blizzard's InspectFrame is currently showing inspected gear.
 -- While that frame is up, calling ClearInspectPlayer() wipes the data that Blizzard
 -- is actively displaying, which causes items to disappear and their tooltips to break.
@@ -73,10 +71,6 @@ local function GetUnitDisplayName(unit, fallbackLabel)
         return unitName
     end
     return StripInspectItemLevelSuffix(fallbackLabel and fallbackLabel:GetText() or "")
-end
-
-local function FormatTooltipItemLevel(value)
-    return "iLvl " .. BisManager:FormatAverageItemLevel(value)
 end
 
 local function GetLocalizedButtonText(key, fallback)
@@ -328,22 +322,6 @@ function BisManager:CacheUnitAverageItemLevel(unit)
     return averageItemLevel
 end
 
-function BisManager:ClearTooltipInspectState(tooltip)
-    if tooltip then
-        tooltip._gmIlvlUnitGUID = nil
-        tooltip._gmIlvlText = nil
-    end
-    if self.tooltipInspectTooltip == tooltip or tooltip == nil then
-        local hadPending = self.tooltipInspectGUID ~= nil
-        self.tooltipInspectTooltip = nil
-        self.tooltipInspectUnit = nil
-        self.tooltipInspectGUID = nil
-        if hadPending then
-            SafeClearInspectPlayer("tooltip")
-        end
-    end
-end
-
 local function SafeUnitExists(unit)
     if not unit then
         return false
@@ -373,205 +351,25 @@ local function SafeStringsEqual(left, right)
     return ok and result
 end
 
-local function SafeUnitIsPlayer(unit)
-    if not unit then
-        return false
-    end
-    local ok, result = pcall(UnitIsPlayer, unit)
-    return ok and result
-end
-
-local function SafeUnitIsUnit(unitA, unitB)
-    if not unitA or not unitB then
-        return false
-    end
-    local ok, result = pcall(UnitIsUnit, unitA, unitB)
-    return ok and result
-end
-
-local function SafeCanInspect(unit)
-    if not unit or not CanInspect then
-        return false
-    end
-    local ok, result = pcall(CanInspect, unit, false)
-    return ok and result
-end
-
-local function FindUnitByGUID(guid)
-    if not guid then
-        return nil
-    end
-
-    if UnitTokenFromGUID then
-        local ok, unit = pcall(UnitTokenFromGUID, guid)
-        if ok and unit and SafeUnitExists(unit) then
-            return unit
+-- Tooltip ATH was moved to Modules/BisManagerTooltipATH.lua.
+-- Keep lightweight fallbacks here so the rest of the iLvl module stays
+-- focused on overlays, inspect summaries, and cache management.
+function BisManager:ClearTooltipInspectState(tooltip)
+    if self.tooltipInspectTooltip == tooltip or tooltip == nil then
+        local hadPending = self.tooltipInspectGUID ~= nil
+        self.tooltipInspectTooltip = nil
+        self.tooltipInspectUnit = nil
+        self.tooltipInspectGUID = nil
+        if hadPending then
+            SafeClearInspectPlayer("tooltip")
         end
-    end
-
-    for _, unit in ipairs(TOOLTIP_GUID_UNITS) do
-        if SafeUnitExists(unit) and SafeStringsEqual(SafeUnitGUID(unit), guid) then
-            return unit
-        end
-    end
-    for index = 1, 4 do
-        local unit = "party" .. index
-        if SafeUnitExists(unit) and SafeStringsEqual(SafeUnitGUID(unit), guid) then
-            return unit
-        end
-    end
-    for index = 1, 40 do
-        local unit = "raid" .. index
-        if SafeUnitExists(unit) and SafeStringsEqual(SafeUnitGUID(unit), guid) then
-            return unit
-        end
-    end
-    for index = 1, 40 do
-        local unit = "nameplate" .. index
-        if SafeUnitExists(unit) and SafeStringsEqual(SafeUnitGUID(unit), guid) then
-            return unit
-        end
-    end
-    return nil
-end
-
-function BisManager:ApplyTooltipUnitIlvl(tooltip, guid, value)
-    if not tooltip or not guid or not value then
-        return
-    end
-
-    local text = FormatTooltipItemLevel(value)
-    if SafeStringsEqual(tooltip._gmIlvlUnitGUID, guid) and tooltip._gmIlvlText == text then
-        return
-    end
-
-    tooltip:AddLine(text, 1, 0.82, 0)
-    tooltip:Show()
-    tooltip._gmIlvlUnitGUID = guid
-    tooltip._gmIlvlText = text
-end
-
-function BisManager:HandleUnitTooltip(tooltip, tooltipData)
-    if not tooltip or not tooltip.GetUnit then
-        return
-    end
-    if not self:IsIlvlDisplayAllowed() then
-        self:ClearTooltipInspectState(tooltip)
-        return
-    end
-
-    local _, unit = tooltip:GetUnit()
-    self:ClearTooltipInspectState(tooltip)
-    local guid = unit and SafeUnitExists(unit) and SafeUnitGUID(unit) or nil
-    if not guid and tooltipData and tooltipData.guid then
-        guid = tooltipData.guid
-        unit = FindUnitByGUID(guid)
-    end
-    if not guid or not unit or not SafeUnitExists(unit) or not SafeUnitIsPlayer(unit) then
-        return
-    end
-
-    if SafeUnitIsUnit(unit, "player") then
-        local averageItemLevel = self:CacheUnitAverageItemLevel("player")
-        if averageItemLevel then
-            self:ApplyTooltipUnitIlvl(tooltip, guid, averageItemLevel)
-        end
-        return
-    end
-
-    local cachedValue = self:GetCachedInspectAverageItemLevel(guid)
-    if cachedValue then
-        self:ApplyTooltipUnitIlvl(tooltip, guid, cachedValue)
-        return
-    end
-
-    if InCombatLockdown() then
-        return
-    end
-
-    -- Don't race Blizzard's InspectFrame: firing NotifyInspect here would
-    -- preempt the inspect the user is actively looking at, wiping its items
-    -- and tooltips. Skip the on-demand fetch; the cache will fill naturally
-    -- once an inspect completes elsewhere (group report, manual inspect...).
-    if IsBlizzardInspectActive() then
-        return
-    end
-
-    -- Don't stomp on another pending inspect (group report, profile import).
-    if self.groupInspectCurrentGUID or self.pendingInspectImport then
-        return
-    end
-
-    if SafeCanInspect(unit) and NotifyInspect then
-        self.tooltipInspectTooltip = tooltip
-        self.tooltipInspectUnit = unit
-        self.tooltipInspectGUID = guid
-        NotifyInspect(unit)
-
-        -- Watchdog: if INSPECT_READY never fires (target moved out of range,
-        -- logged out, ...), clean up stale state after a few seconds so later
-        -- tooltips can try again instead of being stuck.
-        local pendingGUID = guid
-        C_Timer.After(3, function()
-            if BisManager.tooltipInspectGUID == pendingGUID then
-                BisManager.tooltipInspectTooltip = nil
-                BisManager.tooltipInspectUnit = nil
-                BisManager.tooltipInspectGUID = nil
-                SafeClearInspectPlayer("tooltip")
-            end
-        end)
     end
 end
 
-function BisManager:HandleTooltipInspectReady(guid)
-    if not guid or not SafeStringsEqual(guid, self.tooltipInspectGUID) then
-        return
-    end
-
-    local tooltip = self.tooltipInspectTooltip
-    local unit = self.tooltipInspectUnit
-    self.tooltipInspectTooltip = nil
-    self.tooltipInspectUnit = nil
-    self.tooltipInspectGUID = nil
-
-    if not tooltip or not tooltip:IsShown() or not unit or not SafeUnitExists(unit) or not SafeStringsEqual(SafeUnitGUID(unit), guid) then
-        SafeClearInspectPlayer("tooltip")
-        return
-    end
-
-    local averageItemLevel = self:GetAverageEquippedItemLevel(unit)
-    if averageItemLevel then
-        self:SetCachedInspectAverageItemLevel(guid, averageItemLevel)
-        self:ApplyTooltipUnitIlvl(tooltip, guid, averageItemLevel)
-    end
-
-    SafeClearInspectPlayer("tooltip")
+function BisManager:HandleTooltipInspectReady(_guid)
 end
 
 function BisManager:InitializeTooltipIlvl()
-    if self.tooltipIlvlHooked then
-        return
-    end
-
-    local tooltip = GameTooltip
-    local hasTooltipDataProcessor = TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall and Enum and Enum.TooltipDataType and Enum.TooltipDataType.Unit
-    if tooltip then
-        tooltip:HookScript("OnHide", function(frame)
-            BisManager:ClearTooltipInspectState(frame)
-        end)
-        if not hasTooltipDataProcessor then
-            tooltip:HookScript("OnTooltipSetUnit", function(frame)
-                BisManager:HandleUnitTooltip(frame)
-            end)
-        end
-    end
-    if hasTooltipDataProcessor then
-        TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(frame, tooltipData)
-            BisManager:HandleUnitTooltip(frame, tooltipData)
-        end)
-    end
-
-    self.tooltipIlvlHooked = true
 end
 
 local function ResolveButtonBagSlot(button, fallbackBagID, fallbackSlotID)

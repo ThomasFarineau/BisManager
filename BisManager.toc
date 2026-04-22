@@ -27,6 +27,7 @@ Mapping/SpecializationIds.lua
 Mapping/EnchantableSlots.lua
 Modules/BisManagerBiS.lua
 Modules/BisManagerIlvl.lua
+Modules/BisManagerTooltipATH.lua
 Modules/BisManagerEnchant.lua
 Modules/BisManagerGroupReport.lua
 Modules/BisManagerConfig.lua
