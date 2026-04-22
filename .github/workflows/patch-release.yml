@@ -1,12 +1,7 @@
-name: Official Release
+name: Patch Release
 
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: "Official version tag to publish (for example: 1.0.2)"
-        required: true
-        default: ""
 
 permissions:
   contents: write
@@ -20,21 +15,26 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate version
+      - name: Compute next version
         id: meta
         shell: bash
         run: |
-          release_tag="${{ github.event.inputs.version }}"
-          if ! [[ "$release_tag" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "Version must match x.y.z." >&2
-            exit 1
+          # Find the latest tag matching x.y.z (ignore suffixes like -14)
+          latest=$(git tag -l --sort=-v:refname | grep -E '^[0-9]+\.[0-9]+\.[0-9]+' | head -n1)
+
+          if [ -z "$latest" ]; then
+            release_tag="1.0.0"
+          else
+            # Strip any suffix after x.y.z (e.g. 1.0.13-14 -> 1.0.13)
+            base=$(echo "$latest" | grep -oE '^[0-9]+\.[0-9]+\.[0-9]+')
+            major=$(echo "$base" | cut -d. -f1)
+            minor=$(echo "$base" | cut -d. -f2)
+            patch=$(echo "$base" | cut -d. -f3)
+            patch=$((patch + 1))
+            release_tag="${major}.${minor}.${patch}"
           fi
 
-          if git rev-parse --verify "refs/tags/$release_tag" >/dev/null 2>&1; then
-            echo "Tag $release_tag already exists." >&2
-            exit 1
-          fi
-
+          echo "Next version: $release_tag"
           echo "release_tag=$release_tag" >> "$GITHUB_OUTPUT"
 
       - name: Create official tag

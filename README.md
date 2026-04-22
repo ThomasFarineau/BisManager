@@ -1,9 +1,3 @@
-# BisManager
-
-**BisManager** is a lightweight World of Warcraft addon that enhances the default character and inspect frames with Best-in-Slot tracking, item level overlays, enchant/gem checks, and group gear reports.
-
----
-
 ## Features
 
 ### 🎯 Best-in-Slot (BiS) Tracking
