@@ -1,0 +1,1011 @@
+{
+  "key": "EVOKER",
+  "specs": {
+    "AUGMENTATION": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            251178
+          ],
+          "OFFHAND": [
+            249276
+          ],
+          "HEAD": [
+            133506
+          ],
+          "NECK": [
+            249337
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            239656
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            49810
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249999
+          ],
+          "FINGER": [
+            249920,
+            49812
+          ],
+          "TRINKET": [
+            249810,
+            250223
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/evoker/augmentation/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.745Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            250223,
+            250256,
+            249346,
+            264507,
+            249809,
+            249810,
+            249343
+          ],
+          "FINGER": [
+            251217,
+            49812,
+            251093,
+            249336,
+            193708
+          ],
+          "HEAD": [
+            249997,
+            249317,
+            49824
+          ],
+          "NECK": [
+            50228,
+            249337,
+            265739
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            239656,
+            260312
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            49810,
+            249371,
+            249303,
+            260375
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249999,
+            193715
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            250256,
+            264507,
+            250223,
+            250144,
+            249346
+          ],
+          "FINGER": [
+            251217,
+            49812,
+            251093,
+            193708
+          ],
+          "HEAD": [
+            249997,
+            49824,
+            249317
+          ],
+          "NECK": [
+            50228,
+            265739,
+            249337
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            260312,
+            239656
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            49810,
+            249371,
+            263268
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249999,
+            193715,
+            249646
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/augmentation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/augmentation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.011Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/evoker/augmentation/m+",
+        "scrapedAt": "2026-04-22T10:37:47.534Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            249337
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249325
+          ],
+          "WAIST": [
+            244581
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249377
+          ],
+          "FINGER": [
+            249919,
+            249336
+          ],
+          "TRINKET": [
+            249810,
+            249346
+          ],
+          "MAINHAND": [
+            249294
+          ],
+          "OFFHAND": [
+            249276
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            133506
+          ],
+          "NECK": [
+            50228
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            260312
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            244581
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            193715
+          ],
+          "FINGER": [
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            250223,
+            250256
+          ],
+          "MAINHAND": [
+            251178
+          ],
+          "OFFHAND": [
+            193709
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            133506
+          ],
+          "NECK": [
+            249337
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            260312
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            244581
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249377
+          ],
+          "FINGER": [
+            249920,
+            133496
+          ],
+          "TRINKET": [
+            249810,
+            249346
+          ],
+          "MAINHAND": [
+            251178
+          ],
+          "OFFHAND": [
+            249276
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.289Z"
+      }
+    },
+    "DEVASTATION": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            249283
+          ],
+          "OFFHAND": [
+            249276
+          ],
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            239656
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249325
+          ],
+          "WAIST": [
+            49810
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249377
+          ],
+          "FINGER": [
+            249919,
+            249920
+          ],
+          "TRINKET": [
+            249346,
+            249809
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/evoker/devastation/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.745Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            249346,
+            264507,
+            249343,
+            249809,
+            250223,
+            250256,
+            250144
+          ],
+          "FINGER": [
+            251217,
+            49812,
+            251093,
+            249336,
+            193708
+          ],
+          "HEAD": [
+            249997,
+            249317
+          ],
+          "NECK": [
+            50228,
+            249337,
+            265739
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            239656,
+            260312,
+            258575
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584,
+            249304
+          ],
+          "HANDS": [
+            249998,
+            249325,
+            249647
+          ],
+          "WAIST": [
+            49810,
+            249371,
+            249303,
+            249994
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249999,
+            193715,
+            249377
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            264507,
+            249346,
+            250256,
+            250144,
+            250223,
+            249343,
+            249809
+          ],
+          "FINGER": [
+            251217,
+            49812,
+            251093,
+            193708
+          ],
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            50228,
+            265739,
+            249337
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            260312,
+            239656,
+            258575
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249998,
+            249647
+          ],
+          "WAIST": [
+            49810,
+            249651,
+            249371
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249999,
+            193715,
+            249646
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/devastation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/devastation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.011Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/evoker/devastation/m+",
+        "scrapedAt": "2026-04-22T10:37:47.534Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249325
+          ],
+          "WAIST": [
+            244581
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249377
+          ],
+          "FINGER": [
+            249920,
+            249919
+          ],
+          "TRINKET": [
+            249809,
+            249346
+          ],
+          "MAINHAND": [
+            249294
+          ],
+          "OFFHAND": [
+            249276
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            50228
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            260312
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            244581
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            193715
+          ],
+          "FINGER": [
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            250144,
+            250256
+          ],
+          "MAINHAND": [
+            251178
+          ],
+          "OFFHAND": [
+            193709
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            260312
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249325
+          ],
+          "WAIST": [
+            244581
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249377
+          ],
+          "FINGER": [
+            249920,
+            249919
+          ],
+          "TRINKET": [
+            249809,
+            249346
+          ],
+          "MAINHAND": [
+            249283
+          ],
+          "OFFHAND": [
+            249276
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/devastation-evoker/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/devastation-evoker/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/devastation-evoker/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.289Z"
+      }
+    },
+    "PRESERVATION": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "HEAD": [
+            249914
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            251206
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            251079
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            193722
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            251084
+          ],
+          "FINGER": [
+            249369,
+            249920
+          ],
+          "TRINKET": [
+            249343,
+            249809
+          ],
+          "MAINHAND": [
+            258514
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/evoker/preservation/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.745Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            245770,
+            237849
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            249343,
+            264507,
+            249809,
+            249346,
+            250256,
+            193718
+          ],
+          "FINGER": [
+            251115,
+            251093,
+            249369,
+            193708,
+            251217,
+            49812
+          ],
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            266314,
+            50228
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            249992,
+            258575
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            249304,
+            244584,
+            251079
+          ],
+          "HANDS": [
+            249998,
+            251089,
+            249325
+          ],
+          "WAIST": [
+            249371,
+            244611,
+            249994
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            244610,
+            251084,
+            249999,
+            249320,
+            244577
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            245770,
+            237849
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            264507,
+            250256,
+            249343,
+            193718,
+            249809,
+            249808,
+            249346,
+            250144
+          ],
+          "FINGER": [
+            251093,
+            251217,
+            251115,
+            193708,
+            49812,
+            249369
+          ],
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            50228,
+            265739,
+            266314
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            249992,
+            260312,
+            258575
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            244584,
+            251079,
+            249304,
+            251209
+          ],
+          "HANDS": [
+            249998,
+            251089
+          ],
+          "WAIST": [
+            244611,
+            249371,
+            49810
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            244610,
+            251084,
+            193715,
+            249999,
+            249646
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/preservation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/preservation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.011Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/evoker/preservation/m+",
+        "scrapedAt": "2026-04-22T10:37:47.534Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            249914
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            249304
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            249371
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            249377
+          ],
+          "FINGER": [
+            249369,
+            249920
+          ],
+          "TRINKET": [
+            249343,
+            249809
+          ],
+          "MAINHAND": [
+            249294,
+            249286
+          ],
+          "OFFHAND": [
+            249922
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            251119
+          ],
+          "NECK": [
+            50228
+          ],
+          "SHOULDER": [
+            151323
+          ],
+          "BACK": [
+            258575
+          ],
+          "CHEST": [
+            251179
+          ],
+          "WRIST": [
+            251079
+          ],
+          "HANDS": [
+            251089,
+            193710
+          ],
+          "WAIST": [
+            49810
+          ],
+          "LEGS": [
+            251215
+          ],
+          "FEET": [
+            251084
+          ],
+          "FINGER": [
+            251115,
+            251093
+          ],
+          "TRINKET": [
+            193718,
+            252411
+          ],
+          "MAINHAND": [
+            251201,
+            193707
+          ],
+          "OFFHAND": [
+            258472
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            249914
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "BACK": [
+            249992
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WRIST": [
+            251079
+          ],
+          "HANDS": [
+            249998
+          ],
+          "WAIST": [
+            249371
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            251084
+          ],
+          "FINGER": [
+            249920,
+            249369
+          ],
+          "TRINKET": [
+            249809,
+            249343
+          ],
+          "MAINHAND": [
+            249294,
+            249286
+          ],
+          "OFFHAND": [
+            249922
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/preservation-evoker/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/preservation-evoker/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/preservation-evoker/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.290Z"
+      }
+    }
+  }
+}

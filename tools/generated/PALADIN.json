@@ -1,0 +1,1038 @@
+{
+  "key": "PALADIN",
+  "specs": {
+    "HOLY": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            193710
+          ],
+          "OFFHAND": [
+            258049
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            258575
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            263193
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            249331
+          ],
+          "LEGS": [
+            249915
+          ],
+          "FEET": [
+            249332
+          ],
+          "FINGER": [
+            249920,
+            249919
+          ],
+          "TRINKET": [
+            249809,
+            249343
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.746Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            237843
+          ],
+          "OFFHAND": [
+            237831,
+            249275
+          ],
+          "TRINKET": [
+            249343,
+            264507,
+            249809,
+            250256,
+            249346,
+            193718,
+            249341
+          ],
+          "FINGER": [
+            251115,
+            251093,
+            193708,
+            251217,
+            240949,
+            249369,
+            49812
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            50228,
+            266314,
+            240950
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            239656,
+            258575,
+            260312
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834,
+            249326,
+            263193
+          ],
+          "HANDS": [
+            249962,
+            258583
+          ],
+          "WAIST": [
+            249958,
+            249331,
+            151327,
+            237830
+          ],
+          "LEGS": [
+            249960,
+            249311
+          ],
+          "FEET": [
+            249332,
+            251107,
+            249381,
+            251169,
+            249963
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            237843
+          ],
+          "OFFHAND": [
+            237831,
+            258049
+          ],
+          "TRINKET": [
+            250256,
+            264507,
+            249343,
+            193718,
+            249808,
+            250144
+          ],
+          "FINGER": [
+            251093,
+            251115,
+            251217,
+            193708,
+            49812,
+            151311
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            50228,
+            251096,
+            265739,
+            151309
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            258575,
+            260312,
+            239656,
+            193712
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834,
+            263193,
+            151328,
+            249326
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            49808,
+            251086,
+            151327
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            251169,
+            251107,
+            249654,
+            249332
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/holy/paladin/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/holy/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.020Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/paladin/holy/m+",
+        "scrapedAt": "2026-04-22T10:37:47.535Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            249326
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            249331
+          ],
+          "LEGS": [
+            249915
+          ],
+          "FEET": [
+            249332
+          ],
+          "FINGER": [
+            249919,
+            249920
+          ],
+          "TRINKET": [
+            249343,
+            249809
+          ],
+          "MAINHAND": [
+            249294
+          ],
+          "OFFHAND": [
+            249275
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            50228
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            258575
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            263193
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            151327
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            251169
+          ],
+          "FINGER": [
+            251115,
+            251093
+          ],
+          "TRINKET": [
+            250256,
+            193718
+          ],
+          "MAINHAND": [
+            193710
+          ],
+          "OFFHAND": [
+            251105
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            249326
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            249331
+          ],
+          "LEGS": [
+            249915
+          ],
+          "FEET": [
+            249332
+          ],
+          "FINGER": [
+            249920,
+            249919
+          ],
+          "TRINKET": [
+            249809,
+            249343
+          ],
+          "MAINHAND": [
+            249294
+          ],
+          "OFFHAND": [
+            251105
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/holy-paladin/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/holy-paladin/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/holy-paladin/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.291Z"
+      }
+    },
+    "PROTECTION": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            249295
+          ],
+          "OFFHAND": [
+            249921
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            249368
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            249326
+          ],
+          "HANDS": [
+            151332
+          ],
+          "WAIST": [
+            249331
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            249381
+          ],
+          "FINGER": [
+            249920,
+            151311
+          ],
+          "TRINKET": [
+            249343,
+            249342
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/paladin/protection/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.746Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            237839,
+            249281
+          ],
+          "OFFHAND": [
+            237831,
+            249275
+          ],
+          "TRINKET": [
+            249342,
+            249343,
+            193701,
+            250256,
+            249339,
+            252420
+          ],
+          "FINGER": [
+            251217,
+            251093,
+            151311,
+            49812,
+            151308
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            50228,
+            251096,
+            151309
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            260312,
+            193712,
+            249956,
+            239656
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834,
+            249326,
+            151328,
+            249957
+          ],
+          "HANDS": [
+            249962,
+            151332
+          ],
+          "WAIST": [
+            237830,
+            251086,
+            49808,
+            251112,
+            249331
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            237828,
+            249963,
+            249381,
+            249332,
+            251169,
+            251091
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            237839
+          ],
+          "OFFHAND": [
+            237831
+          ],
+          "TRINKET": [
+            250256,
+            252420,
+            249342,
+            264507,
+            249343,
+            193701
+          ],
+          "FINGER": [
+            251217,
+            251093,
+            49812,
+            151311,
+            193708,
+            251115,
+            151308
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            50228,
+            251096,
+            151309,
+            265739
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            193712,
+            260312
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834,
+            263193,
+            249660,
+            151328,
+            251203
+          ],
+          "HANDS": [
+            249962,
+            151332,
+            251081
+          ],
+          "WAIST": [
+            251086,
+            49808,
+            251112,
+            249659
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            251169,
+            251091,
+            251107,
+            237828,
+            249654
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/protection/paladin/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/protection/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.020Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/paladin/protection/m+",
+        "scrapedAt": "2026-04-22T10:37:47.535Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            249368
+          ],
+          "SHOULDER": [
+            249313
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            249326
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            249331
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            249332
+          ],
+          "FINGER": [
+            249920,
+            249369
+          ],
+          "TRINKET": [
+            249343,
+            249342
+          ],
+          "MAINHAND": [
+            249295
+          ],
+          "OFFHAND": [
+            249921
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            151309
+          ],
+          "SHOULDER": [
+            251157
+          ],
+          "BACK": [
+            193712
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            151328
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            251086
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            251169
+          ],
+          "FINGER": [
+            151311,
+            251093
+          ],
+          "TRINKET": [
+            250256,
+            252420
+          ],
+          "MAINHAND": [
+            193711
+          ],
+          "OFFHAND": [
+            251202
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            249368
+          ],
+          "SHOULDER": [
+            251157
+          ],
+          "BACK": [
+            193712
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            151328
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            251086
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            251169
+          ],
+          "FINGER": [
+            249920,
+            151311
+          ],
+          "TRINKET": [
+            249343,
+            249342
+          ],
+          "MAINHAND": [
+            193711
+          ],
+          "OFFHAND": [
+            249921
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/protection-paladin/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/protection-paladin/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/protection-paladin/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.292Z"
+      }
+    },
+    "RETRIBUTION": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            249277
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            239656
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834
+          ],
+          "HANDS": [
+            151332
+          ],
+          "WAIST": [
+            249380
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            249381
+          ],
+          "FINGER": [
+            249919,
+            249920,
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            260235,
+            193701
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.747Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            237846
+          ],
+          "TRINKET": [
+            193701,
+            249342,
+            249343,
+            252420
+          ],
+          "FINGER": [
+            251217,
+            251093,
+            193708,
+            251513,
+            251115,
+            49812
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            50228,
+            266314,
+            249337
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            239656,
+            258575
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834,
+            249326,
+            263193,
+            249957
+          ],
+          "HANDS": [
+            258583,
+            151332,
+            249962,
+            251081
+          ],
+          "WAIST": [
+            249958,
+            249380,
+            237830,
+            49808,
+            151327
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            249381,
+            249332,
+            251107
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            237846
+          ],
+          "TRINKET": [
+            193701,
+            249342,
+            252420,
+            264507,
+            249343
+          ],
+          "FINGER": [
+            251217,
+            251093,
+            193708,
+            251115,
+            251513,
+            49812
+          ],
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            50228,
+            265739,
+            266314
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            258575,
+            239656,
+            260312
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834,
+            263193
+          ],
+          "HANDS": [
+            249962,
+            258583,
+            151332,
+            251081
+          ],
+          "WAIST": [
+            49808,
+            249958,
+            151327,
+            263269,
+            249659,
+            251086
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            249654,
+            251107,
+            251169,
+            249381
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/retribution/paladin/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/retribution/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.021Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/paladin/retribution/m+",
+        "scrapedAt": "2026-04-22T10:37:47.536Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            239656
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834
+          ],
+          "HANDS": [
+            249962
+          ],
+          "WAIST": [
+            249380
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            249381
+          ],
+          "FINGER": [
+            249919,
+            249920
+          ],
+          "TRINKET": [
+            260235,
+            249343
+          ],
+          "MAINHAND": [
+            249277
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            50228
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            239656
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834
+          ],
+          "HANDS": [
+            151332
+          ],
+          "WAIST": [
+            151327
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            251169
+          ],
+          "FINGER": [
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            252420,
+            193701
+          ],
+          "MAINHAND": [
+            251117
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            249961
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            249959
+          ],
+          "BACK": [
+            239656
+          ],
+          "CHEST": [
+            249964
+          ],
+          "WRIST": [
+            237834
+          ],
+          "HANDS": [
+            151332
+          ],
+          "WAIST": [
+            249380
+          ],
+          "LEGS": [
+            249960
+          ],
+          "FEET": [
+            249381
+          ],
+          "FINGER": [
+            249919,
+            249920
+          ],
+          "TRINKET": [
+            260235,
+            193701
+          ],
+          "MAINHAND": [
+            249277
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/retribution-paladin/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/retribution-paladin/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/retribution-paladin/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.292Z"
+      }
+    }
+  }
+}

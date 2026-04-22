@@ -1,0 +1,880 @@
+{
+  "key": "MAGE",
+  "specs": {
+    "ARCANE": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            258218
+          ],
+          "OFFHAND": [
+            251094
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            250058
+          ],
+          "BACK": [
+            239661
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            239660
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            249376
+          ],
+          "LEGS": [
+            251090
+          ],
+          "FEET": [
+            249373
+          ],
+          "FINGER": [
+            249919,
+            249920
+          ],
+          "TRINKET": [
+            249346,
+            249343
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/mage/arcane/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.746Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            249346,
+            249343,
+            264507,
+            250144,
+            250256,
+            249809
+          ],
+          "FINGER": [
+            251115,
+            193708,
+            251217,
+            251093,
+            249369,
+            151308
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            266314,
+            50228,
+            251096
+          ],
+          "SHOULDER": [
+            250058,
+            251085
+          ],
+          "BACK": [
+            239656,
+            239661,
+            258575
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            239648,
+            239660,
+            251108
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            250057,
+            249319,
+            151302,
+            263265
+          ],
+          "LEGS": [
+            250059,
+            251090
+          ],
+          "FEET": [
+            249373,
+            258584,
+            251167
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            249346,
+            249343,
+            250144,
+            264507,
+            250256
+          ],
+          "FINGER": [
+            193708,
+            251093,
+            251115,
+            251217,
+            49812
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            50228,
+            251096,
+            266314
+          ],
+          "SHOULDER": [
+            250058,
+            251085
+          ],
+          "BACK": [
+            258575,
+            239656,
+            239661
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            239648,
+            239660,
+            251108
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            263265,
+            250057,
+            151302,
+            251102
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            249373,
+            258584,
+            249630,
+            251167
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/arcane/mage/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/arcane/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.012Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/mage/arcane/m+",
+        "scrapedAt": "2026-04-22T10:37:47.534Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            249368
+          ],
+          "SHOULDER": [
+            250058
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            249315
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            249319
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            249373
+          ],
+          "FINGER": [
+            249369,
+            249920
+          ],
+          "TRINKET": [
+            249346,
+            249343
+          ],
+          "MAINHAND": [
+            249286
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            151337
+          ],
+          "NECK": [
+            151309
+          ],
+          "SHOULDER": [
+            251213
+          ],
+          "BACK": [
+            260312
+          ],
+          "CHEST": [
+            49825
+          ],
+          "WRIST": [
+            151305
+          ],
+          "HANDS": [
+            251172
+          ],
+          "WAIST": [
+            50263
+          ],
+          "LEGS": [
+            258574
+          ],
+          "FEET": [
+            258584
+          ],
+          "FINGER": [
+            251093,
+            251115
+          ],
+          "TRINKET": [
+            250256,
+            250223
+          ],
+          "MAINHAND": [
+            110031
+          ],
+          "OFFHAND": [
+            258472
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            249368
+          ],
+          "SHOULDER": [
+            250058
+          ],
+          "BACK": [
+            249370
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            239648
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            50263
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            258584
+          ],
+          "FINGER": [
+            241140,
+            249920
+          ],
+          "TRINKET": [
+            249346,
+            249343
+          ],
+          "MAINHAND": [
+            249286
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/arcane-mage/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/arcane-mage/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/arcane-mage/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.290Z"
+      }
+    },
+    "FIRE": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            249286
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            250058
+          ],
+          "BACK": [
+            239656
+          ],
+          "CHEST": [
+            249912
+          ],
+          "WRIST": [
+            239648
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            249376
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            258584
+          ],
+          "FINGER": [
+            249920,
+            249369
+          ],
+          "TRINKET": [
+            250144,
+            249809
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.746Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            250144,
+            249346,
+            249343,
+            250256,
+            249809
+          ],
+          "FINGER": [
+            251093,
+            251115,
+            249369,
+            151311
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            266314,
+            251096,
+            151309,
+            249368,
+            250247
+          ],
+          "SHOULDER": [
+            250058
+          ],
+          "BACK": [
+            239656,
+            250055
+          ],
+          "CHEST": [
+            250063,
+            239655
+          ],
+          "WRIST": [
+            239648,
+            249315
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            249319,
+            251102,
+            239649,
+            249376,
+            50263
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            250062,
+            258584
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            250144,
+            250256,
+            249346,
+            249343
+          ],
+          "FINGER": [
+            251093,
+            251115,
+            251217,
+            151311
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            251096,
+            266314,
+            151309
+          ],
+          "SHOULDER": [
+            250058
+          ],
+          "BACK": [
+            239656,
+            250055
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            239648,
+            249315
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            251102,
+            249635,
+            50263,
+            239649
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            258584,
+            250062
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/fire/mage/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/fire/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.012Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/mage/fire/m+",
+        "scrapedAt": "2026-04-22T10:37:47.535Z"
+      },
+      "method": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            250058
+          ],
+          "BACK": [
+            239656
+          ],
+          "CHEST": [
+            249912
+          ],
+          "WRIST": [
+            239648
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            249376
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            258584
+          ],
+          "FINGER": [
+            249920,
+            249369
+          ],
+          "TRINKET": [
+            250144,
+            249343
+          ],
+          "MAINHAND": [
+            249286
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/fire-mage/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/fire-mage/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/fire-mage/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.291Z"
+      }
+    },
+    "FROST": {
+      "wowhead": {
+        "raid": {},
+        "mythicplus": {},
+        "overall": {
+          "MAINHAND": [
+            258218
+          ],
+          "OFFHAND": [
+            245769
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            251085
+          ],
+          "BACK": [
+            258575
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            239648
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            250057
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            249373
+          ],
+          "FINGER": [
+            249920,
+            249919
+          ],
+          "TRINKET": [
+            249343,
+            249346
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/mage/frost/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-04-22T10:37:39.746Z"
+      },
+      "archon": {
+        "raid": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            249343,
+            249346,
+            264507,
+            249809
+          ],
+          "FINGER": [
+            193708,
+            251217,
+            251093,
+            251115,
+            249336,
+            249369
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            50228,
+            249337,
+            266314
+          ],
+          "SHOULDER": [
+            251085,
+            250058,
+            249634
+          ],
+          "BACK": [
+            258575,
+            239656
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            239648
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            250057,
+            263265
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            249373,
+            249630
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [],
+          "TRINKET": [
+            249343,
+            249346,
+            264507,
+            250144,
+            250256
+          ],
+          "FINGER": [
+            193708,
+            251217,
+            251093,
+            251115,
+            49812
+          ],
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            50228
+          ],
+          "SHOULDER": [
+            250058,
+            251085,
+            249634
+          ],
+          "BACK": [
+            258575,
+            239656
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            239648
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            250057,
+            263265
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            249373,
+            249630,
+            258584,
+            49805
+          ]
+        },
+        "raidUrl": "https://www.archon.gg/wow/builds/frost/mage/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/frost/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-04-22T10:37:44.012Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "mythicplusUrl": "https://murlok.io/mage/frost/m+",
+        "scrapedAt": "2026-04-22T10:37:47.535Z"
+      },
+      "method": {
+        "raid": {
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            250058
+          ],
+          "BACK": [
+            249335
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            249315
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            249376
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            249373
+          ],
+          "FINGER": [
+            249920,
+            249919
+          ],
+          "TRINKET": [
+            249343,
+            249346
+          ],
+          "MAINHAND": [
+            249286
+          ]
+        },
+        "mythicplus": {
+          "HEAD": [
+            251080
+          ],
+          "NECK": [
+            50228
+          ],
+          "SHOULDER": [
+            251085
+          ],
+          "BACK": [
+            258575
+          ],
+          "CHEST": [
+            193720
+          ],
+          "WRIST": [
+            258580
+          ],
+          "HANDS": [
+            151300
+          ],
+          "WAIST": [
+            151302
+          ],
+          "LEGS": [
+            251205
+          ],
+          "FEET": [
+            251167
+          ],
+          "FINGER": [
+            151308,
+            193708
+          ],
+          "TRINKET": [
+            250144,
+            250258
+          ],
+          "MAINHAND": [
+            258514
+          ]
+        },
+        "overall": {
+          "HEAD": [
+            250060
+          ],
+          "NECK": [
+            250247
+          ],
+          "SHOULDER": [
+            251085
+          ],
+          "BACK": [
+            258575
+          ],
+          "CHEST": [
+            250063
+          ],
+          "WRIST": [
+            258580
+          ],
+          "HANDS": [
+            250061
+          ],
+          "WAIST": [
+            249376
+          ],
+          "LEGS": [
+            250059
+          ],
+          "FEET": [
+            249373
+          ],
+          "FINGER": [
+            249919,
+            249920
+          ],
+          "TRINKET": [
+            249343,
+            249346
+          ],
+          "MAINHAND": [
+            258514
+          ]
+        },
+        "raidUrl": "https://www.method.gg/guides/frost-mage/gearing#raid_table",
+        "mythicplusUrl": "https://www.method.gg/guides/frost-mage/gearing#dungeon_table",
+        "overallUrl": "https://www.method.gg/guides/frost-mage/gearing#overall_table",
+        "scrapedAt": "2026-04-22T10:37:52.291Z"
+      }
+    }
+  }
+}
