@@ -9,4 +9,5 @@ ignore:
   - README.md
   - tools
   - AGENTS.md
+  - Assets/Icon.png
 

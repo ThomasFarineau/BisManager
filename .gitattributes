@@ -4,4 +4,4 @@ tools/ export-ignore
 .gitattributes export-ignore
 README.md export-ignore
 AGENTS.md export-ignore
-
+Assets/icon.png export-ignore
