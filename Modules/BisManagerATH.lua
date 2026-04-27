@@ -73,7 +73,14 @@ local function SafeStringsEqual(left, right)
 end
 
 local function IsPlayerGUID(guid)
-    return type(guid) == "string" and guid:sub(1, 7) == "Player-"
+    if type(guid) ~= "string" then
+        return false
+    end
+    -- Use the global strsub to avoid indexing `guid` directly, which can
+    -- raise "attempt to index a secret string value" when the tooltip data
+    -- carries a Blizzard-tainted GUID.
+    local ok, prefix = pcall(strsub, guid, 1, 7)
+    return ok and prefix == "Player-"
 end
 
 local function FindUnitByGUID(guid)
@@ -201,8 +208,17 @@ function BisManager:ShowTooltipATH(tooltip, guid, value)
     local widget = self:EnsureTooltipATHWidget()
     local text = FormatTooltipATH(value)
     widget.text:SetText(text)
-    widget:SetWidth(math.max(tooltip:GetWidth(), widget.text:GetStringWidth() + 40))
-    widget:SetHeight(math.max(24, widget.text:GetStringHeight() + 12))
+    -- GetStringHeight() can return a "secret number" when the tooltip is
+    -- tainted by Blizzard, so wrap it in pcall and fall back to a fixed height.
+    local okH, strH = pcall(widget.text.GetStringHeight, widget.text)
+    local height = 24
+    if okH and type(strH) == "number" then
+        local computed = strH + 12
+        if computed > height then
+            height = computed
+        end
+    end
+    widget:SetHeight(height)
     widget:ClearAllPoints()
     widget:SetPoint("BOTTOMLEFT", tooltip, "TOPLEFT", 0, 2)
     widget:SetPoint("BOTTOMRIGHT", tooltip, "TOPRIGHT", 0, 2)
