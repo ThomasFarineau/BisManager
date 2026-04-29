@@ -49,7 +49,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.737Z"
+        "scrapedAt": "2026-04-29T10:44:27.399Z"
       },
       "archon": {
         "raid": {
@@ -63,31 +63,31 @@
             252420
           ],
           "FINGER": [
+            251513,
             251217,
             251093,
-            251513,
             193708,
+            240949,
             49812,
-            251115,
-            151311
+            249336,
+            251115
           ],
           "HEAD": [
             249970
           ],
           "NECK": [
             50228,
+            240950,
+            249337,
             251096,
-            249368,
-            151309
+            249368
           ],
           "SHOULDER": [
             249968
           ],
           "BACK": [
             239656,
-            260312,
-            258575,
-            193712
+            258575
           ],
           "CHEST": [
             249973
@@ -102,19 +102,17 @@
           ],
           "WAIST": [
             249967,
-            249331,
-            49808,
-            249380,
             237830,
-            251086
+            249331,
+            49808
           ],
           "LEGS": [
             249969
           ],
           "FEET": [
             249381,
-            249972,
-            249332
+            249332,
+            249972
           ]
         },
         "mythicplus": {
@@ -125,14 +123,14 @@
             252420,
             249343,
             249342,
-            264507,
             249344,
-            250256
+            250256,
+            264507
           ],
           "FINGER": [
             193708,
-            251093,
             251217,
+            251093,
             251513,
             151308,
             251115,
@@ -144,14 +142,15 @@
           ],
           "NECK": [
             50228,
-            251096
+            251096,
+            240950
           ],
           "SHOULDER": [
             249968
           ],
           "BACK": [
-            258575,
             239656,
+            258575,
             251206
           ],
           "CHEST": [
@@ -159,7 +158,6 @@
           ],
           "WRIST": [
             237834,
-            249660,
             263193,
             251203
           ],
@@ -169,11 +167,7 @@
           ],
           "WAIST": [
             249967,
-            49808,
-            251086,
-            263269,
-            251112,
-            249659
+            49808
           ],
           "LEGS": [
             249969
@@ -181,20 +175,21 @@
           "FEET": [
             249654,
             251091,
-            251107,
             249381,
-            251169
+            251107,
+            251169,
+            151330
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/blood/death-knight/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/blood/death-knight/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:43.983Z"
+        "scrapedAt": "2026-04-29T10:44:31.247Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/death-knight/blood/m+",
-        "scrapedAt": "2026-04-22T10:37:47.531Z"
+        "scrapedAt": "2026-04-29T10:44:34.709Z"
       },
       "method": {
         "raid": {
@@ -288,7 +283,7 @@
         "raidUrl": "https://www.method.gg/guides/blood-death-knight/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/blood-death-knight/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/blood-death-knight/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.287Z"
+        "scrapedAt": "2026-04-29T10:44:39.304Z"
       }
     },
     "FROST": {
@@ -340,7 +335,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.741Z"
+        "scrapedAt": "2026-04-29T10:44:27.400Z"
       },
       "archon": {
         "raid": {
@@ -352,18 +347,15 @@
             249344,
             249343,
             249342,
-            193701,
-            252420
+            193701
           ],
           "FINGER": [
             193708,
             251115,
-            251217,
-            251093,
-            249369,
-            249919,
             240949,
-            251513
+            251217,
+            249369,
+            249919
           ],
           "HEAD": [
             249970
@@ -371,12 +363,13 @@
           "NECK": [
             50228,
             240950,
-            266314
+            266314,
+            249337
           ],
           "SHOULDER": [
             50234,
-            249968,
-            249313
+            249313,
+            249968
           ],
           "BACK": [
             239656,
@@ -401,14 +394,12 @@
           "FEET": [
             249381,
             249332,
-            249654,
-            251107
+            249654
           ]
         },
         "mythicplus": {
           "MAINHAND": [
-            237846,
-            237839
+            237846
           ],
           "OFFHAND": [],
           "TRINKET": [
@@ -424,14 +415,15 @@
             251115,
             251217,
             251093,
-            249620,
-            49812
+            49812,
+            249620
           ],
           "HEAD": [
             249970
           ],
           "NECK": [
             50228,
+            240950,
             266314
           ],
           "SHOULDER": [
@@ -440,8 +432,8 @@
             249658
           ],
           "BACK": [
-            258575,
-            239656
+            239656,
+            258575
           ],
           "CHEST": [
             249973
@@ -461,20 +453,20 @@
             249969
           ],
           "FEET": [
-            249654,
             249381,
+            249654,
             251107
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/frost/death-knight/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/frost/death-knight/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:43.990Z"
+        "scrapedAt": "2026-04-29T10:44:31.247Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/death-knight/frost/m+",
-        "scrapedAt": "2026-04-22T10:37:47.532Z"
+        "scrapedAt": "2026-04-29T10:44:34.710Z"
       },
       "method": {
         "raid": {
@@ -615,7 +607,7 @@
         "raidUrl": "https://www.method.gg/guides/frost-death-knight/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/frost-death-knight/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/frost-death-knight/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.287Z"
+        "scrapedAt": "2026-04-29T10:44:39.304Z"
       }
     },
     "UNHOLY": {
@@ -666,12 +658,13 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/death-knight/unholy/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.741Z"
+        "scrapedAt": "2026-04-29T10:44:27.401Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            237846
+            237846,
+            251168
           ],
           "TRINKET": [
             249344,
@@ -682,18 +675,20 @@
           "FINGER": [
             193708,
             251115,
+            240949,
             251217,
             249369,
             249620,
-            251093
+            249919
           ],
           "HEAD": [
             249970
           ],
           "NECK": [
             50228,
+            240950,
             266314,
-            240950
+            249337
           ],
           "SHOULDER": [
             50234,
@@ -723,8 +718,7 @@
           "FEET": [
             249381,
             249654,
-            249332,
-            251107
+            249332
           ]
         },
         "mythicplus": {
@@ -736,46 +730,42 @@
             249343,
             249342,
             252420,
-            264507,
-            193701
+            193701,
+            264507
           ],
           "FINGER": [
             193708,
             251115,
             251217,
-            251093,
-            249620,
-            49812
+            251093
           ],
           "HEAD": [
             249970
           ],
           "NECK": [
             50228,
-            266314
+            266314,
+            240950
           ],
           "SHOULDER": [
             50234,
-            249968,
-            249658
+            249968
           ],
           "BACK": [
-            258575,
-            239656
+            239656,
+            258575
           ],
           "CHEST": [
             249973
           ],
           "WRIST": [
-            237834,
-            263193
+            237834
           ],
           "HANDS": [
             249971
           ],
           "WAIST": [
-            249967,
-            263269
+            249967
           ],
           "LEGS": [
             249969
@@ -783,19 +773,18 @@
           "FEET": [
             249381,
             249654,
-            251107,
-            251169
+            251107
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/unholy/death-knight/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/unholy/death-knight/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:43.991Z"
+        "scrapedAt": "2026-04-29T10:44:31.248Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/death-knight/unholy/m+",
-        "scrapedAt": "2026-04-22T10:37:47.532Z"
+        "scrapedAt": "2026-04-29T10:44:34.710Z"
       },
       "method": {
         "raid": {
@@ -930,7 +919,7 @@
         "raidUrl": "https://www.method.gg/guides/unholy-death-knight/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/unholy-death-knight/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/unholy-death-knight/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.288Z"
+        "scrapedAt": "2026-04-29T10:44:39.304Z"
       }
     }
   }

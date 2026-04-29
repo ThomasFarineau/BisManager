@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.746Z"
+        "scrapedAt": "2026-04-29T10:44:27.414Z"
       },
       "archon": {
         "raid": {
@@ -68,16 +68,14 @@
             264507,
             249809,
             250256,
-            249346,
-            193718,
-            249341
+            249346
           ],
           "FINGER": [
             251115,
             251093,
+            240949,
             193708,
             251217,
-            240949,
             249369,
             49812
           ],
@@ -86,16 +84,15 @@
           ],
           "NECK": [
             50228,
-            266314,
-            240950
+            240950,
+            266314
           ],
           "SHOULDER": [
             249959
           ],
           "BACK": [
             239656,
-            258575,
-            260312
+            258575
           ],
           "CHEST": [
             249964
@@ -112,8 +109,8 @@
           "WAIST": [
             249958,
             249331,
-            151327,
-            237830
+            237830,
+            151327
           ],
           "LEGS": [
             249960,
@@ -121,10 +118,9 @@
           ],
           "FEET": [
             249332,
-            251107,
             249381,
-            251169,
-            249963
+            249963,
+            251107
           ]
         },
         "mythicplus": {
@@ -137,8 +133,8 @@
           ],
           "TRINKET": [
             250256,
-            264507,
             249343,
+            264507,
             193718,
             249808,
             250144
@@ -157,7 +153,6 @@
           "NECK": [
             50228,
             251096,
-            265739,
             151309
           ],
           "SHOULDER": [
@@ -165,8 +160,8 @@
           ],
           "BACK": [
             258575,
-            260312,
             239656,
+            260312,
             193712
           ],
           "CHEST": [
@@ -182,9 +177,10 @@
             249962
           ],
           "WAIST": [
+            151327,
             49808,
             251086,
-            151327
+            249958
           ],
           "LEGS": [
             249960
@@ -192,19 +188,19 @@
           "FEET": [
             251169,
             251107,
-            249654,
+            249963,
             249332
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/holy/paladin/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/holy/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.020Z"
+        "scrapedAt": "2026-04-29T10:44:31.251Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/paladin/holy/m+",
-        "scrapedAt": "2026-04-22T10:37:47.535Z"
+        "scrapedAt": "2026-04-29T10:44:34.714Z"
       },
       "method": {
         "raid": {
@@ -348,7 +344,7 @@
         "raidUrl": "https://www.method.gg/guides/holy-paladin/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/holy-paladin/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/holy-paladin/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.291Z"
+        "scrapedAt": "2026-04-29T10:44:39.309Z"
       }
     },
     "PROTECTION": {
@@ -402,7 +398,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/paladin/protection/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.746Z"
+        "scrapedAt": "2026-04-29T10:44:27.414Z"
       },
       "archon": {
         "raid": {
@@ -425,9 +421,10 @@
           "FINGER": [
             251217,
             251093,
-            151311,
             49812,
-            151308
+            151311,
+            151308,
+            240949
           ],
           "HEAD": [
             249961
@@ -435,16 +432,17 @@
           "NECK": [
             50228,
             251096,
-            151309
+            151309,
+            240950
           ],
           "SHOULDER": [
             249959
           ],
           "BACK": [
             260312,
+            239656,
             193712,
-            249956,
-            239656
+            249956
           ],
           "CHEST": [
             249964
@@ -452,7 +450,6 @@
           "WRIST": [
             237834,
             249326,
-            151328,
             249957
           ],
           "HANDS": [
@@ -473,9 +470,7 @@
             237828,
             249963,
             249381,
-            249332,
-            251169,
-            251091
+            249332
           ]
         },
         "mythicplus": {
@@ -489,9 +484,9 @@
             250256,
             252420,
             249342,
-            264507,
             249343,
-            193701
+            193701,
+            264507
           ],
           "FINGER": [
             251217,
@@ -508,8 +503,7 @@
           "NECK": [
             50228,
             251096,
-            151309,
-            265739
+            151309
           ],
           "SHOULDER": [
             249959
@@ -524,41 +518,39 @@
           "WRIST": [
             237834,
             263193,
-            249660,
             151328,
+            249660,
             251203
           ],
           "HANDS": [
             249962,
-            151332,
-            251081
+            151332
           ],
           "WAIST": [
             251086,
             49808,
-            251112,
-            249659
+            251112
           ],
           "LEGS": [
             249960
           ],
           "FEET": [
             251169,
+            237828,
             251091,
             251107,
-            237828,
-            249654
+            249963
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/protection/paladin/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/protection/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.020Z"
+        "scrapedAt": "2026-04-29T10:44:31.251Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/paladin/protection/m+",
-        "scrapedAt": "2026-04-22T10:37:47.535Z"
+        "scrapedAt": "2026-04-29T10:44:34.714Z"
       },
       "method": {
         "raid": {
@@ -702,7 +694,7 @@
         "raidUrl": "https://www.method.gg/guides/protection-paladin/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/protection-paladin/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/protection-paladin/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.292Z"
+        "scrapedAt": "2026-04-29T10:44:39.309Z"
       }
     },
     "RETRIBUTION": {
@@ -755,7 +747,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.747Z"
+        "scrapedAt": "2026-04-29T10:44:27.414Z"
       },
       "archon": {
         "raid": {
@@ -764,8 +756,8 @@
           ],
           "TRINKET": [
             193701,
-            249342,
             249343,
+            249342,
             252420
           ],
           "FINGER": [
@@ -773,8 +765,7 @@
             251093,
             193708,
             251513,
-            251115,
-            49812
+            251115
           ],
           "HEAD": [
             249961
@@ -782,6 +773,7 @@
           "NECK": [
             50228,
             266314,
+            240950,
             249337
           ],
           "SHOULDER": [
@@ -797,7 +789,6 @@
           "WRIST": [
             237834,
             249326,
-            263193,
             249957
           ],
           "HANDS": [
@@ -808,8 +799,8 @@
           ],
           "WAIST": [
             249958,
-            249380,
             237830,
+            249380,
             49808,
             151327
           ],
@@ -819,7 +810,8 @@
           "FEET": [
             249381,
             249332,
-            251107
+            251107,
+            249963
           ]
         },
         "mythicplus": {
@@ -828,15 +820,15 @@
           ],
           "TRINKET": [
             193701,
-            249342,
             252420,
-            264507,
-            249343
+            249342,
+            249343,
+            264507
           ],
           "FINGER": [
             251217,
-            251093,
             193708,
+            251093,
             251115,
             251513,
             49812
@@ -846,7 +838,6 @@
           ],
           "NECK": [
             50228,
-            265739,
             266314
           ],
           "SHOULDER": [
@@ -867,16 +858,12 @@
           "HANDS": [
             249962,
             258583,
-            151332,
-            251081
+            151332
           ],
           "WAIST": [
-            49808,
             249958,
-            151327,
-            263269,
-            249659,
-            251086
+            49808,
+            151327
           ],
           "LEGS": [
             249960
@@ -884,19 +871,19 @@
           "FEET": [
             249654,
             251107,
-            251169,
-            249381
+            249381,
+            251169
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/retribution/paladin/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/retribution/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.021Z"
+        "scrapedAt": "2026-04-29T10:44:31.251Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/paladin/retribution/m+",
-        "scrapedAt": "2026-04-22T10:37:47.536Z"
+        "scrapedAt": "2026-04-29T10:44:34.714Z"
       },
       "method": {
         "raid": {
@@ -1031,7 +1018,7 @@
         "raidUrl": "https://www.method.gg/guides/retribution-paladin/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/retribution-paladin/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/retribution-paladin/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.292Z"
+        "scrapedAt": "2026-04-29T10:44:39.309Z"
       }
     }
   }

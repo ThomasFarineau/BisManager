@@ -49,24 +49,24 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/warrior/arms/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.903Z"
+        "scrapedAt": "2026-04-29T10:44:27.421Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            237846
+            237846,
+            49802
           ],
           "TRINKET": [
             249342,
             249343,
-            252420,
-            264507
+            252420
           ],
           "FINGER": [
             251217,
-            251093,
             49812,
-            193708
+            251093,
+            240949
           ],
           "HEAD": [
             249952
@@ -80,8 +80,7 @@
           ],
           "BACK": [
             239656,
-            260312,
-            258575
+            260312
           ],
           "CHEST": [
             249955
@@ -99,15 +98,14 @@
           "WAIST": [
             249949,
             49808,
-            251086
+            249659
           ],
           "LEGS": [
             249951
           ],
           "FEET": [
             249954,
-            249381,
-            249332
+            249381
           ]
         },
         "mythicplus": {
@@ -139,8 +137,8 @@
             249950
           ],
           "BACK": [
-            260312,
             239656,
+            260312,
             258575
           ],
           "CHEST": [
@@ -156,8 +154,8 @@
             258583
           ],
           "WAIST": [
-            49808,
             249949,
+            49808,
             251086,
             249659
           ],
@@ -165,20 +163,18 @@
             249951
           ],
           "FEET": [
-            249954,
-            249654,
-            251169
+            249954
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/arms/warrior/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/arms/warrior/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.023Z"
+        "scrapedAt": "2026-04-29T10:44:31.253Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/warrior/arms/m+",
-        "scrapedAt": "2026-04-22T10:37:47.538Z"
+        "scrapedAt": "2026-04-29T10:44:34.716Z"
       },
       "method": {
         "raid": {
@@ -313,7 +309,7 @@
         "raidUrl": "https://www.method.gg/guides/arms-warrior/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/arms-warrior/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/arms-warrior/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.294Z"
+        "scrapedAt": "2026-04-29T10:44:39.312Z"
       }
     },
     "FURY": {
@@ -367,12 +363,13 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/warrior/fury/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.904Z"
+        "scrapedAt": "2026-04-29T10:44:27.421Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            237846
+            237846,
+            251117
           ],
           "OFFHAND": [
             237846,
@@ -382,22 +379,22 @@
           "TRINKET": [
             249342,
             249343,
-            252420,
-            193701,
-            264507
+            252420
           ],
           "FINGER": [
             251093,
             251217,
             251115,
-            249369
+            249369,
+            240949
           ],
           "HEAD": [
             249952
           ],
           "NECK": [
             266314,
-            50228
+            50228,
+            240950
           ],
           "SHOULDER": [
             249950
@@ -406,8 +403,7 @@
             239656,
             258575,
             260312,
-            249370,
-            257175
+            249370
           ],
           "CHEST": [
             249955
@@ -423,7 +419,8 @@
           "WAIST": [
             249331,
             151327,
-            249949
+            249949,
+            237830
           ],
           "LEGS": [
             249951
@@ -432,6 +429,7 @@
             249332,
             249954,
             251107,
+            249381,
             251169
           ]
         },
@@ -440,34 +438,30 @@
             237846
           ],
           "OFFHAND": [
-            251117,
             237846,
-            249277,
-            260188
+            251117
           ],
           "TRINKET": [
             249342,
             249343,
             193701,
             252420,
-            264507,
-            250256
+            250256,
+            264507
           ],
           "FINGER": [
             251093,
             251115,
             251217,
             193708,
-            49812,
-            249623
+            49812
           ],
           "HEAD": [
             249952
           ],
           "NECK": [
             266314,
-            50228,
-            265739
+            50228
           ],
           "SHOULDER": [
             249950
@@ -475,7 +469,7 @@
           "BACK": [
             258575,
             260312,
-            257175
+            239656
           ],
           "CHEST": [
             249955
@@ -490,11 +484,10 @@
           ],
           "WAIST": [
             151327,
+            249949,
             249331,
-            49808,
             251086,
-            249659,
-            249949
+            49808
           ],
           "LEGS": [
             249951
@@ -503,19 +496,18 @@
             251107,
             251169,
             249954,
-            249332,
-            249654
+            249332
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/fury/warrior/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/fury/warrior/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.023Z"
+        "scrapedAt": "2026-04-29T10:44:31.254Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/warrior/fury/m+",
-        "scrapedAt": "2026-04-22T10:37:47.538Z"
+        "scrapedAt": "2026-04-29T10:44:34.716Z"
       },
       "method": {
         "raid": {
@@ -615,7 +607,7 @@
             249952
           ],
           "NECK": [
-            250247
+            249368
           ],
           "SHOULDER": [
             249950
@@ -624,13 +616,13 @@
             249370
           ],
           "CHEST": [
-            151329
+            249955
           ],
           "WRIST": [
             237834
           ],
           "HANDS": [
-            249953
+            151332
           ],
           "WAIST": [
             237830
@@ -650,16 +642,16 @@
             249342
           ],
           "MAINHAND": [
-            249277
+            251117
           ],
           "OFFHAND": [
-            249277
+            251117
           ]
         },
         "raidUrl": "https://www.method.gg/guides/fury-warrior/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/fury-warrior/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/fury-warrior/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.294Z"
+        "scrapedAt": "2026-04-29T10:44:39.312Z"
       }
     },
     "PROTECTION": {
@@ -713,7 +705,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/warrior/protection/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.904Z"
+        "scrapedAt": "2026-04-29T10:44:27.421Z"
       },
       "archon": {
         "raid": {
@@ -729,7 +721,6 @@
             249342,
             249343,
             250256,
-            264507,
             252420
           ],
           "FINGER": [
@@ -737,8 +728,7 @@
             251093,
             49812,
             151311,
-            240949,
-            251115
+            240949
           ],
           "HEAD": [
             249952
@@ -746,16 +736,17 @@
           "NECK": [
             50228,
             151309,
-            251096
+            251096,
+            240950
           ],
           "SHOULDER": [
             249950
           ],
           "BACK": [
             239656,
-            193712,
             260312,
-            249947
+            249947,
+            193712
           ],
           "CHEST": [
             249955
@@ -763,7 +754,6 @@
           "WRIST": [
             237834,
             249326,
-            151328,
             249948
           ],
           "HANDS": [
@@ -772,11 +762,11 @@
             251081
           ],
           "WAIST": [
-            251086,
-            249331,
-            49808,
             237830,
-            249949
+            249949,
+            249331,
+            251086,
+            49808
           ],
           "LEGS": [
             249951
@@ -784,8 +774,7 @@
           "FEET": [
             249954,
             237828,
-            249332,
-            251169
+            249332
           ]
         },
         "mythicplus": {
@@ -798,13 +787,13 @@
           "TRINKET": [
             250256,
             249342,
-            252420,
             249343,
+            252420,
             264507
           ],
           "FINGER": [
-            251093,
             251217,
+            251093,
             49812,
             151311,
             251115
@@ -823,16 +812,17 @@
           ],
           "BACK": [
             260312,
-            193712
+            193712,
+            239656
           ],
           "CHEST": [
             249955
           ],
           "WRIST": [
             237834,
-            249660,
             263193,
-            151328
+            151328,
+            249660
           ],
           "HANDS": [
             249953,
@@ -849,22 +839,21 @@
             249951
           ],
           "FEET": [
-            251169,
             249954,
+            251169,
             251107,
-            251091,
-            249654
+            237828
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/protection/warrior/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/protection/warrior/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.023Z"
+        "scrapedAt": "2026-04-29T10:44:31.254Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/warrior/protection/m+",
-        "scrapedAt": "2026-04-22T10:37:47.538Z"
+        "scrapedAt": "2026-04-29T10:44:34.716Z"
       },
       "method": {
         "raid": {
@@ -1008,7 +997,7 @@
         "raidUrl": "https://www.method.gg/guides/protection-warrior/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/protection-warrior/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/protection-warrior/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.294Z"
+        "scrapedAt": "2026-04-29T10:44:39.312Z"
       }
     }
   }

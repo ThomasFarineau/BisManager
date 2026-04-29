@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.902Z"
+        "scrapedAt": "2026-04-29T10:44:27.416Z"
       },
       "archon": {
         "raid": {
@@ -61,10 +61,10 @@
           ],
           "OFFHAND": [],
           "TRINKET": [
-            249346,
             249343,
-            264507,
+            249346,
             249808,
+            264507,
             249341,
             250256,
             249809
@@ -73,9 +73,9 @@
             251217,
             251093,
             49812,
+            240949,
             193708,
-            251115,
-            240949
+            249336
           ],
           "HEAD": [
             250051
@@ -83,7 +83,7 @@
           "NECK": [
             50228,
             249337,
-            265739
+            240950
           ],
           "SHOULDER": [
             250049
@@ -91,14 +91,15 @@
           "BACK": [
             260312,
             239656,
-            258575
+            249370
           ],
           "CHEST": [
             250054
           ],
           "WRIST": [
             249315,
-            239648
+            239648,
+            250047
           ],
           "HANDS": [
             250052
@@ -112,8 +113,9 @@
           ],
           "FEET": [
             249305,
-            49805,
             249373,
+            49805,
+            250053,
             258584
           ]
         },
@@ -135,25 +137,22 @@
             251217,
             251093,
             49812,
-            251115,
             193708,
-            151311
+            251115
           ],
           "HEAD": [
             250051
           ],
           "NECK": [
             50228,
-            265739,
-            251096
+            265739
           ],
           "SHOULDER": [
             250049
           ],
           "BACK": [
             260312,
-            258575,
-            193712
+            258575
           ],
           "CHEST": [
             250054
@@ -161,8 +160,7 @@
           "WRIST": [
             239648,
             249315,
-            49809,
-            249636
+            49809
           ],
           "HANDS": [
             250052
@@ -175,19 +173,18 @@
           ],
           "FEET": [
             49805,
-            258584,
-            251167
+            258584
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/discipline/priest/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/discipline/priest/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.021Z"
+        "scrapedAt": "2026-04-29T10:44:31.252Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/priest/discipline/m+",
-        "scrapedAt": "2026-04-22T10:37:47.536Z"
+        "scrapedAt": "2026-04-29T10:44:34.714Z"
       },
       "method": {
         "raid": {
@@ -328,7 +325,7 @@
         "raidUrl": "https://www.method.gg/guides/discipline-priest/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/discipline-priest/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/discipline-priest/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.292Z"
+        "scrapedAt": "2026-04-29T10:44:39.309Z"
       }
     },
     "HOLY": {
@@ -382,7 +379,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/priest/holy/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.902Z"
+        "scrapedAt": "2026-04-29T10:44:27.416Z"
       },
       "archon": {
         "raid": {
@@ -394,34 +391,36 @@
           ],
           "TRINKET": [
             249808,
+            249343,
             264507,
             249809,
-            249343,
-            193718
+            193718,
+            250256
           ],
           "FINGER": [
             193708,
             249336,
             251217,
+            240949,
             151308,
-            49812,
-            251115
+            49812
           ],
           "HEAD": [
             250051
           ],
           "NECK": [
             50228,
+            240950,
             249337
           ],
           "SHOULDER": [
             250049
           ],
           "BACK": [
-            258575,
             249335,
-            49823,
-            251161
+            258575,
+            250046,
+            239656
           ],
           "CHEST": [
             250054
@@ -429,14 +428,14 @@
           "WRIST": [
             250047,
             239648,
-            249315,
-            249636
+            249315
           ],
           "HANDS": [
             250052
           ],
           "WAIST": [
             239664,
+            239649,
             249319
           ],
           "LEGS": [
@@ -445,9 +444,7 @@
           ],
           "FEET": [
             249373,
-            251167,
-            249630,
-            249305
+            251167
           ]
         },
         "mythicplus": {
@@ -460,25 +457,25 @@
             250256,
             249808,
             193718,
-            249343
+            249343,
+            249809
           ],
           "FINGER": [
             251217,
             193708,
             49812,
-            251093,
             151308,
-            251115,
+            251093,
+            249336,
             151311,
-            249336
+            251115
           ],
           "HEAD": [
             250051
           ],
           "NECK": [
             50228,
-            251096,
-            265739
+            251096
           ],
           "SHOULDER": [
             250049
@@ -493,18 +490,18 @@
             250054
           ],
           "WRIST": [
+            239648,
             249636,
+            250047,
             49809,
             251108,
-            239648,
             258580
           ],
           "HANDS": [
             250052
           ],
           "WAIST": [
-            239664,
-            263265
+            239664
           ],
           "LEGS": [
             250050
@@ -512,20 +509,20 @@
           "FEET": [
             251167,
             49805,
+            249373,
             258584,
-            249630,
-            249373
+            249630
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/holy/priest/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/holy/priest/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.021Z"
+        "scrapedAt": "2026-04-29T10:44:31.252Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/priest/holy/m+",
-        "scrapedAt": "2026-04-22T10:37:47.536Z"
+        "scrapedAt": "2026-04-29T10:44:34.714Z"
       },
       "method": {
         "raid": {
@@ -662,7 +659,7 @@
         "raidUrl": "https://www.method.gg/guides/holy-priest/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/holy-priest/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/holy-priest/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.292Z"
+        "scrapedAt": "2026-04-29T10:44:39.309Z"
       }
     },
     "SHADOW": {
@@ -716,7 +713,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/priest/shadow/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-22T10:37:39.902Z"
+        "scrapedAt": "2026-04-29T10:44:27.416Z"
       },
       "archon": {
         "raid": {
@@ -727,23 +724,24 @@
           "TRINKET": [
             249343,
             249346,
-            264507,
             249809,
-            250144
+            250144,
+            264507
           ],
           "FINGER": [
             251093,
             251217,
             251115,
             249369,
-            193708
+            193708,
+            240949
           ],
           "HEAD": [
             250051
           ],
           "NECK": [
-            249368,
             266314,
+            249368,
             50228
           ],
           "SHOULDER": [
@@ -751,18 +749,17 @@
           ],
           "BACK": [
             239656,
-            258575,
             249370,
+            258575,
             260312
           ],
           "CHEST": [
             250054
           ],
           "WRIST": [
-            249315,
             239648,
-            250047,
-            151305
+            249315,
+            250047
           ],
           "HANDS": [
             250052,
@@ -789,8 +786,8 @@
           "TRINKET": [
             249343,
             249346,
-            264507,
             250144,
+            264507,
             250256,
             250223,
             249809
@@ -808,8 +805,8 @@
           "NECK": [
             266314,
             50228,
-            265739,
-            249368
+            249368,
+            265739
           ],
           "SHOULDER": [
             250049
@@ -817,20 +814,19 @@
           "BACK": [
             260312,
             258575,
-            257175
+            239656
           ],
           "CHEST": [
             250054
           ],
           "WRIST": [
-            249315,
             239648,
+            249315,
             151305
           ],
           "HANDS": [
             250052,
-            251172,
-            249631
+            251172
           ],
           "WAIST": [
             239664,
@@ -840,21 +836,20 @@
             250050
           ],
           "FEET": [
-            258584,
             250053,
-            249373,
-            249630
+            258584,
+            249373
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/shadow/priest/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/shadow/priest/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-22T10:37:44.021Z"
+        "scrapedAt": "2026-04-29T10:44:31.252Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/priest/shadow/m+",
-        "scrapedAt": "2026-04-22T10:37:47.536Z"
+        "scrapedAt": "2026-04-29T10:44:34.715Z"
       },
       "method": {
         "raid": {},
@@ -908,7 +903,7 @@
         "raidUrl": "https://www.method.gg/guides/shadow-priest/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/shadow-priest/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/shadow-priest/gearing#overall_table",
-        "scrapedAt": "2026-04-22T10:37:52.292Z"
+        "scrapedAt": "2026-04-29T10:44:39.310Z"
       }
     }
   }
