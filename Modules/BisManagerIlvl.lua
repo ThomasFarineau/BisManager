@@ -792,7 +792,6 @@ end
 
 function BisManager:HandleIlvlCombatStateChanged()
     if InCombatLockdown() then
-        self:ClearInspectSummaryIlvl()
         self:ClearTooltipInspectState()
     end
 end

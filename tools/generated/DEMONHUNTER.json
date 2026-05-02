@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.699Z"
+        "scrapedAt": "2026-05-02T09:19:01.905Z"
       },
       "archon": {
         "raid": {
@@ -185,13 +185,73 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/havoc/demon-hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/havoc/demon-hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.386Z"
+        "scrapedAt": "2026-05-02T09:19:05.513Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            249306,
+            250033,
+            251109
+          ],
+          "NECK": [
+            50228,
+            240950
+          ],
+          "SHOULDER": [
+            250031
+          ],
+          "CHEST": [
+            250036
+          ],
+          "WAIST": [
+            244573,
+            251082
+          ],
+          "LEGS": [
+            244574,
+            250032,
+            260373
+          ],
+          "FEET": [
+            250035,
+            258577
+          ],
+          "WRIST": [
+            244576
+          ],
+          "HANDS": [
+            250034
+          ],
+          "FINGER": [
+            193708,
+            240949,
+            249336,
+            249919,
+            251217
+          ],
+          "TRINKET": [
+            193701,
+            249343,
+            252420
+          ],
+          "BACK": [
+            239656,
+            258575
+          ],
+          "MAINHAND": [
+            237840,
+            249280,
+            251175
+          ],
+          "OFFHAND": [
+            237840,
+            249280
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/demon-hunter/havoc/m+",
-        "scrapedAt": "2026-05-02T09:01:04.479Z"
+        "scrapedAt": "2026-05-02T09:19:09.096Z"
       },
       "method": {
         "raid": {
@@ -337,7 +397,7 @@
         "raidUrl": "https://www.method.gg/guides/havoc-demon-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/havoc-demon-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/havoc-demon-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.955Z"
+        "scrapedAt": "2026-05-02T09:19:13.019Z"
       }
     },
     "VENGEANCE": {
@@ -393,7 +453,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.700Z"
+        "scrapedAt": "2026-05-02T09:19:01.912Z"
       },
       "archon": {
         "raid": {
@@ -534,13 +594,80 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/vengeance/demon-hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/vengeance/demon-hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.386Z"
+        "scrapedAt": "2026-05-02T09:19:05.518Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            250033
+          ],
+          "NECK": [
+            151309,
+            251096
+          ],
+          "SHOULDER": [
+            250031
+          ],
+          "CHEST": [
+            151313,
+            244570,
+            250036
+          ],
+          "WAIST": [
+            49806,
+            244573,
+            249374,
+            250030,
+            251166
+          ],
+          "LEGS": [
+            250032
+          ],
+          "FEET": [
+            244569,
+            249334,
+            251210
+          ],
+          "WRIST": [
+            50264,
+            244576,
+            249327,
+            251103
+          ],
+          "HANDS": [
+            250034
+          ],
+          "FINGER": [
+            49812,
+            151311,
+            251093,
+            251217,
+            251513
+          ],
+          "TRINKET": [
+            249343,
+            249344,
+            250256,
+            252420
+          ],
+          "BACK": [
+            193712,
+            239656,
+            250028
+          ],
+          "MAINHAND": [
+            237839,
+            237840,
+            249298
+          ],
+          "OFFHAND": [
+            237839,
+            237840
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/demon-hunter/vengeance/m+",
-        "scrapedAt": "2026-05-02T09:01:04.480Z"
+        "scrapedAt": "2026-05-02T09:19:09.105Z"
       },
       "method": {
         "raid": {
@@ -685,7 +812,7 @@
         "raidUrl": "https://www.method.gg/guides/vengeance-demon-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/vengeance-demon-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/vengeance-demon-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.955Z"
+        "scrapedAt": "2026-05-02T09:19:13.025Z"
       }
     },
     "DEVOURER": {
@@ -741,7 +868,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/demon-hunter/devourer/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.700Z"
+        "scrapedAt": "2026-05-02T09:19:01.919Z"
       },
       "archon": {
         "raid": {
@@ -873,13 +1000,75 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/devourer/demon-hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/devourer/demon-hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.387Z"
+        "scrapedAt": "2026-05-02T09:19:05.524Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            250033
+          ],
+          "NECK": [
+            240950,
+            249368,
+            266314
+          ],
+          "SHOULDER": [
+            250031
+          ],
+          "CHEST": [
+            250036
+          ],
+          "WAIST": [
+            244573,
+            249374
+          ],
+          "LEGS": [
+            49817,
+            244574,
+            249312,
+            260373
+          ],
+          "FEET": [
+            244569,
+            250035
+          ],
+          "WRIST": [
+            193714,
+            250029
+          ],
+          "HANDS": [
+            250034
+          ],
+          "FINGER": [
+            240949,
+            249369,
+            249920,
+            251093,
+            251115
+          ],
+          "TRINKET": [
+            249343,
+            249346
+          ],
+          "BACK": [
+            239656,
+            249370,
+            250028
+          ],
+          "MAINHAND": [
+            193710,
+            237840,
+            249280,
+            249294
+          ],
+          "OFFHAND": [
+            237840,
+            237843
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/demon-hunter/devourer/m+",
-        "scrapedAt": "2026-05-02T09:01:04.480Z"
+        "scrapedAt": "2026-05-02T09:19:09.113Z"
       },
       "method": {
         "raid": {
@@ -1025,7 +1214,7 @@
         "raidUrl": "https://www.method.gg/guides/devourer-demon-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/devourer-demon-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/devourer-demon-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.955Z"
+        "scrapedAt": "2026-05-02T09:19:13.032Z"
       }
     }
   }

@@ -792,7 +792,11 @@ function BisManager:FormatAverageItemLevel(value)
 end
 
 function BisManager:IsIlvlDisplayAllowed()
-    return self.db and self.db.display and self.db.display.showIlvl and not InCombatLockdown()
+    return self.db and self.db.display and self.db.display.showIlvl
+end
+
+function BisManager:IsTooltipATHDisplayAllowed()
+    return self:IsIlvlDisplayAllowed() and not InCombatLockdown()
 end
 
 function BisManager:GetProfileNames()

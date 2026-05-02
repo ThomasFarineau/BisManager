@@ -442,6 +442,9 @@ function BisManager:ProcessGroupInspectQueue()
     if not self:IsIlvlDisplayAllowed() then
         return
     end
+    if InCombatLockdown() then
+        return
+    end
     if self.tooltipInspectGUID then
         C_Timer.After(0.3, function()
             BisManager:ProcessGroupInspectQueue()

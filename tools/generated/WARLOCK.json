@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/warlock/affliction/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.710Z"
+        "scrapedAt": "2026-05-02T09:19:02.179Z"
       },
       "archon": {
         "raid": {
@@ -179,13 +179,76 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/affliction/warlock/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/affliction/warlock/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.394Z"
+        "scrapedAt": "2026-05-02T09:19:05.631Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            250042
+          ],
+          "NECK": [
+            50228,
+            249368
+          ],
+          "SHOULDER": [
+            250040,
+            251085,
+            251213
+          ],
+          "CHEST": [
+            250045
+          ],
+          "WAIST": [
+            50263,
+            239649,
+            249319,
+            250039
+          ],
+          "LEGS": [
+            250041
+          ],
+          "FEET": [
+            49805,
+            239654,
+            249305,
+            249373,
+            250044
+          ],
+          "WRIST": [
+            239648,
+            250038
+          ],
+          "HANDS": [
+            250043
+          ],
+          "FINGER": [
+            49812,
+            193708,
+            249336,
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            249343,
+            250144,
+            250256
+          ],
+          "BACK": [
+            239656,
+            258575,
+            260312
+          ],
+          "MAINHAND": [
+            245770,
+            258047
+          ],
+          "OFFHAND": [
+            249276
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/warlock/affliction/m+",
-        "scrapedAt": "2026-05-02T09:01:04.486Z"
+        "scrapedAt": "2026-05-02T09:19:09.245Z"
       },
       "method": {
         "raid": {
@@ -329,7 +392,7 @@
         "raidUrl": "https://www.method.gg/guides/affliction-warlock/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/affliction-warlock/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/affliction-warlock/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.963Z"
+        "scrapedAt": "2026-05-02T09:19:13.151Z"
       }
     },
     "DEMONOLOGY": {
@@ -384,7 +447,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/warlock/demonology/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.710Z"
+        "scrapedAt": "2026-05-02T09:19:02.188Z"
       },
       "archon": {
         "raid": {
@@ -508,13 +571,71 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/demonology/warlock/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/demonology/warlock/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.394Z"
+        "scrapedAt": "2026-05-02T09:19:05.639Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            250042
+          ],
+          "NECK": [
+            50228,
+            249337,
+            249368
+          ],
+          "SHOULDER": [
+            250040,
+            251085
+          ],
+          "CHEST": [
+            250045
+          ],
+          "WAIST": [
+            239649,
+            249319,
+            250039,
+            260371
+          ],
+          "LEGS": [
+            250041
+          ],
+          "FEET": [
+            49805,
+            249305,
+            249373
+          ],
+          "WRIST": [
+            239648,
+            250038
+          ],
+          "HANDS": [
+            250043
+          ],
+          "FINGER": [
+            49812,
+            193708,
+            249336,
+            249919,
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            249343,
+            250144,
+            250256
+          ],
+          "BACK": [
+            239656,
+            260312
+          ],
+          "MAINHAND": [
+            245770,
+            251201
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/warlock/demonology/m+",
-        "scrapedAt": "2026-05-02T09:01:04.487Z"
+        "scrapedAt": "2026-05-02T09:19:09.251Z"
       },
       "method": {
         "raid": {},
@@ -570,7 +691,7 @@
         "raidUrl": "https://www.method.gg/guides/demonology-warlock/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/demonology-warlock/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/demonology-warlock/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.963Z"
+        "scrapedAt": "2026-05-02T09:19:13.156Z"
       }
     },
     "DESTRUCTION": {
@@ -624,7 +745,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/warlock/destruction/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.711Z"
+        "scrapedAt": "2026-05-02T09:19:02.197Z"
       },
       "archon": {
         "raid": {
@@ -750,13 +871,78 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/destruction/warlock/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/destruction/warlock/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.395Z"
+        "scrapedAt": "2026-05-02T09:19:05.645Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            250042
+          ],
+          "NECK": [
+            50228,
+            249368,
+            251096
+          ],
+          "SHOULDER": [
+            239650,
+            250040,
+            251085,
+            251213
+          ],
+          "CHEST": [
+            250045
+          ],
+          "WAIST": [
+            239649,
+            250039,
+            251102
+          ],
+          "LEGS": [
+            250041
+          ],
+          "FEET": [
+            49805,
+            249305,
+            249373,
+            250044
+          ],
+          "WRIST": [
+            239648,
+            250038
+          ],
+          "HANDS": [
+            250043
+          ],
+          "FINGER": [
+            49812,
+            151311,
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            249343,
+            249346,
+            249809,
+            250144,
+            250223,
+            250256
+          ],
+          "BACK": [
+            239656,
+            260312
+          ],
+          "MAINHAND": [
+            193707,
+            245770,
+            251201
+          ],
+          "OFFHAND": [
+            249276
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/warlock/destruction/m+",
-        "scrapedAt": "2026-05-02T09:01:04.487Z"
+        "scrapedAt": "2026-05-02T09:19:09.258Z"
       },
       "method": {
         "raid": {
@@ -902,7 +1088,7 @@
         "raidUrl": "https://www.method.gg/guides/destruction-warlock/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/destruction-warlock/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/destruction-warlock/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.963Z"
+        "scrapedAt": "2026-05-02T09:19:13.161Z"
       }
     }
   }

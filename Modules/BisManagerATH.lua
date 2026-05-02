@@ -293,7 +293,7 @@ function BisManager:HandleTooltipATH(tooltip, tooltipData)
     if not tooltip then
         return
     end
-    if not self:IsIlvlDisplayAllowed() then
+    if not self:IsTooltipATHDisplayAllowed() then
         self:ClearTooltipInspectState(tooltip)
         return
     end

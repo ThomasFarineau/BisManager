@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.709Z"
+        "scrapedAt": "2026-05-02T09:19:02.153Z"
       },
       "archon": {
         "raid": {
@@ -184,13 +184,78 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/elemental/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/elemental/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.393Z"
+        "scrapedAt": "2026-05-02T09:19:05.620Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            249979
+          ],
+          "NECK": [
+            240950,
+            249337,
+            266314
+          ],
+          "SHOULDER": [
+            249977
+          ],
+          "CHEST": [
+            249982
+          ],
+          "WAIST": [
+            244611,
+            249976
+          ],
+          "LEGS": [
+            244582,
+            249978,
+            251170,
+            251215
+          ],
+          "FEET": [
+            244610,
+            249981,
+            251084
+          ],
+          "WRIST": [
+            151321,
+            244584,
+            249304,
+            251079
+          ],
+          "HANDS": [
+            249980
+          ],
+          "FINGER": [
+            193708,
+            240949,
+            249369,
+            251093,
+            251115,
+            251217
+          ],
+          "TRINKET": [
+            249343,
+            249346,
+            249809,
+            250144
+          ],
+          "BACK": [
+            249974,
+            258575
+          ],
+          "MAINHAND": [
+            237849,
+            245770,
+            251083
+          ],
+          "OFFHAND": [
+            249275
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/shaman/elemental/m+",
-        "scrapedAt": "2026-05-02T09:01:04.486Z"
+        "scrapedAt": "2026-05-02T09:19:09.232Z"
       },
       "method": {
         "raid": {},
@@ -244,7 +309,7 @@
         "raidUrl": "https://www.method.gg/guides/elemental-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/elemental-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/elemental-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.962Z"
+        "scrapedAt": "2026-05-02T09:19:13.139Z"
       }
     },
     "ENHANCEMENT": {
@@ -285,7 +350,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.709Z"
+        "scrapedAt": "2026-05-02T09:19:02.161Z"
       },
       "archon": {
         "raid": {
@@ -421,13 +486,73 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/enhancement/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/enhancement/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.394Z"
+        "scrapedAt": "2026-05-02T09:19:05.625Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            249979
+          ],
+          "NECK": [
+            240950,
+            250247,
+            266314
+          ],
+          "SHOULDER": [
+            249977
+          ],
+          "CHEST": [
+            249982
+          ],
+          "WAIST": [
+            249371,
+            249976
+          ],
+          "LEGS": [
+            244582,
+            249324,
+            251215
+          ],
+          "FEET": [
+            151320,
+            249981
+          ],
+          "WRIST": [
+            244584,
+            249304,
+            251079
+          ],
+          "HANDS": [
+            249980
+          ],
+          "FINGER": [
+            251093,
+            251115,
+            251217
+          ],
+          "TRINKET": [
+            193701,
+            249343
+          ],
+          "BACK": [
+            239656,
+            249370,
+            249974
+          ],
+          "MAINHAND": [
+            237850,
+            249287,
+            258438
+          ],
+          "OFFHAND": [
+            237850,
+            249287,
+            258438
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/shaman/enhancement/m+",
-        "scrapedAt": "2026-05-02T09:01:04.486Z"
+        "scrapedAt": "2026-05-02T09:19:09.238Z"
       },
       "method": {
         "raid": {
@@ -571,7 +696,7 @@
         "raidUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.962Z"
+        "scrapedAt": "2026-05-02T09:19:13.146Z"
       }
     },
     "RESTORATION": {
@@ -625,7 +750,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:00:56.710Z"
+        "scrapedAt": "2026-05-02T09:19:02.171Z"
       },
       "archon": {
         "raid": {
@@ -764,13 +889,80 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/restoration/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/restoration/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:01:00.394Z"
+        "scrapedAt": "2026-05-02T09:19:05.631Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            249317,
+            249979
+          ],
+          "NECK": [
+            50228,
+            240950,
+            249337
+          ],
+          "SHOULDER": [
+            249977
+          ],
+          "CHEST": [
+            249982
+          ],
+          "WAIST": [
+            244581,
+            249303,
+            251110,
+            260375
+          ],
+          "LEGS": [
+            249978
+          ],
+          "FEET": [
+            244610,
+            249320
+          ],
+          "WRIST": [
+            244584,
+            249975
+          ],
+          "HANDS": [
+            249980
+          ],
+          "FINGER": [
+            49812,
+            151308,
+            151311,
+            240949,
+            249336,
+            251217
+          ],
+          "TRINKET": [
+            193718,
+            249343,
+            249808,
+            250246,
+            250256,
+            264507
+          ],
+          "BACK": [
+            49823,
+            239656,
+            249335,
+            251161
+          ],
+          "MAINHAND": [
+            237844,
+            245770,
+            249293
+          ],
+          "OFFHAND": [
+            237831,
+            249275
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/shaman/restoration/m+",
-        "scrapedAt": "2026-05-02T09:01:04.486Z"
+        "scrapedAt": "2026-05-02T09:19:09.245Z"
       },
       "method": {
         "raid": {
@@ -913,7 +1105,7 @@
         "raidUrl": "https://www.method.gg/guides/restoration-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/restoration-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/restoration-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:01:09.963Z"
+        "scrapedAt": "2026-05-02T09:19:13.151Z"
       }
     }
   }
