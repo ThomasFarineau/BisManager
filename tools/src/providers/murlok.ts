@@ -54,7 +54,7 @@ const MIN_POPULARITY = 10; // Only keep items used by > 10% of top players
  * Only keeps items equipped by more than MIN_POPULARITY% of top players.
  */
 async function fetchMurlokBis(spec: SpecDef, activity: "raid" | "m+"): Promise<SlotItems> {
-  const url = `${API_BASE}/${spec.urlClass}/${spec.urlSpec}/${encodeURIComponent(activity)}`;
+  const url = `${API_BASE}/${spec.urlClass}/${spec.urlSpec}/${activity}`;
   const slots: SlotItems = {};
 
   try {
