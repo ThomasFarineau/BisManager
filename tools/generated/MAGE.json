@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/mage/arcane/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-29T10:44:27.407Z"
+        "scrapedAt": "2026-05-02T09:00:56.704Z"
       },
       "archon": {
         "raid": {
@@ -63,17 +63,15 @@
           "TRINKET": [
             249346,
             249343,
-            250144,
-            264507
+            250144
           ],
           "FINGER": [
             193708,
+            251217,
             251115,
             251093,
-            251217,
             249369,
-            240949,
-            249336
+            240949
           ],
           "HEAD": [
             250060
@@ -82,16 +80,16 @@
             266314,
             50228,
             240950,
-            249337
+            249337,
+            251096
           ],
           "SHOULDER": [
             250058,
             251085
           ],
           "BACK": [
-            239661,
             239656,
-            258575
+            239661
           ],
           "CHEST": [
             250063
@@ -128,8 +126,8 @@
             249346,
             249343,
             250144,
-            264507,
-            250256
+            250256,
+            264507
           ],
           "FINGER": [
             193708,
@@ -142,8 +140,9 @@
           ],
           "NECK": [
             50228,
+            251096,
             266314,
-            251096
+            240950
           ],
           "SHOULDER": [
             250058,
@@ -151,16 +150,15 @@
           ],
           "BACK": [
             239656,
-            258575,
-            239661
+            239661,
+            258575
           ],
           "CHEST": [
             250063
           ],
           "WRIST": [
             239648,
-            239660,
-            251108
+            239660
           ],
           "HANDS": [
             250061
@@ -168,12 +166,12 @@
           "WAIST": [
             250057,
             151302,
+            239649,
             263265,
             251102
           ],
           "LEGS": [
-            250059,
-            251090
+            250059
           ],
           "FEET": [
             249373,
@@ -184,13 +182,13 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/arcane/mage/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/arcane/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-29T10:44:31.250Z"
+        "scrapedAt": "2026-05-02T09:01:00.390Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/mage/arcane/m+",
-        "scrapedAt": "2026-04-29T10:44:34.713Z"
+        "scrapedAt": "2026-05-02T09:01:04.483Z"
       },
       "method": {
         "raid": {
@@ -328,7 +326,7 @@
         "raidUrl": "https://www.method.gg/guides/arcane-mage/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/arcane-mage/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/arcane-mage/gearing#overall_table",
-        "scrapedAt": "2026-04-29T10:44:39.307Z"
+        "scrapedAt": "2026-05-02T09:01:09.958Z"
       }
     },
     "FIRE": {
@@ -379,7 +377,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-29T10:44:27.408Z"
+        "scrapedAt": "2026-05-02T09:00:56.704Z"
       },
       "archon": {
         "raid": {
@@ -391,15 +389,14 @@
             250144,
             249343,
             249346,
-            250256,
-            249809
+            250256
           ],
           "FINGER": [
             251093,
             251115,
             249369,
-            151311,
-            240949
+            240949,
+            151311
           ],
           "HEAD": [
             250060
@@ -430,8 +427,8 @@
           ],
           "WAIST": [
             239649,
-            249319,
             249376,
+            249319,
             50263,
             251102
           ],
@@ -451,8 +448,8 @@
           "TRINKET": [
             250144,
             250256,
-            249346,
-            249343
+            249343,
+            249346
           ],
           "FINGER": [
             251093,
@@ -481,14 +478,15 @@
             239655
           ],
           "WRIST": [
-            239648
+            239648,
+            249315
           ],
           "HANDS": [
             250061
           ],
           "WAIST": [
-            251102,
             239649,
+            251102,
             50263,
             249635
           ],
@@ -502,13 +500,13 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/fire/mage/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/fire/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-29T10:44:31.250Z"
+        "scrapedAt": "2026-05-02T09:01:00.390Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/mage/fire/m+",
-        "scrapedAt": "2026-04-29T10:44:34.713Z"
+        "scrapedAt": "2026-05-02T09:01:04.483Z"
       },
       "method": {
         "raid": {},
@@ -559,7 +557,7 @@
         "raidUrl": "https://www.method.gg/guides/fire-mage/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/fire-mage/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/fire-mage/gearing#overall_table",
-        "scrapedAt": "2026-04-29T10:44:39.308Z"
+        "scrapedAt": "2026-05-02T09:01:09.959Z"
       }
     },
     "FROST": {
@@ -613,7 +611,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/mage/frost/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-04-29T10:44:27.408Z"
+        "scrapedAt": "2026-05-02T09:00:56.705Z"
       },
       "archon": {
         "raid": {
@@ -632,8 +630,8 @@
             240949,
             251093,
             249336,
-            251115,
-            249919
+            249919,
+            251115
           ],
           "HEAD": [
             250060
@@ -671,8 +669,7 @@
             250059
           ],
           "FEET": [
-            249373,
-            249630
+            249373
           ]
         },
         "mythicplus": {
@@ -698,7 +695,8 @@
             250060
           ],
           "NECK": [
-            50228
+            50228,
+            240950
           ],
           "SHOULDER": [
             250058,
@@ -719,8 +717,8 @@
           ],
           "WAIST": [
             250057,
-            263265,
-            239649
+            239649,
+            263265
           ],
           "LEGS": [
             250059
@@ -734,13 +732,13 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/frost/mage/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/frost/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-04-29T10:44:31.250Z"
+        "scrapedAt": "2026-05-02T09:01:00.390Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/mage/frost/m+",
-        "scrapedAt": "2026-04-29T10:44:34.713Z"
+        "scrapedAt": "2026-05-02T09:01:04.483Z"
       },
       "method": {
         "raid": {
@@ -875,7 +873,7 @@
         "raidUrl": "https://www.method.gg/guides/frost-mage/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/frost-mage/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/frost-mage/gearing#overall_table",
-        "scrapedAt": "2026-04-29T10:44:39.308Z"
+        "scrapedAt": "2026-05-02T09:01:09.959Z"
       }
     }
   }
