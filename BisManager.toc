@@ -24,6 +24,13 @@ Locales/zhCN.lua
 Locales/zhTW.lua
 
 Core/BisManager.lua
+Lib/CustomUI/Core.lua
+Lib/CustomUI/Surface.lua
+Lib/CustomUI/Button.lua
+Lib/CustomUI/Input.lua
+Lib/CustomUI/Toggle.lua
+Lib/CustomUI/ScrollFrame.lua
+Lib/CustomUI/Slider.lua
 Mapping/SpecializationIds.lua
 Mapping/EnchantableSlots.lua
 Modules/BisManagerBiS.lua
