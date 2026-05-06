@@ -26,6 +26,8 @@ local ITEM_ROW_HEIGHT = 56
 local MAX_SEARCH_ROWS = 5
 local statsRows = {}
 local MAX_STATS_ROWS = 30
+local farmRows = {}
+local MAX_FARM_ROWS = 40
 local profileListButtons = {}
 local MAX_PROFILE_ROWS = 12
 
@@ -33,7 +35,7 @@ local MAX_PROFILE_ROWS = 12
 -- Forward declarations
 ------------------------------------------------------------------------
 
-local RefreshSlotList, RefreshDetailPanel, RefreshSettingsPanel, RefreshImportPanel, RefreshProfilesPanel, RefreshStatsPanel, SwitchTab, CreateConfigFrame
+local RefreshSlotList, RefreshDetailPanel, RefreshSettingsPanel, RefreshImportPanel, RefreshProfilesPanel, RefreshStatsPanel, RefreshFarmPanel, SwitchTab, CreateConfigFrame
 
 local function GetStatsSlotLabel(slotDef, entryIndex)
     if slotDef.key == "FINGER" then
@@ -257,7 +259,96 @@ local function SetEquippedItemLine(line, itemID, itemLink, prefixText, itemText,
 end
 
 local function OpenExternalUrl(url)
-    BisManager:OpenExternalUrl(url, configFrame and configFrame.profilesPanel, L["external_url_title"])
+    BisManager:OpenExternalUrl(url, configFrame or UIParent, L["external_url_title"])
+end
+
+local function GetFarmLayout(contentWidth)
+    local width = math.max(contentWidth or 760, 760)
+    local slotX = 4
+    local slotW = 92
+    local iconX = 102
+    local itemX = 130
+    local sourceX = math.max(430, math.floor(width * 0.58))
+    local itemW = math.max(220, sourceX - itemX - 12)
+    local sourceW = math.max(220, width - sourceX - 12)
+
+    return {
+        width = width,
+        slotX = slotX,
+        slotW = slotW,
+        iconX = iconX,
+        itemX = itemX,
+        itemW = itemW,
+        sourceX = sourceX,
+        sourceW = sourceW,
+    }
+end
+
+local function GetEquippedIDsForSlot(slotDef)
+    local equipped = {}
+    if not slotDef then
+        return equipped
+    end
+
+    if slotDef.subSlots then
+        for _, subSlot in ipairs(slotDef.subSlots) do
+            local itemID = GetInventoryItemID("player", subSlot.slotID)
+            if itemID then
+                equipped[itemID] = true
+            end
+        end
+    elseif slotDef.slotID then
+        local itemID = GetInventoryItemID("player", slotDef.slotID)
+        if itemID then
+            equipped[itemID] = true
+        end
+    end
+    return equipped
+end
+
+local function CollectFarmEntries()
+    local rows = {}
+    local profile = BisManager:GetProfile()
+    if not profile or type(profile.slots) ~= "table" then
+        return rows, profile
+    end
+
+    for _, slotDef in ipairs(SLOT_DEFINITIONS) do
+        local entries = BisManager:GetEntries(slotDef.key)
+        local equipped = GetEquippedIDsForSlot(slotDef)
+        if entries and #entries > 0 then
+            local maxEntries = slotDef.subSlots and math.min(#entries, slotDef.requiredCount or 2) or 1
+            for entryIndex = 1, maxEntries do
+                local entry = entries[entryIndex]
+                local itemID = tonumber(entry.itemID)
+                if itemID and not equipped[itemID] then
+                    rows[#rows + 1] = {
+                        slotDef = slotDef,
+                        slotLabel = GetStatsSlotLabel(slotDef, entryIndex),
+                        entry = entry,
+                        itemID = itemID,
+                    }
+                end
+            end
+        end
+    end
+
+    return rows, profile
+end
+
+local function OpenSourceData(sourceData)
+    if type(sourceData) ~= "table" then
+        return
+    end
+    if sourceData.url and sourceData.url ~= "" then
+        OpenExternalUrl(sourceData.url)
+    elseif sourceData.journalInstanceID then
+        BisManager:OpenEncounterJournalSource({
+            journalInstanceID = sourceData.journalInstanceID,
+            encounterID = sourceData.encounterID,
+            itemID = sourceData.itemID,
+        })
+    end
 end
 
 local function SplitGeneratedProfileName(name)
@@ -410,6 +501,7 @@ local function CreateProfileDropdown(parent)
                 if RefreshSlotList then RefreshSlotList() end
                 if RefreshDetailPanel then RefreshDetailPanel() end
                 if RefreshStatsPanel then RefreshStatsPanel() end
+                if RefreshFarmPanel then RefreshFarmPanel() end
             end)
             btn:Show()
         end
@@ -1136,6 +1228,166 @@ RefreshStatsPanel = function()
 end
 
 ------------------------------------------------------------------------
+-- Refresh: farm panel
+------------------------------------------------------------------------
+
+RefreshFarmPanel = function()
+    if not configFrame or not configFrame.farmPanel then return end
+    local fp = configFrame.farmPanel
+    local layout = GetFarmLayout((fp.scrollFrame and fp.scrollFrame:GetWidth() and (fp.scrollFrame:GetWidth() - 12)) or 760)
+    fp.farmLayout = layout
+
+    if fp.scrollChild then
+        fp.scrollChild:SetWidth(layout.width)
+    end
+    if fp.colSlot then
+        fp.colSlot:SetWidth(layout.slotW)
+        fp.colItem:ClearAllPoints()
+        fp.colItem:SetPoint("TOPLEFT", fp, "TOPLEFT", 20 + layout.itemX, -42)
+        fp.colItem:SetWidth(layout.itemW)
+        fp.colSource:ClearAllPoints()
+        fp.colSource:SetPoint("TOPLEFT", fp, "TOPLEFT", 20 + layout.sourceX, -42)
+        fp.colSource:SetWidth(layout.sourceW)
+    end
+
+    for _, row in ipairs(farmRows) do row:Hide() end
+
+    local missingRows, profile = CollectFarmEntries()
+    local totalConfigured = 0
+    for _, slotDef in ipairs(SLOT_DEFINITIONS) do
+        local entries = BisManager:GetEntries(slotDef.key)
+        if entries and #entries > 0 then
+            totalConfigured = totalConfigured + (slotDef.subSlots and math.min(#entries, slotDef.requiredCount or 2) or 1)
+        end
+    end
+
+    if fp.summaryText then
+        fp.summaryText:SetText(L["farm_equipped_count_fmt"]:format(math.max(totalConfigured - #missingRows, 0), totalConfigured))
+    end
+
+    if #missingRows == 0 then
+        if fp.noDataText then
+            fp.noDataText:SetText(totalConfigured == 0 and L["stats_no_data"] or L["farm_no_data"])
+        end
+        fp.noDataText:Show()
+        if fp.scrollChild then fp.scrollChild:SetHeight(10) end
+        return
+    end
+    fp.noDataText:Hide()
+
+    local needsRetry = false
+    local rowIndex = 0
+    for _, data in ipairs(missingRows) do
+        rowIndex = rowIndex + 1
+        if rowIndex > MAX_FARM_ROWS then break end
+
+        local row = farmRows[rowIndex]
+        if not row then
+            row = CreateFrame("Button", nil, fp.scrollChild, BD_TEMPLATE)
+            row:RegisterForClicks("LeftButtonUp", "RightButtonUp")
+            row:SetSize(layout.width, 32)
+            row:SetPoint("TOPLEFT", 0, -(rowIndex - 1) * 36)
+            ApplyBackdrop(row, { 0.095, 0.112, 0.136, 0.72 }, UI.lineSoft, UI.round.row)
+            row.bg = row:CreateTexture(nil, "BACKGROUND")
+            row.bg:SetPoint("TOPLEFT", 5, -3)
+            row.bg:SetPoint("BOTTOMRIGHT", -5, 3)
+            row.bg:SetColorTexture((rowIndex % 2 == 0) and 0.07 or 0.045, (rowIndex % 2 == 0) and 0.08 or 0.055, (rowIndex % 2 == 0) and 0.095 or 0.07, 0.38)
+            row.hl = row:CreateTexture(nil, "HIGHLIGHT")
+            row.hl:SetPoint("TOPLEFT", 5, -3)
+            row.hl:SetPoint("BOTTOMRIGHT", -5, 3)
+            row.hl:SetColorTexture(0.36, 0.78, 1, 0.14)
+            row.slotText = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+            row.slotText:SetPoint("LEFT", layout.slotX, 0)
+            row.slotText:SetWidth(layout.slotW)
+            row.slotText:SetJustifyH("LEFT")
+            row.icon = row:CreateTexture(nil, "ARTWORK")
+            row.icon:SetSize(22, 22)
+            row.icon:SetPoint("LEFT", layout.iconX, 0)
+            row.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+            row.nameText = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+            row.nameText:SetPoint("LEFT", layout.itemX, 0)
+            row.nameText:SetWidth(layout.itemW)
+            row.nameText:SetJustifyH("LEFT")
+            row.nameText:SetWordWrap(false)
+            row.sourceText = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+            row.sourceText:SetPoint("LEFT", layout.sourceX, 0)
+            row.sourceText:SetWidth(layout.sourceW)
+            row.sourceText:SetJustifyH("LEFT")
+            row.sourceText:SetWordWrap(false)
+            row:SetScript("OnEnter", function(self)
+                if self.itemLink then
+                    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                    GameTooltip:SetHyperlink(self.itemLink)
+                    if self.sourceTextValue and self.sourceTextValue ~= "" then
+                        GameTooltip:AddLine(" ")
+                        GameTooltip:AddLine(L["source_label"] .. " " .. self.sourceTextValue, 0.76, 0.76, 0.58, true)
+                    end
+                    if self.sourceCanOpen then
+                        GameTooltip:AddLine(L["farm_open_source"], 0.36, 0.78, 1, true)
+                    end
+                    GameTooltip:Show()
+                end
+            end)
+            row:SetScript("OnLeave", GameTooltip_Hide)
+            row:SetScript("OnClick", function(self)
+                if self.sourceCanOpen then
+                    OpenSourceData(self.sourceData)
+                end
+            end)
+            farmRows[rowIndex] = row
+        end
+
+        row:SetWidth(layout.width)
+        row.slotText:SetWidth(layout.slotW)
+        row.icon:ClearAllPoints()
+        row.icon:SetPoint("LEFT", layout.iconX, 0)
+        row.nameText:ClearAllPoints()
+        row.nameText:SetPoint("LEFT", layout.itemX, 0)
+        row.nameText:SetWidth(layout.itemW)
+        row.sourceText:ClearAllPoints()
+        row.sourceText:SetPoint("LEFT", layout.sourceX, 0)
+        row.sourceText:SetWidth(layout.sourceW)
+
+        local itemLink = BisManager:GetBiSItemLink(data.itemID)
+        if not itemLink and C_Item and C_Item.RequestLoadItemDataByID then
+            C_Item.RequestLoadItemDataByID(data.itemID)
+            needsRetry = true
+        end
+
+        local sourceData = BisManager:GetDisplayItemSourceData(data.entry, profile) or {}
+        local sourceLabel = (sourceData.label and sourceData.label ~= "") and sourceData.label or L["farm_unknown_source"]
+        if sourceData.kind == "loading" then
+            needsRetry = true
+        end
+
+        row.itemLink = itemLink
+        row.sourceData = sourceData
+        row.sourceTextValue = sourceLabel
+        row.sourceCanOpen = ((sourceData.url and sourceData.url ~= "") or sourceData.journalInstanceID) and true or false
+        row.slotText:SetText(data.slotLabel)
+        row.icon:SetTexture(BisManager:GetItemIcon(data.itemID))
+        row.nameText:SetText(itemLink or ("|cff999999item:" .. data.itemID .. "|r"))
+        row.sourceText:SetText(row.sourceCanOpen and ("|cff5cc8ff" .. sourceLabel .. "|r") or sourceLabel)
+        row.sourceText:SetTextColor(row.sourceCanOpen and 0.36 or 0.76, row.sourceCanOpen and 0.78 or 0.76, row.sourceCanOpen and 1 or 0.58)
+        row:Show()
+    end
+
+    fp.scrollChild:SetHeight(math.max(rowIndex * 36 + 4, 10))
+
+    if needsRetry and C_Timer and not fp.retryScheduled then
+        fp.retryScheduled = true
+        C_Timer.After(0.6, function()
+            if configFrame and configFrame.farmPanel and configFrame.farmPanel:IsShown() then
+                configFrame.farmPanel.retryScheduled = nil
+                RefreshFarmPanel()
+            elseif configFrame and configFrame.farmPanel then
+                configFrame.farmPanel.retryScheduled = nil
+            end
+        end)
+    end
+end
+
+------------------------------------------------------------------------
 -- Refresh: settings
 ------------------------------------------------------------------------
 
@@ -1321,16 +1573,17 @@ RefreshProfilesPanel = function()
 end
 
 ------------------------------------------------------------------------
--- Tab switching (5 tabs)
+-- Tab switching
 ------------------------------------------------------------------------
 
 SwitchTab = function(tabKey)
     if not configFrame then return end
-    local tabs = { slots = false, stats = false, profiles = false, import = false, settings = false }
+    local tabs = { slots = false, stats = false, farm = false, profiles = false, import = false, settings = false }
     tabs[tabKey] = true
 
     configFrame.slotsPanel:SetShown(tabs.slots)
     configFrame.statsPanel:SetShown(tabs.stats)
+    if configFrame.farmPanel then configFrame.farmPanel:SetShown(tabs.farm) end
     configFrame.settingsPanel:SetShown(tabs.settings)
     if configFrame.importPanel then configFrame.importPanel:SetShown(tabs.import) end
     if configFrame.profilesPanel then configFrame.profilesPanel:SetShown(tabs.profiles) end
@@ -1356,6 +1609,7 @@ SwitchTab = function(tabKey)
 
     if tabs.slots then RefreshSlotList(); RefreshDetailPanel()
     elseif tabs.stats then RefreshStatsPanel()
+    elseif tabs.farm then RefreshFarmPanel()
     elseif tabs.profiles then RefreshProfilesPanel()
     elseif tabs.import then RefreshImportPanel()
     elseif tabs.settings then RefreshSettingsPanel() end
@@ -1410,15 +1664,15 @@ CreateConfigFrame = function()
         configFrame:Hide()
     end)
 
-    -- Tabs (5)
+    -- Tabs
     configFrame.tabs = {}
     configFrame.tabBar = CreateFrame("Frame", nil, configFrame.header, BD_TEMPLATE)
-    configFrame.tabBar:SetSize(560, 36)
-    configFrame.tabBar:SetPoint("LEFT", configFrame.header, "LEFT", 330, 2)
+    configFrame.tabBar:SetSize(584, 36)
+    configFrame.tabBar:SetPoint("LEFT", configFrame.header, "LEFT", 300, 2)
     ApplyBackdrop(configFrame.tabBar, { 0.042, 0.052, 0.066, 0.82 }, UI.line, UI.round.pill)
 
     local function MakeTab(label, tabKey)
-        local tab = CreateFrame("Button", nil, configFrame.tabBar, BD_TEMPLATE); tab:SetSize(96, 28)
+        local tab = CreateFrame("Button", nil, configFrame.tabBar, BD_TEMPLATE); tab:SetSize(82, 28)
         ApplyBackdrop(tab, { 0, 0, 0, 0 }, { 0, 0, 0, 0 }, UI.round.pill)
         tab.text = tab:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall"); tab.text:SetAllPoints(); tab.text:SetText(label)
         tab.text:SetTextColor(0.80, 0.86, 0.92)
@@ -1431,8 +1685,9 @@ CreateConfigFrame = function()
         return tab
     end
     local tabSlots = MakeTab(L["tab_slots"], "slots"); tabSlots:SetPoint("LEFT", configFrame.tabBar, "LEFT", RADIUS, 0)
-    local tabStats = MakeTab(L["tab_stats"], "stats"); tabStats:SetPoint("LEFT", tabSlots, "RIGHT", GAP, 0)
-    local tabProfiles = MakeTab(L["tab_profiles"], "profiles"); tabProfiles:SetPoint("LEFT", tabStats, "RIGHT", GAP, 0)
+    local tabStats = MakeTab(L["tab_stats"], "stats"); tabStats:SetSize(72, 28); tabStats:SetPoint("LEFT", tabSlots, "RIGHT", GAP, 0)
+    local tabFarm = MakeTab(L["tab_farm"], "farm"); tabFarm:SetSize(86, 28); tabFarm:SetPoint("LEFT", tabStats, "RIGHT", GAP, 0)
+    local tabProfiles = MakeTab(L["tab_profiles"], "profiles"); tabProfiles:SetPoint("LEFT", tabFarm, "RIGHT", GAP, 0)
     local tabImport = MakeTab(L["tab_import_export"], "import"); tabImport:SetSize(128, 28); tabImport:SetPoint("LEFT", tabProfiles, "RIGHT", GAP, 0)
     local tabSettings = MakeTab(L["tab_settings"], "settings"); tabSettings:SetPoint("LEFT", tabImport, "RIGHT", GAP, 0)
 
@@ -1713,7 +1968,68 @@ CreateConfigFrame = function()
     stp.noDataText:SetPoint("CENTER", 0, 0); stp.noDataText:SetText(L["stats_no_data"]); stp.noDataText:Hide()
 
     ----------------------------------------------------------------
-    -- TAB 3: SETTINGS PANEL
+    -- TAB 3: FARM PANEL
+    ----------------------------------------------------------------
+    configFrame.farmPanel = CreateFrame("Frame", nil, configFrame, BD_TEMPLATE)
+    configFrame.farmPanel:SetPoint("TOPLEFT", PADDING, -80); configFrame.farmPanel:SetPoint("BOTTOMRIGHT", -PADDING, PADDING)
+    SkinPanel(configFrame.farmPanel)
+    configFrame.farmPanel:Hide()
+    local fp = configFrame.farmPanel
+
+    local farmHeader = fp:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
+    farmHeader:SetPoint("TOPLEFT", 20, -16)
+    farmHeader:SetText(L["farm_header"])
+    farmHeader:SetTextColor(UI.blue[1], UI.blue[2], UI.blue[3])
+
+    fp.summaryText = fp:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+    fp.summaryText:SetPoint("TOPRIGHT", -20, -18)
+    fp.summaryText:SetTextColor(0.82, 0.86, 0.9)
+    fp.summaryText:SetText("")
+
+    fp.farmLayout = GetFarmLayout(760)
+    local farmColY = -42
+    fp.colSlot = fp:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    fp.colSlot:SetPoint("TOPLEFT", 24, farmColY)
+    fp.colSlot:SetWidth(fp.farmLayout.slotW)
+    fp.colSlot:SetJustifyH("LEFT")
+    fp.colSlot:SetText(L["stats_slot_header"])
+    fp.colSlot:SetTextColor(0.7, 0.7, 0.7)
+
+    fp.colItem = fp:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    fp.colItem:SetPoint("TOPLEFT", 20 + fp.farmLayout.itemX, farmColY)
+    fp.colItem:SetWidth(fp.farmLayout.itemW)
+    fp.colItem:SetJustifyH("LEFT")
+    fp.colItem:SetText(L["stats_item_header"])
+    fp.colItem:SetTextColor(0.7, 0.7, 0.7)
+
+    fp.colSource = fp:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+    fp.colSource:SetPoint("TOPLEFT", 20 + fp.farmLayout.sourceX, farmColY)
+    fp.colSource:SetWidth(fp.farmLayout.sourceW)
+    fp.colSource:SetJustifyH("LEFT")
+    fp.colSource:SetText(L["stats_source_header"])
+    fp.colSource:SetTextColor(0.7, 0.7, 0.7)
+
+    local farmSep = fp:CreateTexture(nil, "ARTWORK")
+    farmSep:SetColorTexture(UI.lineSoft[1], UI.lineSoft[2], UI.lineSoft[3], UI.lineSoft[4])
+    farmSep:SetHeight(2)
+    farmSep:SetPoint("TOPLEFT", 20, -56)
+    farmSep:SetPoint("TOPRIGHT", -20, -56)
+
+    fp.scrollFrame = CreateFrame("ScrollFrame", "BisManagerFarmScroll", fp, "UIPanelScrollFrameTemplate")
+    fp.scrollFrame:SetPoint("TOPLEFT", 20, -60)
+    fp.scrollFrame:SetPoint("BOTTOMRIGHT", -38, 16)
+    SkinScrollFrame(fp.scrollFrame)
+    fp.scrollChild = CreateFrame("Frame", nil, fp.scrollFrame)
+    fp.scrollChild:SetSize(760, 10)
+    fp.scrollFrame:SetScrollChild(fp.scrollChild)
+
+    fp.noDataText = fp:CreateFontString(nil, "OVERLAY", "GameFontDisable")
+    fp.noDataText:SetPoint("CENTER", 0, 0)
+    fp.noDataText:SetText(L["farm_no_data"])
+    fp.noDataText:Hide()
+
+    ----------------------------------------------------------------
+    -- TAB 4: SETTINGS PANEL
     ----------------------------------------------------------------
     configFrame.settingsPanel = CreateFrame("Frame", nil, configFrame, BD_TEMPLATE)
     configFrame.settingsPanel:SetPoint("TOPLEFT", PADDING, -80); configFrame.settingsPanel:SetPoint("BOTTOMRIGHT", -PADDING, PADDING)
@@ -1793,7 +2109,7 @@ CreateConfigFrame = function()
     ht:SetText(L["help_config_text"])
 
     ----------------------------------------------------------------
-    -- TAB 4: PROFILES (redesigned: two sections)
+    -- TAB 5: PROFILES (redesigned: two sections)
     ----------------------------------------------------------------
     configFrame.profilesPanel = CreateFrame("Frame", nil, configFrame, BD_TEMPLATE)
     configFrame.profilesPanel:SetPoint("TOPLEFT", PADDING, -80); configFrame.profilesPanel:SetPoint("BOTTOMRIGHT", -PADDING, PADDING)
@@ -1964,7 +2280,7 @@ CreateConfigFrame = function()
     resetAllBtn:SetScript("OnClick", function() StaticPopup_Show("BisManager_CONFIRM_RESET_PROFILES") end)
 
     ----------------------------------------------------------------
-    -- TAB 5: IMPORT / EXPORT
+    -- TAB 6: IMPORT / EXPORT
     ----------------------------------------------------------------
     configFrame.importPanel = CreateFrame("Frame", nil, configFrame, BD_TEMPLATE)
     configFrame.importPanel:SetPoint("TOPLEFT", PADDING, -80); configFrame.importPanel:SetPoint("BOTTOMRIGHT", -PADDING, PADDING)
@@ -2077,7 +2393,7 @@ end
 
 function BisManager:RefreshConfigUI()
     if configFrame and configFrame:IsShown() then
-        RefreshSlotList(); RefreshSettingsPanel(); RefreshImportPanel(); RefreshProfilesPanel(); RefreshDetailPanel()
+        RefreshSlotList(); RefreshSettingsPanel(); RefreshImportPanel(); RefreshProfilesPanel(); RefreshDetailPanel(); RefreshFarmPanel()
     end
 end
 

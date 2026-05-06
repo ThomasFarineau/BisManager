@@ -1,4 +1,10 @@
 local L = select(2, ...).L('koKR')
+L["tab_farm"] = "파밍"
+L["farm_header"] = "파밍할 항목"
+L["farm_no_data"] = "누락된 BiS 아이템이 없습니다. 활성 프로필의 모든 항목을 착용 중입니다."
+L["farm_equipped_count_fmt"] = "착용: %d/%d"
+L["farm_unknown_source"] = "출처 알 수 없음"
+L["farm_open_source"] = "|cff5cc8ff클릭|r: 출처 열기"
 -- Slot names
 L["slot_head"] = "머리"
 L["slot_neck"] = "목"

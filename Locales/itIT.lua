@@ -1,4 +1,10 @@
 local L = select(2, ...).L('itIT')
+L["tab_farm"] = "Farm"
+L["farm_header"] = "Cosa farmare"
+L["farm_no_data"] = "Nessun oggetto BiS mancante. Tutto nel profilo attivo è equipaggiato."
+L["farm_equipped_count_fmt"] = "Equipaggiati: %d/%d"
+L["farm_unknown_source"] = "Fonte sconosciuta"
+L["farm_open_source"] = "|cff5cc8ffClic|r: apri la fonte"
 -- Slot names
 L["slot_head"] = "Testa"
 L["slot_neck"] = "Collo"

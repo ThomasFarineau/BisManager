@@ -1,4 +1,10 @@
 local L = select(2, ...).L('deDE')
+L["tab_farm"] = "Farmen"
+L["farm_header"] = "Was farmen"
+L["farm_no_data"] = "Keine fehlenden BiS-Gegenstände. Alles im aktiven Profil ist ausgerüstet."
+L["farm_equipped_count_fmt"] = "Ausgerüstet: %d/%d"
+L["farm_unknown_source"] = "Quelle unbekannt"
+L["farm_open_source"] = "|cff5cc8ffKlicken|r: Quelle öffnen"
 -- Slot names
 L["slot_head"] = "Kopf"
 L["slot_neck"] = "Hals"

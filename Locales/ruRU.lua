@@ -1,4 +1,10 @@
 local L = select(2, ...).L('ruRU')
+L["tab_farm"] = "Фарм"
+L["farm_header"] = "Что фармить"
+L["farm_no_data"] = "Недостающих BiS-предметов нет. Все из активного профиля экипировано."
+L["farm_equipped_count_fmt"] = "Экипировано: %d/%d"
+L["farm_unknown_source"] = "Источник неизвестен"
+L["farm_open_source"] = "|cff5cc8ffЩелкните|r: открыть источник"
 -- Slot names
 L["slot_head"] = "Голова"
 L["slot_neck"] = "Шея"

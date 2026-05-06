@@ -1,4 +1,10 @@
 local L = select(2, ...).L('zhCN')
+L["tab_farm"] = "刷取"
+L["farm_header"] = "要刷取的物品"
+L["farm_no_data"] = "没有缺失的 BiS 物品。当前配置中的物品都已装备。"
+L["farm_equipped_count_fmt"] = "已装备：%d/%d"
+L["farm_unknown_source"] = "来源未知"
+L["farm_open_source"] = "|cff5cc8ff点击|r：打开来源"
 -- Slot names
 L["slot_head"] = "头部"
 L["slot_neck"] = "颈部"
