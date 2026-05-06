@@ -49,7 +49,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:19:01.990Z"
+        "scrapedAt": "2026-05-06T10:49:01.438Z"
       },
       "archon": {
         "raid": {
@@ -61,8 +61,8 @@
           "TRINKET": [
             193701,
             249343,
-            249806,
-            252420
+            252420,
+            249806
           ],
           "FINGER": [
             193708,
@@ -121,8 +121,8 @@
         "mythicplus": {
           "MAINHAND": [
             265337,
-            268477,
             251174,
+            268477,
             249279
           ],
           "TRINKET": [
@@ -160,8 +160,8 @@
           ],
           "WRIST": [
             251079,
-            249304,
             151321,
+            249304,
             244584,
             251209
           ],
@@ -169,8 +169,7 @@
             249989
           ],
           "WAIST": [
-            244611,
-            249651
+            244611
           ],
           "LEGS": [
             249987
@@ -183,7 +182,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/beast-mastery/hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/beast-mastery/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:19:05.552Z"
+        "scrapedAt": "2026-05-06T10:49:05.626Z"
       },
       "murlok": {
         "raid": {},
@@ -192,7 +191,6 @@
             249988
           ],
           "NECK": [
-            50228,
             240950,
             249337,
             250247,
@@ -201,9 +199,7 @@
           "SHOULDER": [
             151323,
             193704,
-            249318,
-            249986,
-            260374
+            249318
           ],
           "CHEST": [
             249991
@@ -221,7 +217,8 @@
             151321,
             244584,
             249304,
-            251079
+            251079,
+            251209
           ],
           "HANDS": [
             249989
@@ -245,12 +242,11 @@
             258575
           ],
           "MAINHAND": [
-            249279,
-            251174
+            249279
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/beast-mastery/m+",
-        "scrapedAt": "2026-05-02T09:19:09.153Z"
+        "scrapedAt": "2026-05-06T10:49:09.169Z"
       },
       "method": {
         "raid": {
@@ -389,7 +385,7 @@
         "raidUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:19:13.064Z"
+        "scrapedAt": "2026-05-06T10:49:13.762Z"
       }
     },
     "MARKSMANSHIP": {
@@ -440,7 +436,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:19:01.999Z"
+        "scrapedAt": "2026-05-06T10:49:01.438Z"
       },
       "archon": {
         "raid": {
@@ -452,16 +448,13 @@
             193701,
             249343,
             260235,
-            252420,
-            264507,
-            249806
+            252420
           ],
           "FINGER": [
             193708,
             249336,
             240949,
-            251217,
-            249919
+            251217
           ],
           "HEAD": [
             249988
@@ -508,7 +501,9 @@
         "mythicplus": {
           "MAINHAND": [
             265337,
-            249279
+            249279,
+            251095,
+            258412
           ],
           "TRINKET": [
             193701,
@@ -545,9 +540,9 @@
             249991
           ],
           "WRIST": [
-            249304,
             251079,
             151321,
+            249304,
             251209
           ],
           "HANDS": [
@@ -565,7 +560,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/marksmanship/hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/marksmanship/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:19:05.557Z"
+        "scrapedAt": "2026-05-06T10:49:05.626Z"
       },
       "murlok": {
         "raid": {},
@@ -581,9 +576,7 @@
           "SHOULDER": [
             151323,
             193704,
-            249318,
-            249986,
-            251097
+            249318
           ],
           "CHEST": [
             249991
@@ -623,11 +616,12 @@
           "MAINHAND": [
             249279,
             251095,
-            258412
+            258412,
+            265337
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/marksmanship/m+",
-        "scrapedAt": "2026-05-02T09:19:09.158Z"
+        "scrapedAt": "2026-05-06T10:49:09.169Z"
       },
       "method": {
         "raid": {
@@ -772,7 +766,7 @@
         "raidUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:19:13.069Z"
+        "scrapedAt": "2026-05-06T10:49:13.762Z"
       }
     },
     "SURVIVAL": {
@@ -827,7 +821,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/survival/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:19:02.008Z"
+        "scrapedAt": "2026-05-06T10:49:01.438Z"
       },
       "archon": {
         "raid": {
@@ -839,8 +833,8 @@
           "OFFHAND": [
             237837,
             249925,
-            249284,
-            258436
+            258436,
+            249284
           ],
           "TRINKET": [
             193701,
@@ -851,8 +845,8 @@
           "FINGER": [
             251093,
             251217,
-            251115,
             193708,
+            251115,
             240949,
             249369
           ],
@@ -908,21 +902,18 @@
           ],
           "OFFHAND": [
             237837,
-            249925,
-            258436
+            249925
           ],
           "TRINKET": [
             193701,
             249343,
             252420,
-            249806,
-            250256,
-            264507
+            249806
           ],
           "FINGER": [
             251093,
-            251217,
             193708,
+            251217,
             251115
           ],
           "HEAD": [
@@ -956,8 +947,7 @@
             249989
           ],
           "WAIST": [
-            244611,
-            249371
+            244611
           ],
           "LEGS": [
             249987
@@ -969,7 +959,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/survival/hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/survival/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:19:05.561Z"
+        "scrapedAt": "2026-05-06T10:49:05.626Z"
       },
       "murlok": {
         "raid": {},
@@ -986,27 +976,26 @@
           "SHOULDER": [
             151323,
             193704,
-            249318,
-            251097
+            249318
           ],
           "CHEST": [
             249991
           ],
           "WAIST": [
-            244611
+            244611,
+            249371
           ],
           "LEGS": [
             249987
           ],
           "FEET": [
             244577,
-            244610,
-            249990
+            244610
           ],
           "WRIST": [
+            151321,
             249304,
-            251079,
-            251209
+            251079
           ],
           "HANDS": [
             249989
@@ -1014,6 +1003,7 @@
           "FINGER": [
             193708,
             240949,
+            249369,
             251093,
             251115,
             251217
@@ -1025,20 +1015,20 @@
           ],
           "BACK": [
             239656,
+            251206,
             258575
           ],
           "MAINHAND": [
-            249925,
-            251212
+            249925
           ],
           "OFFHAND": [
             237837,
-            249284,
-            249925
+            249925,
+            251212
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/survival/m+",
-        "scrapedAt": "2026-05-02T09:19:09.164Z"
+        "scrapedAt": "2026-05-06T10:49:09.169Z"
       },
       "method": {
         "raid": {
@@ -1173,7 +1163,7 @@
         "raidUrl": "https://www.method.gg/guides/survival-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/survival-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/survival-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:19:13.075Z"
+        "scrapedAt": "2026-05-06T10:49:13.762Z"
       }
     }
   }
