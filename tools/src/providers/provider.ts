@@ -17,9 +17,11 @@ export interface BiSResult {
   raid?: SlotItems;
   mythicplus?: SlotItems;
   overall?: SlotItems;
+  presets?: Record<string, SlotItems>;
   raidUrl?: string;
   mythicplusUrl?: string;
   overallUrl?: string;
+  presetUrls?: Record<string, string>;
 }
 
 export interface SpecDef {

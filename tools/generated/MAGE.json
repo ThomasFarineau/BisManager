@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/mage/arcane/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.439Z"
+        "scrapedAt": "2026-05-06T14:15:41.855Z"
       },
       "archon": {
         "raid": {
@@ -182,7 +182,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/arcane/mage/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/arcane/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.626Z"
+        "scrapedAt": "2026-05-06T14:15:45.370Z"
       },
       "murlok": {
         "raid": {},
@@ -254,7 +254,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/mage/arcane/m+",
-        "scrapedAt": "2026-05-06T10:49:09.169Z"
+        "scrapedAt": "2026-05-06T14:15:55.476Z"
       },
       "method": {
         "raid": {
@@ -392,7 +392,155 @@
         "raidUrl": "https://www.method.gg/guides/arcane-mage/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/arcane-mage/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/arcane-mage/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.763Z"
+        "scrapedAt": "2026-05-06T14:15:59.591Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              258218
+            ],
+            "OFFHAND": [
+              251094
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              250058
+            ],
+            "BACK": [
+              239661
+            ],
+            "CHEST": [
+              250063
+            ],
+            "WRIST": [
+              239660
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              249376
+            ],
+            "LEGS": [
+              251090
+            ],
+            "FEET": [
+              249373
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249343,
+              249346
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              258218,
+              258047
+            ],
+            "OFFHAND": [
+              251094
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              250058
+            ],
+            "BACK": [
+              239661
+            ],
+            "CHEST": [
+              250063
+            ],
+            "WRIST": [
+              239660
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              251102
+            ],
+            "LEGS": [
+              251090
+            ],
+            "FEET": [
+              251167
+            ],
+            "FINGER": [
+              193708,
+              151308
+            ],
+            "TRINKET": [
+              250144,
+              250258
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249286
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              250058
+            ],
+            "BACK": [
+              239661
+            ],
+            "CHEST": [
+              250063
+            ],
+            "WRIST": [
+              239660
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              249376
+            ],
+            "LEGS": [
+              249323
+            ],
+            "FEET": [
+              249373
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249343,
+              249346
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/arcane-mage-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/arcane-mage-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/arcane-mage-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.577Z"
       }
     },
     "FIRE": {
@@ -443,7 +591,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/mage/fire/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.439Z"
+        "scrapedAt": "2026-05-06T14:15:41.863Z"
       },
       "archon": {
         "raid": {
@@ -568,7 +716,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/fire/mage/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/fire/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.627Z"
+        "scrapedAt": "2026-05-06T14:15:45.374Z"
       },
       "murlok": {
         "raid": {},
@@ -636,7 +784,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/mage/fire/m+",
-        "scrapedAt": "2026-05-06T10:49:09.170Z"
+        "scrapedAt": "2026-05-06T14:15:55.484Z"
       },
       "method": {
         "raid": {},
@@ -687,7 +835,153 @@
         "raidUrl": "https://www.method.gg/guides/fire-mage/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/fire-mage/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/fire-mage/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.763Z"
+        "scrapedAt": "2026-05-06T14:15:59.597Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              249286
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              250058
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249912
+            ],
+            "WRIST": [
+              239648
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              249376
+            ],
+            "LEGS": [
+              250059
+            ],
+            "FEET": [
+              250062
+            ],
+            "FINGER": [
+              249369,
+              249920
+            ],
+            "TRINKET": [
+              250144,
+              249809
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              193710,
+              251201
+            ],
+            "OFFHAND": [
+              258472
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              151309
+            ],
+            "SHOULDER": [
+              250058
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              49825
+            ],
+            "WRIST": [
+              239648
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              50263
+            ],
+            "LEGS": [
+              250059
+            ],
+            "FEET": [
+              258584
+            ],
+            "FINGER": [
+              251093,
+              251217,
+              251115
+            ],
+            "TRINKET": [
+              250144,
+              250256
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249286
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              250058
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249912
+            ],
+            "WRIST": [
+              239648
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              249376
+            ],
+            "LEGS": [
+              250059
+            ],
+            "FEET": [
+              250062
+            ],
+            "FINGER": [
+              249369,
+              249920
+            ],
+            "TRINKET": [
+              249809,
+              249346
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/fire-mage-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/fire-mage-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/fire-mage-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.585Z"
       }
     },
     "FROST": {
@@ -741,7 +1035,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/mage/frost/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.440Z"
+        "scrapedAt": "2026-05-06T14:15:41.871Z"
       },
       "archon": {
         "raid": {
@@ -863,7 +1157,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/frost/mage/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/frost/mage/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.627Z"
+        "scrapedAt": "2026-05-06T14:15:45.379Z"
       },
       "murlok": {
         "raid": {},
@@ -923,7 +1217,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/mage/frost/m+",
-        "scrapedAt": "2026-05-06T10:49:09.170Z"
+        "scrapedAt": "2026-05-06T14:15:55.493Z"
       },
       "method": {
         "raid": {
@@ -1058,7 +1352,151 @@
         "raidUrl": "https://www.method.gg/guides/frost-mage/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/frost-mage/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/frost-mage/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.763Z"
+        "scrapedAt": "2026-05-06T14:15:59.605Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              258218
+            ],
+            "OFFHAND": [
+              245769
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              251085
+            ],
+            "BACK": [
+              258575
+            ],
+            "CHEST": [
+              250063
+            ],
+            "WRIST": [
+              239648
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              250057
+            ],
+            "LEGS": [
+              250059
+            ],
+            "FEET": [
+              249373
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249346,
+              249343
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              245770
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              251085
+            ],
+            "BACK": [
+              258575
+            ],
+            "CHEST": [
+              250063
+            ],
+            "WRIST": [
+              239648
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              250057
+            ],
+            "LEGS": [
+              250059
+            ],
+            "FEET": [
+              133489
+            ],
+            "FINGER": [
+              251217,
+              251093
+            ],
+            "TRINKET": [
+              250144,
+              250256
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              245770
+            ],
+            "HEAD": [
+              250060
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249328
+            ],
+            "BACK": [
+              249370
+            ],
+            "CHEST": [
+              250063
+            ],
+            "WRIST": [
+              239648
+            ],
+            "HANDS": [
+              250061
+            ],
+            "WAIST": [
+              250057
+            ],
+            "LEGS": [
+              250059
+            ],
+            "FEET": [
+              249373
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249346,
+              249343
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/frost-mage-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/frost-mage-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/frost-mage-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.593Z"
       }
     }
   }

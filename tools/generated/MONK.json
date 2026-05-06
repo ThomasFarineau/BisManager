@@ -55,7 +55,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/monk/brewmaster/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.440Z"
+        "scrapedAt": "2026-05-06T14:15:41.871Z"
       },
       "archon": {
         "raid": {
@@ -180,7 +180,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/brewmaster/monk/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/brewmaster/monk/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.627Z"
+        "scrapedAt": "2026-05-06T14:15:45.379Z"
       },
       "murlok": {
         "raid": {},
@@ -243,7 +243,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/monk/brewmaster/m+",
-        "scrapedAt": "2026-05-06T10:49:09.170Z"
+        "scrapedAt": "2026-05-06T14:15:55.493Z"
       },
       "method": {
         "raid": {
@@ -384,7 +384,70 @@
         "raidUrl": "https://www.method.gg/guides/brewmaster-monk/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/brewmaster-monk/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/brewmaster-monk/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.763Z"
+        "scrapedAt": "2026-05-06T14:15:59.605Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Gear and Best in Slot": {
+            "HEAD": [
+              250015
+            ],
+            "NECK": [
+              240950
+            ],
+            "SHOULDER": [
+              250013
+            ],
+            "BACK": [
+              249335,
+              251161
+            ],
+            "CHEST": [
+              250018
+            ],
+            "WRIST": [
+              250011,
+              50264,
+              249327
+            ],
+            "HANDS": [
+              250016
+            ],
+            "WAIST": [
+              251082,
+              249314
+            ],
+            "LEGS": [
+              151314,
+              249312
+            ],
+            "FEET": [
+              151317,
+              249382
+            ],
+            "FINGER": [
+              249336,
+              251513,
+              151308
+            ],
+            "MAINHAND": [
+              249302,
+              251207,
+              193723,
+              260423
+            ],
+            "TRINKET": [
+              249806,
+              252420
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Gear and Best in Slot": "https://www.icy-veins.com/wow/brewmaster-monk-pve-tank-gear-best-in-slot"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.594Z"
       }
     },
     "MISTWEAVER": {
@@ -438,7 +501,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/monk/mistweaver/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.441Z"
+        "scrapedAt": "2026-05-06T14:15:41.881Z"
       },
       "archon": {
         "raid": {
@@ -519,8 +582,8 @@
             251217,
             151311,
             251093,
-            151308,
-            240949
+            240949,
+            151308
           ],
           "HEAD": [
             250015
@@ -567,7 +630,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/mistweaver/monk/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/mistweaver/monk/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.627Z"
+        "scrapedAt": "2026-05-06T14:15:45.385Z"
       },
       "murlok": {
         "raid": {},
@@ -637,7 +700,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/monk/mistweaver/m+",
-        "scrapedAt": "2026-05-06T10:49:09.171Z"
+        "scrapedAt": "2026-05-06T14:15:55.501Z"
       },
       "method": {
         "raid": {
@@ -775,7 +838,157 @@
         "raidUrl": "https://www.method.gg/guides/mistweaver-monk/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/mistweaver-monk/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/mistweaver-monk/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.764Z"
+        "scrapedAt": "2026-05-06T14:15:59.614Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              258050
+            ],
+            "OFFHAND": [
+              249276
+            ],
+            "HEAD": [
+              249913
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              250013
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250018
+            ],
+            "WRIST": [
+              244576
+            ],
+            "HANDS": [
+              250016
+            ],
+            "WAIST": [
+              249374
+            ],
+            "LEGS": [
+              250014
+            ],
+            "FEET": [
+              251210
+            ],
+            "FINGER": [
+              249920,
+              151311
+            ],
+            "TRINKET": [
+              249343,
+              249808
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              258050
+            ],
+            "OFFHAND": [
+              193709
+            ],
+            "HEAD": [
+              151336
+            ],
+            "NECK": [
+              251096
+            ],
+            "SHOULDER": [
+              250013
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250018
+            ],
+            "WRIST": [
+              244576
+            ],
+            "HANDS": [
+              250016
+            ],
+            "WAIST": [
+              251166
+            ],
+            "LEGS": [
+              250014
+            ],
+            "FEET": [
+              251210
+            ],
+            "FINGER": [
+              151308,
+              151311
+            ],
+            "TRINKET": [
+              250256,
+              250144
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249293
+            ],
+            "OFFHAND": [
+              249276
+            ],
+            "HEAD": [
+              249913
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              250013
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250018
+            ],
+            "WRIST": [
+              244576
+            ],
+            "HANDS": [
+              250016
+            ],
+            "WAIST": [
+              249374
+            ],
+            "LEGS": [
+              250014
+            ],
+            "FEET": [
+              249334
+            ],
+            "FINGER": [
+              249920,
+              249336
+            ],
+            "TRINKET": [
+              249343,
+              249808
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/mistweaver-monk-pve-healing-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/mistweaver-monk-pve-healing-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/mistweaver-monk-pve-healing-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.601Z"
       }
     },
     "WINDWALKER": {
@@ -826,7 +1039,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/monk/windwalker/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.441Z"
+        "scrapedAt": "2026-05-06T14:15:41.890Z"
       },
       "archon": {
         "raid": {
@@ -961,13 +1174,74 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/windwalker/monk/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/windwalker/monk/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.628Z"
+        "scrapedAt": "2026-05-06T14:15:45.391Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            250015
+          ],
+          "NECK": [
+            50228,
+            240950,
+            249337
+          ],
+          "SHOULDER": [
+            250013
+          ],
+          "CHEST": [
+            250018
+          ],
+          "WAIST": [
+            49806,
+            244573,
+            249374,
+            250012
+          ],
+          "LEGS": [
+            250014
+          ],
+          "FEET": [
+            244569,
+            250017
+          ],
+          "WRIST": [
+            50264,
+            193714,
+            244576,
+            249327
+          ],
+          "HANDS": [
+            151318,
+            249321,
+            250016,
+            251113
+          ],
+          "FINGER": [
+            193708,
+            251093,
+            251115,
+            251217,
+            251513
+          ],
+          "TRINKET": [
+            193701,
+            249343,
+            252420
+          ],
+          "BACK": [
+            239656,
+            250010,
+            260312
+          ],
+          "MAINHAND": [
+            249278,
+            249302
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/monk/windwalker/m+",
-        "scrapedAt": "2026-05-06T10:49:09.171Z"
+        "scrapedAt": "2026-05-06T14:15:55.510Z"
       },
       "method": {
         "raid": {
@@ -1111,7 +1385,154 @@
         "raidUrl": "https://www.method.gg/guides/windwalker-monk/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/windwalker-monk/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/windwalker-monk/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.764Z"
+        "scrapedAt": "2026-05-06T14:15:59.622Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              251162,
+              260423,
+              237845
+            ],
+            "HEAD": [
+              250015
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              250013
+            ],
+            "BACK": [
+              250010
+            ],
+            "CHEST": [
+              250018
+            ],
+            "WRIST": [
+              249327
+            ],
+            "HANDS": [
+              249321
+            ],
+            "WAIST": [
+              251082
+            ],
+            "LEGS": [
+              250014
+            ],
+            "FEET": [
+              250017
+            ],
+            "FINGER": [
+              251513,
+              249920
+            ],
+            "TRINKET": [
+              249343,
+              193701
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              251162,
+              251122,
+              237845
+            ],
+            "HEAD": [
+              250015
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              250013
+            ],
+            "BACK": [
+              250010
+            ],
+            "CHEST": [
+              250018
+            ],
+            "WRIST": [
+              193714
+            ],
+            "HANDS": [
+              151318
+            ],
+            "WAIST": [
+              251082
+            ],
+            "LEGS": [
+              250014
+            ],
+            "FEET": [
+              250017
+            ],
+            "FINGER": [
+              251513,
+              251093
+            ],
+            "TRINKET": [
+              250256,
+              193701
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249302,
+              260423,
+              237845
+            ],
+            "HEAD": [
+              250015
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              250013
+            ],
+            "BACK": [
+              250010
+            ],
+            "CHEST": [
+              250018
+            ],
+            "WRIST": [
+              249327
+            ],
+            "HANDS": [
+              249321
+            ],
+            "WAIST": [
+              249374
+            ],
+            "LEGS": [
+              250014
+            ],
+            "FEET": [
+              250017
+            ],
+            "FINGER": [
+              251513,
+              249920
+            ],
+            "TRINKET": [
+              249343,
+              249806
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/windwalker-monk-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/windwalker-monk-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/windwalker-monk-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.608Z"
       }
     }
   }

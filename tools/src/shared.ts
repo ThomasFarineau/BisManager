@@ -88,9 +88,11 @@ export interface ProviderData {
   raid: SlotItems;
   mythicplus: SlotItems;
   overall?: SlotItems;
+  presets?: Record<string, SlotItems>;
   raidUrl?: string;
   mythicplusUrl?: string;
   overallUrl?: string;
+  presetUrls?: Record<string, string>;
   scrapedAt: string;
 }
 
@@ -119,9 +121,11 @@ export function saveJson(key: string, provider: string, bis: BiSResult) {
     raid: bis.raid ?? {},
     mythicplus: bis.mythicplus ?? {},
     ...(bis.overall !== undefined ? { overall: bis.overall } : {}),
+    ...(bis.presets !== undefined ? { presets: bis.presets } : {}),
     raidUrl: bis.raidUrl,
     mythicplusUrl: bis.mythicplusUrl,
     overallUrl: bis.overallUrl,
+    presetUrls: bis.presetUrls,
     scrapedAt: new Date().toISOString(),
   };
 
@@ -138,6 +142,7 @@ export const PROVIDER_LABELS: Record<string, { raid?: string; mythicplus?: strin
   wowhead: { overall: "Wowhead - Overall" },
   murlok:  { mythicplus: "Murlok - M+" },
   method:  { raid: "Method - Raid",  mythicplus: "Method - M+", overall: "Method - Overall" },
+  icyveins: { raid: "Icy Veins - Raid", mythicplus: "Icy Veins - M+", overall: "Icy Veins - Overall" },
 };
 
 interface PresetEntry { slots: SlotItems; sourceUrl?: string; }
@@ -183,6 +188,17 @@ export function loadAllJson(): NestedData {
           const o = clean(data.overall);
           if (Object.keys(o).length > 0) {
             all[className][specName][labels.overall] = { slots: o, sourceUrl: data.overallUrl };
+          }
+        }
+        if (data.presets) {
+          for (const [presetName, slots] of Object.entries(data.presets)) {
+            const p = clean(slots);
+            if (Object.keys(p).length > 0) {
+              all[className][specName][presetName] = {
+                slots: p,
+                sourceUrl: data.presetUrls?.[presetName] || data.overallUrl || data.raidUrl || data.mythicplusUrl,
+              };
+            }
           }
         }
       }

@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.444Z"
+        "scrapedAt": "2026-05-06T14:15:41.919Z"
       },
       "archon": {
         "raid": {
@@ -191,7 +191,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/assassination/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/assassination/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.629Z"
+        "scrapedAt": "2026-05-06T14:15:45.415Z"
       },
       "murlok": {
         "raid": {},
@@ -219,8 +219,7 @@
             49817,
             244574,
             250005,
-            251087,
-            260373
+            251087
           ],
           "FEET": [
             244569,
@@ -247,7 +246,6 @@
             249343
           ],
           "BACK": [
-            239656,
             258575,
             260312
           ],
@@ -261,7 +259,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/rogue/assassination/m+",
-        "scrapedAt": "2026-05-06T10:49:09.173Z"
+        "scrapedAt": "2026-05-06T14:15:55.549Z"
       },
       "method": {
         "raid": {
@@ -405,7 +403,145 @@
         "raidUrl": "https://www.method.gg/guides/assassination-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/assassination-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/assassination-rogue/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.765Z"
+        "scrapedAt": "2026-05-06T14:15:59.662Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "HANDS": [
+              133491,
+              237837,
+              250007
+            ],
+            "HEAD": [
+              250006
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              260312
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              244576
+            ],
+            "WAIST": [
+              49806
+            ],
+            "LEGS": [
+              251087
+            ],
+            "FEET": [
+              250008
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              193701,
+              249343
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "HANDS": [
+              133491,
+              237837,
+              250007
+            ],
+            "HEAD": [
+              250006
+            ],
+            "NECK": [
+              151309
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              260312
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              244576
+            ],
+            "WAIST": [
+              49806
+            ],
+            "LEGS": [
+              251087
+            ],
+            "FEET": [
+              258577
+            ],
+            "FINGER": [
+              251217,
+              251093
+            ],
+            "TRINKET": [
+              193701,
+              252420
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "HANDS": [
+              249925,
+              237837,
+              250007
+            ],
+            "HEAD": [
+              250006
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              249370
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              244576
+            ],
+            "WAIST": [
+              249374
+            ],
+            "LEGS": [
+              249312
+            ],
+            "FEET": [
+              249382
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249806,
+              249343
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/assassination-rogue-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/assassination-rogue-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/assassination-rogue-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.637Z"
       }
     },
     "OUTLAW": {
@@ -459,7 +595,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/outlaw/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.444Z"
+        "scrapedAt": "2026-05-06T14:15:41.925Z"
       },
       "archon": {
         "raid": {
@@ -587,7 +723,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/outlaw/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/outlaw/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.629Z"
+        "scrapedAt": "2026-05-06T14:15:45.420Z"
       },
       "murlok": {
         "raid": {},
@@ -657,7 +793,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/rogue/outlaw/m+",
-        "scrapedAt": "2026-05-06T10:49:09.173Z"
+        "scrapedAt": "2026-05-06T14:15:55.557Z"
       },
       "method": {
         "raid": {
@@ -807,7 +943,145 @@
         "raidUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.766Z"
+        "scrapedAt": "2026-05-06T14:15:59.670Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "HANDS": [
+              260423,
+              133491,
+              250007
+            ],
+            "HEAD": [
+              151336
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              249335
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              50264
+            ],
+            "WAIST": [
+              249374
+            ],
+            "LEGS": [
+              250005
+            ],
+            "FEET": [
+              244569
+            ],
+            "FINGER": [
+              249920,
+              240949
+            ],
+            "TRINKET": [
+              260235,
+              249343
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "HANDS": [
+              251207,
+              133491,
+              250007
+            ],
+            "HEAD": [
+              151336
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              260312
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              50264
+            ],
+            "WAIST": [
+              251166
+            ],
+            "LEGS": [
+              250005
+            ],
+            "FEET": [
+              244569
+            ],
+            "FINGER": [
+              251217,
+              240949
+            ],
+            "TRINKET": [
+              250256,
+              252420
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "HANDS": [
+              260423,
+              249284,
+              250007
+            ],
+            "HEAD": [
+              249913
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              249335
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              249327
+            ],
+            "WAIST": [
+              249374
+            ],
+            "LEGS": [
+              250005
+            ],
+            "FEET": [
+              244569
+            ],
+            "FINGER": [
+              249920,
+              240949
+            ],
+            "TRINKET": [
+              260235,
+              249343
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/outlaw-rogue-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/outlaw-rogue-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/outlaw-rogue-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.644Z"
       }
     },
     "SUBTLETY": {
@@ -861,7 +1135,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.444Z"
+        "scrapedAt": "2026-05-06T14:15:41.933Z"
       },
       "archon": {
         "raid": {
@@ -995,13 +1269,82 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/subtlety/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/subtlety/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.630Z"
+        "scrapedAt": "2026-05-06T14:15:45.426Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            250006
+          ],
+          "NECK": [
+            50228,
+            240950,
+            249368,
+            266314
+          ],
+          "SHOULDER": [
+            250004
+          ],
+          "CHEST": [
+            250009
+          ],
+          "WAIST": [
+            244573,
+            249374
+          ],
+          "LEGS": [
+            49817,
+            244574,
+            249312,
+            250005,
+            251087
+          ],
+          "FEET": [
+            244569,
+            250008,
+            258577
+          ],
+          "WRIST": [
+            50264,
+            193714,
+            244576,
+            249327,
+            250002
+          ],
+          "HANDS": [
+            250007
+          ],
+          "FINGER": [
+            49812,
+            193708,
+            240949,
+            249369,
+            251093,
+            251115,
+            251217
+          ],
+          "TRINKET": [
+            193701,
+            249343,
+            249344
+          ],
+          "BACK": [
+            250001,
+            258575,
+            260312
+          ],
+          "MAINHAND": [
+            49807,
+            237837,
+            249925
+          ],
+          "OFFHAND": [
+            237837
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/rogue/subtlety/m+",
-        "scrapedAt": "2026-05-06T10:49:09.174Z"
+        "scrapedAt": "2026-05-06T14:15:55.566Z"
       },
       "method": {
         "raid": {},
@@ -1055,7 +1398,143 @@
         "raidUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.766Z"
+        "scrapedAt": "2026-05-06T14:15:59.678Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "HANDS": [
+              249284,
+              237837,
+              250007
+            ],
+            "HEAD": [
+              250006
+            ],
+            "NECK": [
+              249368
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              258575
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              244576
+            ],
+            "WAIST": [
+              251082
+            ],
+            "LEGS": [
+              260373
+            ],
+            "FEET": [
+              250008
+            ],
+            "FINGER": [
+              251217,
+              251093
+            ],
+            "TRINKET": [
+              249344,
+              249343
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "HANDS": [
+              258436,
+              250007
+            ],
+            "HEAD": [
+              250006
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              258575
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              193714
+            ],
+            "WAIST": [
+              49806
+            ],
+            "LEGS": [
+              49817
+            ],
+            "FEET": [
+              258577
+            ],
+            "FINGER": [
+              251217,
+              251093
+            ],
+            "TRINKET": [
+              193701,
+              252420
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "HANDS": [
+              249284,
+              250007
+            ],
+            "HEAD": [
+              250006
+            ],
+            "NECK": [
+              249368
+            ],
+            "SHOULDER": [
+              250004
+            ],
+            "BACK": [
+              249370
+            ],
+            "CHEST": [
+              250009
+            ],
+            "WRIST": [
+              249327
+            ],
+            "WAIST": [
+              249374
+            ],
+            "LEGS": [
+              249312
+            ],
+            "FEET": [
+              249382
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249344,
+              249343
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/subtlety-rogue-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/subtlety-rogue-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/subtlety-rogue-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.651Z"
       }
     }
   }

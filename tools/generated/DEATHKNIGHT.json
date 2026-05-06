@@ -49,7 +49,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/death-knight/blood/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.428Z"
+        "scrapedAt": "2026-05-06T14:15:41.769Z"
       },
       "archon": {
         "raid": {
@@ -180,13 +180,78 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/blood/death-knight/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/blood/death-knight/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.622Z"
+        "scrapedAt": "2026-05-06T14:15:45.295Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            249970
+          ],
+          "NECK": [
+            50228,
+            151309,
+            240950,
+            251096
+          ],
+          "SHOULDER": [
+            249968
+          ],
+          "CHEST": [
+            249973,
+            251101
+          ],
+          "WAIST": [
+            237830,
+            249967,
+            251112
+          ],
+          "LEGS": [
+            249969
+          ],
+          "FEET": [
+            151330,
+            237828,
+            249381,
+            249972
+          ],
+          "WRIST": [
+            237834,
+            251203
+          ],
+          "HANDS": [
+            151332,
+            249971
+          ],
+          "FINGER": [
+            151308,
+            151311,
+            193708,
+            240949,
+            251093,
+            251217,
+            251513,
+            266317
+          ],
+          "TRINKET": [
+            249342,
+            249343,
+            249344,
+            252420
+          ],
+          "BACK": [
+            239656,
+            249965,
+            251206
+          ],
+          "MAINHAND": [
+            237846,
+            249277,
+            251078
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/death-knight/blood/m+",
-        "scrapedAt": "2026-05-06T10:49:09.165Z"
+        "scrapedAt": "2026-05-06T14:15:55.371Z"
       },
       "method": {
         "raid": {
@@ -280,7 +345,195 @@
         "raidUrl": "https://www.method.gg/guides/blood-death-knight/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/blood-death-knight/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/blood-death-knight/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.758Z"
+        "scrapedAt": "2026-05-06T14:15:59.486Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - BiS Raid (San'layn)": {
+            "MAINHAND": [
+              251168
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              249368
+            ],
+            "SHOULDER": [
+              249968
+            ],
+            "BACK": [
+              260312
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              151332
+            ],
+            "WAIST": [
+              49808
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              249920,
+              251513
+            ],
+            "TRINKET": [
+              249343,
+              249344
+            ]
+          },
+          "Icy Veins - BiS Raid (Deathbringer)": {
+            "MAINHAND": [
+              251168
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              249368
+            ],
+            "SHOULDER": [
+              249968
+            ],
+            "BACK": [
+              260312
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              251203
+            ],
+            "HANDS": [
+              151332
+            ],
+            "WAIST": [
+              249380
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              240949,
+              251513
+            ],
+            "TRINKET": [
+              249343,
+              260235,
+              249342
+            ]
+          },
+          "Icy Veins - Dreamrift, Voidspire, and March on Quel'Danas Gear": {
+            "MAINHAND": [
+              249296
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              249368
+            ],
+            "SHOULDER": [
+              249968
+            ],
+            "BACK": [
+              249370
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              249971
+            ],
+            "WAIST": [
+              249331
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              249369,
+              251513
+            ],
+            "TRINKET": [
+              249343,
+              249806,
+              249344,
+              249342
+            ]
+          },
+          "Icy Veins - Mythic+": {
+            "MAINHAND": [
+              251168
+            ],
+            "HEAD": [
+              151333
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              258587
+            ],
+            "BACK": [
+              260312
+            ],
+            "CHEST": [
+              50272
+            ],
+            "WRIST": [
+              263193
+            ],
+            "HANDS": [
+              151332
+            ],
+            "WAIST": [
+              49808
+            ],
+            "LEGS": [
+              251208
+            ],
+            "FEET": [
+              251091
+            ],
+            "FINGER": [
+              251217,
+              251093
+            ],
+            "TRINKET": [
+              250256,
+              252420
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - BiS Raid (San'layn)": "https://www.icy-veins.com/wow/blood-death-knight-pve-tank-gear-best-in-slot#area_1",
+          "Icy Veins - BiS Raid (Deathbringer)": "https://www.icy-veins.com/wow/blood-death-knight-pve-tank-gear-best-in-slot#area_2",
+          "Icy Veins - Dreamrift, Voidspire, and March on Quel'Danas Gear": "https://www.icy-veins.com/wow/blood-death-knight-pve-tank-gear-best-in-slot#area_3",
+          "Icy Veins - Mythic+": "https://www.icy-veins.com/wow/blood-death-knight-pve-tank-gear-best-in-slot#area_4"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.463Z"
       }
     },
     "FROST": {
@@ -332,7 +585,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/death-knight/frost/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.432Z"
+        "scrapedAt": "2026-05-06T14:15:41.777Z"
       },
       "archon": {
         "raid": {
@@ -453,13 +706,75 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/frost/death-knight/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/frost/death-knight/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.623Z"
+        "scrapedAt": "2026-05-06T14:15:45.304Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            249970
+          ],
+          "NECK": [
+            50228,
+            240950,
+            250247,
+            266314
+          ],
+          "SHOULDER": [
+            50234,
+            249313,
+            251164
+          ],
+          "CHEST": [
+            249973
+          ],
+          "WAIST": [
+            249967
+          ],
+          "LEGS": [
+            249969
+          ],
+          "FEET": [
+            249332,
+            249381
+          ],
+          "WRIST": [
+            237834,
+            249966
+          ],
+          "HANDS": [
+            249971
+          ],
+          "FINGER": [
+            193708,
+            240949,
+            249369,
+            249919,
+            251093,
+            251115,
+            251513
+          ],
+          "TRINKET": [
+            193701,
+            249342,
+            249343,
+            249344
+          ],
+          "BACK": [
+            239656,
+            258575
+          ],
+          "MAINHAND": [
+            237846,
+            251168
+          ],
+          "OFFHAND": [
+            237839,
+            249281
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/death-knight/frost/m+",
-        "scrapedAt": "2026-05-06T10:49:09.165Z"
+        "scrapedAt": "2026-05-06T14:15:55.381Z"
       },
       "method": {
         "raid": {
@@ -600,7 +915,154 @@
         "raidUrl": "https://www.method.gg/guides/frost-death-knight/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/frost-death-knight/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/frost-death-knight/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.758Z"
+        "scrapedAt": "2026-05-06T14:15:59.496Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              249277
+            ],
+            "HANDS": [
+              249281,
+              237841,
+              249971
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              50234
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              237834
+            ],
+            "WAIST": [
+              249380
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              193708,
+              249919
+            ],
+            "TRINKET": [
+              249343,
+              249344
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              251168
+            ],
+            "HANDS": [
+              251100,
+              237841,
+              249971
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              50234
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              237834
+            ],
+            "WAIST": [
+              49808
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              251107
+            ],
+            "FINGER": [
+              193708,
+              251217
+            ],
+            "TRINKET": [
+              193701,
+              252420
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249277
+            ],
+            "HANDS": [
+              249281,
+              237841,
+              249971
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249313
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              237834
+            ],
+            "WAIST": [
+              249380
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              249336,
+              249919
+            ],
+            "TRINKET": [
+              249343,
+              249344
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/frost-death-knight-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/frost-death-knight-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/frost-death-knight-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.473Z"
       }
     },
     "UNHOLY": {
@@ -651,7 +1113,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/death-knight/unholy/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.432Z"
+        "scrapedAt": "2026-05-06T14:15:41.785Z"
       },
       "archon": {
         "raid": {
@@ -769,7 +1231,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/unholy/death-knight/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/unholy/death-knight/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.623Z"
+        "scrapedAt": "2026-05-06T14:15:45.310Z"
       },
       "murlok": {
         "raid": {},
@@ -833,7 +1295,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/death-knight/unholy/m+",
-        "scrapedAt": "2026-05-06T10:49:09.166Z"
+        "scrapedAt": "2026-05-06T14:15:55.391Z"
       },
       "method": {
         "raid": {
@@ -968,7 +1430,148 @@
         "raidUrl": "https://www.method.gg/guides/unholy-death-knight/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/unholy-death-knight/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/unholy-death-knight/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.759Z"
+        "scrapedAt": "2026-05-06T14:15:59.505Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              249277
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              50234
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              249971
+            ],
+            "WAIST": [
+              249380
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              193708,
+              249919
+            ],
+            "TRINKET": [
+              249343,
+              249344
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              251168
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              50234
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              249971
+            ],
+            "WAIST": [
+              49808
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              251107
+            ],
+            "FINGER": [
+              193708,
+              251217
+            ],
+            "TRINKET": [
+              193701,
+              252420
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249277
+            ],
+            "HEAD": [
+              249970
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249313
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249973
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              249971
+            ],
+            "WAIST": [
+              249380
+            ],
+            "LEGS": [
+              249969
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              249336,
+              249919
+            ],
+            "TRINKET": [
+              249343,
+              249344
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/unholy-death-knight-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/unholy-death-knight-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/unholy-death-knight-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.484Z"
       }
     }
   }

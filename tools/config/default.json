@@ -1,0 +1,99 @@
+{
+  "scrape": {
+    "parallel": 10,
+    "retries": 0,
+    "batchDelayMs": 1000,
+    "browser": {
+      "headless": true,
+      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
+    },
+    "providers": {
+      "archon": {
+        "parallel": 10,
+        "retries": 1
+      },
+      "method": {
+        "parallel": 10,
+        "retries": 1
+      },
+      "murlok": {
+        "parallel": 5,
+        "retries": 2
+      },
+      "icyveins": {
+        "parallel": 10,
+        "retries": 1
+      },
+      "wowhead": {
+        "parallel": 10,
+        "retries": 2
+      }
+    }
+  },
+  "providers": {
+    "archon": {
+      "baseUrl": "https://www.archon.gg",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36",
+      "minPopularity": 10,
+      "routes": {
+        "home": "/wow",
+        "raid": "/wow/builds/{spec}/{class}/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplus": "/wow/builds/{spec}/{class}/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week"
+      },
+      "params": {
+        "raid": "gameSlug=wow&specSlug={spec}&classSlug={class}&zoneTypeSlug=raid&categorySlug=gear-and-tier-set&difficultySlug=mythic&encounterSlug=all-bosses",
+        "mythicplus": "gameSlug=wow&specSlug={spec}&classSlug={class}&zoneTypeSlug=mythic-plus&categorySlug=gear-and-tier-set&difficultySlug=10&encounterSlug=all-dungeons&affixesSlug=this-week"
+      }
+    },
+    "method": {
+      "baseUrl": "https://www.method.gg",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36",
+      "guidePath": "/guides/{spec}-{class}/gearing",
+      "selectors": {
+        "raid": "#raid_table",
+        "mythicplus": "#dungeon_table",
+        "overall": "#overall_table"
+      }
+    },
+    "murlok": {
+      "apiBaseUrl": "https://murlok.io/api/guides",
+      "siteBaseUrl": "https://murlok.io",
+      "userAgent": "GearManager-Scraper/1.0",
+      "minPopularity": 10,
+      "activities": {
+        "mythicplus": "m+"
+      }
+    },
+    "icyveins": {
+      "baseUrl": "https://www.icy-veins.com",
+      "userAgent": "GearManager-Scraper/1.0",
+      "guidePath": "/wow/{spec}-{class}-pve-{role}-gear-best-in-slot",
+      "firstItemOnly": true,
+      "presetPrefix": "Icy Veins - ",
+      "tabContentSelector": ".image_block_content[id^=\"area_\"]",
+      "roleBySpecName": {
+        "BLOOD": "tank",
+        "VENGEANCE": "tank",
+        "GUARDIAN": "tank",
+        "BREWMASTER": "tank",
+        "PROTECTION": "tank",
+        "RESTORATION": "healing",
+        "PRESERVATION": "healing",
+        "MISTWEAVER": "healing",
+        "HOLY": "healing",
+        "DISCIPLINE": "healing"
+      }
+    },
+    "wowhead": {
+      "baseUrl": "https://www.wowhead.com",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36",
+      "pageTimeoutMs": 60000,
+      "tableTimeoutMs": 20000,
+      "guidePath": "/guide/classes/{class}/{spec}/bis-gear",
+      "overallAnchor": "#tab-bis-items-overall-bis",
+      "tableSelector": "[id^=\"tab-bis-items-\"] table",
+      "panelSelector": "[id^=\"tab-bis-items-\"]",
+      "blockedResourceTypes": ["image", "font", "media"]
+    }
+  }
+}

@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/paladin/holy/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.441Z"
+        "scrapedAt": "2026-05-06T14:15:41.890Z"
       },
       "archon": {
         "raid": {
@@ -171,8 +171,7 @@
           ],
           "WRIST": [
             237834,
-            263193,
-            151328
+            263193
           ],
           "HANDS": [
             249962
@@ -195,7 +194,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/holy/paladin/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/holy/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.628Z"
+        "scrapedAt": "2026-05-06T14:15:45.391Z"
       },
       "murlok": {
         "raid": {},
@@ -241,13 +240,13 @@
             249962
           ],
           "FINGER": [
-            49812,
             151308,
             151311,
             240949,
             249369,
             251093,
-            251115
+            251115,
+            251217
           ],
           "TRINKET": [
             193718,
@@ -263,6 +262,7 @@
             249956
           ],
           "MAINHAND": [
+            193710,
             237843
           ],
           "OFFHAND": [
@@ -271,7 +271,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/paladin/holy/m+",
-        "scrapedAt": "2026-05-06T10:49:09.171Z"
+        "scrapedAt": "2026-05-06T14:15:55.510Z"
       },
       "method": {
         "raid": {
@@ -415,7 +415,151 @@
         "raidUrl": "https://www.method.gg/guides/holy-paladin/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/holy-paladin/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/holy-paladin/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.764Z"
+        "scrapedAt": "2026-05-06T14:15:59.623Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "HANDS": [
+              193710,
+              249962
+            ],
+            "OFFHAND": [
+              258049
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249964
+            ],
+            "WRIST": [
+              237834
+            ],
+            "WAIST": [
+              249331
+            ],
+            "LEGS": [
+              249915
+            ],
+            "FEET": [
+              249332
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249809,
+              249343
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "HANDS": [
+              193710,
+              249962
+            ],
+            "OFFHAND": [
+              258049
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249964
+            ],
+            "WRIST": [
+              237834
+            ],
+            "WAIST": [
+              151327
+            ],
+            "LEGS": [
+              251118
+            ],
+            "FEET": [
+              251107
+            ],
+            "FINGER": [
+              251115,
+              251093
+            ],
+            "TRINKET": [
+              250256,
+              250144
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "HANDS": [
+              249294,
+              249962
+            ],
+            "OFFHAND": [
+              249921
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249964
+            ],
+            "WRIST": [
+              237834
+            ],
+            "WAIST": [
+              249331
+            ],
+            "LEGS": [
+              249915
+            ],
+            "FEET": [
+              249332
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249809,
+              249343
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/holy-paladin-pve-healing-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/holy-paladin-pve-healing-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/holy-paladin-pve-healing-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.608Z"
       }
     },
     "PROTECTION": {
@@ -469,7 +613,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/paladin/protection/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.442Z"
+        "scrapedAt": "2026-05-06T14:15:41.897Z"
       },
       "archon": {
         "raid": {
@@ -616,7 +760,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/protection/paladin/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/protection/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.628Z"
+        "scrapedAt": "2026-05-06T14:15:45.397Z"
       },
       "murlok": {
         "raid": {},
@@ -684,7 +828,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/paladin/protection/m+",
-        "scrapedAt": "2026-05-06T10:49:09.171Z"
+        "scrapedAt": "2026-05-06T14:15:55.519Z"
       },
       "method": {
         "raid": {
@@ -828,7 +972,157 @@
         "raidUrl": "https://www.method.gg/guides/protection-paladin/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/protection-paladin/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/protection-paladin/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.764Z"
+        "scrapedAt": "2026-05-06T14:15:59.634Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List for Season 1": {
+            "MAINHAND": [
+              249295
+            ],
+            "OFFHAND": [
+              249275
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              251096
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              249335
+            ],
+            "CHEST": [
+              249964
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              151332
+            ],
+            "WAIST": [
+              249331
+            ],
+            "LEGS": [
+              249960
+            ],
+            "FEET": [
+              249332
+            ],
+            "FINGER": [
+              251217,
+              251513
+            ],
+            "TRINKET": [
+              260235,
+              193701
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249295
+            ],
+            "OFFHAND": [
+              249275
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              249335
+            ],
+            "CHEST": [
+              249309
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              249962
+            ],
+            "WAIST": [
+              249331
+            ],
+            "LEGS": [
+              249960
+            ],
+            "FEET": [
+              249332
+            ],
+            "FINGER": [
+              249920,
+              251513
+            ],
+            "TRINKET": [
+              260235,
+              249343
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              193711
+            ],
+            "OFFHAND": [
+              251105
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              251096
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              49823
+            ],
+            "CHEST": [
+              249964
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              151332
+            ],
+            "WAIST": [
+              251112
+            ],
+            "LEGS": [
+              249960
+            ],
+            "FEET": [
+              251169
+            ],
+            "FINGER": [
+              251217,
+              251513
+            ],
+            "TRINKET": [
+              252420,
+              193701
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List for Season 1": "https://www.icy-veins.com/wow/protection-paladin-pve-tank-gear-best-in-slot#area_1",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/protection-paladin-pve-tank-gear-best-in-slot#area_2",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/protection-paladin-pve-tank-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.614Z"
       }
     },
     "RETRIBUTION": {
@@ -881,7 +1175,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/paladin/retribution/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.442Z"
+        "scrapedAt": "2026-05-06T14:15:41.905Z"
       },
       "archon": {
         "raid": {
@@ -1010,7 +1304,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/retribution/paladin/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/retribution/paladin/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.628Z"
+        "scrapedAt": "2026-05-06T14:15:45.404Z"
       },
       "murlok": {
         "raid": {},
@@ -1080,7 +1374,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/paladin/retribution/m+",
-        "scrapedAt": "2026-05-06T10:49:09.172Z"
+        "scrapedAt": "2026-05-06T14:15:55.531Z"
       },
       "method": {
         "raid": {
@@ -1215,7 +1509,148 @@
         "raidUrl": "https://www.method.gg/guides/retribution-paladin/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/retribution-paladin/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/retribution-paladin/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.764Z"
+        "scrapedAt": "2026-05-06T14:15:59.645Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              249277
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249964
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              151332
+            ],
+            "WAIST": [
+              249380
+            ],
+            "LEGS": [
+              249960
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              249920,
+              249919
+            ],
+            "TRINKET": [
+              193701,
+              260235
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              251168
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249964
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              151332
+            ],
+            "WAIST": [
+              151327
+            ],
+            "LEGS": [
+              249960
+            ],
+            "FEET": [
+              251107
+            ],
+            "FINGER": [
+              251093,
+              251217
+            ],
+            "TRINKET": [
+              252420,
+              193701
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249277
+            ],
+            "HEAD": [
+              249961
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249959
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249964
+            ],
+            "WRIST": [
+              237834
+            ],
+            "HANDS": [
+              249307
+            ],
+            "WAIST": [
+              249380
+            ],
+            "LEGS": [
+              249960
+            ],
+            "FEET": [
+              249381
+            ],
+            "FINGER": [
+              249920,
+              249919
+            ],
+            "TRINKET": [
+              249343,
+              249806
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/retribution-paladin-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/retribution-paladin-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/retribution-paladin-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.620Z"
       }
     }
   }

@@ -8,9 +8,9 @@
 
 import { type Browser } from "puppeteer";
 import { BiSProvider, type BiSResult, type SlotItems, type SpecDef, resolveSlot } from "./provider";
+import { type ArchonConfig, fillTemplate, providerConfig } from "../config";
 
-const ARCHON_BASE = "https://www.archon.gg";
-const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36";
+const ARCHON_CONFIG = providerConfig<ArchonConfig>("archon");
 
 /** Cache the buildId across calls */
 let cachedBuildId: string | null = null;
@@ -18,9 +18,11 @@ let cachedBuildId: string | null = null;
 async function fetchBuildId(): Promise<string> {
   if (cachedBuildId) return cachedBuildId;
 
-  const res = await fetch(`${ARCHON_BASE}/wow`, {
-    headers: { "User-Agent": USER_AGENT },
+  const res = await fetch(`${ARCHON_CONFIG.baseUrl}${ARCHON_CONFIG.routes.home}`, {
+    headers: { "User-Agent": ARCHON_CONFIG.userAgent },
   });
+  if (!res.ok) throw new Error(`archon buildId: HTTP ${res.status}`);
+
   const html = await res.text();
 
   // Extract buildId from __NEXT_DATA__ script
@@ -59,8 +61,6 @@ function extractPopularity(markup: string): number {
   return m ? parseFloat(m[1]) : 0;
 }
 
-const MIN_POPULARITY = 10; // Only keep items with > 10% usage
-
 /**
  * Extract all item IDs from an item cell markup like:
  *   <ItemIcon id={237846} ...>Blood Knight's Warblade</ItemIcon>
@@ -94,25 +94,19 @@ interface ArchonSection {
 
 async function fetchArchonGear(buildId: string, spec: SpecDef, mode: "mythicplus" | "raid"): Promise<SlotItems> {
   const slots: SlotItems = {};
+  const routeValues = { spec: spec.urlSpec, class: spec.urlClass };
+  const pagePath = fillTemplate(ARCHON_CONFIG.routes[mode], routeValues);
+  const params = fillTemplate(ARCHON_CONFIG.params[mode], routeValues);
 
-  const pagePath = mode === "mythicplus"
-    ? `/wow/builds/${spec.urlSpec}/${spec.urlClass}/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week`
-    : `/wow/builds/${spec.urlSpec}/${spec.urlClass}/raid/gear-and-tier-set/mythic/all-bosses`;
-
-  const params = mode === "mythicplus"
-    ? `gameSlug=wow&specSlug=${spec.urlSpec}&classSlug=${spec.urlClass}&zoneTypeSlug=mythic-plus&categorySlug=gear-and-tier-set&difficultySlug=10&encounterSlug=all-dungeons&affixesSlug=this-week`
-    : `gameSlug=wow&specSlug=${spec.urlSpec}&classSlug=${spec.urlClass}&zoneTypeSlug=raid&categorySlug=gear-and-tier-set&difficultySlug=mythic&encounterSlug=all-bosses`;
-
-  const url = `${ARCHON_BASE}/_next/data/${buildId}${pagePath}.json?${params}`;
+  const url = `${ARCHON_CONFIG.baseUrl}/_next/data/${buildId}${pagePath}.json?${params}`;
 
   try {
     const res = await fetch(url, {
-      headers: { "User-Agent": USER_AGENT },
+      headers: { "User-Agent": ARCHON_CONFIG.userAgent },
     });
 
     if (!res.ok) {
-      console.error(`  [WARN] archon ${mode} ${spec.urlSpec}/${spec.urlClass}: HTTP ${res.status}`);
-      return slots;
+      throw new Error(`archon ${mode} ${spec.urlSpec}/${spec.urlClass}: HTTP ${res.status}`);
     }
 
     const json = await res.json() as {
@@ -137,7 +131,7 @@ async function fetchArchonGear(buildId: string, spec: SpecDef, mode: "mythicplus
 
         for (const row of table.data || []) {
           const pop = extractPopularity(row.popularity || "");
-          if (pop < MIN_POPULARITY) continue;
+          if (pop < ARCHON_CONFIG.minPopularity) continue;
           const itemIds = extractItemIds(row.item || "");
           for (const id of itemIds) {
             if (!slots[slot].includes(id)) slots[slot].push(id);
@@ -146,7 +140,7 @@ async function fetchArchonGear(buildId: string, spec: SpecDef, mode: "mythicplus
       }
     }
   } catch (err) {
-    console.error(`  [ERROR] archon ${mode} ${spec.urlSpec}/${spec.urlClass}: ${err}`);
+    throw new Error(`archon ${mode} ${spec.urlSpec}/${spec.urlClass}: ${err}`);
   }
 
   return slots;
@@ -165,8 +159,8 @@ export class ArchonProvider extends BiSProvider {
 
     return {
       raid, mythicplus,
-      raidUrl: `${ARCHON_BASE}/wow/builds/${spec.urlSpec}/${spec.urlClass}/raid/gear-and-tier-set/mythic/all-bosses`,
-      mythicplusUrl: `${ARCHON_BASE}/wow/builds/${spec.urlSpec}/${spec.urlClass}/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week`,
+      raidUrl: `${ARCHON_CONFIG.baseUrl}${fillTemplate(ARCHON_CONFIG.routes.raid, { spec: spec.urlSpec, class: spec.urlClass })}`,
+      mythicplusUrl: `${ARCHON_CONFIG.baseUrl}${fillTemplate(ARCHON_CONFIG.routes.mythicplus, { spec: spec.urlSpec, class: spec.urlClass })}`,
     };
   }
 }

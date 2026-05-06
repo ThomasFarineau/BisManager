@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/evoker/augmentation/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.436Z"
+        "scrapedAt": "2026-05-06T14:15:41.821Z"
       },
       "archon": {
         "raid": {
@@ -176,7 +176,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/augmentation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/augmentation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.625Z"
+        "scrapedAt": "2026-05-06T14:15:45.343Z"
       },
       "murlok": {
         "raid": {},
@@ -237,7 +237,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/evoker/augmentation/m+",
-        "scrapedAt": "2026-05-06T10:49:09.168Z"
+        "scrapedAt": "2026-05-06T14:15:55.435Z"
       },
       "method": {
         "raid": {
@@ -381,7 +381,142 @@
         "raidUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.761Z"
+        "scrapedAt": "2026-05-06T14:15:59.550Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              251178
+            ],
+            "HEAD": [
+              249914
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              244584
+            ],
+            "HANDS": [
+              249998
+            ],
+            "WAIST": [
+              49810
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              249377
+            ],
+            "FINGER": [
+              251217
+            ],
+            "TRINKET": [
+              249810
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              251178
+            ],
+            "HEAD": [
+              49824
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              244584
+            ],
+            "HANDS": [
+              249998
+            ],
+            "WAIST": [
+              49810
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              193715
+            ],
+            "FINGER": [
+              251217
+            ],
+            "TRINKET": [
+              250223
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249283
+            ],
+            "HEAD": [
+              249914
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              244584
+            ],
+            "HANDS": [
+              249998
+            ],
+            "WAIST": [
+              244581
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              249377
+            ],
+            "FINGER": [
+              249920
+            ],
+            "TRINKET": [
+              249810
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/augmentation-evoker-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/augmentation-evoker-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/augmentation-evoker-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.534Z"
       }
     },
     "DEVASTATION": {
@@ -435,7 +570,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/evoker/devastation/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.437Z"
+        "scrapedAt": "2026-05-06T14:15:41.827Z"
       },
       "archon": {
         "raid": {
@@ -565,13 +700,69 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/devastation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/devastation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.625Z"
+        "scrapedAt": "2026-05-06T14:15:45.350Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            49824,
+            249317,
+            249997
+          ],
+          "NECK": [
+            50228,
+            249337
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WAIST": [
+            49810,
+            244581,
+            249994
+          ],
+          "LEGS": [
+            249996,
+            251215
+          ],
+          "FEET": [
+            193715,
+            249999
+          ],
+          "WRIST": [
+            244584
+          ],
+          "HANDS": [
+            249998
+          ],
+          "FINGER": [
+            49812,
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            249343,
+            249346,
+            249809,
+            250256
+          ],
+          "BACK": [
+            239656,
+            260312
+          ],
+          "MAINHAND": [
+            245770
+          ],
+          "OFFHAND": [
+            249276
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/evoker/devastation/m+",
-        "scrapedAt": "2026-05-06T10:49:09.168Z"
+        "scrapedAt": "2026-05-06T14:15:55.446Z"
       },
       "method": {
         "raid": {
@@ -715,7 +906,154 @@
         "raidUrl": "https://www.method.gg/guides/devastation-evoker/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/devastation-evoker/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/devastation-evoker/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.761Z"
+        "scrapedAt": "2026-05-06T14:15:59.562Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              249294
+            ],
+            "OFFHAND": [
+              249276
+            ],
+            "HEAD": [
+              249997
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              244584
+            ],
+            "HANDS": [
+              249325
+            ],
+            "WAIST": [
+              49810
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              249999
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249343,
+              249346
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              251201
+            ],
+            "HEAD": [
+              249997
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              244584
+            ],
+            "HANDS": [
+              249998
+            ],
+            "WAIST": [
+              49810
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              251084
+            ],
+            "FINGER": [
+              251217,
+              251093
+            ],
+            "TRINKET": [
+              250144,
+              250256
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249294
+            ],
+            "OFFHAND": [
+              249276
+            ],
+            "HEAD": [
+              249997
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              244584
+            ],
+            "HANDS": [
+              249325
+            ],
+            "WAIST": [
+              249371
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              249999
+            ],
+            "FINGER": [
+              249919,
+              249920
+            ],
+            "TRINKET": [
+              249343,
+              249346
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/devastation-evoker-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/devastation-evoker-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/devastation-evoker-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.546Z"
       }
     },
     "PRESERVATION": {
@@ -766,7 +1104,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/evoker/preservation/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.437Z"
+        "scrapedAt": "2026-05-06T14:15:41.837Z"
       },
       "archon": {
         "raid": {
@@ -905,13 +1243,75 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/preservation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/preservation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.625Z"
+        "scrapedAt": "2026-05-06T14:15:45.358Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            249997
+          ],
+          "NECK": [
+            50228,
+            240950,
+            249337,
+            266314
+          ],
+          "SHOULDER": [
+            249995
+          ],
+          "CHEST": [
+            250000
+          ],
+          "WAIST": [
+            244581,
+            244611,
+            249371,
+            249994
+          ],
+          "LEGS": [
+            249996
+          ],
+          "FEET": [
+            244610,
+            249999,
+            251084
+          ],
+          "WRIST": [
+            244584,
+            249304,
+            251079
+          ],
+          "HANDS": [
+            249998,
+            251089
+          ],
+          "FINGER": [
+            49812,
+            249369,
+            251093,
+            251115,
+            251217
+          ],
+          "TRINKET": [
+            249343,
+            249346,
+            249808,
+            249809,
+            250144,
+            250256
+          ],
+          "BACK": [
+            249992
+          ],
+          "MAINHAND": [
+            237849,
+            245770,
+            251201
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/evoker/preservation/m+",
-        "scrapedAt": "2026-05-06T10:49:09.168Z"
+        "scrapedAt": "2026-05-06T14:15:55.458Z"
       },
       "method": {
         "raid": {
@@ -1059,7 +1459,148 @@
         "raidUrl": "https://www.method.gg/guides/preservation-evoker/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/preservation-evoker/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/preservation-evoker/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.761Z"
+        "scrapedAt": "2026-05-06T14:15:59.574Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              258514
+            ],
+            "HEAD": [
+              249914
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              251206
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              251079
+            ],
+            "HANDS": [
+              249998
+            ],
+            "WAIST": [
+              244611
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              244610
+            ],
+            "FINGER": [
+              249369,
+              249920
+            ],
+            "TRINKET": [
+              249343,
+              249809
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              258514
+            ],
+            "HEAD": [
+              251119
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              251206
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              251079
+            ],
+            "HANDS": [
+              249998
+            ],
+            "WAIST": [
+              244611
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              244610
+            ],
+            "FINGER": [
+              251115,
+              251093
+            ],
+            "TRINKET": [
+              250256,
+              250144
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "MAINHAND": [
+              249286
+            ],
+            "HEAD": [
+              249914
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249995
+            ],
+            "BACK": [
+              249370
+            ],
+            "CHEST": [
+              250000
+            ],
+            "WRIST": [
+              249304
+            ],
+            "HANDS": [
+              249998
+            ],
+            "WAIST": [
+              244611
+            ],
+            "LEGS": [
+              249996
+            ],
+            "FEET": [
+              244610
+            ],
+            "FINGER": [
+              249369,
+              249920
+            ],
+            "TRINKET": [
+              249343,
+              249809
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/preservation-evoker-pve-healing-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/preservation-evoker-pve-healing-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/preservation-evoker-pve-healing-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.559Z"
       }
     }
   }

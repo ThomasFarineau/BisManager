@@ -7,36 +7,36 @@
 
 import { type Browser } from "puppeteer";
 import { BiSProvider, type BiSResult, type SpecDef, resolveSlot } from "./provider";
+import { type WowheadConfig, fillTemplate, providerConfig } from "../config";
 
-const PAGE_TIMEOUT = 60_000;
+const WOWHEAD_CONFIG = providerConfig<WowheadConfig>("wowhead");
 
 export class WowheadProvider extends BiSProvider {
   readonly name = "wowhead";
 
   async getBis(browser: Browser, spec: SpecDef): Promise<BiSResult> {
-    const url = `https://www.wowhead.com/guide/classes/${spec.urlClass}/${spec.urlSpec}/bis-gear`;
-    const result: BiSResult = { overall: {}, overallUrl: url + '#tab-bis-items-overall-bis' };
+    const url = `${WOWHEAD_CONFIG.baseUrl}${fillTemplate(WOWHEAD_CONFIG.guidePath, { class: spec.urlClass, spec: spec.urlSpec })}`;
+    const result: BiSResult = { overall: {}, overallUrl: url + WOWHEAD_CONFIG.overallAnchor };
 
     const page = await browser.newPage();
     try {
-      await page.setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36");
+      await page.setUserAgent(WOWHEAD_CONFIG.userAgent);
       await page.setRequestInterception(true);
-      page.on("request", r => ["image", "font", "media"].includes(r.resourceType()) ? r.abort() : r.continue());
+      page.on("request", r => WOWHEAD_CONFIG.blockedResourceTypes.includes(r.resourceType()) ? r.abort() : r.continue());
 
-      await page.goto(url, { waitUntil: "networkidle2", timeout: PAGE_TIMEOUT });
+      await page.goto(url, { waitUntil: "networkidle2", timeout: WOWHEAD_CONFIG.pageTimeoutMs });
 
       // Wait for any bis-items tab panel with a table to be rendered
       try {
-        await page.waitForSelector('[id^="tab-bis-items-"] table', { timeout: 20_000 });
+        await page.waitForSelector(WOWHEAD_CONFIG.tableSelector, { timeout: WOWHEAD_CONFIG.tableTimeoutMs });
       } catch {
-        console.error(`  [WARN] wowhead ${spec.className}_${spec.specName}: BiS table not found`);
-        return result;
+        throw new Error(`wowhead ${spec.className}_${spec.specName}: BiS table not found`);
       }
 
-      const rows = await page.evaluate(() => {
+      const rows = await page.evaluate((panelSelector) => {
         const out: { slot: string; itemIds: number[] }[] = [];
         // Target any tab panel that starts with "tab-bis-items-"
-        const panels = document.querySelectorAll('[id^="tab-bis-items-"]');
+        const panels = document.querySelectorAll(panelSelector);
         const panel = panels[0];
         if (!panel) return out;
 
@@ -60,7 +60,7 @@ export class WowheadProvider extends BiSProvider {
           if (ids.length > 0) out.push({ slot: slotText, itemIds: ids });
         }
         return out;
-      });
+      }, WOWHEAD_CONFIG.panelSelector);
 
       for (const { slot, itemIds } of rows) {
         const key = resolveSlot(slot);
@@ -69,7 +69,7 @@ export class WowheadProvider extends BiSProvider {
         for (const id of itemIds) if (!result.overall![key].includes(id)) result.overall![key].push(id);
       }
     } catch (err) {
-      console.error(`  [ERROR] wowhead ${spec.className}_${spec.specName}: ${err}`);
+      throw new Error(`wowhead ${spec.className}_${spec.specName}: ${err}`);
     } finally {
       await page.close();
     }

@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.445Z"
+        "scrapedAt": "2026-05-06T14:15:41.933Z"
       },
       "archon": {
         "raid": {
@@ -185,7 +185,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/elemental/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/elemental/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.630Z"
+        "scrapedAt": "2026-05-06T14:15:45.427Z"
       },
       "murlok": {
         "raid": {},
@@ -240,14 +240,17 @@
           ],
           "TRINKET": [
             249343,
+            249346,
             249809,
             250144
           ],
           "BACK": [
-            249974
+            249974,
+            258575
           ],
           "MAINHAND": [
             245770,
+            249293,
             251083
           ],
           "OFFHAND": [
@@ -255,7 +258,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/shaman/elemental/m+",
-        "scrapedAt": "2026-05-06T10:49:09.174Z"
+        "scrapedAt": "2026-05-06T14:15:55.566Z"
       },
       "method": {
         "raid": {},
@@ -309,7 +312,159 @@
         "raidUrl": "https://www.method.gg/guides/elemental-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/elemental-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/elemental-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.766Z"
+        "scrapedAt": "2026-05-06T14:15:59.679Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              251083
+            ],
+            "OFFHAND": [
+              251105
+            ],
+            "HEAD": [
+              249979
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              249974
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              249304
+            ],
+            "HANDS": [
+              249980
+            ],
+            "WAIST": [
+              244611
+            ],
+            "LEGS": [
+              251215
+            ],
+            "FEET": [
+              244610
+            ],
+            "FINGER": [
+              193708,
+              249919
+            ],
+            "TRINKET": [
+              250144,
+              249809
+            ]
+          },
+          "Icy Veins - Mythic+ Gear BiS List": {
+            "MAINHAND": [
+              251083
+            ],
+            "OFFHAND": [
+              251105
+            ],
+            "HEAD": [
+              249979
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              258575
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              251079,
+              151321
+            ],
+            "HANDS": [
+              249980
+            ],
+            "WAIST": [
+              244611
+            ],
+            "LEGS": [
+              251215
+            ],
+            "FEET": [
+              244610
+            ],
+            "FINGER": [
+              193708,
+              251115,
+              251093
+            ],
+            "TRINKET": [
+              250144,
+              250256
+            ]
+          },
+          "Icy Veins - Raid Gear BiS List": {
+            "HANDS": [
+              249283,
+              249286,
+              249980
+            ],
+            "OFFHAND": [
+              251105
+            ],
+            "HEAD": [
+              249979
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              249370
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              249304
+            ],
+            "WAIST": [
+              244611
+            ],
+            "LEGS": [
+              249324
+            ],
+            "FEET": [
+              244610
+            ],
+            "FINGER": [
+              249369,
+              249919
+            ],
+            "TRINKET": [
+              249346,
+              249809,
+              249343
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.652Z"
       }
     },
     "ENHANCEMENT": {
@@ -350,7 +505,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.445Z"
+        "scrapedAt": "2026-05-06T14:15:41.939Z"
       },
       "archon": {
         "raid": {
@@ -445,8 +600,8 @@
             249979
           ],
           "NECK": [
-            266314,
             240950,
+            266314,
             50228
           ],
           "SHOULDER": [
@@ -487,7 +642,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/enhancement/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/enhancement/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.630Z"
+        "scrapedAt": "2026-05-06T14:15:45.432Z"
       },
       "murlok": {
         "raid": {},
@@ -556,7 +711,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/shaman/enhancement/m+",
-        "scrapedAt": "2026-05-06T10:49:09.174Z"
+        "scrapedAt": "2026-05-06T14:15:55.574Z"
       },
       "method": {
         "raid": {
@@ -700,7 +855,158 @@
         "raidUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.766Z"
+        "scrapedAt": "2026-05-06T14:15:59.688Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall Best-in-Slot": {
+            "MAINHAND": [
+              249287
+            ],
+            "OFFHAND": [
+              237850
+            ],
+            "HEAD": [
+              249979
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              249304
+            ],
+            "HANDS": [
+              249980
+            ],
+            "WAIST": [
+              249976
+            ],
+            "LEGS": [
+              249324
+            ],
+            "FEET": [
+              251084
+            ],
+            "FINGER": [
+              249920,
+              251093
+            ],
+            "TRINKET": [
+              249343,
+              193701,
+              249806
+            ]
+          },
+          "Icy Veins - Raid Best-in-Slot": {
+            "MAINHAND": [
+              249287
+            ],
+            "OFFHAND": [
+              237850
+            ],
+            "HEAD": [
+              249979
+            ],
+            "NECK": [
+              250247
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              249304
+            ],
+            "HANDS": [
+              249980
+            ],
+            "WAIST": [
+              249976
+            ],
+            "LEGS": [
+              249324
+            ],
+            "FEET": [
+              249981
+            ],
+            "FINGER": [
+              249920,
+              249369
+            ],
+            "TRINKET": [
+              249343,
+              249806
+            ]
+          },
+          "Icy Veins - Mythic+ Best-in-Slot": {
+            "MAINHAND": [
+              258438
+            ],
+            "OFFHAND": [
+              237850
+            ],
+            "HEAD": [
+              249979
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              251079
+            ],
+            "HANDS": [
+              249980
+            ],
+            "WAIST": [
+              49810
+            ],
+            "LEGS": [
+              251215
+            ],
+            "FEET": [
+              251084
+            ],
+            "FINGER": [
+              251093,
+              251217
+            ],
+            "TRINKET": [
+              193701,
+              252420
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall Best-in-Slot": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-gear-best-in-slot#area_1",
+          "Icy Veins - Raid Best-in-Slot": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-gear-best-in-slot#area_2",
+          "Icy Veins - Mythic+ Best-in-Slot": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.660Z"
       }
     },
     "RESTORATION": {
@@ -754,7 +1060,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T10:49:01.445Z"
+        "scrapedAt": "2026-05-06T14:15:41.946Z"
       },
       "archon": {
         "raid": {
@@ -894,7 +1200,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/restoration/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/restoration/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T10:49:05.630Z"
+        "scrapedAt": "2026-05-06T14:15:45.438Z"
       },
       "murlok": {
         "raid": {},
@@ -965,7 +1271,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/shaman/restoration/m+",
-        "scrapedAt": "2026-05-06T10:49:09.174Z"
+        "scrapedAt": "2026-05-06T14:15:55.584Z"
       },
       "method": {
         "raid": {
@@ -1108,7 +1414,157 @@
         "raidUrl": "https://www.method.gg/guides/restoration-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/restoration-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/restoration-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-06T10:49:13.767Z"
+        "scrapedAt": "2026-05-06T14:15:59.696Z"
+      },
+      "icyveins": {
+        "raid": {},
+        "mythicplus": {},
+        "presets": {
+          "Icy Veins - Overall BiS List": {
+            "MAINHAND": [
+              249293
+            ],
+            "OFFHAND": [
+              249921
+            ],
+            "HEAD": [
+              249914
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              239656
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              244584
+            ],
+            "HANDS": [
+              249980
+            ],
+            "WAIST": [
+              249303
+            ],
+            "LEGS": [
+              249978
+            ],
+            "FEET": [
+              249320
+            ],
+            "FINGER": [
+              151308,
+              151311
+            ],
+            "TRINKET": [
+              249809,
+              249811
+            ]
+          },
+          "Icy Veins - Mythic+ only BiS List": {
+            "MAINHAND": [
+              251178
+            ],
+            "OFFHAND": [
+              258049
+            ],
+            "HEAD": [
+              258585
+            ],
+            "NECK": [
+              50228
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              258575
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              151321
+            ],
+            "HANDS": [
+              249980
+            ],
+            "WAIST": [
+              49810
+            ],
+            "LEGS": [
+              249978
+            ],
+            "FEET": [
+              258582
+            ],
+            "FINGER": [
+              151308,
+              151311
+            ],
+            "TRINKET": [
+              193718,
+              250253
+            ]
+          },
+          "Icy Veins - Dreamrift, Voidspire, and March on Quel'Danas BiS List": {
+            "MAINHAND": [
+              249293
+            ],
+            "OFFHAND": [
+              249921
+            ],
+            "HEAD": [
+              249914
+            ],
+            "NECK": [
+              249337
+            ],
+            "SHOULDER": [
+              249977
+            ],
+            "BACK": [
+              249974
+            ],
+            "CHEST": [
+              249982
+            ],
+            "WRIST": [
+              249975
+            ],
+            "HANDS": [
+              249980
+            ],
+            "WAIST": [
+              249303
+            ],
+            "LEGS": [
+              249978
+            ],
+            "FEET": [
+              249320
+            ],
+            "FINGER": [
+              249919,
+              249336
+            ],
+            "TRINKET": [
+              249811,
+              249809
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-gear-best-in-slot#area_1",
+          "Icy Veins - Mythic+ only BiS List": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-gear-best-in-slot#area_2",
+          "Icy Veins - Dreamrift, Voidspire, and March on Quel'Danas BiS List": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-gear-best-in-slot#area_3"
+        },
+        "scrapedAt": "2026-05-06T14:16:03.667Z"
       }
     }
   }

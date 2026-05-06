@@ -8,8 +8,9 @@
 
 import { type Browser } from "puppeteer";
 import { BiSProvider, type BiSResult, type SlotItems, type SpecDef } from "./provider";
+import { type MurlokConfig, providerConfig } from "../config";
 
-const API_BASE = "https://murlok.io/api/guides";
+const MURLOK_CONFIG = providerConfig<MurlokConfig>("murlok");
 
 /** Map Murlok API slot names to our internal slot keys */
 const MURLOK_SLOT_MAP: Record<string, string> = {
@@ -47,24 +48,21 @@ interface MurlokResponse {
   Characters?: MurlokCharacter[];
 }
 
-const MIN_POPULARITY = 10; // Only keep items used by > 10% of top players
-
 /**
  * Fetch BiS items from the Murlok API for a given activity (raid or m+).
- * Only keeps items equipped by more than MIN_POPULARITY% of top players.
+ * Only keeps items equipped by more than the configured popularity threshold.
  */
-async function fetchMurlokBis(spec: SpecDef, activity: "raid" | "m+"): Promise<SlotItems> {
-  const url = `${API_BASE}/${spec.urlClass}/${spec.urlSpec}/${activity}`;
+async function fetchMurlokBis(spec: SpecDef, activity: string): Promise<SlotItems> {
+  const url = `${MURLOK_CONFIG.apiBaseUrl}/${spec.urlClass}/${spec.urlSpec}/${activity}`;
   const slots: SlotItems = {};
 
   try {
     const res = await fetch(url, {
-      headers: { "User-Agent": "GearManager-Scraper/1.0" },
+      headers: { "User-Agent": MURLOK_CONFIG.userAgent },
     });
 
     if (!res.ok) {
-      console.error(`  [WARN] murlok ${url}: HTTP ${res.status}`);
-      return slots;
+      throw new Error(`murlok ${url}: HTTP ${res.status}`);
     }
 
     const data = await res.json() as MurlokResponse;
@@ -89,14 +87,14 @@ async function fetchMurlokBis(spec: SpecDef, activity: "raid" | "m+"): Promise<S
     for (const [slot, itemCounts] of Object.entries(counts)) {
       for (const [itemIdStr, count] of Object.entries(itemCounts)) {
         const popularity = (count / total) * 100;
-        if (popularity > MIN_POPULARITY) {
+        if (popularity > MURLOK_CONFIG.minPopularity) {
           if (!slots[slot]) slots[slot] = [];
           slots[slot].push(parseInt(itemIdStr, 10));
         }
       }
     }
   } catch (err) {
-    console.error(`  [ERROR] murlok ${url}: ${err}`);
+    throw new Error(`murlok ${url}: ${err}`);
   }
 
   return slots;
@@ -106,11 +104,11 @@ export class MurlokProvider extends BiSProvider {
   readonly name = "murlok";
 
   async getBis(_browser: Browser, spec: SpecDef): Promise<BiSResult> {
-    const mythicplus = await fetchMurlokBis(spec, "m+");
+    const mythicplus = await fetchMurlokBis(spec, MURLOK_CONFIG.activities.mythicplus);
 
     return {
       mythicplus,
-      mythicplusUrl: `https://murlok.io/${spec.urlClass}/${spec.urlSpec}/m+`,
+      mythicplusUrl: `${MURLOK_CONFIG.siteBaseUrl}/${spec.urlClass}/${spec.urlSpec}/${MURLOK_CONFIG.activities.mythicplus}`,
     };
   }
 }

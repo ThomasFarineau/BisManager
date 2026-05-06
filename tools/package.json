@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "description": "Scrape WoW Bis",
   "scripts": {
-    "n": "tsx src/scrape.ts",
+    "scrape": "tsx src/scrape.ts",
     "generate": "tsx src/generate.ts",
     "build": "tsc"
   },
   "dependencies": {
     "cli-progress": "^3.12.0",
     "commander": "^14.0.3",
+    "config": "^4.4.1",
     "node-html-parser": "^7.1.0",
-    "puppeteer": "^23.0.0",
+    "puppeteer": "^24.43.0",
     "tsx": "^4.21.0"
   },
   "devDependencies": {
     "@types/cli-progress": "^3.11.6",
-    "@types/node": "^22.0.0",
+    "@types/node": "^24.12.2",
     "typescript": "^6.0.3"
   }
 }

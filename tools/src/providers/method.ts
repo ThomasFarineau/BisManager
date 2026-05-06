@@ -10,12 +10,12 @@
 import { type Browser } from "puppeteer";
 import { parse } from "node-html-parser";
 import { BiSProvider, type BiSResult, type SpecDef, resolveSlot } from "./provider";
+import { type MethodConfig, fillTemplate, providerConfig } from "../config";
 
-const METHOD_BASE = "https://www.method.gg";
-const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/125.0.0.0 Safari/537.36";
+const METHOD_CONFIG = providerConfig<MethodConfig>("method");
 
 function methodUrl(spec: SpecDef): string {
-  return `${METHOD_BASE}/guides/${spec.urlSpec}-${spec.urlClass}/gearing`;
+  return `${METHOD_CONFIG.baseUrl}${fillTemplate(METHOD_CONFIG.guidePath, { spec: spec.urlSpec, class: spec.urlClass })}`;
 }
 
 function parseTable(html: ReturnType<typeof parse>, selector: string): { slot: string; itemIds: number[] }[] {
@@ -54,20 +54,19 @@ export class MethodProvider extends BiSProvider {
 
     try {
       const res = await fetch(url, {
-        headers: { "User-Agent": USER_AGENT },
+        headers: { "User-Agent": METHOD_CONFIG.userAgent },
       });
 
       if (!res.ok) {
-        console.error(`  [WARN] method ${spec.className}_${spec.specName}: HTTP ${res.status}`);
-        return result;
+        throw new Error(`method ${spec.className}_${spec.specName}: HTTP ${res.status}`);
       }
 
       const html = parse(await res.text());
 
       const sections: { section: "raid" | "mythicplus" | "overall"; selector: string }[] = [
-        { section: "raid",       selector: "#raid_table" },
-        { section: "mythicplus", selector: "#dungeon_table" },
-        { section: "overall",    selector: "#overall_table" },
+        { section: "raid",       selector: METHOD_CONFIG.selectors.raid },
+        { section: "mythicplus", selector: METHOD_CONFIG.selectors.mythicplus },
+        { section: "overall",    selector: METHOD_CONFIG.selectors.overall },
       ];
 
       for (const { section, selector } of sections) {
@@ -80,7 +79,7 @@ export class MethodProvider extends BiSProvider {
         }
       }
     } catch (err) {
-      console.error(`  [ERROR] method ${spec.className}_${spec.specName}: ${err}`);
+      throw new Error(`method ${spec.className}_${spec.specName}: ${err}`);
     }
 
     return result;
