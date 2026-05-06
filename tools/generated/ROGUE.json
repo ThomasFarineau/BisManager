@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:19:02.127Z"
+        "scrapedAt": "2026-05-06T10:49:01.444Z"
       },
       "archon": {
         "raid": {
@@ -100,7 +100,8 @@
           ],
           "WRIST": [
             244576,
-            249327
+            249327,
+            50264
           ],
           "HANDS": [
             250007
@@ -114,7 +115,8 @@
             250005,
             251087,
             49817,
-            244574
+            244574,
+            249641
           ],
           "FEET": [
             250008,
@@ -125,12 +127,12 @@
         "mythicplus": {
           "MAINHAND": [
             237837,
-            249925
+            249925,
+            49807
           ],
           "OFFHAND": [
             237837,
-            49807,
-            249925
+            49807
           ],
           "TRINKET": [
             193701,
@@ -189,13 +191,77 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/assassination/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/assassination/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:19:05.609Z"
+        "scrapedAt": "2026-05-06T10:49:05.629Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
+        "mythicplus": {
+          "HEAD": [
+            250006
+          ],
+          "NECK": [
+            50228,
+            240950,
+            249337
+          ],
+          "SHOULDER": [
+            250004
+          ],
+          "CHEST": [
+            250009
+          ],
+          "WAIST": [
+            49806,
+            244573,
+            249374
+          ],
+          "LEGS": [
+            49817,
+            244574,
+            250005,
+            251087,
+            260373
+          ],
+          "FEET": [
+            244569,
+            250008
+          ],
+          "WRIST": [
+            50264,
+            244576,
+            249327
+          ],
+          "HANDS": [
+            250007
+          ],
+          "FINGER": [
+            49812,
+            193708,
+            240949,
+            249336,
+            251093,
+            251217
+          ],
+          "TRINKET": [
+            193701,
+            249343
+          ],
+          "BACK": [
+            239656,
+            258575,
+            260312
+          ],
+          "MAINHAND": [
+            49807,
+            249925,
+            258436
+          ],
+          "OFFHAND": [
+            237837
+          ]
+        },
         "mythicplusUrl": "https://murlok.io/rogue/assassination/m+",
-        "scrapedAt": "2026-05-02T09:19:09.215Z"
+        "scrapedAt": "2026-05-06T10:49:09.173Z"
       },
       "method": {
         "raid": {
@@ -339,7 +405,7 @@
         "raidUrl": "https://www.method.gg/guides/assassination-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/assassination-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/assassination-rogue/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:19:13.126Z"
+        "scrapedAt": "2026-05-06T10:49:13.765Z"
       }
     },
     "OUTLAW": {
@@ -393,7 +459,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/outlaw/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:19:02.136Z"
+        "scrapedAt": "2026-05-06T10:49:01.444Z"
       },
       "archon": {
         "raid": {
@@ -409,8 +475,7 @@
             249343,
             252420,
             260235,
-            264507,
-            249345
+            264507
           ],
           "FINGER": [
             49812,
@@ -501,16 +566,15 @@
           ],
           "WRIST": [
             50264,
-            244576,
-            249327
+            244576
           ],
           "HANDS": [
             250007
           ],
           "WAIST": [
             49806,
-            249374,
-            244573
+            244573,
+            249374
           ],
           "LEGS": [
             250005
@@ -523,7 +587,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/outlaw/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/outlaw/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:19:05.614Z"
+        "scrapedAt": "2026-05-06T10:49:05.629Z"
       },
       "murlok": {
         "raid": {},
@@ -536,8 +600,7 @@
           "NECK": [
             50228,
             240950,
-            249337,
-            249368
+            249337
           ],
           "SHOULDER": [
             250004
@@ -551,8 +614,7 @@
             249374
           ],
           "LEGS": [
-            250005,
-            251087
+            250005
           ],
           "FEET": [
             244569,
@@ -586,16 +648,16 @@
           ],
           "MAINHAND": [
             237839,
-            249298
+            249298,
+            260423
           ],
           "OFFHAND": [
             49807,
-            237837,
-            249925
+            237837
           ]
         },
         "mythicplusUrl": "https://murlok.io/rogue/outlaw/m+",
-        "scrapedAt": "2026-05-02T09:19:09.224Z"
+        "scrapedAt": "2026-05-06T10:49:09.173Z"
       },
       "method": {
         "raid": {
@@ -745,7 +807,7 @@
         "raidUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:19:13.131Z"
+        "scrapedAt": "2026-05-06T10:49:13.766Z"
       }
     },
     "SUBTLETY": {
@@ -781,11 +843,11 @@
             251087
           ],
           "FEET": [
-            258577
+            249382
           ],
           "FINGER": [
-            249919,
-            49812
+            249369,
+            249919
           ],
           "TRINKET": [
             249344,
@@ -799,7 +861,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-02T09:19:02.145Z"
+        "scrapedAt": "2026-05-06T10:49:01.444Z"
       },
       "archon": {
         "raid": {
@@ -857,8 +919,7 @@
           "LEGS": [
             49817,
             250005,
-            251087,
-            244574
+            251087
           ],
           "FEET": [
             250008,
@@ -886,8 +947,8 @@
             251093,
             251115,
             251217,
-            240949,
-            49812
+            49812,
+            240949
           ],
           "HEAD": [
             250006
@@ -910,19 +971,21 @@
           "WRIST": [
             244576,
             193714,
-            249644,
-            50264
+            50264,
+            249644
           ],
           "HANDS": [
             250007
           ],
           "WAIST": [
             244573,
-            251082
+            251082,
+            49806
           ],
           "LEGS": [
             49817,
-            250005
+            250005,
+            251087
           ],
           "FEET": [
             258577,
@@ -932,78 +995,13 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/subtlety/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/subtlety/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-02T09:19:05.619Z"
+        "scrapedAt": "2026-05-06T10:49:05.630Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {
-          "HEAD": [
-            250006
-          ],
-          "NECK": [
-            50228,
-            240950,
-            249368
-          ],
-          "SHOULDER": [
-            250004
-          ],
-          "CHEST": [
-            250009
-          ],
-          "WAIST": [
-            244573,
-            249374
-          ],
-          "LEGS": [
-            49817,
-            244574,
-            249312,
-            251087
-          ],
-          "FEET": [
-            249382,
-            250008,
-            258577
-          ],
-          "WRIST": [
-            50264,
-            244576,
-            249327,
-            250002
-          ],
-          "HANDS": [
-            250007
-          ],
-          "FINGER": [
-            49812,
-            193708,
-            240949,
-            251093,
-            251115,
-            251217
-          ],
-          "TRINKET": [
-            193701,
-            249343,
-            249344,
-            252420
-          ],
-          "BACK": [
-            250001,
-            258575,
-            260312
-          ],
-          "MAINHAND": [
-            237837,
-            249925
-          ],
-          "OFFHAND": [
-            237837
-          ]
-        },
+        "mythicplus": {},
         "mythicplusUrl": "https://murlok.io/rogue/subtlety/m+",
-        "scrapedAt": "2026-05-02T09:19:09.231Z"
+        "scrapedAt": "2026-05-06T10:49:09.174Z"
       },
       "method": {
         "raid": {},
@@ -1057,7 +1055,7 @@
         "raidUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#overall_table",
-        "scrapedAt": "2026-05-02T09:19:13.138Z"
+        "scrapedAt": "2026-05-06T10:49:13.766Z"
       }
     }
   }
