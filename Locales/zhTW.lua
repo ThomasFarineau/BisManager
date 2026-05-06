@@ -20,6 +20,7 @@ L["bis_on"] = "BiS |cff4cff4c開|r"
 L["bis_off"] = "BiS |cffff4c4c關|r"
 L["label_ok"] = "OK"
 L["label_bis"] = "BiS"
+L["tooltip_bis_profile_fmt"] = "BIS - %s"
 
 -- Toggle tooltip
 L["toggle_title"] = "BisManager - BiS顯示"

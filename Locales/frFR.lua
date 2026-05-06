@@ -20,6 +20,7 @@ L["bis_on"] = "BiS |cff4cff4cON|r"
 L["bis_off"] = "BiS |cffff4c4cOFF|r"
 L["label_ok"] = "OK"
 L["label_bis"] = "BiS"
+L["tooltip_bis_profile_fmt"] = "BIS - %s"
 
 L["toggle_title"] = "BisManager - Affichage BiS"
 L["toggle_desc"] = "Cliquez pour afficher/masquer les badges BiS"

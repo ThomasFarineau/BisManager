@@ -911,6 +911,31 @@ function BisManager:HasConfiguredItem(slotKey, itemID)
     return false
 end
 
+function BisManager:FindConfiguredItem(itemID, profileName)
+    itemID = tonumber(itemID)
+    if not itemID then
+        return nil
+    end
+
+    local profile = self:GetProfile(profileName)
+    if not profile or type(profile.slots) ~= "table" then
+        return nil
+    end
+
+    for _, slotDef in ipairs(SLOT_DEFINITIONS) do
+        local entries = profile.slots[slotDef.key]
+        if type(entries) == "table" then
+            for _, entry in ipairs(entries) do
+                if tonumber(entry.itemID) == itemID then
+                    return slotDef.key, entry
+                end
+            end
+        end
+    end
+
+    return nil
+end
+
 function BisManager:SetSlotItems(slotKey, itemIDs)
     local profile = self:GetOrCreateProfile(self:GetActiveProfileName())
     local t = {}
@@ -1593,6 +1618,9 @@ function BisManager:PLAYER_LOGIN()
     end
     if self.InitializeTooltipIlvl then
         self:InitializeTooltipIlvl()
+    end
+    if self.InitializeTooltipBiS then
+        self:InitializeTooltipBiS()
     end
     if self.InitializeMinimapButton then
         self:InitializeMinimapButton()
