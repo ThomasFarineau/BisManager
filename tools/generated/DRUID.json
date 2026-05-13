@@ -52,36 +52,35 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/druid/balance/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.801Z"
+        "scrapedAt": "2026-05-13T11:00:40.868Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            245770
+            245770,
+            251201
           ],
           "OFFHAND": [],
           "TRINKET": [
-            249346,
             249343,
-            249809,
-            264507,
-            250256
+            249346,
+            249809
           ],
           "FINGER": [
             251093,
             251217,
+            240949,
             193708,
             251115,
-            240949,
             249369
           ],
           "HEAD": [
             250024
           ],
           "NECK": [
-            266314,
-            50228,
             240950,
+            50228,
+            266314,
             249337
           ],
           "SHOULDER": [
@@ -90,16 +89,15 @@
           "BACK": [
             239656,
             250019,
-            258575,
-            249370
+            249370,
+            258575
           ],
           "CHEST": [
             250027
           ],
           "WRIST": [
             244576,
-            249327,
-            193714
+            249327
           ],
           "HANDS": [
             250025,
@@ -123,16 +121,16 @@
         },
         "mythicplus": {
           "MAINHAND": [
-            245770
+            245770,
+            251201
           ],
           "OFFHAND": [],
           "TRINKET": [
-            249346,
             249343,
+            249346,
             250256,
             250144,
-            264507,
-            250223
+            264507
           ],
           "FINGER": [
             251093,
@@ -152,9 +150,10 @@
             250022
           ],
           "BACK": [
-            258575,
             250019,
+            258575,
             239656,
+            251206,
             260312
           ],
           "CHEST": [
@@ -162,8 +161,7 @@
           ],
           "WRIST": [
             244576,
-            193714,
-            249644
+            193714
           ],
           "HANDS": [
             250025,
@@ -172,8 +170,7 @@
           "WAIST": [
             244573,
             251082,
-            250021,
-            49806
+            250021
           ],
           "LEGS": [
             250023
@@ -186,7 +183,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/balance/druid/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/balance/druid/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.324Z"
+        "scrapedAt": "2026-05-13T11:00:44.880Z"
       },
       "murlok": {
         "raid": {},
@@ -236,7 +233,8 @@
           ],
           "TRINKET": [
             249343,
-            249346
+            249346,
+            250256
           ],
           "BACK": [
             239656,
@@ -250,7 +248,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/druid/balance/m+",
-        "scrapedAt": "2026-05-06T14:15:55.409Z"
+        "scrapedAt": "2026-05-13T11:00:52.564Z"
       },
       "method": {
         "raid": {
@@ -394,7 +392,7 @@
         "raidUrl": "https://www.method.gg/guides/balance-druid/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/balance-druid/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/balance-druid/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.525Z"
+        "scrapedAt": "2026-05-13T11:00:57.047Z"
       },
       "icyveins": {
         "raid": {},
@@ -532,7 +530,7 @@
           "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/balance-druid-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/balance-druid-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.505Z"
+        "scrapedAt": "2026-05-13T11:01:01.951Z"
       }
     },
     "FERAL": {
@@ -583,14 +581,14 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/druid/feral/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.807Z"
+        "scrapedAt": "2026-05-13T11:00:40.869Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
             249302,
-            245771,
-            249278
+            249278,
+            245771
           ],
           "TRINKET": [
             193701,
@@ -610,8 +608,8 @@
           ],
           "NECK": [
             266314,
-            50228,
-            240950
+            240950,
+            50228
           ],
           "SHOULDER": [
             250022
@@ -644,22 +642,21 @@
           ],
           "FEET": [
             250026,
-            258577,
             244569,
-            249382
+            258577
           ]
         },
         "mythicplus": {
           "MAINHAND": [
             245771,
+            251077,
             237847
           ],
           "TRINKET": [
             193701,
             249343,
             250256,
-            252420,
-            264507
+            252420
           ],
           "FINGER": [
             251093,
@@ -707,14 +704,14 @@
           "FEET": [
             258577,
             250026,
-            249638,
             244569,
+            249638,
             251121
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/feral/druid/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/feral/druid/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.330Z"
+        "scrapedAt": "2026-05-13T11:00:44.880Z"
       },
       "murlok": {
         "raid": {},
@@ -723,7 +720,6 @@
             250024
           ],
           "NECK": [
-            151309,
             240950,
             266314
           ],
@@ -745,42 +741,39 @@
           "FEET": [
             244569,
             250026,
-            258577
+            251121
           ],
           "WRIST": [
-            193714,
             244576
           ],
           "HANDS": [
             193721,
-            250025,
-            251113
+            250025
           ],
           "FINGER": [
             193708,
-            240949,
             251093,
             251115,
-            251217,
-            251513
+            251217
           ],
           "TRINKET": [
             193701,
-            249343
+            249343,
+            250256
           ],
           "BACK": [
             239656,
-            249370,
             250019,
             258575
           ],
           "MAINHAND": [
             249278,
-            249302
+            249302,
+            258529
           ]
         },
         "mythicplusUrl": "https://murlok.io/druid/feral/m+",
-        "scrapedAt": "2026-05-06T14:15:55.417Z"
+        "scrapedAt": "2026-05-13T11:00:52.565Z"
       },
       "method": {
         "raid": {},
@@ -821,7 +814,7 @@
         "raidUrl": "https://www.method.gg/guides/feral-druid/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/feral-druid/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/feral-druid/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.533Z"
+        "scrapedAt": "2026-05-13T11:00:57.048Z"
       },
       "icyveins": {
         "raid": {},
@@ -966,7 +959,7 @@
           "Icy Veins - Midnight Season 1 Raid Best-in-Slot": "https://www.icy-veins.com/wow/feral-druid-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Midnight Season 1 Mythic + Best-in-Slot": "https://www.icy-veins.com/wow/feral-druid-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.515Z"
+        "scrapedAt": "2026-05-13T11:01:01.952Z"
       }
     },
     "GUARDIAN": {
@@ -1017,19 +1010,19 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/druid/guardian/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.813Z"
+        "scrapedAt": "2026-05-13T11:00:40.870Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
             249278,
-            245771,
-            249302
+            245771
           ],
           "TRINKET": [
-            193701,
             249343,
-            250256
+            193701,
+            250256,
+            250144
           ],
           "FINGER": [
             251093,
@@ -1067,8 +1060,7 @@
           "WAIST": [
             244573,
             249374,
-            251166,
-            249314
+            251166
           ],
           "LEGS": [
             250023
@@ -1076,21 +1068,23 @@
           "FEET": [
             249334,
             244569,
-            251210
+            251210,
+            250026
           ]
         },
         "mythicplus": {
           "MAINHAND": [
             245771,
-            258529
+            258529,
+            249278
           ],
           "TRINKET": [
             250256,
             250144,
-            193701,
             249343,
-            264507,
-            252420
+            193701,
+            252420,
+            264507
           ],
           "FINGER": [
             251093,
@@ -1112,38 +1106,40 @@
           ],
           "BACK": [
             193712,
-            251206,
-            239656
+            239656,
+            251206
           ],
           "CHEST": [
-            250027
+            250027,
+            251216
           ],
           "WRIST": [
             244576,
-            251103,
-            193714
+            193714,
+            251103
           ],
           "HANDS": [
             250025
           ],
           "WAIST": [
-            251166,
             244573,
+            251166,
+            251082,
             249643,
-            49806,
-            251082
+            49806
           ],
           "LEGS": [
             250023
           ],
           "FEET": [
             251210,
-            244569
+            244569,
+            250026
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/guardian/druid/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/guardian/druid/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.337Z"
+        "scrapedAt": "2026-05-13T11:00:44.881Z"
       },
       "murlok": {
         "raid": {},
@@ -1161,22 +1157,23 @@
             250022
           ],
           "CHEST": [
-            250027
+            244570,
+            250027,
+            251216
           ],
           "WAIST": [
             244573,
-            249314,
             249374,
             251166
           ],
           "LEGS": [
-            250023
+            250023,
+            260373
           ],
           "FEET": [
             244569,
             249334,
-            250026,
-            251210
+            250026
           ],
           "WRIST": [
             244576,
@@ -1187,14 +1184,16 @@
           ],
           "FINGER": [
             151311,
+            249920,
             251093,
+            251115,
             251217,
             251513
           ],
           "TRINKET": [
-            193701,
             249339,
             249343,
+            249344,
             250144,
             250256
           ],
@@ -1204,13 +1203,12 @@
             250019
           ],
           "MAINHAND": [
-            237847,
             249278,
             249302
           ]
         },
         "mythicplusUrl": "https://murlok.io/druid/guardian/m+",
-        "scrapedAt": "2026-05-06T14:15:55.427Z"
+        "scrapedAt": "2026-05-13T11:00:52.565Z"
       },
       "method": {
         "raid": {
@@ -1345,7 +1343,7 @@
         "raidUrl": "https://www.method.gg/guides/guardian-druid/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/guardian-druid/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/guardian-druid/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.542Z"
+        "scrapedAt": "2026-05-13T11:00:57.048Z"
       },
       "icyveins": {
         "raid": {},
@@ -1486,7 +1484,7 @@
           "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/guardian-druid-pve-tank-gear-best-in-slot#area_2",
           "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/guardian-druid-pve-tank-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.524Z"
+        "scrapedAt": "2026-05-13T11:01:01.952Z"
       }
     },
     "RESTORATION": {
@@ -1540,7 +1538,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/druid/restoration/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.820Z"
+        "scrapedAt": "2026-05-13T11:00:40.871Z"
       },
       "archon": {
         "raid": {
@@ -1567,9 +1565,9 @@
             250024
           ],
           "NECK": [
+            240950,
             266314,
             151309,
-            240950,
             251096
           ],
           "SHOULDER": [
@@ -1579,7 +1577,8 @@
             239656,
             249370,
             193712,
-            250019
+            250019,
+            251206
           ],
           "CHEST": [
             251216,
@@ -1588,8 +1587,7 @@
           ],
           "WRIST": [
             244576,
-            193714,
-            249644
+            193714
           ],
           "HANDS": [
             250025
@@ -1597,7 +1595,6 @@
           "WAIST": [
             244573,
             249374,
-            251166,
             249314
           ],
           "LEGS": [
@@ -1620,8 +1617,7 @@
             250256,
             249343,
             193718,
-            250144,
-            249809
+            250144
           ],
           "FINGER": [
             251093,
@@ -1635,6 +1631,7 @@
           "NECK": [
             251096,
             151309,
+            240950,
             266314
           ],
           "SHOULDER": [
@@ -1653,8 +1650,7 @@
           "WRIST": [
             244576,
             193714,
-            251103,
-            249644
+            251103
           ],
           "HANDS": [
             250025
@@ -1674,7 +1670,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/restoration/druid/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/restoration/druid/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.342Z"
+        "scrapedAt": "2026-05-13T11:00:44.881Z"
       },
       "murlok": {
         "raid": {},
@@ -1685,8 +1681,8 @@
           "NECK": [
             151309,
             240950,
-            251096,
-            266314
+            249368,
+            251096
           ],
           "SHOULDER": [
             250022
@@ -1707,6 +1703,8 @@
           ],
           "FEET": [
             244569,
+            249334,
+            250026,
             251210,
             260372
           ],
@@ -1732,16 +1730,16 @@
           ],
           "BACK": [
             239656,
-            249370,
-            250019
+            249370
           ],
           "MAINHAND": [
+            193707,
             245770,
             251201
           ]
         },
         "mythicplusUrl": "https://murlok.io/druid/restoration/m+",
-        "scrapedAt": "2026-05-06T14:15:55.435Z"
+        "scrapedAt": "2026-05-13T11:00:52.565Z"
       },
       "method": {
         "raid": {
@@ -1888,7 +1886,7 @@
         "raidUrl": "https://www.method.gg/guides/restoration-druid/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/restoration-druid/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/restoration-druid/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.550Z"
+        "scrapedAt": "2026-05-13T11:00:57.048Z"
       },
       "icyveins": {
         "raid": {},
@@ -2035,7 +2033,7 @@
           "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/restoration-druid-pve-healing-gear-best-in-slot#area_2",
           "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/restoration-druid-pve-healing-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.533Z"
+        "scrapedAt": "2026-05-13T11:01:01.952Z"
       }
     }
   }

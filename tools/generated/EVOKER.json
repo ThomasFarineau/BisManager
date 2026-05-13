@@ -52,7 +52,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/evoker/augmentation/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.821Z"
+        "scrapedAt": "2026-05-13T11:00:40.871Z"
       },
       "archon": {
         "raid": {
@@ -63,20 +63,20 @@
             249276
           ],
           "TRINKET": [
-            250256,
             250223,
-            249346,
+            250256,
             249343,
+            249346,
             249810,
-            264507,
-            249809
+            249809,
+            264507
           ],
           "FINGER": [
             251217,
             49812,
             240949,
-            251093,
-            249336
+            249336,
+            251093
           ],
           "HEAD": [
             249997,
@@ -124,16 +124,16 @@
           "OFFHAND": [],
           "TRINKET": [
             250256,
-            264507,
             250223,
             249343,
+            264507,
             250144
           ],
           "FINGER": [
             49812,
             251217,
             251093,
-            193708
+            240949
           ],
           "HEAD": [
             249997,
@@ -142,8 +142,7 @@
           ],
           "NECK": [
             50228,
-            249337,
-            265739
+            249337
           ],
           "SHOULDER": [
             249995
@@ -170,21 +169,19 @@
           ],
           "FEET": [
             249999,
-            193715,
-            249646
+            193715
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/augmentation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/augmentation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.343Z"
+        "scrapedAt": "2026-05-13T11:00:44.881Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
             49824,
-            249317,
-            249997
+            249317
           ],
           "NECK": [
             50228,
@@ -215,13 +212,16 @@
           ],
           "FINGER": [
             49812,
+            249336,
+            249920,
             251217
           ],
           "TRINKET": [
             249343,
             249346,
-            249809,
+            249808,
             249810,
+            250223,
             250256
           ],
           "BACK": [
@@ -237,7 +237,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/evoker/augmentation/m+",
-        "scrapedAt": "2026-05-06T14:15:55.435Z"
+        "scrapedAt": "2026-05-13T11:00:52.565Z"
       },
       "method": {
         "raid": {
@@ -381,7 +381,7 @@
         "raidUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/augmentation-evoker/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.550Z"
+        "scrapedAt": "2026-05-13T11:00:57.049Z"
       },
       "icyveins": {
         "raid": {},
@@ -516,7 +516,7 @@
           "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/augmentation-evoker-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/augmentation-evoker-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.534Z"
+        "scrapedAt": "2026-05-13T11:01:01.953Z"
       }
     },
     "DEVASTATION": {
@@ -570,7 +570,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/evoker/devastation/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.827Z"
+        "scrapedAt": "2026-05-13T11:00:40.872Z"
       },
       "archon": {
         "raid": {
@@ -583,9 +583,9 @@
           "TRINKET": [
             249346,
             249343,
-            264507,
             249809,
             250223,
+            264507,
             250256,
             250144
           ],
@@ -593,8 +593,8 @@
             251217,
             49812,
             251093,
-            240949,
             249336,
+            240949,
             193708
           ],
           "HEAD": [
@@ -621,8 +621,8 @@
           ],
           "HANDS": [
             249998,
-            249325,
             244583,
+            249325,
             249647
           ],
           "WAIST": [
@@ -647,12 +647,11 @@
           "OFFHAND": [],
           "TRINKET": [
             250256,
-            249346,
-            264507,
             249343,
+            249346,
             250144,
             250223,
-            249809
+            264507
           ],
           "FINGER": [
             251217,
@@ -682,11 +681,11 @@
             244584
           ],
           "HANDS": [
-            249998,
-            249647
+            249998
           ],
           "WAIST": [
             49810,
+            244581,
             249994
           ],
           "LEGS": [
@@ -694,13 +693,12 @@
           ],
           "FEET": [
             249999,
-            193715,
-            249646
+            193715
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/devastation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/devastation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.350Z"
+        "scrapedAt": "2026-05-13T11:00:44.882Z"
       },
       "murlok": {
         "raid": {},
@@ -712,7 +710,8 @@
           ],
           "NECK": [
             50228,
-            249337
+            249337,
+            249368
           ],
           "SHOULDER": [
             249995
@@ -722,21 +721,23 @@
           ],
           "WAIST": [
             49810,
-            244581,
-            249994
+            249371,
+            249994,
+            260375
           ],
           "LEGS": [
-            249996,
-            251215
+            249996
           ],
           "FEET": [
             193715,
             249999
           ],
           "WRIST": [
-            244584
+            244584,
+            249304
           ],
           "HANDS": [
+            244583,
             249998
           ],
           "FINGER": [
@@ -755,14 +756,17 @@
             260312
           ],
           "MAINHAND": [
-            245770
+            237849,
+            245770,
+            251178
           ],
           "OFFHAND": [
-            249276
+            249276,
+            249922
           ]
         },
         "mythicplusUrl": "https://murlok.io/evoker/devastation/m+",
-        "scrapedAt": "2026-05-06T14:15:55.446Z"
+        "scrapedAt": "2026-05-13T11:00:52.566Z"
       },
       "method": {
         "raid": {
@@ -906,7 +910,7 @@
         "raidUrl": "https://www.method.gg/guides/devastation-evoker/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/devastation-evoker/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/devastation-evoker/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.562Z"
+        "scrapedAt": "2026-05-13T11:00:57.049Z"
       },
       "icyveins": {
         "raid": {},
@@ -1053,7 +1057,7 @@
           "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/devastation-evoker-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/devastation-evoker-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.546Z"
+        "scrapedAt": "2026-05-13T11:01:01.953Z"
       }
     },
     "PRESERVATION": {
@@ -1104,19 +1108,18 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/evoker/preservation/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.837Z"
+        "scrapedAt": "2026-05-13T11:00:40.872Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            245770,
-            237849
+            245770
           ],
           "OFFHAND": [],
           "TRINKET": [
             249343,
-            264507,
             249809,
+            264507,
             249346,
             250256
           ],
@@ -1124,20 +1127,20 @@
             251115,
             249369,
             193708,
-            251093,
             240949,
+            251093,
             251217,
-            49812,
-            249336
+            249336,
+            49812
           ],
           "HEAD": [
             249997
           ],
           "NECK": [
-            266314,
-            50228,
+            249337,
             240950,
-            249337
+            50228,
+            266314
           ],
           "SHOULDER": [
             249995
@@ -1161,15 +1164,15 @@
           ],
           "WAIST": [
             249371,
-            244611,
-            249994
+            249994,
+            244611
           ],
           "LEGS": [
             249996
           ],
           "FEET": [
-            244610,
             249999,
+            244610,
             244577,
             249320
           ]
@@ -1177,7 +1180,7 @@
         "mythicplus": {
           "MAINHAND": [
             245770,
-            237849
+            251201
           ],
           "OFFHAND": [],
           "TRINKET": [
@@ -1187,7 +1190,6 @@
             193718,
             249809,
             250144,
-            249808,
             249346
           ],
           "FINGER": [
@@ -1195,8 +1197,7 @@
             251217,
             251115,
             49812,
-            193708,
-            249369
+            193708
           ],
           "HEAD": [
             249997
@@ -1210,8 +1211,7 @@
           "BACK": [
             249992,
             239656,
-            260312,
-            258575
+            260312
           ],
           "CHEST": [
             250000
@@ -1219,8 +1219,8 @@
           "WRIST": [
             244584,
             251079,
-            249304,
-            251209
+            251209,
+            249304
           ],
           "HANDS": [
             249998,
@@ -1237,13 +1237,12 @@
           "FEET": [
             244610,
             249999,
-            251084,
-            193715
+            251084
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/preservation/evoker/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/preservation/evoker/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.358Z"
+        "scrapedAt": "2026-05-13T11:00:44.882Z"
       },
       "murlok": {
         "raid": {},
@@ -1253,9 +1252,7 @@
           ],
           "NECK": [
             50228,
-            240950,
-            249337,
-            266314
+            240950
           ],
           "SHOULDER": [
             249995
@@ -1264,7 +1261,6 @@
             250000
           ],
           "WAIST": [
-            244581,
             244611,
             249371,
             249994
@@ -1273,9 +1269,9 @@
             249996
           ],
           "FEET": [
+            244577,
             244610,
-            249999,
-            251084
+            249999
           ],
           "WRIST": [
             244584,
@@ -1288,30 +1284,35 @@
           ],
           "FINGER": [
             49812,
+            193708,
             249369,
             251093,
             251115,
             251217
           ],
           "TRINKET": [
+            193718,
             249343,
             249346,
             249808,
             249809,
-            250144,
             250256
           ],
           "BACK": [
+            249370,
             249992
           ],
           "MAINHAND": [
             237849,
             245770,
             251201
+          ],
+          "OFFHAND": [
+            249922
           ]
         },
         "mythicplusUrl": "https://murlok.io/evoker/preservation/m+",
-        "scrapedAt": "2026-05-06T14:15:55.458Z"
+        "scrapedAt": "2026-05-13T11:00:52.566Z"
       },
       "method": {
         "raid": {
@@ -1459,7 +1460,7 @@
         "raidUrl": "https://www.method.gg/guides/preservation-evoker/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/preservation-evoker/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/preservation-evoker/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.574Z"
+        "scrapedAt": "2026-05-13T11:00:57.049Z"
       },
       "icyveins": {
         "raid": {},
@@ -1600,7 +1601,7 @@
           "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/preservation-evoker-pve-healing-gear-best-in-slot#area_2",
           "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/preservation-evoker-pve-healing-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.559Z"
+        "scrapedAt": "2026-05-13T11:01:01.953Z"
       }
     }
   }

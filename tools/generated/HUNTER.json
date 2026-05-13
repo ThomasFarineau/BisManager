@@ -49,13 +49,14 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.837Z"
+        "scrapedAt": "2026-05-13T11:00:40.873Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
             249279,
             265337,
+            251174,
             268477
           ],
           "TRINKET": [
@@ -68,10 +69,9 @@
             193708,
             251093,
             251217,
-            251115,
             240949,
-            249369,
-            249336
+            251115,
+            249369
           ],
           "HEAD": [
             249988
@@ -84,10 +84,10 @@
           ],
           "SHOULDER": [
             193704,
-            151323,
             249318,
-            251097,
-            249986
+            151323,
+            249986,
+            251097
           ],
           "BACK": [
             258575,
@@ -128,9 +128,7 @@
           "TRINKET": [
             193701,
             252420,
-            249343,
-            264507,
-            249806
+            249343
           ],
           "FINGER": [
             193708,
@@ -147,8 +145,8 @@
             266314
           ],
           "SHOULDER": [
-            249986,
             193704,
+            249986,
             151323,
             251097
           ],
@@ -161,28 +159,28 @@
           "WRIST": [
             251079,
             151321,
-            249304,
             244584,
+            249304,
             251209
           ],
           "HANDS": [
             249989
           ],
           "WAIST": [
-            244611
+            244611,
+            244581
           ],
           "LEGS": [
             249987
           ],
           "FEET": [
             244610,
-            249990,
-            251084
+            249990
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/beast-mastery/hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/beast-mastery/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.359Z"
+        "scrapedAt": "2026-05-13T11:00:44.882Z"
       },
       "murlok": {
         "raid": {},
@@ -192,6 +190,7 @@
           ],
           "NECK": [
             240950,
+            249337,
             250247,
             266314
           ],
@@ -214,10 +213,8 @@
           ],
           "WRIST": [
             151321,
-            244584,
             249304,
-            251079,
-            251209
+            251079
           ],
           "HANDS": [
             249989
@@ -234,18 +231,19 @@
           "TRINKET": [
             193701,
             249343,
-            249806,
-            252420
+            249806
           ],
           "BACK": [
+            239656,
             258575
           ],
           "MAINHAND": [
-            249279
+            249279,
+            265337
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/beast-mastery/m+",
-        "scrapedAt": "2026-05-06T14:15:55.458Z"
+        "scrapedAt": "2026-05-13T11:00:52.566Z"
       },
       "method": {
         "raid": {
@@ -384,7 +382,7 @@
         "raidUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.575Z"
+        "scrapedAt": "2026-05-13T11:00:57.050Z"
       },
       "icyveins": {
         "raid": {},
@@ -525,7 +523,7 @@
           "Icy Veins - Raid Gear BiS List for Season 1": "https://www.icy-veins.com/wow/beast-mastery-hunter-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Mythic+ Gear BiS List for Season 1": "https://www.icy-veins.com/wow/beast-mastery-hunter-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.560Z"
+        "scrapedAt": "2026-05-13T11:01:01.954Z"
       }
     },
     "MARKSMANSHIP": {
@@ -576,7 +574,7 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.845Z"
+        "scrapedAt": "2026-05-13T11:00:40.873Z"
       },
       "archon": {
         "raid": {
@@ -594,7 +592,8 @@
             193708,
             249336,
             240949,
-            251217
+            251217,
+            249369
           ],
           "HEAD": [
             249988
@@ -620,7 +619,6 @@
           "WRIST": [
             249304,
             244584,
-            151321,
             251079
           ],
           "HANDS": [
@@ -628,7 +626,8 @@
           ],
           "WAIST": [
             244611,
-            249985
+            249985,
+            249371
           ],
           "LEGS": [
             249987
@@ -641,21 +640,21 @@
         "mythicplus": {
           "MAINHAND": [
             265337,
-            249279,
-            251095
+            258412,
+            251095,
+            249279
           ],
           "TRINKET": [
             193701,
             252420,
-            264507,
             260235,
             249343
           ],
           "FINGER": [
             193708,
             251217,
-            249336,
             251093,
+            249336,
             49812
           ],
           "HEAD": [
@@ -693,12 +692,13 @@
             249987
           ],
           "FEET": [
-            244610
+            244610,
+            249990
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/marksmanship/hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/marksmanship/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.364Z"
+        "scrapedAt": "2026-05-13T11:00:44.883Z"
       },
       "murlok": {
         "raid": {},
@@ -708,13 +708,13 @@
           ],
           "NECK": [
             50228,
-            240950,
-            249337
+            240950
           ],
           "SHOULDER": [
             151323,
             193704,
-            249318
+            249318,
+            251097
           ],
           "CHEST": [
             249991
@@ -761,7 +761,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/marksmanship/m+",
-        "scrapedAt": "2026-05-06T14:15:55.467Z"
+        "scrapedAt": "2026-05-13T11:00:52.567Z"
       },
       "method": {
         "raid": {
@@ -906,7 +906,7 @@
         "raidUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.583Z"
+        "scrapedAt": "2026-05-13T11:00:57.050Z"
       },
       "icyveins": {
         "raid": {},
@@ -1047,7 +1047,7 @@
           "Icy Veins - Raid Gear BiS List for Season 1": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Mythic+ Gear BiS List for Season 1": "https://www.icy-veins.com/wow/marksmanship-hunter-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.569Z"
+        "scrapedAt": "2026-05-13T11:01:01.954Z"
       }
     },
     "SURVIVAL": {
@@ -1102,20 +1102,20 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/survival/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.855Z"
+        "scrapedAt": "2026-05-13T11:00:40.874Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
             249925,
             237837,
-            258436
+            258436,
+            251212
           ],
           "OFFHAND": [
             237837,
             249925,
-            258436,
-            249284
+            258436
           ],
           "TRINKET": [
             193701,
@@ -1125,8 +1125,8 @@
           ],
           "FINGER": [
             251093,
-            251217,
             193708,
+            251217,
             251115,
             240949,
             249369
@@ -1135,8 +1135,8 @@
             249988
           ],
           "NECK": [
-            266314,
             240950,
+            266314,
             50228
           ],
           "SHOULDER": [
@@ -1180,7 +1180,8 @@
           "MAINHAND": [
             237837,
             249925,
-            258436
+            258436,
+            251212
           ],
           "OFFHAND": [
             237837,
@@ -1191,9 +1192,7 @@
             193701,
             249343,
             252420,
-            249806,
-            250256,
-            264507
+            249806
           ],
           "FINGER": [
             251093,
@@ -1206,13 +1205,13 @@
             249988
           ],
           "NECK": [
-            266314,
             240950,
+            266314,
             50228
           ],
           "SHOULDER": [
-            249986,
             193704,
+            249986,
             151323
           ],
           "BACK": [
@@ -1226,8 +1225,8 @@
             249304,
             251079,
             151321,
-            244584,
-            251209
+            251209,
+            244584
           ],
           "HANDS": [
             249989
@@ -1240,12 +1239,13 @@
           ],
           "FEET": [
             244610,
-            244577
+            244577,
+            249990
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/survival/hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/survival/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.369Z"
+        "scrapedAt": "2026-05-13T11:00:44.883Z"
       },
       "murlok": {
         "raid": {},
@@ -1254,6 +1254,7 @@
             249988
           ],
           "NECK": [
+            50228,
             240950,
             249337,
             250247,
@@ -1300,21 +1301,21 @@
             249806
           ],
           "BACK": [
-            239656,
+            249370,
             251206,
             258575
           ],
           "MAINHAND": [
-            249925
+            249925,
+            251212
           ],
           "OFFHAND": [
             237837,
-            249925,
-            251212
+            249925
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/survival/m+",
-        "scrapedAt": "2026-05-06T14:15:55.476Z"
+        "scrapedAt": "2026-05-13T11:00:52.567Z"
       },
       "method": {
         "raid": {
@@ -1449,7 +1450,7 @@
         "raidUrl": "https://www.method.gg/guides/survival-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/survival-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/survival-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.591Z"
+        "scrapedAt": "2026-05-13T11:00:57.050Z"
       },
       "icyveins": {
         "raid": {},
@@ -1596,7 +1597,7 @@
           "Icy Veins - Raid Gear BiS List for Season 1": "https://www.icy-veins.com/wow/survival-hunter-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Mythic+ Gear BiS List for Season 1": "https://www.icy-veins.com/wow/survival-hunter-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.577Z"
+        "scrapedAt": "2026-05-13T11:01:01.954Z"
       }
     }
   }

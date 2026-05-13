@@ -52,39 +52,39 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.933Z"
+        "scrapedAt": "2026-05-13T11:00:40.882Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
             245770,
-            237849
+            251083
           ],
           "OFFHAND": [],
           "TRINKET": [
             250144,
             249343,
             249346,
-            249809,
-            250256,
-            264507
+            249809
           ],
           "FINGER": [
             193708,
             251217,
             251093,
+            240949,
             251115,
             249369,
-            240949
+            249919,
+            249336
           ],
           "HEAD": [
             249979
           ],
           "NECK": [
-            266314,
-            50228,
             240950,
-            249337
+            249337,
+            266314,
+            50228
           ],
           "SHOULDER": [
             249977
@@ -99,8 +99,8 @@
           ],
           "WRIST": [
             249304,
-            251079,
-            244584
+            244584,
+            251079
           ],
           "HANDS": [
             249980
@@ -127,13 +127,14 @@
             245770,
             251083
           ],
-          "OFFHAND": [],
+          "OFFHAND": [
+            251105
+          ],
           "TRINKET": [
             250144,
             249343,
             250256,
-            264507,
-            249346
+            264507
           ],
           "FINGER": [
             193708,
@@ -162,8 +163,8 @@
           ],
           "WRIST": [
             251079,
-            249304,
             244584,
+            249304,
             151321
           ],
           "HANDS": [
@@ -185,7 +186,7 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/elemental/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/elemental/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.427Z"
+        "scrapedAt": "2026-05-13T11:00:44.888Z"
       },
       "murlok": {
         "raid": {},
@@ -194,6 +195,7 @@
             249979
           ],
           "NECK": [
+            50228,
             240950,
             250247,
             266314
@@ -216,11 +218,11 @@
           ],
           "FEET": [
             244610,
+            249320,
             249981,
             251084
           ],
           "WRIST": [
-            151321,
             244584,
             249304,
             251079
@@ -233,10 +235,10 @@
             240949,
             249336,
             249369,
+            249919,
             251093,
             251115,
-            251217,
-            251513
+            251217
           ],
           "TRINKET": [
             249343,
@@ -245,8 +247,8 @@
             250144
           ],
           "BACK": [
-            249974,
-            258575
+            239656,
+            249974
           ],
           "MAINHAND": [
             245770,
@@ -258,7 +260,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/shaman/elemental/m+",
-        "scrapedAt": "2026-05-06T14:15:55.566Z"
+        "scrapedAt": "2026-05-13T11:00:52.571Z"
       },
       "method": {
         "raid": {},
@@ -312,7 +314,7 @@
         "raidUrl": "https://www.method.gg/guides/elemental-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/elemental-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/elemental-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.679Z"
+        "scrapedAt": "2026-05-13T11:00:57.055Z"
       },
       "icyveins": {
         "raid": {},
@@ -464,7 +466,7 @@
           "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.652Z"
+        "scrapedAt": "2026-05-13T11:01:01.959Z"
       }
     },
     "ENHANCEMENT": {
@@ -505,15 +507,15 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.939Z"
+        "scrapedAt": "2026-05-13T11:00:40.882Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
             237850,
             249287,
-            249298,
-            258438
+            258438,
+            249298
           ],
           "OFFHAND": [
             237850,
@@ -528,7 +530,8 @@
             251115,
             251217,
             249369,
-            240949
+            240949,
+            193708
           ],
           "HEAD": [
             249979
@@ -609,18 +612,18 @@
           ],
           "BACK": [
             239656,
-            258575
+            258575,
+            249974
           ],
           "CHEST": [
             249982
           ],
           "WRIST": [
             251079,
-            249304,
             244584,
+            249304,
             251209,
-            151321,
-            249652
+            151321
           ],
           "HANDS": [
             249980
@@ -636,13 +639,12 @@
           ],
           "FEET": [
             249981,
-            151320,
-            251084
+            151320
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/enhancement/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/enhancement/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.432Z"
+        "scrapedAt": "2026-05-13T11:00:44.888Z"
       },
       "murlok": {
         "raid": {},
@@ -652,6 +654,7 @@
           ],
           "NECK": [
             240950,
+            249368,
             250247,
             266314
           ],
@@ -667,24 +670,23 @@
           ],
           "LEGS": [
             244582,
-            249324,
             249978,
             251215
           ],
           "FEET": [
-            151320,
             249981
           ],
           "WRIST": [
             244584,
             249304,
-            251079,
-            251209
+            251079
           ],
           "HANDS": [
             249980
           ],
           "FINGER": [
+            240949,
+            249369,
             251093,
             251115,
             251217
@@ -705,13 +707,11 @@
             258438
           ],
           "OFFHAND": [
-            237850,
-            249287,
-            258438
+            237850
           ]
         },
         "mythicplusUrl": "https://murlok.io/shaman/enhancement/m+",
-        "scrapedAt": "2026-05-06T14:15:55.574Z"
+        "scrapedAt": "2026-05-13T11:00:52.571Z"
       },
       "method": {
         "raid": {
@@ -855,7 +855,7 @@
         "raidUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.688Z"
+        "scrapedAt": "2026-05-13T11:00:57.055Z"
       },
       "icyveins": {
         "raid": {},
@@ -1006,7 +1006,7 @@
           "Icy Veins - Raid Best-in-Slot": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-gear-best-in-slot#area_2",
           "Icy Veins - Mythic+ Best-in-Slot": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.660Z"
+        "scrapedAt": "2026-05-13T11:01:01.960Z"
       }
     },
     "RESTORATION": {
@@ -1049,7 +1049,7 @@
             193708
           ],
           "TRINKET": [
-            249811,
+            249343,
             249809
           ],
           "MAINHAND": [
@@ -1060,32 +1060,31 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-06T14:15:41.946Z"
+        "scrapedAt": "2026-05-13T11:00:40.883Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            245770,
             249293,
-            237849
+            245770
           ],
           "OFFHAND": [
             249275,
             237831
           ],
           "TRINKET": [
-            264507,
             249343,
+            264507,
             249809,
             250256,
             249811
           ],
           "FINGER": [
             249336,
-            251217,
             151308,
-            193708,
+            251217,
             49812,
+            193708,
             240949
           ],
           "HEAD": [
@@ -1119,8 +1118,8 @@
             249980
           ],
           "WAIST": [
-            249303,
             244581,
+            249303,
             49810,
             249371
           ],
@@ -1129,7 +1128,8 @@
           ],
           "FEET": [
             249320,
-            193715
+            193715,
+            244577
           ]
         },
         "mythicplus": {
@@ -1144,15 +1144,15 @@
           ],
           "TRINKET": [
             264507,
-            250256,
             249343,
+            250256,
             193718,
             250144
           ],
           "FINGER": [
             151308,
-            251217,
             49812,
+            251217,
             193708,
             151311,
             249336
@@ -1163,15 +1163,16 @@
           ],
           "NECK": [
             50228,
-            251096,
-            240950
+            240950,
+            251096
           ],
           "SHOULDER": [
             249977
           ],
           "BACK": [
             49823,
-            251161
+            251161,
+            239656
           ],
           "CHEST": [
             249982
@@ -1200,12 +1201,14 @@
         },
         "raidUrl": "https://www.archon.gg/wow/builds/restoration/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/restoration/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-06T14:15:45.438Z"
+        "scrapedAt": "2026-05-13T11:00:44.888Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
+            49824,
+            244579,
             249317,
             249979
           ],
@@ -1221,6 +1224,7 @@
             249982
           ],
           "WAIST": [
+            49810,
             244581,
             249303,
             260375
@@ -1230,7 +1234,6 @@
           ],
           "FEET": [
             244577,
-            244610,
             249320
           ],
           "WRIST": [
@@ -1244,7 +1247,6 @@
             49812,
             151308,
             151311,
-            193708,
             240949,
             249336,
             251217
@@ -1254,7 +1256,7 @@
             249343,
             249808,
             250246,
-            250256,
+            252411,
             264507
           ],
           "BACK": [
@@ -1263,6 +1265,7 @@
             249335
           ],
           "MAINHAND": [
+            50227,
             249293
           ],
           "OFFHAND": [
@@ -1271,7 +1274,7 @@
           ]
         },
         "mythicplusUrl": "https://murlok.io/shaman/restoration/m+",
-        "scrapedAt": "2026-05-06T14:15:55.584Z"
+        "scrapedAt": "2026-05-13T11:00:52.572Z"
       },
       "method": {
         "raid": {
@@ -1414,7 +1417,7 @@
         "raidUrl": "https://www.method.gg/guides/restoration-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/restoration-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/restoration-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-06T14:15:59.696Z"
+        "scrapedAt": "2026-05-13T11:00:57.055Z"
       },
       "icyveins": {
         "raid": {},
@@ -1564,7 +1567,7 @@
           "Icy Veins - Mythic+ only BiS List": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-gear-best-in-slot#area_2",
           "Icy Veins - Dreamrift, Voidspire, and March on Quel'Danas BiS List": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-gear-best-in-slot#area_3"
         },
-        "scrapedAt": "2026-05-06T14:16:03.667Z"
+        "scrapedAt": "2026-05-13T11:01:01.960Z"
       }
     }
   }
