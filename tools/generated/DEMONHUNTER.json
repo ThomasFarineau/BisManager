@@ -13,10 +13,10 @@
             249280
           ],
           "HEAD": [
-            251109
+            250033
           ],
           "NECK": [
-            250247
+            268291
           ],
           "SHOULDER": [
             250031
@@ -34,7 +34,7 @@
             250034
           ],
           "WAIST": [
-            251082
+            268286
           ],
           "LEGS": [
             250032
@@ -52,108 +52,109 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/demon-hunter/havoc/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-13T11:00:40.866Z"
+        "scrapedAt": "2026-07-08T10:49:57.057Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            237840,
-            249280
-          ],
-          "OFFHAND": [
-            237840,
             249280,
-            260408
-          ],
-          "TRINKET": [
-            193701,
-            249343,
-            252420
-          ],
-          "FINGER": [
-            193708,
-            240949,
-            251217,
-            249919,
-            249336,
-            249622
-          ],
-          "HEAD": [
-            250033,
-            249306,
-            251109
-          ],
-          "NECK": [
-            240950,
-            50228,
-            249337
-          ],
-          "SHOULDER": [
-            250031
-          ],
-          "BACK": [
-            258575,
-            239656
-          ],
-          "CHEST": [
-            250036
-          ],
-          "WRIST": [
-            244576,
-            249327
-          ],
-          "HANDS": [
-            250034
-          ],
-          "WAIST": [
-            251082,
-            244573,
-            249374
-          ],
-          "LEGS": [
-            250032,
-            244574
-          ],
-          "FEET": [
-            250035,
-            258577,
-            249638
-          ]
-        },
-        "mythicplus": {
-          "MAINHAND": [
-            237840
+            251175,
+            260408,
+            193717
           ],
           "OFFHAND": [
             237840,
             249280
           ],
           "TRINKET": [
-            193701,
             249343,
-            252420
+            193701
           ],
           "FINGER": [
             193708,
-            251217,
             240949,
-            49812,
-            251093
+            249919,
+            251217,
+            249336
           ],
           "HEAD": [
-            250033,
-            251109
+            250033
           ],
           "NECK": [
-            50228,
+            268291,
             240950
           ],
           "SHOULDER": [
             250031
           ],
           "BACK": [
+            239656,
             258575,
-            239656
+            250028
+          ],
+          "CHEST": [
+            250036
+          ],
+          "WRIST": [
+            244576,
+            250029,
+            249327
+          ],
+          "HANDS": [
+            250034
+          ],
+          "WAIST": [
+            268286,
+            244573,
+            251082
+          ],
+          "LEGS": [
+            250032,
+            244574,
+            260373
+          ],
+          "FEET": [
+            250035,
+            258577
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            251175,
+            237840,
+            193717
+          ],
+          "OFFHAND": [
+            237840,
+            251175
+          ],
+          "TRINKET": [
+            193701,
+            249343,
+            252420
+          ],
+          "FINGER": [
+            193708,
+            240949,
+            251217,
+            49812
+          ],
+          "HEAD": [
+            250033,
+            251109
+          ],
+          "NECK": [
+            240950,
+            50228,
+            268291
+          ],
+          "SHOULDER": [
+            250031
+          ],
+          "BACK": [
+            258575,
+            239656,
+            250028
           ],
           "CHEST": [
             250036
@@ -161,6 +162,7 @@
           "WRIST": [
             244576,
             193714,
+            250029,
             50264
           ],
           "HANDS": [
@@ -168,32 +170,33 @@
           ],
           "WAIST": [
             251082,
+            268286,
             244573,
-            49806
+            49806,
+            250030
           ],
           "LEGS": [
-            250032
+            250032,
+            244574
           ],
           "FEET": [
             258577,
-            250035,
-            249638
+            250035
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/havoc/demon-hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/havoc/demon-hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-13T11:00:44.879Z"
+        "scrapedAt": "2026-07-08T10:50:00.989Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
-            249306,
             250033
           ],
           "NECK": [
-            50228,
-            240950
+            240950,
+            268291
           ],
           "SHOULDER": [
             250031
@@ -202,9 +205,7 @@
             250036
           ],
           "WAIST": [
-            244573,
-            250030,
-            251082
+            268286
           ],
           "LEGS": [
             244574,
@@ -216,9 +217,8 @@
             258577
           ],
           "WRIST": [
-            193714,
             244576,
-            249327
+            250029
           ],
           "HANDS": [
             250034
@@ -226,9 +226,7 @@
           "FINGER": [
             193708,
             240949,
-            249336,
-            249919,
-            251217
+            249919
           ],
           "TRINKET": [
             193701,
@@ -239,17 +237,18 @@
             258575
           ],
           "MAINHAND": [
-            237840,
             249280,
-            251175
+            251175,
+            260408
           ],
           "OFFHAND": [
             237840,
-            249280
+            249280,
+            251175
           ]
         },
         "mythicplusUrl": "https://murlok.io/demon-hunter/havoc/m+",
-        "scrapedAt": "2026-05-13T11:00:52.563Z"
+        "scrapedAt": "2026-07-08T10:50:26.109Z"
       },
       "method": {
         "raid": {
@@ -346,7 +345,7 @@
         },
         "overall": {
           "HEAD": [
-            251109
+            250033
           ],
           "NECK": [
             250247
@@ -355,7 +354,7 @@
             250031
           ],
           "BACK": [
-            258575
+            249370
           ],
           "CHEST": [
             250036
@@ -368,7 +367,7 @@
             250034
           ],
           "WAIST": [
-            251082
+            268286
           ],
           "LEGS": [
             250032
@@ -395,155 +394,14 @@
         "raidUrl": "https://www.method.gg/guides/havoc-demon-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/havoc-demon-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/havoc-demon-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-13T11:00:57.046Z"
+        "scrapedAt": "2026-07-08T10:50:31.665Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
-        "presets": {
-          "Icy Veins - Overall Best-in-Slot": {
-            "MAINHAND": [
-              260408
-            ],
-            "OFFHAND": [
-              251175
-            ],
-            "HEAD": [
-              251109
-            ],
-            "NECK": [
-              250247
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              239656
-            ],
-            "CHEST": [
-              250036
-            ],
-            "WRIST": [
-              244576
-            ],
-            "HANDS": [
-              250034
-            ],
-            "WAIST": [
-              251082
-            ],
-            "LEGS": [
-              250032
-            ],
-            "FEET": [
-              258577
-            ],
-            "FINGER": [
-              249919,
-              193708
-            ],
-            "TRINKET": [
-              249343,
-              193701,
-              260235
-            ]
-          },
-          "Icy Veins - Raid Best-in-Slot": {
-            "MAINHAND": [
-              260408
-            ],
-            "OFFHAND": [
-              249280
-            ],
-            "HEAD": [
-              249306
-            ],
-            "NECK": [
-              250247
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              239656
-            ],
-            "CHEST": [
-              250036
-            ],
-            "WRIST": [
-              244576
-            ],
-            "HANDS": [
-              250034
-            ],
-            "WAIST": [
-              249314
-            ],
-            "LEGS": [
-              250032
-            ],
-            "FEET": [
-              249382
-            ],
-            "FINGER": [
-              249919,
-              249336
-            ],
-            "TRINKET": [
-              249343,
-              260235
-            ]
-          },
-          "Icy Veins - Mythic + Best-in-Slot": {
-            "MAINHAND": [
-              251175
-            ],
-            "HEAD": [
-              251109
-            ],
-            "NECK": [
-              50228
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              239656
-            ],
-            "CHEST": [
-              250036
-            ],
-            "WRIST": [
-              244576
-            ],
-            "HANDS": [
-              250034
-            ],
-            "WAIST": [
-              251082
-            ],
-            "LEGS": [
-              250032
-            ],
-            "FEET": [
-              258577
-            ],
-            "FINGER": [
-              193708,
-              251217
-            ],
-            "TRINKET": [
-              193701,
-              252420
-            ]
-          }
-        },
-        "presetUrls": {
-          "Icy Veins - Overall Best-in-Slot": "https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-gear-best-in-slot#area_1",
-          "Icy Veins - Raid Best-in-Slot": "https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-gear-best-in-slot#area_2",
-          "Icy Veins - Mythic + Best-in-Slot": "https://www.icy-veins.com/wow/havoc-demon-hunter-pve-dps-gear-best-in-slot#area_3"
-        },
-        "scrapedAt": "2026-05-13T11:01:01.950Z"
+        "presets": {},
+        "presetUrls": {},
+        "scrapedAt": "2026-07-08T10:50:37.480Z"
       }
     },
     "VENGEANCE": {
@@ -559,6 +417,7 @@
             237840
           ],
           "HEAD": [
+            268283,
             250033
           ],
           "NECK": [
@@ -580,7 +439,8 @@
             250034
           ],
           "WAIST": [
-            49806
+            268286,
+            250030
           ],
           "LEGS": [
             250032
@@ -589,23 +449,24 @@
             251210
           ],
           "FINGER": [
-            251093,
             249920,
-            251513
+            268290
           ],
           "TRINKET": [
             249343,
-            249344
+            268292
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/demon-hunter/vengeance/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-13T11:00:40.867Z"
+        "scrapedAt": "2026-07-08T10:49:57.057Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
+            249298,
             237840,
-            249298
+            193717,
+            249280
           ],
           "OFFHAND": [
             237840,
@@ -613,34 +474,35 @@
           ],
           "TRINKET": [
             249343,
+            268292,
             250256,
-            252420,
             249344,
-            249339
+            252420
           ],
           "FINGER": [
             251217,
+            268290,
             251093,
             49812,
-            251513,
             151311,
             240949
           ],
           "HEAD": [
-            250033
+            250033,
+            268283
           ],
           "NECK": [
-            151309,
+            268291,
             50228,
-            251096,
-            240950
+            249337,
+            151309
           ],
           "SHOULDER": [
             250031
           ],
           "BACK": [
-            239656,
-            250028
+            250028,
+            239656
           ],
           "CHEST": [
             250036,
@@ -655,10 +517,9 @@
             250034
           ],
           "WAIST": [
-            249374,
             250030,
-            244573,
-            49806
+            249374,
+            268286
           ],
           "LEGS": [
             250032
@@ -666,29 +527,31 @@
           "FEET": [
             249334,
             251210,
-            244569,
-            250035
+            250035,
+            244569
           ]
         },
         "mythicplus": {
           "MAINHAND": [
-            237840
+            237840,
+            193717
           ],
           "OFFHAND": [
             237840
           ],
           "TRINKET": [
             250256,
-            252420,
             249343,
-            250144
+            252420,
+            250144,
+            268292
           ],
           "FINGER": [
             251217,
             251093,
             49812,
             151311,
-            251513
+            268290
           ],
           "HEAD": [
             250033
@@ -702,9 +565,8 @@
             250031
           ],
           "BACK": [
-            239656,
             250028,
-            193712,
+            239656,
             260312
           ],
           "CHEST": [
@@ -712,8 +574,8 @@
             151313
           ],
           "WRIST": [
-            244576,
             50264,
+            244576,
             193714,
             251103
           ],
@@ -721,35 +583,34 @@
             250034
           ],
           "WAIST": [
-            49806,
-            244573,
             250030,
-            251166
+            49806
           ],
           "LEGS": [
             250032
           ],
           "FEET": [
             251210,
-            244569,
             250035,
             258577
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/vengeance/demon-hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/vengeance/demon-hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-13T11:00:44.879Z"
+        "scrapedAt": "2026-07-08T10:50:00.989Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
-            250033
+            250033,
+            268283
           ],
           "NECK": [
             50228,
             151309,
-            251096
+            251096,
+            268291
           ],
           "SHOULDER": [
             250031
@@ -759,10 +620,8 @@
             250036
           ],
           "WAIST": [
-            49806,
-            249374,
             250030,
-            251166
+            268286
           ],
           "LEGS": [
             250032
@@ -784,39 +643,37 @@
           "FINGER": [
             49812,
             151311,
-            251093,
+            240949,
             251217,
-            251513
+            268290
           ],
           "TRINKET": [
             249343,
-            249344,
             250256,
-            252420
+            252420,
+            268292
           ],
           "BACK": [
-            193712,
             239656,
-            250028,
-            260312
+            250028
           ],
           "MAINHAND": [
+            193717,
             237840,
             249298,
-            251122
+            258438
           ],
           "OFFHAND": [
-            237839,
             237840
           ]
         },
         "mythicplusUrl": "https://murlok.io/demon-hunter/vengeance/m+",
-        "scrapedAt": "2026-05-13T11:00:52.564Z"
+        "scrapedAt": "2026-07-08T10:50:26.109Z"
       },
       "method": {
         "raid": {
           "HEAD": [
-            250033
+            268283
           ],
           "NECK": [
             249368
@@ -847,7 +704,7 @@
           ],
           "FINGER": [
             249920,
-            249336
+            268290
           ],
           "TRINKET": [
             249343,
@@ -908,7 +765,7 @@
         },
         "overall": {
           "HEAD": [
-            250033
+            268283
           ],
           "NECK": [
             249368
@@ -917,13 +774,15 @@
             250031
           ],
           "BACK": [
-            249335
+            239656,
+            240167
           ],
           "CHEST": [
             250036
           ],
           "WRIST": [
-            249327
+            244576,
+            240167
           ],
           "HANDS": [
             250034
@@ -939,7 +798,7 @@
           ],
           "FINGER": [
             249920,
-            251513
+            268290
           ],
           "TRINKET": [
             249343,
@@ -949,152 +808,20 @@
             260408
           ],
           "OFFHAND": [
-            237840,
-            245875
+            249298
           ]
         },
         "raidUrl": "https://www.method.gg/guides/vengeance-demon-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/vengeance-demon-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/vengeance-demon-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-13T11:00:57.047Z"
+        "scrapedAt": "2026-07-08T10:50:31.665Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
-        "presets": {
-          "Icy Veins - Overall BiS List": {
-            "HANDS": [
-              260408,
-              237840,
-              250034
-            ],
-            "HEAD": [
-              250033
-            ],
-            "NECK": [
-              249368
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              260312
-            ],
-            "CHEST": [
-              251216
-            ],
-            "WRIST": [
-              244576
-            ],
-            "WAIST": [
-              249374
-            ],
-            "LEGS": [
-              250032
-            ],
-            "FEET": [
-              249334
-            ],
-            "FINGER": [
-              251217,
-              249920
-            ],
-            "TRINKET": [
-              250256,
-              249343
-            ]
-          },
-          "Icy Veins - Raid Gear BiS List": {
-            "HANDS": [
-              260408,
-              237840,
-              250034
-            ],
-            "HEAD": [
-              250033
-            ],
-            "NECK": [
-              249368
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              249335
-            ],
-            "CHEST": [
-              249322
-            ],
-            "WRIST": [
-              244576
-            ],
-            "WAIST": [
-              249374
-            ],
-            "LEGS": [
-              250032
-            ],
-            "FEET": [
-              249334
-            ],
-            "FINGER": [
-              249336,
-              249920
-            ],
-            "TRINKET": [
-              249344,
-              249343
-            ]
-          },
-          "Icy Veins - Mythic+ Gear BiS List": {
-            "HANDS": [
-              193717,
-              237840,
-              250034
-            ],
-            "HEAD": [
-              250033
-            ],
-            "NECK": [
-              151309
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              260312
-            ],
-            "CHEST": [
-              251216
-            ],
-            "WRIST": [
-              244576
-            ],
-            "WAIST": [
-              251166
-            ],
-            "LEGS": [
-              250032
-            ],
-            "FEET": [
-              251210
-            ],
-            "FINGER": [
-              251217,
-              49812
-            ],
-            "TRINKET": [
-              250256,
-              252420
-            ]
-          }
-        },
-        "presetUrls": {
-          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/vengeance-demon-hunter-pve-tank-gear-best-in-slot#area_1",
-          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/vengeance-demon-hunter-pve-tank-gear-best-in-slot#area_2",
-          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/vengeance-demon-hunter-pve-tank-gear-best-in-slot#area_3"
-        },
-        "scrapedAt": "2026-05-13T11:01:01.951Z"
+        "presets": {},
+        "presetUrls": {},
+        "scrapedAt": "2026-07-08T10:50:37.480Z"
       }
     },
     "DEVOURER": {
@@ -1131,17 +858,17 @@
             250034
           ],
           "WAIST": [
-            244573,
-            240167
+            268286
           ],
           "LEGS": [
             49817
           ],
           "FEET": [
-            250035
+            244569,
+            240167
           ],
           "FINGER": [
-            249369,
+            268290,
             249920
           ],
           "TRINKET": [
@@ -1150,66 +877,71 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/demon-hunter/devourer/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-13T11:00:40.867Z"
+        "scrapedAt": "2026-07-08T10:49:57.058Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            237840,
             193710,
-            249280
+            249294,
+            260408,
+            237840
           ],
           "OFFHAND": [
-            237840
+            237840,
+            249294,
+            193710
           ],
           "TRINKET": [
             249343,
-            249346,
-            250256
+            249346
           ],
           "FINGER": [
+            268290,
             251093,
+            249369,
             251115,
-            240949,
-            249369
+            249920,
+            240949
           ],
           "HEAD": [
             250033
           ],
           "NECK": [
+            268291,
+            249368,
             240950,
-            266314,
-            249368
+            250247
           ],
           "SHOULDER": [
             250031
           ],
           "BACK": [
+            239656,
             249370,
-            250028,
-            239656
+            250028
           ],
           "CHEST": [
             250036
           ],
           "WRIST": [
             250029,
-            193714,
-            244576
+            244576,
+            193714
           ],
           "HANDS": [
             250034
           ],
           "WAIST": [
-            244573,
             250030,
-            249374
+            244573,
+            268286
           ],
           "LEGS": [
             49817,
+            249312,
             250032,
-            244574,
-            249312
+            244574
           ],
           "FEET": [
             250035,
@@ -1218,8 +950,8 @@
         },
         "mythicplus": {
           "MAINHAND": [
-            237840,
-            193710
+            193710,
+            237840
           ],
           "OFFHAND": [
             237840,
@@ -1228,30 +960,28 @@
           "TRINKET": [
             249343,
             249346,
-            250256,
-            250144
+            250144,
+            250256
           ],
           "FINGER": [
+            268290,
             251093,
             251115,
-            240949,
-            251217,
-            249369
+            240949
           ],
           "HEAD": [
             250033
           ],
           "NECK": [
-            240950,
-            266314,
-            249368
+            268291,
+            240950
           ],
           "SHOULDER": [
             250031
           ],
           "BACK": [
-            250028,
             239656,
+            250028,
             249370
           ],
           "CHEST": [
@@ -1266,6 +996,7 @@
             250034
           ],
           "WAIST": [
+            250030,
             244573
           ],
           "LEGS": [
@@ -1275,12 +1006,13 @@
           ],
           "FEET": [
             250035,
-            244569
+            244569,
+            260372
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/devourer/demon-hunter/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/devourer/demon-hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-13T11:00:44.880Z"
+        "scrapedAt": "2026-07-08T10:50:00.989Z"
       },
       "murlok": {
         "raid": {},
@@ -1289,10 +1021,9 @@
             250033
           ],
           "NECK": [
-            240950,
             249368,
             250247,
-            266314
+            268291
           ],
           "SHOULDER": [
             250031
@@ -1301,22 +1032,19 @@
             250036
           ],
           "WAIST": [
-            244573,
-            249374,
             250030
           ],
           "LEGS": [
             49817,
-            244574,
             249312,
             260373
           ],
           "FEET": [
+            244569,
             250035,
             260372
           ],
           "WRIST": [
-            193714,
             244576,
             250029
           ],
@@ -1324,34 +1052,31 @@
             250034
           ],
           "FINGER": [
-            240949,
             249369,
             249920,
             251093,
-            251115
+            251115,
+            268290
           ],
           "TRINKET": [
             249343,
             249346
           ],
           "BACK": [
-            239656,
-            249370,
-            250028
+            239656
           ],
           "MAINHAND": [
             193710,
-            249280,
             249294,
             260408
           ],
           "OFFHAND": [
-            237840,
-            237843
+            193710,
+            249294
           ]
         },
         "mythicplusUrl": "https://murlok.io/demon-hunter/devourer/m+",
-        "scrapedAt": "2026-05-13T11:00:52.564Z"
+        "scrapedAt": "2026-07-08T10:50:26.110Z"
       },
       "method": {
         "raid": {
@@ -1377,7 +1102,7 @@
             250034
           ],
           "WAIST": [
-            249314
+            268286
           ],
           "LEGS": [
             250032
@@ -1386,7 +1111,7 @@
             249382
           ],
           "FINGER": [
-            249920,
+            268290,
             249369
           ],
           "TRINKET": [
@@ -1463,14 +1188,14 @@
             250036
           ],
           "WRIST": [
-            193714
+            244576,
+            240167
           ],
           "HANDS": [
             250034
           ],
           "WAIST": [
-            244573,
-            240166
+            268286
           ],
           "LEGS": [
             49817
@@ -1479,7 +1204,7 @@
             250035
           ],
           "FINGER": [
-            249920,
+            268290,
             249369
           ],
           "TRINKET": [
@@ -1497,158 +1222,14 @@
         "raidUrl": "https://www.method.gg/guides/devourer-demon-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/devourer-demon-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/devourer-demon-hunter/gearing#overall_table",
-        "scrapedAt": "2026-05-13T11:00:57.047Z"
+        "scrapedAt": "2026-07-08T10:50:31.665Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
-        "presets": {
-          "Icy Veins - Overall Best-in-Slot": {
-            "MAINHAND": [
-              260408
-            ],
-            "OFFHAND": [
-              237840
-            ],
-            "HEAD": [
-              250033
-            ],
-            "NECK": [
-              249368
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              249370
-            ],
-            "CHEST": [
-              250036
-            ],
-            "WRIST": [
-              193714
-            ],
-            "HANDS": [
-              250034
-            ],
-            "WAIST": [
-              244573
-            ],
-            "LEGS": [
-              49817
-            ],
-            "FEET": [
-              250035
-            ],
-            "FINGER": [
-              249369,
-              249920
-            ],
-            "TRINKET": [
-              249343,
-              249346,
-              250256
-            ]
-          },
-          "Icy Veins - Raid Best-in-Slot": {
-            "MAINHAND": [
-              260408
-            ],
-            "OFFHAND": [
-              237840
-            ],
-            "HEAD": [
-              250033
-            ],
-            "NECK": [
-              249368
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              249370
-            ],
-            "CHEST": [
-              250036
-            ],
-            "WRIST": [
-              249327
-            ],
-            "HANDS": [
-              250034
-            ],
-            "WAIST": [
-              244573
-            ],
-            "LEGS": [
-              249312
-            ],
-            "FEET": [
-              249382
-            ],
-            "FINGER": [
-              249369,
-              249920
-            ],
-            "TRINKET": [
-              249343,
-              249346
-            ]
-          },
-          "Icy Veins - Mythic + Best-in-Slot": {
-            "MAINHAND": [
-              193710
-            ],
-            "OFFHAND": [
-              237840
-            ],
-            "HEAD": [
-              250033
-            ],
-            "NECK": [
-              50228
-            ],
-            "SHOULDER": [
-              250031
-            ],
-            "BACK": [
-              260312
-            ],
-            "CHEST": [
-              250036
-            ],
-            "WRIST": [
-              193714
-            ],
-            "HANDS": [
-              250034
-            ],
-            "WAIST": [
-              244573
-            ],
-            "LEGS": [
-              49817
-            ],
-            "FEET": [
-              258577
-            ],
-            "FINGER": [
-              251093,
-              251115
-            ],
-            "TRINKET": [
-              250256,
-              250144
-            ]
-          }
-        },
-        "presetUrls": {
-          "Icy Veins - Overall Best-in-Slot": "https://www.icy-veins.com/wow/devourer-demon-hunter-pve-dps-gear-best-in-slot#area_1",
-          "Icy Veins - Raid Best-in-Slot": "https://www.icy-veins.com/wow/devourer-demon-hunter-pve-dps-gear-best-in-slot#area_2",
-          "Icy Veins - Mythic + Best-in-Slot": "https://www.icy-veins.com/wow/devourer-demon-hunter-pve-dps-gear-best-in-slot#area_3"
-        },
-        "scrapedAt": "2026-05-13T11:01:01.951Z"
+        "presets": {},
+        "presetUrls": {},
+        "scrapedAt": "2026-07-08T10:50:37.480Z"
       }
     }
   }

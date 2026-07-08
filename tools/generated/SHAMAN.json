@@ -37,13 +37,13 @@
             244611
           ],
           "LEGS": [
-            251215
+            268288
           ],
           "FEET": [
             244610
           ],
           "FINGER": [
-            193708,
+            268290,
             249919
           ],
           "TRINKET": [
@@ -52,47 +52,49 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/elemental/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-13T11:00:40.882Z"
+        "scrapedAt": "2026-07-08T10:49:57.077Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            245770,
-            251083
+            251083,
+            245770
           ],
-          "OFFHAND": [],
+          "OFFHAND": [
+            251105,
+            258049,
+            249275
+          ],
           "TRINKET": [
-            250144,
             249343,
+            250144,
             249346,
             249809
           ],
           "FINGER": [
             193708,
-            251217,
-            251093,
-            240949,
-            251115,
-            249369,
+            268290,
             249919,
-            249336
+            240949,
+            249369,
+            249336,
+            251217
           ],
           "HEAD": [
             249979
           ],
           "NECK": [
-            240950,
+            268291,
             249337,
-            266314,
-            50228
+            240950,
+            250247
           ],
           "SHOULDER": [
             249977
           ],
           "BACK": [
             249974,
-            239656,
-            258575
+            239656
           ],
           "CHEST": [
             249982
@@ -108,47 +110,47 @@
           "WAIST": [
             244611,
             249976,
+            244581,
             249371
           ],
           "LEGS": [
-            249978,
-            251215,
-            244582,
-            251170
+            268288,
+            249978
           ],
           "FEET": [
+            268287,
             244610,
-            251084,
-            249981
+            251084
           ]
         },
         "mythicplus": {
           "MAINHAND": [
-            245770,
             251083
           ],
           "OFFHAND": [
-            251105
+            251105,
+            258049
           ],
           "TRINKET": [
             250144,
             249343,
-            250256,
-            264507
+            250256
           ],
           "FINGER": [
             193708,
-            251093,
-            251217,
             251115,
+            251217,
+            251093,
+            268290,
+            240949,
             49812
           ],
           "HEAD": [
             249979
           ],
           "NECK": [
+            268291,
             50228,
-            266314,
             240950
           ],
           "SHOULDER": [
@@ -156,7 +158,8 @@
           ],
           "BACK": [
             249974,
-            258575
+            258575,
+            239656
           ],
           "CHEST": [
             249982
@@ -164,7 +167,6 @@
           "WRIST": [
             251079,
             244584,
-            249304,
             151321
           ],
           "HANDS": [
@@ -172,95 +174,28 @@
           ],
           "WAIST": [
             244611,
-            249976
+            249976,
+            244581
           ],
           "LEGS": [
             249978,
-            251215,
-            251170
-          ],
-          "FEET": [
-            244610,
-            251084
-          ]
-        },
-        "raidUrl": "https://www.archon.gg/wow/builds/elemental/shaman/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/elemental/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-13T11:00:44.888Z"
-      },
-      "murlok": {
-        "raid": {},
-        "mythicplus": {
-          "HEAD": [
-            249979
-          ],
-          "NECK": [
-            50228,
-            240950,
-            250247,
-            266314
-          ],
-          "SHOULDER": [
-            249977
-          ],
-          "CHEST": [
-            249982
-          ],
-          "WAIST": [
-            244611,
-            249976
-          ],
-          "LEGS": [
-            244582,
-            249978,
-            251170,
+            268288,
             251215
           ],
           "FEET": [
             244610,
-            249320,
-            249981,
-            251084
-          ],
-          "WRIST": [
-            244584,
-            249304,
-            251079
-          ],
-          "HANDS": [
-            249980
-          ],
-          "FINGER": [
-            193708,
-            240949,
-            249336,
-            249369,
-            249919,
-            251093,
-            251115,
-            251217
-          ],
-          "TRINKET": [
-            249343,
-            249346,
-            249809,
-            250144
-          ],
-          "BACK": [
-            239656,
-            249974
-          ],
-          "MAINHAND": [
-            245770,
-            249293,
-            251083
-          ],
-          "OFFHAND": [
-            249275
+            251084,
+            268287
           ]
         },
-        "mythicplusUrl": "https://murlok.io/shaman/elemental/m+",
-        "scrapedAt": "2026-05-13T11:00:52.571Z"
+        "raidUrl": "https://www.archon.gg/wow/builds/elemental/shaman/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/elemental/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-07-08T10:50:00.996Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {},
+        "scrapedAt": "2026-07-08T10:50:26.122Z"
       },
       "method": {
         "raid": {},
@@ -270,7 +205,7 @@
             249979
           ],
           "NECK": [
-            250247
+            268291
           ],
           "SHOULDER": [
             249977
@@ -291,13 +226,13 @@
             244611
           ],
           "LEGS": [
-            251215
+            268288
           ],
           "FEET": [
             244610
           ],
           "FINGER": [
-            193708,
+            268290,
             249919
           ],
           "TRINKET": [
@@ -314,159 +249,14 @@
         "raidUrl": "https://www.method.gg/guides/elemental-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/elemental-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/elemental-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-13T11:00:57.055Z"
+        "scrapedAt": "2026-07-08T10:50:31.677Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
-        "presets": {
-          "Icy Veins - Overall BiS List": {
-            "MAINHAND": [
-              251083
-            ],
-            "OFFHAND": [
-              251105
-            ],
-            "HEAD": [
-              249979
-            ],
-            "NECK": [
-              250247
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              249974
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              249304
-            ],
-            "HANDS": [
-              249980
-            ],
-            "WAIST": [
-              244611
-            ],
-            "LEGS": [
-              251215
-            ],
-            "FEET": [
-              244610
-            ],
-            "FINGER": [
-              193708,
-              249919
-            ],
-            "TRINKET": [
-              250144,
-              249809
-            ]
-          },
-          "Icy Veins - Mythic+ Gear BiS List": {
-            "MAINHAND": [
-              251083
-            ],
-            "OFFHAND": [
-              251105
-            ],
-            "HEAD": [
-              249979
-            ],
-            "NECK": [
-              50228
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              258575
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              251079,
-              151321
-            ],
-            "HANDS": [
-              249980
-            ],
-            "WAIST": [
-              244611
-            ],
-            "LEGS": [
-              251215
-            ],
-            "FEET": [
-              244610
-            ],
-            "FINGER": [
-              193708,
-              251115,
-              251093
-            ],
-            "TRINKET": [
-              250144,
-              250256
-            ]
-          },
-          "Icy Veins - Raid Gear BiS List": {
-            "HANDS": [
-              249283,
-              249286,
-              249980
-            ],
-            "OFFHAND": [
-              251105
-            ],
-            "HEAD": [
-              249979
-            ],
-            "NECK": [
-              250247
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              249370
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              249304
-            ],
-            "WAIST": [
-              244611
-            ],
-            "LEGS": [
-              249324
-            ],
-            "FEET": [
-              244610
-            ],
-            "FINGER": [
-              249369,
-              249919
-            ],
-            "TRINKET": [
-              249346,
-              249809,
-              249343
-            ]
-          }
-        },
-        "presetUrls": {
-          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-gear-best-in-slot#area_1",
-          "Icy Veins - Mythic+ Gear BiS List": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-gear-best-in-slot#area_2",
-          "Icy Veins - Raid Gear BiS List": "https://www.icy-veins.com/wow/elemental-shaman-pve-dps-gear-best-in-slot#area_3"
-        },
-        "scrapedAt": "2026-05-13T11:01:01.959Z"
+        "presets": {},
+        "presetUrls": {},
+        "scrapedAt": "2026-07-08T10:50:37.486Z"
       }
     },
     "ENHANCEMENT": {
@@ -507,15 +297,13 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/enhancement/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-13T11:00:40.882Z"
+        "scrapedAt": "2026-07-08T10:49:57.080Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
-            237850,
-            249287,
             258438,
-            249298
+            249287
           ],
           "OFFHAND": [
             237850,
@@ -526,20 +314,18 @@
             249343
           ],
           "FINGER": [
+            268290,
             251093,
-            251115,
             251217,
-            249369,
-            240949,
+            251115,
             193708
           ],
           "HEAD": [
             249979
           ],
           "NECK": [
-            240950,
-            266314,
-            250247
+            268291,
+            240950
           ],
           "SHOULDER": [
             249977
@@ -547,16 +333,15 @@
           "BACK": [
             239656,
             249974,
-            249370
+            258575
           ],
           "CHEST": [
             249982
           ],
           "WRIST": [
-            249304,
             244584,
-            251079,
-            251209
+            249304,
+            251079
           ],
           "HANDS": [
             249980
@@ -566,45 +351,45 @@
             249371
           ],
           "LEGS": [
+            268288,
             244582,
             251215,
-            249978,
-            249324
+            249978
           ],
           "FEET": [
-            249981,
-            151320
+            268287,
+            249981
           ]
         },
         "mythicplus": {
           "MAINHAND": [
-            237850,
-            258438
+            258438,
+            237850
           ],
           "OFFHAND": [
             237850,
-            258438,
-            249287
+            258438
           ],
           "TRINKET": [
             193701,
             249343,
-            250256,
             252420,
+            250256,
             250144
           ],
           "FINGER": [
             251093,
-            251115,
             251217,
+            268290,
+            251115,
             193708
           ],
           "HEAD": [
             249979
           ],
           "NECK": [
+            268291,
             240950,
-            266314,
             50228
           ],
           "SHOULDER": [
@@ -619,9 +404,8 @@
             249982
           ],
           "WRIST": [
-            251079,
             244584,
-            249304,
+            251079,
             251209,
             151321
           ],
@@ -634,17 +418,17 @@
           ],
           "LEGS": [
             249978,
-            244582,
+            268288,
             251215
           ],
           "FEET": [
             249981,
-            151320
+            268287
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/enhancement/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/enhancement/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-13T11:00:44.888Z"
+        "scrapedAt": "2026-07-08T10:50:00.996Z"
       },
       "murlok": {
         "raid": {},
@@ -653,10 +437,7 @@
             249979
           ],
           "NECK": [
-            240950,
-            249368,
-            250247,
-            266314
+            268291
           ],
           "SHOULDER": [
             249977
@@ -669,12 +450,11 @@
             249976
           ],
           "LEGS": [
-            244582,
-            249978,
-            251215
+            268288
           ],
           "FEET": [
-            249981
+            249981,
+            268287
           ],
           "WRIST": [
             244584,
@@ -685,11 +465,10 @@
             249980
           ],
           "FINGER": [
-            240949,
-            249369,
             251093,
-            251115,
-            251217
+            251217,
+            251513,
+            268290
           ],
           "TRINKET": [
             193701,
@@ -697,21 +476,19 @@
           ],
           "BACK": [
             239656,
-            249370,
             249974
           ],
           "MAINHAND": [
-            237850,
             249287,
-            249298,
             258438
           ],
           "OFFHAND": [
-            237850
+            237850,
+            249287
           ]
         },
         "mythicplusUrl": "https://murlok.io/shaman/enhancement/m+",
-        "scrapedAt": "2026-05-13T11:00:52.571Z"
+        "scrapedAt": "2026-07-08T10:50:26.122Z"
       },
       "method": {
         "raid": {
@@ -719,7 +496,7 @@
             249979
           ],
           "NECK": [
-            250247
+            268291
           ],
           "SHOULDER": [
             249977
@@ -740,14 +517,14 @@
             249371
           ],
           "LEGS": [
-            249324
+            268288
           ],
           "FEET": [
-            249377
+            268287
           ],
           "FINGER": [
             249920,
-            249369
+            268290
           ],
           "TRINKET": [
             249343,
@@ -811,13 +588,13 @@
             249979
           ],
           "NECK": [
-            250247
+            268291
           ],
           "SHOULDER": [
             249977
           ],
           "BACK": [
-            249370
+            239656
           ],
           "CHEST": [
             249982
@@ -829,24 +606,24 @@
             249980
           ],
           "WAIST": [
-            249371
+            249976
           ],
           "LEGS": [
-            249324
+            268288
           ],
           "FEET": [
-            249377
+            268287
           ],
           "FINGER": [
             249920,
-            249369
+            268290
           ],
           "TRINKET": [
             193701,
             249343
           ],
           "MAINHAND": [
-            237850
+            249287
           ],
           "OFFHAND": [
             237850
@@ -855,158 +632,14 @@
         "raidUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/enhancement-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-13T11:00:57.055Z"
+        "scrapedAt": "2026-07-08T10:50:31.677Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
-        "presets": {
-          "Icy Veins - Overall Best-in-Slot": {
-            "MAINHAND": [
-              249287
-            ],
-            "OFFHAND": [
-              237850
-            ],
-            "HEAD": [
-              249979
-            ],
-            "NECK": [
-              250247
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              239656
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              249304
-            ],
-            "HANDS": [
-              249980
-            ],
-            "WAIST": [
-              249976
-            ],
-            "LEGS": [
-              249324
-            ],
-            "FEET": [
-              251084
-            ],
-            "FINGER": [
-              249920,
-              251093
-            ],
-            "TRINKET": [
-              249343,
-              193701,
-              249806
-            ]
-          },
-          "Icy Veins - Raid Best-in-Slot": {
-            "MAINHAND": [
-              249287
-            ],
-            "OFFHAND": [
-              237850
-            ],
-            "HEAD": [
-              249979
-            ],
-            "NECK": [
-              250247
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              239656
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              249304
-            ],
-            "HANDS": [
-              249980
-            ],
-            "WAIST": [
-              249976
-            ],
-            "LEGS": [
-              249324
-            ],
-            "FEET": [
-              249981
-            ],
-            "FINGER": [
-              249920,
-              249369
-            ],
-            "TRINKET": [
-              249343,
-              249806
-            ]
-          },
-          "Icy Veins - Mythic+ Best-in-Slot": {
-            "MAINHAND": [
-              258438
-            ],
-            "OFFHAND": [
-              237850
-            ],
-            "HEAD": [
-              249979
-            ],
-            "NECK": [
-              50228
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              239656
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              251079
-            ],
-            "HANDS": [
-              249980
-            ],
-            "WAIST": [
-              49810
-            ],
-            "LEGS": [
-              251215
-            ],
-            "FEET": [
-              251084
-            ],
-            "FINGER": [
-              251093,
-              251217
-            ],
-            "TRINKET": [
-              193701,
-              252420
-            ]
-          }
-        },
-        "presetUrls": {
-          "Icy Veins - Overall Best-in-Slot": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-gear-best-in-slot#area_1",
-          "Icy Veins - Raid Best-in-Slot": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-gear-best-in-slot#area_2",
-          "Icy Veins - Mythic+ Best-in-Slot": "https://www.icy-veins.com/wow/enhancement-shaman-pve-dps-gear-best-in-slot#area_3"
-        },
-        "scrapedAt": "2026-05-13T11:01:01.960Z"
+        "presets": {},
+        "presetUrls": {},
+        "scrapedAt": "2026-07-08T10:50:37.486Z"
       }
     },
     "RESTORATION": {
@@ -1018,7 +651,7 @@
             249914
           ],
           "NECK": [
-            249337
+            268291
           ],
           "SHOULDER": [
             249977
@@ -1042,7 +675,7 @@
             249978
           ],
           "FEET": [
-            249320
+            268287
           ],
           "FINGER": [
             249919,
@@ -1060,21 +693,22 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/shaman/restoration/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-05-13T11:00:40.883Z"
+        "scrapedAt": "2026-07-08T10:49:57.080Z"
       },
       "archon": {
         "raid": {
           "MAINHAND": [
             249293,
-            245770
+            50227
           ],
           "OFFHAND": [
             249275,
+            251202,
             237831
           ],
           "TRINKET": [
             249343,
-            264507,
+            268292,
             249809,
             250256,
             249811
@@ -1082,26 +716,96 @@
           "FINGER": [
             249336,
             151308,
-            251217,
             49812,
+            240949,
+            251217,
             193708,
-            240949
+            268290,
+            151311
           ],
           "HEAD": [
-            249979,
             249317,
+            249979,
             49824
           ],
           "NECK": [
+            268291,
             50228,
-            249337,
-            240950
+            249337
           ],
           "SHOULDER": [
             249977
           ],
           "BACK": [
+            239656,
             249335,
+            49823,
+            249974
+          ],
+          "CHEST": [
+            249982
+          ],
+          "WRIST": [
+            244584,
+            249975
+          ],
+          "HANDS": [
+            249980
+          ],
+          "WAIST": [
+            49810,
+            244581,
+            249303
+          ],
+          "LEGS": [
+            249978
+          ],
+          "FEET": [
+            249320,
+            268287,
+            244577
+          ]
+        },
+        "mythicplus": {
+          "MAINHAND": [
+            50227,
+            249293
+          ],
+          "OFFHAND": [
+            251202,
+            249275,
+            237831,
+            258049
+          ],
+          "TRINKET": [
+            249343,
+            252411,
+            250256,
+            268292,
+            193718
+          ],
+          "FINGER": [
+            151308,
+            49812,
+            151311,
+            251217,
+            193708,
+            249336,
+            240949
+          ],
+          "HEAD": [
+            249979,
+            49824,
+            249317
+          ],
+          "NECK": [
+            50228,
+            268291
+          ],
+          "SHOULDER": [
+            249977
+          ],
+          "BACK": [
             49823,
             239656,
             249974
@@ -1111,76 +815,7 @@
           ],
           "WRIST": [
             244584,
-            249975,
-            249304
-          ],
-          "HANDS": [
-            249980
-          ],
-          "WAIST": [
-            244581,
-            249303,
-            49810,
-            249371
-          ],
-          "LEGS": [
-            249978
-          ],
-          "FEET": [
-            249320,
-            193715,
-            244577
-          ]
-        },
-        "mythicplus": {
-          "MAINHAND": [
-            245770,
-            237844
-          ],
-          "OFFHAND": [
-            237831,
-            251202,
-            249275
-          ],
-          "TRINKET": [
-            264507,
-            249343,
-            250256,
-            193718,
-            250144
-          ],
-          "FINGER": [
-            151308,
-            49812,
-            251217,
-            193708,
-            151311,
-            249336
-          ],
-          "HEAD": [
-            249979,
-            49824
-          ],
-          "NECK": [
-            50228,
-            240950,
-            251096
-          ],
-          "SHOULDER": [
-            249977
-          ],
-          "BACK": [
-            49823,
-            251161,
-            239656
-          ],
-          "CHEST": [
-            249982
-          ],
-          "WRIST": [
-            244584,
-            249975,
-            251079
+            249975
           ],
           "HANDS": [
             249980
@@ -1193,29 +828,29 @@
             249978
           ],
           "FEET": [
-            193715,
             249320,
+            193715,
+            244577,
             251084,
-            244577
+            249981
           ]
         },
         "raidUrl": "https://www.archon.gg/wow/builds/restoration/shaman/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/restoration/shaman/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-05-13T11:00:44.888Z"
+        "scrapedAt": "2026-07-08T10:50:00.997Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
-            49824,
             244579,
             249317,
+            249914,
             249979
           ],
           "NECK": [
             50228,
-            240950,
-            249337
+            268291
           ],
           "SHOULDER": [
             249977
@@ -1226,7 +861,6 @@
           "WAIST": [
             49810,
             244581,
-            249303,
             260375
           ],
           "LEGS": [
@@ -1234,7 +868,9 @@
           ],
           "FEET": [
             244577,
-            249320
+            249320,
+            249981,
+            268287
           ],
           "WRIST": [
             244584,
@@ -1244,20 +880,16 @@
             249980
           ],
           "FINGER": [
-            49812,
             151308,
             151311,
-            240949,
-            249336,
-            251217
+            249336
           ],
           "TRINKET": [
             193718,
             249343,
             249808,
-            250246,
             252411,
-            264507
+            268292
           ],
           "BACK": [
             49823,
@@ -1269,12 +901,12 @@
             249293
           ],
           "OFFHAND": [
-            237831,
-            249275
+            249275,
+            251202
           ]
         },
         "mythicplusUrl": "https://murlok.io/shaman/restoration/m+",
-        "scrapedAt": "2026-05-13T11:00:52.572Z"
+        "scrapedAt": "2026-07-08T10:50:26.122Z"
       },
       "method": {
         "raid": {
@@ -1282,7 +914,7 @@
             249914
           ],
           "NECK": [
-            240950
+            268291
           ],
           "SHOULDER": [
             249977
@@ -1306,7 +938,7 @@
             249978
           ],
           "FEET": [
-            244577
+            268287
           ],
           "FINGER": [
             249920,
@@ -1373,7 +1005,7 @@
             249914
           ],
           "NECK": [
-            240950
+            268291
           ],
           "SHOULDER": [
             249977
@@ -1397,7 +1029,7 @@
             249978
           ],
           "FEET": [
-            244577
+            268287
           ],
           "FINGER": [
             249920,
@@ -1417,157 +1049,14 @@
         "raidUrl": "https://www.method.gg/guides/restoration-shaman/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/restoration-shaman/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/restoration-shaman/gearing#overall_table",
-        "scrapedAt": "2026-05-13T11:00:57.055Z"
+        "scrapedAt": "2026-07-08T10:50:31.678Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
-        "presets": {
-          "Icy Veins - Overall BiS List": {
-            "MAINHAND": [
-              249293
-            ],
-            "OFFHAND": [
-              249921
-            ],
-            "HEAD": [
-              249914
-            ],
-            "NECK": [
-              249337
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              239656
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              244584
-            ],
-            "HANDS": [
-              249980
-            ],
-            "WAIST": [
-              249303
-            ],
-            "LEGS": [
-              249978
-            ],
-            "FEET": [
-              249320
-            ],
-            "FINGER": [
-              151308,
-              151311
-            ],
-            "TRINKET": [
-              249809,
-              249811
-            ]
-          },
-          "Icy Veins - Mythic+ only BiS List": {
-            "MAINHAND": [
-              251178
-            ],
-            "OFFHAND": [
-              258049
-            ],
-            "HEAD": [
-              258585
-            ],
-            "NECK": [
-              50228
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              258575
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              151321
-            ],
-            "HANDS": [
-              249980
-            ],
-            "WAIST": [
-              49810
-            ],
-            "LEGS": [
-              249978
-            ],
-            "FEET": [
-              258582
-            ],
-            "FINGER": [
-              151308,
-              151311
-            ],
-            "TRINKET": [
-              193718,
-              250253
-            ]
-          },
-          "Icy Veins - Dreamrift, Voidspire, and March on Quel'Danas BiS List": {
-            "MAINHAND": [
-              249293
-            ],
-            "OFFHAND": [
-              249921
-            ],
-            "HEAD": [
-              249914
-            ],
-            "NECK": [
-              249337
-            ],
-            "SHOULDER": [
-              249977
-            ],
-            "BACK": [
-              249974
-            ],
-            "CHEST": [
-              249982
-            ],
-            "WRIST": [
-              249975
-            ],
-            "HANDS": [
-              249980
-            ],
-            "WAIST": [
-              249303
-            ],
-            "LEGS": [
-              249978
-            ],
-            "FEET": [
-              249320
-            ],
-            "FINGER": [
-              249919,
-              249336
-            ],
-            "TRINKET": [
-              249811,
-              249809
-            ]
-          }
-        },
-        "presetUrls": {
-          "Icy Veins - Overall BiS List": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-gear-best-in-slot#area_1",
-          "Icy Veins - Mythic+ only BiS List": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-gear-best-in-slot#area_2",
-          "Icy Veins - Dreamrift, Voidspire, and March on Quel'Danas BiS List": "https://www.icy-veins.com/wow/restoration-shaman-pve-healing-gear-best-in-slot#area_3"
-        },
-        "scrapedAt": "2026-05-13T11:01:01.960Z"
+        "presets": {},
+        "presetUrls": {},
+        "scrapedAt": "2026-07-08T10:50:37.486Z"
       }
     }
   }
