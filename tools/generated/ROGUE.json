@@ -7,183 +7,59 @@
         "mythicplus": {},
         "overall": {
           "MAINHAND": [
-            249925
+            271093
           ],
           "OFFHAND": [
             237837
           ],
           "HEAD": [
-            268283
+            271510
           ],
           "NECK": [
-            249337
+            268265
           ],
           "SHOULDER": [
-            250004
+            271508
           ],
           "BACK": [
-            260312
+            268253
           ],
           "CHEST": [
-            250009
+            271513
           ],
           "WRIST": [
             244576
           ],
           "HANDS": [
-            250007
+            271511
           ],
           "WAIST": [
-            249374
+            268256
           ],
           "LEGS": [
-            250005
+            271509
           ],
           "FEET": [
-            249382
+            251153
           ],
           "FINGER": [
-            249919,
-            268290
+            273792,
+            268249
           ],
           "TRINKET": [
-            249343,
-            193701
+            270175,
+            270168
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/assassination/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-07-08T10:49:57.076Z"
+        "scrapedAt": "2026-08-19T10:37:03.769Z"
       },
       "archon": {
-        "raid": {
-          "MAINHAND": [
-            49807,
-            249925
-          ],
-          "OFFHAND": [
-            237837
-          ],
-          "TRINKET": [
-            193701,
-            249343
-          ],
-          "FINGER": [
-            49812,
-            268290,
-            251217,
-            193708,
-            249336,
-            251093
-          ],
-          "HEAD": [
-            250006,
-            268283
-          ],
-          "NECK": [
-            50228,
-            249337,
-            268291
-          ],
-          "SHOULDER": [
-            250004
-          ],
-          "BACK": [
-            239656,
-            260312,
-            258575,
-            49823,
-            249335
-          ],
-          "CHEST": [
-            250009
-          ],
-          "WRIST": [
-            244576,
-            50264,
-            249327
-          ],
-          "HANDS": [
-            250007
-          ],
-          "WAIST": [
-            268286,
-            49806,
-            249374
-          ],
-          "LEGS": [
-            250005,
-            251087,
-            49817
-          ],
-          "FEET": [
-            250008,
-            244569
-          ]
-        },
-        "mythicplus": {
-          "MAINHAND": [
-            49807,
-            237837
-          ],
-          "OFFHAND": [
-            237837
-          ],
-          "TRINKET": [
-            193701,
-            249343,
-            252420
-          ],
-          "FINGER": [
-            49812,
-            251217,
-            193708,
-            268290,
-            251093
-          ],
-          "HEAD": [
-            250006,
-            268283
-          ],
-          "NECK": [
-            50228,
-            268291
-          ],
-          "SHOULDER": [
-            250004
-          ],
-          "BACK": [
-            258575,
-            239656,
-            260312,
-            49823
-          ],
-          "CHEST": [
-            250009
-          ],
-          "WRIST": [
-            244576,
-            50264
-          ],
-          "HANDS": [
-            250007
-          ],
-          "WAIST": [
-            49806,
-            268286
-          ],
-          "LEGS": [
-            250005,
-            251087,
-            49817
-          ],
-          "FEET": [
-            250008,
-            258577
-          ]
-        },
+        "raid": {},
+        "mythicplus": {},
         "raidUrl": "https://www.archon.gg/wow/builds/assassination/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/assassination/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-07-08T10:50:00.995Z"
+        "scrapedAt": "2026-08-19T10:37:08.237Z"
       },
       "murlok": {
         "raid": {},
@@ -193,62 +69,87 @@
             268283
           ],
           "NECK": [
-            50228,
             249337,
-            268291
+            251234,
+            265739,
+            268291,
+            272229,
+            273781
           ],
           "SHOULDER": [
-            250004
+            250004,
+            257000
           ],
           "CHEST": [
-            250009
+            250009,
+            251159
           ],
           "WAIST": [
+            49806,
+            159301,
+            159317,
+            257019,
             268286
           ],
           "LEGS": [
-            49817,
             250005,
-            251087
+            251198,
+            271509
           ],
           "FEET": [
-            244569,
+            159327,
             250008,
-            258577
+            251153,
+            272240,
+            277786
           ],
           "WRIST": [
-            50264,
             244576,
-            249327
+            249327,
+            251183,
+            277780
           ],
           "HANDS": [
-            250007
+            250007,
+            271511
           ],
           "FINGER": [
             49812,
+            158366,
             193708,
+            251136,
+            251148,
             251217,
-            268290
+            252258,
+            268290,
+            273792
           ],
           "TRINKET": [
             193701,
-            249343
+            249343,
+            250225,
+            250259,
+            252420,
+            274493
           ],
           "BACK": [
+            49823,
             239656,
-            258575,
-            260312
+            258575
           ],
           "MAINHAND": [
             49807,
-            249925
+            193756,
+            237837
           ],
           "OFFHAND": [
-            237837
+            49807,
+            237837,
+            258436
           ]
         },
         "mythicplusUrl": "https://murlok.io/rogue/assassination/m+",
-        "scrapedAt": "2026-07-08T10:50:26.121Z"
+        "scrapedAt": "2026-08-19T10:37:29.532Z"
       },
       "method": {
         "raid": {
@@ -345,45 +246,45 @@
         },
         "overall": {
           "HEAD": [
-            250006
+            271875
           ],
           "NECK": [
-            249337
+            268265
           ],
           "SHOULDER": [
-            250004
+            251223
           ],
           "BACK": [
-            260312
+            268253
           ],
           "CHEST": [
-            250009
+            251159
           ],
           "WRIST": [
             244576
           ],
           "HANDS": [
-            250007
+            271511
           ],
           "WAIST": [
-            249374
+            268256
           ],
           "LEGS": [
-            250005
+            268225
           ],
           "FEET": [
-            249382
+            251153
           ],
           "FINGER": [
-            249919,
-            268290
+            268252,
+            268249
           ],
           "TRINKET": [
-            249343,
-            193701
+            270175,
+            270164
           ],
           "MAINHAND": [
-            249925
+            271093
           ],
           "OFFHAND": [
             237837
@@ -392,14 +293,14 @@
         "raidUrl": "https://www.method.gg/guides/assassination-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/assassination-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/assassination-rogue/gearing#overall_table",
-        "scrapedAt": "2026-07-08T10:50:31.676Z"
+        "scrapedAt": "2026-08-19T10:37:35.128Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-07-08T10:50:37.485Z"
+        "scrapedAt": "2026-08-19T10:37:41.208Z"
       }
     },
     "OUTLAW": {
@@ -408,196 +309,76 @@
         "mythicplus": {},
         "overall": {
           "MAINHAND": [
-            260423
+            268209
           ],
           "OFFHAND": [
-            133491
+            275070
           ],
           "HEAD": [
-            268283
+            271875
           ],
           "NECK": [
-            50228
+            268265
           ],
           "SHOULDER": [
-            250004
+            271508
           ],
           "BACK": [
-            249335
+            268248
           ],
           "CHEST": [
-            250009
+            271513
           ],
           "WRIST": [
-            50264
+            268240
           ],
           "HANDS": [
-            250007
+            271511
           ],
           "WAIST": [
-            249374
+            244573
           ],
           "LEGS": [
-            250005
+            271509
           ],
           "FEET": [
             244569
           ],
           "FINGER": [
-            249336,
-            240949
+            268266,
+            268252
           ],
           "TRINKET": [
-            249343,
-            260235
+            270173,
+            270175
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/outlaw/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-07-08T10:49:57.076Z"
+        "scrapedAt": "2026-08-19T10:37:03.769Z"
       },
       "archon": {
-        "raid": {
-          "MAINHAND": [
-            237839,
-            249298,
-            260423,
-            251207
-          ],
-          "OFFHAND": [
-            49807,
-            237837
-          ],
-          "TRINKET": [
-            249343,
-            252420,
-            260235
-          ],
-          "FINGER": [
-            49812,
-            251217,
-            240949,
-            268290,
-            249336
-          ],
-          "HEAD": [
-            268283,
-            151336,
-            250006
-          ],
-          "NECK": [
-            50228,
-            249337
-          ],
-          "SHOULDER": [
-            250004
-          ],
-          "BACK": [
-            239656,
-            49823,
-            249335,
-            260312
-          ],
-          "CHEST": [
-            250009
-          ],
-          "WRIST": [
-            50264,
-            244576,
-            249327,
-            250002
-          ],
-          "HANDS": [
-            250007
-          ],
-          "WAIST": [
-            49806,
-            249374,
-            268286
-          ],
-          "LEGS": [
-            250005
-          ],
-          "FEET": [
-            244569,
-            250008,
-            260372
-          ]
-        },
-        "mythicplus": {
-          "MAINHAND": [
-            237839,
-            251207,
-            258438
-          ],
-          "OFFHAND": [
-            49807,
-            237837
-          ],
-          "TRINKET": [
-            252420,
-            249343,
-            250256,
-            260235
-          ],
-          "FINGER": [
-            49812,
-            251217,
-            240949,
-            268290
-          ],
-          "HEAD": [
-            268283,
-            250006,
-            151336
-          ],
-          "NECK": [
-            50228
-          ],
-          "SHOULDER": [
-            250004
-          ],
-          "BACK": [
-            49823,
-            239656,
-            260312
-          ],
-          "CHEST": [
-            250009
-          ],
-          "WRIST": [
-            50264,
-            244576,
-            250002
-          ],
-          "HANDS": [
-            250007
-          ],
-          "WAIST": [
-            49806,
-            268286,
-            249374
-          ],
-          "LEGS": [
-            250005
-          ],
-          "FEET": [
-            244569,
-            250008
-          ]
-        },
+        "raid": {},
+        "mythicplus": {},
         "raidUrl": "https://www.archon.gg/wow/builds/outlaw/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/outlaw/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-07-08T10:50:00.996Z"
+        "scrapedAt": "2026-08-19T10:37:08.237Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
-            268283
+            193751,
+            239033,
+            250006,
+            268283,
+            271510
           ],
           "NECK": [
             50228,
-            249337
+            249337,
+            251173,
+            265739,
+            273781
           ],
           "SHOULDER": [
             250004
@@ -607,212 +388,226 @@
           ],
           "WAIST": [
             49806,
+            159301,
+            251235,
             268286
           ],
           "LEGS": [
             250005
           ],
           "FEET": [
+            159327,
             244569,
-            250008,
-            260372
+            260372,
+            272240
           ],
           "WRIST": [
             50264,
+            159300,
             244576,
             249327,
-            250002
+            251183,
+            276643
           ],
           "HANDS": [
-            250007
+            250007,
+            251124
           ],
           "FINGER": [
             49812,
+            159459,
             240949,
+            249336,
             249920,
+            251148,
             251217,
+            252258,
             268290
           ],
           "TRINKET": [
             249343,
+            250215,
+            250259,
             252420,
-            260235
+            260235,
+            273796
           ],
           "BACK": [
-            49823,
+            193763,
             239656,
-            249335
+            251190
           ],
           "MAINHAND": [
-            249298,
+            251186,
             251207,
-            258438,
+            251224,
             260423
           ],
           "OFFHAND": [
             49807,
-            237837
+            237837,
+            275070
           ]
         },
         "mythicplusUrl": "https://murlok.io/rogue/outlaw/m+",
-        "scrapedAt": "2026-07-08T10:50:26.121Z"
+        "scrapedAt": "2026-08-19T10:37:29.532Z"
       },
       "method": {
         "raid": {
           "HEAD": [
-            250006
+            271875
           ],
           "NECK": [
-            249337
+            268265
           ],
           "SHOULDER": [
-            250004
+            271508
           ],
           "BACK": [
-            249335
+            268248
           ],
           "CHEST": [
-            250009
+            271513
           ],
           "WRIST": [
-            249327
+            268240
           ],
           "HANDS": [
-            250007
+            271511
           ],
           "WAIST": [
-            249374
+            244573,
+            240167
           ],
           "LEGS": [
-            250005
+            271509
           ],
           "FEET": [
             244569,
-            240166
+            240167
           ],
           "FINGER": [
-            240949,
-            251487,
-            249336
+            268266,
+            268252
           ],
           "TRINKET": [
-            249343,
-            260235
+            270173,
+            270175
           ],
           "MAINHAND": [
-            260423
+            268209
           ],
           "OFFHAND": [
-            249284
+            268204
           ]
         },
         "mythicplus": {
           "HEAD": [
-            151336
+            273791
           ],
           "NECK": [
-            50228
+            273781
           ],
           "SHOULDER": [
-            250004
+            271508
           ],
           "BACK": [
-            260312
+            193763
           ],
           "CHEST": [
-            250009
+            271513
           ],
           "WRIST": [
-            50264
+            251135
           ],
           "HANDS": [
-            250007
+            271511
           ],
           "WAIST": [
-            251166
+            244573,
+            240167
           ],
           "LEGS": [
-            250005
+            271509
           ],
           "FEET": [
             244569,
-            240166
+            240167
           ],
           "FINGER": [
-            240949,
-            251487,
-            251217
+            273792,
+            159459
           ],
           "TRINKET": [
-            252420,
-            250256
+            250259,
+            159617
           ],
           "MAINHAND": [
-            251207
+            251143
           ],
           "OFFHAND": [
-            133491
+            275070
           ]
         },
         "overall": {
           "HEAD": [
-            250006
+            271875
           ],
           "NECK": [
-            50228
+            268265
           ],
           "SHOULDER": [
-            250004
+            271508
           ],
           "BACK": [
-            249335
+            268248
           ],
           "CHEST": [
-            250009
+            271513
           ],
           "WRIST": [
-            50264
+            268240
           ],
           "HANDS": [
-            250007
+            271511
           ],
           "WAIST": [
-            249374
+            244573,
+            240167
           ],
           "LEGS": [
-            250005
+            271509
           ],
           "FEET": [
             244569,
-            240166
+            240167
           ],
           "FINGER": [
-            240949,
-            251487,
-            249336
+            268266,
+            268252
           ],
           "TRINKET": [
-            249343,
-            260235
+            270173,
+            270175
           ],
           "MAINHAND": [
-            260423
+            268209
           ],
           "OFFHAND": [
-            133491
+            275070
           ]
         },
         "raidUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/outlaw-rogue/gearing#overall_table",
-        "scrapedAt": "2026-07-08T10:50:31.676Z"
+        "scrapedAt": "2026-08-19T10:37:35.128Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-07-08T10:50:37.485Z"
+        "scrapedAt": "2026-08-19T10:37:41.208Z"
       }
     },
     "SUBTLETY": {
@@ -820,249 +615,110 @@
         "raid": {},
         "mythicplus": {},
         "overall": {
-          "HEAD": [
-            250006
-          ],
-          "NECK": [
-            268291,
-            249368
-          ],
-          "SHOULDER": [
-            250004
-          ],
-          "BACK": [
-            260312,
-            249370
-          ],
-          "CHEST": [
-            250009
-          ],
-          "WRIST": [
-            50264,
-            249327
-          ],
-          "HANDS": [
-            250007
-          ],
-          "WAIST": [
-            268286
-          ],
-          "LEGS": [
-            251087
-          ],
-          "FEET": [
-            244569
-          ],
-          "FINGER": [
-            268290,
-            193708,
-            249369
-          ],
-          "TRINKET": [
-            249344,
-            249343
-          ],
           "MAINHAND": [
-            249284
+            271093
           ],
           "OFFHAND": [
             237837
+          ],
+          "HEAD": [
+            271510
+          ],
+          "NECK": [
+            268265
+          ],
+          "SHOULDER": [
+            271508
+          ],
+          "BACK": [
+            268253
+          ],
+          "CHEST": [
+            271513
+          ],
+          "WRIST": [
+            244576
+          ],
+          "HANDS": [
+            271511
+          ],
+          "WAIST": [
+            268256
+          ],
+          "LEGS": [
+            271509
+          ],
+          "FEET": [
+            271512
+          ],
+          "FINGER": [
+            251194,
+            162544
+          ],
+          "TRINKET": [
+            270173,
+            270175
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/rogue/subtlety/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-07-08T10:49:57.077Z"
+        "scrapedAt": "2026-08-19T10:37:03.770Z"
       },
       "archon": {
-        "raid": {
-          "MAINHAND": [
-            249925,
-            258436,
-            249284,
-            49807
-          ],
-          "OFFHAND": [
-            237837
-          ],
-          "TRINKET": [
-            249343,
-            249344
-          ],
-          "FINGER": [
-            268290,
-            251093,
-            249369,
-            193708,
-            251217,
-            240949,
-            251115,
-            249919,
-            49812
-          ],
-          "HEAD": [
-            250006
-          ],
-          "NECK": [
-            268291,
-            249368
-          ],
-          "SHOULDER": [
-            250004
-          ],
-          "BACK": [
-            258575,
-            239656,
-            249370,
-            250001
-          ],
-          "CHEST": [
-            250009
-          ],
-          "WRIST": [
-            244576,
-            249327,
-            250002
-          ],
-          "HANDS": [
-            250007
-          ],
-          "WAIST": [
-            268286,
-            249374,
-            244573
-          ],
-          "LEGS": [
-            49817,
-            249312,
-            250005
-          ],
-          "FEET": [
-            250008,
-            258577,
-            249382,
-            244569
-          ]
-        },
-        "mythicplus": {
-          "MAINHAND": [
-            258436,
-            49807,
-            237837,
-            249925
-          ],
-          "OFFHAND": [
-            237837
-          ],
-          "TRINKET": [
-            249343,
-            249344,
-            193701,
-            252420
-          ],
-          "FINGER": [
-            251093,
-            193708,
-            268290,
-            251115,
-            251217,
-            49812,
-            240949
-          ],
-          "HEAD": [
-            250006
-          ],
-          "NECK": [
-            268291,
-            50228,
-            240950
-          ],
-          "SHOULDER": [
-            250004
-          ],
-          "BACK": [
-            258575,
-            250001,
-            239656
-          ],
-          "CHEST": [
-            250009
-          ],
-          "WRIST": [
-            244576,
-            193714,
-            50264,
-            250002
-          ],
-          "HANDS": [
-            250007
-          ],
-          "WAIST": [
-            268286,
-            244573,
-            49806,
-            251082
-          ],
-          "LEGS": [
-            49817,
-            250005
-          ],
-          "FEET": [
-            250008,
-            258577
-          ]
-        },
+        "raid": {},
+        "mythicplus": {},
         "raidUrl": "https://www.archon.gg/wow/builds/subtlety/rogue/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/subtlety/rogue/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-07-08T10:50:00.996Z"
+        "scrapedAt": "2026-08-19T10:37:08.237Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {},
-        "scrapedAt": "2026-07-08T10:50:26.122Z"
+        "scrapedAt": "2026-08-19T10:37:29.532Z"
       },
       "method": {
         "raid": {},
         "mythicplus": {},
         "overall": {
           "HEAD": [
-            250006
+            271510
           ],
           "NECK": [
-            249368
+            268265
           ],
           "SHOULDER": [
-            250004
+            271508
           ],
           "BACK": [
-            258575
+            268253
           ],
           "CHEST": [
-            250009
+            271513
           ],
           "WRIST": [
             244576
           ],
           "HANDS": [
-            250007
+            271511
           ],
           "WAIST": [
-            251082
+            268256
           ],
           "LEGS": [
-            260373
+            271509
           ],
           "FEET": [
-            250008
+            251153
           ],
           "FINGER": [
-            251217,
-            251093
+            251194,
+            252258
           ],
           "TRINKET": [
-            249344,
-            249343
+            270175,
+            270173
           ],
           "MAINHAND": [
-            249284
+            271093
           ],
           "OFFHAND": [
             237837
@@ -1071,14 +727,14 @@
         "raidUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/subtlety-rogue/gearing#overall_table",
-        "scrapedAt": "2026-07-08T10:50:31.676Z"
+        "scrapedAt": "2026-08-19T10:37:35.129Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-07-08T10:50:37.485Z"
+        "scrapedAt": "2026-08-19T10:37:41.208Z"
       }
     }
   }

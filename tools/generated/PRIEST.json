@@ -6,43 +6,115 @@
         "raid": {},
         "mythicplus": {},
         "overall": {
+          "MAINHAND": [
+            271092
+          ],
+          "OFFHAND": [
+            159667
+          ],
+          "HEAD": [
+            271874
+          ],
+          "NECK": [
+            268265
+          ],
+          "SHOULDER": [
+            271553
+          ],
+          "BACK": [
+            268253
+          ],
+          "CHEST": [
+            271558
+          ],
+          "WRIST": [
+            239648
+          ],
+          "HANDS": [
+            271556
+          ],
+          "WAIST": [
+            239649
+          ],
+          "LEGS": [
+            271554
+          ],
+          "FEET": [
+            268255
+          ],
+          "FINGER": [
+            268266,
+            252258
+          ],
+          "TRINKET": [
+            270167,
+            270162
+          ]
+        },
+        "overallUrl": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-08-19T10:37:03.768Z"
+      },
+      "archon": {
+        "raid": {},
+        "mythicplus": {},
+        "raidUrl": "https://www.archon.gg/wow/builds/discipline/priest/raid/gear-and-tier-set/mythic/all-bosses",
+        "mythicplusUrl": "https://www.archon.gg/wow/builds/discipline/priest/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
+        "scrapedAt": "2026-08-19T10:37:08.236Z"
+      },
+      "murlok": {
+        "raid": {},
+        "mythicplus": {
           "HEAD": [
             250051
           ],
           "NECK": [
-            249368
+            251173,
+            268291
           ],
           "SHOULDER": [
             250049
           ],
-          "BACK": [
-            249370
-          ],
           "CHEST": [
+            250054,
             268284
           ],
+          "WAIST": [
+            193691,
+            239664
+          ],
+          "LEGS": [
+            250050,
+            271554
+          ],
+          "FEET": [
+            250053,
+            251137,
+            268282
+          ],
           "WRIST": [
+            239648,
             249315
           ],
           "HANDS": [
             250052
           ],
-          "WAIST": [
-            239664
-          ],
-          "LEGS": [
-            250050
-          ],
-          "FEET": [
-            268282
-          ],
           "FINGER": [
             249920,
+            251093,
+            251217,
             268290
           ],
           "TRINKET": [
             249343,
-            249346
+            249346,
+            250214,
+            250256,
+            268292
+          ],
+          "BACK": [
+            193763,
+            239656,
+            250046
           ],
           "MAINHAND": [
             249283
@@ -51,299 +123,156 @@
             245769
           ]
         },
-        "overallUrl": "https://www.wowhead.com/guide/classes/priest/discipline/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-07-08T10:49:57.073Z"
-      },
-      "archon": {
-        "raid": {
-          "MAINHAND": [
-            245770,
-            251201
-          ],
-          "OFFHAND": [
-            249922
-          ],
-          "TRINKET": [
-            249343,
-            249346,
-            249808,
-            268292
-          ],
-          "FINGER": [
-            268290,
-            251217,
-            251093,
-            240949,
-            249336,
-            49812,
-            249920,
-            249919
-          ],
-          "HEAD": [
-            250051
-          ],
-          "NECK": [
-            268291,
-            249337,
-            50228
-          ],
-          "SHOULDER": [
-            250049
-          ],
-          "BACK": [
-            239656,
-            249370,
-            250046
-          ],
-          "CHEST": [
-            250054,
-            268284
-          ],
-          "WRIST": [
-            239648,
-            249315,
-            250047
-          ],
-          "HANDS": [
-            250052
-          ],
-          "WAIST": [
-            249319,
-            239664,
-            239649,
-            250048
-          ],
-          "LEGS": [
-            250050
-          ],
-          "FEET": [
-            268282,
-            249305,
-            249373,
-            250053
-          ]
-        },
-        "mythicplus": {
-          "MAINHAND": [
-            251201,
-            245770
-          ],
-          "OFFHAND": [],
-          "TRINKET": [
-            249343,
-            250256,
-            249808,
-            250144,
-            268292,
-            193718
-          ],
-          "FINGER": [
-            251217,
-            251093,
-            49812,
-            268290,
-            193708
-          ],
-          "HEAD": [
-            250051
-          ],
-          "NECK": [
-            50228,
-            268291
-          ],
-          "SHOULDER": [
-            250049
-          ],
-          "BACK": [
-            239656,
-            260312,
-            250046,
-            258575
-          ],
-          "CHEST": [
-            250054
-          ],
-          "WRIST": [
-            239648,
-            250047
-          ],
-          "HANDS": [
-            250052
-          ],
-          "WAIST": [
-            239664,
-            250048,
-            239649
-          ],
-          "LEGS": [
-            250050
-          ],
-          "FEET": [
-            268282,
-            49805,
-            250053,
-            258584
-          ]
-        },
-        "raidUrl": "https://www.archon.gg/wow/builds/discipline/priest/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/discipline/priest/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-07-08T10:50:00.995Z"
-      },
-      "murlok": {
-        "raid": {},
-        "mythicplus": {},
-        "scrapedAt": "2026-07-08T10:50:26.121Z"
+        "mythicplusUrl": "https://murlok.io/priest/discipline/m+",
+        "scrapedAt": "2026-08-19T10:37:29.531Z"
       },
       "method": {
         "raid": {
           "HEAD": [
-            250051
+            271874
           ],
           "NECK": [
-            268291
+            268265
           ],
           "SHOULDER": [
-            249328
+            271553
           ],
           "BACK": [
-            249370
+            268253
           ],
           "CHEST": [
-            250054,
-            268284
+            271558
           ],
           "WRIST": [
-            249315
+            268228
           ],
           "HANDS": [
-            250052
+            268243
           ],
           "WAIST": [
-            249376,
-            249319
+            268257
           ],
           "LEGS": [
-            250050
+            271554
           ],
           "FEET": [
-            268282
+            268255
           ],
           "FINGER": [
-            249920,
-            268290
+            268266,
+            268252
           ],
           "TRINKET": [
-            249346,
-            249343
+            270169,
+            270167
           ],
           "MAINHAND": [
-            249286
+            271092
+          ],
+          "OFFHAND": [
+            268197
           ]
         },
         "mythicplus": {
           "HEAD": [
-            250051
+            251232
           ],
           "NECK": [
-            50228
+            251173
           ],
           "SHOULDER": [
-            251213,
-            258578
+            239031
           ],
           "BACK": [
-            260312
+            251190
           ],
           "CHEST": [
-            250054
+            251139
           ],
           "WRIST": [
-            151305
+            251127
           ],
           "HANDS": [
-            250052
+            159247
           ],
           "WAIST": [
-            50263
+            193691
           ],
           "LEGS": [
-            250050
+            251160
           ],
           "FEET": [
-            49805,
-            258584
+            251219
           ],
           "FINGER": [
-            251115,
-            251217,
-            251093,
-            133496
+            273792,
+            252258
           ],
           "TRINKET": [
-            193718,
-            250256
+            250215,
+            250214
           ],
           "MAINHAND": [
-            251201,
-            193707
+            159636
           ]
         },
         "overall": {
           "HEAD": [
-            250051
+            271874
           ],
           "NECK": [
-            268291
+            268265
           ],
           "SHOULDER": [
-            251213,
-            249328
+            239031
           ],
           "BACK": [
-            249370
+            251190
           ],
           "CHEST": [
-            250054,
-            268284
+            251139
           ],
           "WRIST": [
-            249315
+            239648
           ],
           "HANDS": [
-            250052
+            268243
           ],
           "WAIST": [
-            239649
+            268257
           ],
           "LEGS": [
-            250050
+            251160
           ],
           "FEET": [
-            268282
+            268255
           ],
           "FINGER": [
-            249920,
-            268290
+            273792,
+            252258
           ],
           "TRINKET": [
-            249346,
-            249343
+            270169,
+            270167
           ],
           "MAINHAND": [
-            245770
+            271092
+          ],
+          "OFFHAND": [
+            245769
           ]
         },
         "raidUrl": "https://www.method.gg/guides/discipline-priest/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/discipline-priest/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/discipline-priest/gearing#overall_table",
-        "scrapedAt": "2026-07-08T10:50:31.674Z"
+        "scrapedAt": "2026-08-19T10:37:35.127Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-07-08T10:50:37.485Z"
+        "scrapedAt": "2026-08-19T10:37:41.207Z"
       }
     },
     "HOLY": {
@@ -351,186 +280,60 @@
         "raid": {},
         "mythicplus": {},
         "overall": {
-          "HEAD": [
-            250051
-          ],
-          "NECK": [
-            268291
-          ],
-          "SHOULDER": [
-            250049
-          ],
-          "BACK": [
-            249335
-          ],
-          "CHEST": [
-            250054
-          ],
-          "WRIST": [
-            250047
-          ],
-          "HANDS": [
-            250052
-          ],
-          "WAIST": [
-            239664
-          ],
-          "LEGS": [
-            250050
-          ],
-          "FEET": [
-            268282
-          ],
-          "FINGER": [
-            249336,
-            249919
-          ],
-          "TRINKET": [
-            249809,
-            249808
-          ],
           "MAINHAND": [
-            249293
+            271092
           ],
           "OFFHAND": [
-            245769
-          ]
-        },
-        "overallUrl": "https://www.wowhead.com/guide/classes/priest/holy/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-07-08T10:49:57.075Z"
-      },
-      "archon": {
-        "raid": {
-          "MAINHAND": [
-            245770,
-            249293,
-            251201,
-            258514
-          ],
-          "OFFHAND": [
-            245769
-          ],
-          "TRINKET": [
-            249343,
-            268292,
-            249808,
-            249809
-          ],
-          "FINGER": [
-            249336,
-            193708,
-            251217,
-            240949,
-            268290,
-            249919
+            268263
           ],
           "HEAD": [
-            250051
+            271874
           ],
           "NECK": [
-            268291,
-            249337,
-            50228
+            268265
           ],
           "SHOULDER": [
-            250049
+            271553
           ],
           "BACK": [
-            250046,
-            239656,
-            249335
+            251132
           ],
           "CHEST": [
-            250054
+            271558
           ],
           "WRIST": [
-            250047,
-            239648,
-            249315
+            239648
           ],
           "HANDS": [
-            250052
+            271556
           ],
           "WAIST": [
-            239664,
-            249319,
             239649
           ],
           "LEGS": [
-            250050,
-            249323
+            271554
           ],
           "FEET": [
-            268282,
-            249373
-          ]
-        },
-        "mythicplus": {
-          "MAINHAND": [
-            245770
-          ],
-          "OFFHAND": [],
-          "TRINKET": [
-            250256,
-            249343,
-            193718,
-            249808,
-            268292,
-            250144
+            268218
           ],
           "FINGER": [
-            251217,
-            193708,
-            151308,
-            49812,
-            151311,
-            251093
+            268252,
+            251148
           ],
-          "HEAD": [
-            250051
-          ],
-          "NECK": [
-            50228,
-            268291,
-            251096,
-            151309
-          ],
-          "SHOULDER": [
-            250049
-          ],
-          "BACK": [
-            250046,
-            49823,
-            258575
-          ],
-          "CHEST": [
-            250054
-          ],
-          "WRIST": [
-            250047,
-            239648,
-            49809
-          ],
-          "HANDS": [
-            250052
-          ],
-          "WAIST": [
-            239664,
-            50263,
-            251102
-          ],
-          "LEGS": [
-            250050
-          ],
-          "FEET": [
-            251167,
-            49805,
-            268282
+          "TRINKET": [
+            270164,
+            270162
           ]
         },
+        "overallUrl": "https://www.wowhead.com/guide/classes/priest/holy/bis-gear#tab-bis-items-overall-bis",
+        "scrapedAt": "2026-08-19T10:37:03.769Z"
+      },
+      "archon": {
+        "raid": {},
+        "mythicplus": {},
         "raidUrl": "https://www.archon.gg/wow/builds/holy/priest/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/holy/priest/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-07-08T10:50:00.995Z"
+        "scrapedAt": "2026-08-19T10:37:08.236Z"
       },
       "murlok": {
         "raid": {},
@@ -542,207 +345,241 @@
             268291
           ],
           "SHOULDER": [
+            239031,
             250049
           ],
           "CHEST": [
-            250054,
-            268284
+            250054
           ],
           "WAIST": [
-            239649,
+            193691,
             239664,
-            249319
+            251222
           ],
           "LEGS": [
-            249323,
             250050
           ],
           "FEET": [
+            159243,
+            250053,
             268282
           ],
           "WRIST": [
             239648,
+            249315,
             250047
           ],
           "HANDS": [
             250052
           ],
           "FINGER": [
-            49812,
-            151308,
-            151311,
+            159459,
+            162544,
             193708,
-            240949,
             249336,
-            251217,
-            268290
+            249919,
+            249920,
+            268290,
+            272147
           ],
           "TRINKET": [
             249343,
+            249346,
             249808,
+            249809,
+            250215,
             268292
           ],
           "BACK": [
+            193763,
             239656,
+            249335,
             250046
           ],
           "MAINHAND": [
+            159636,
             245770,
-            258514,
-            258516
+            273778
           ],
           "OFFHAND": [
-            251094
+            245769,
+            271681
           ]
         },
         "mythicplusUrl": "https://murlok.io/priest/holy/m+",
-        "scrapedAt": "2026-07-08T10:50:26.121Z"
+        "scrapedAt": "2026-08-19T10:37:29.531Z"
       },
       "method": {
         "raid": {
           "HEAD": [
-            250051
+            271874
           ],
           "NECK": [
-            268291
+            268265
           ],
           "SHOULDER": [
-            250049
+            271553
           ],
           "BACK": [
-            249335
+            268248
           ],
           "CHEST": [
-            250054,
-            268284
+            268221
           ],
           "WRIST": [
-            249315
+            268228
           ],
           "HANDS": [
-            249330
+            271556
           ],
           "WAIST": [
-            249376
+            268232
           ],
           "LEGS": [
-            250050
+            268236
           ],
           "FEET": [
-            268282
+            268218
           ],
           "FINGER": [
-            249919,
-            249336,
-            268290
+            268249,
+            268252
           ],
           "TRINKET": [
-            249808,
-            249809
+            270162,
+            270164
           ],
           "MAINHAND": [
-            249286
+            271092
+          ],
+          "OFFHAND": [
+            268263
           ]
         },
         "mythicplus": {
           "HEAD": [
-            250051
+            251199
           ],
           "NECK": [
-            50228
+            251234
           ],
           "SHOULDER": [
-            250049
+            251227
           ],
           "BACK": [
-            258575
+            251132
           ],
           "CHEST": [
-            250054
+            239032
           ],
           "WRIST": [
-            251108
+            251154
           ],
           "HANDS": [
-            151300
+            273773
           ],
           "WAIST": [
-            50263
+            159255
           ],
           "LEGS": [
-            250050
+            159234
           ],
           "FEET": [
-            251167
+            159259
           ],
           "FINGER": [
-            193708,
-            251217,
-            251115
+            251136,
+            158366
           ],
           "TRINKET": [
-            250258,
-            193718
+            250214,
+            250215
           ],
           "MAINHAND": [
-            258514
+            193761
           ]
         },
         "overall": {
           "HEAD": [
-            250051
+            271874
           ],
           "NECK": [
-            268291
+            268265
           ],
           "SHOULDER": [
-            250049
+            271553
           ],
           "BACK": [
-            258575
+            251132
           ],
           "CHEST": [
-            250054,
-            268284
+            268221
           ],
           "WRIST": [
-            251108
+            239648
           ],
           "HANDS": [
-            151300
+            273773
           ],
           "WAIST": [
-            239649
+            268232
           ],
           "LEGS": [
-            250050
+            159234
           ],
           "FEET": [
-            268282
+            268218
           ],
           "FINGER": [
-            249919,
-            193708
+            251136,
+            268252
           ],
           "TRINKET": [
-            249808,
-            249809
+            270162,
+            270164
           ],
           "MAINHAND": [
-            245770
+            271092
+          ],
+          "OFFHAND": [
+            245769
           ]
         },
         "raidUrl": "https://www.method.gg/guides/holy-priest/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/holy-priest/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/holy-priest/gearing#overall_table",
-        "scrapedAt": "2026-07-08T10:50:31.674Z"
+        "scrapedAt": "2026-08-19T10:37:35.127Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
-        "presets": {},
-        "presetUrls": {},
-        "scrapedAt": "2026-07-08T10:50:37.485Z"
+        "presets": {
+          "Icy Veins - Gear and Best in Slot": {
+            "HEAD": [
+              271874,
+              159236
+            ],
+            "CHEST": [
+              268221,
+              159257
+            ],
+            "HANDS": [
+              268243,
+              159247
+            ],
+            "LEGS": [
+              159234,
+              268236
+            ],
+            "SHOULDER": [
+              239031
+            ]
+          }
+        },
+        "presetUrls": {
+          "Icy Veins - Gear and Best in Slot": "https://www.icy-veins.com/wow/holy-priest-pve-healing-gear-best-in-slot"
+        },
+        "scrapedAt": "2026-08-19T10:37:41.207Z"
       }
     },
     "SHADOW": {
@@ -750,175 +587,60 @@
         "raid": {},
         "mythicplus": {},
         "overall": {
-          "HEAD": [
-            250051
-          ],
-          "NECK": [
-            249368
-          ],
-          "SHOULDER": [
-            250049
-          ],
-          "BACK": [
-            249370
-          ],
-          "CHEST": [
-            250054
-          ],
-          "WRIST": [
-            251108
-          ],
-          "HANDS": [
-            250052
-          ],
-          "WAIST": [
-            249376
-          ],
-          "LEGS": [
-            250050
-          ],
-          "FEET": [
-            268282
-          ],
-          "FINGER": [
-            249920,
-            268290
-          ],
-          "TRINKET": [
-            249343,
-            249346
-          ],
           "MAINHAND": [
-            249283
+            271092
           ],
           "OFFHAND": [
-            249922
+            268197
+          ],
+          "HEAD": [
+            271555
+          ],
+          "NECK": [
+            268265
+          ],
+          "SHOULDER": [
+            239045
+          ],
+          "BACK": [
+            268253
+          ],
+          "CHEST": [
+            271558
+          ],
+          "WRIST": [
+            239648
+          ],
+          "HANDS": [
+            271556
+          ],
+          "WAIST": [
+            239649
+          ],
+          "LEGS": [
+            271554
+          ],
+          "FEET": [
+            268255
+          ],
+          "FINGER": [
+            252258,
+            268249
+          ],
+          "TRINKET": [
+            270164,
+            250215
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/priest/shadow/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-07-08T10:49:57.076Z"
+        "scrapedAt": "2026-08-19T10:37:03.769Z"
       },
       "archon": {
-        "raid": {
-          "MAINHAND": [
-            251201,
-            245770
-          ],
-          "OFFHAND": [],
-          "TRINKET": [
-            249343,
-            249346
-          ],
-          "FINGER": [
-            251217,
-            251093,
-            268290,
-            249369
-          ],
-          "HEAD": [
-            250051
-          ],
-          "NECK": [
-            268291,
-            249368
-          ],
-          "SHOULDER": [
-            250049
-          ],
-          "BACK": [
-            239656,
-            249370
-          ],
-          "CHEST": [
-            250054
-          ],
-          "WRIST": [
-            239648,
-            249315,
-            250047
-          ],
-          "HANDS": [
-            250052,
-            251172
-          ],
-          "WAIST": [
-            239664,
-            250048,
-            249319
-          ],
-          "LEGS": [
-            250050
-          ],
-          "FEET": [
-            268282,
-            250053,
-            249373
-          ]
-        },
-        "mythicplus": {
-          "MAINHAND": [
-            251201,
-            245770,
-            258047
-          ],
-          "OFFHAND": [],
-          "TRINKET": [
-            249343,
-            250144,
-            249346,
-            250256
-          ],
-          "FINGER": [
-            251217,
-            251093,
-            268290,
-            251115
-          ],
-          "HEAD": [
-            250051
-          ],
-          "NECK": [
-            268291,
-            50228,
-            240950
-          ],
-          "SHOULDER": [
-            250049
-          ],
-          "BACK": [
-            239656,
-            260312,
-            258575,
-            251206
-          ],
-          "CHEST": [
-            250054
-          ],
-          "WRIST": [
-            239648,
-            250047,
-            151305
-          ],
-          "HANDS": [
-            250052,
-            251172
-          ],
-          "WAIST": [
-            239664,
-            250048
-          ],
-          "LEGS": [
-            250050
-          ],
-          "FEET": [
-            250053,
-            268282,
-            258584
-          ]
-        },
+        "raid": {},
+        "mythicplus": {},
         "raidUrl": "https://www.archon.gg/wow/builds/shadow/priest/raid/gear-and-tier-set/mythic/all-bosses",
         "mythicplusUrl": "https://www.archon.gg/wow/builds/shadow/priest/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-07-08T10:50:00.995Z"
+        "scrapedAt": "2026-08-19T10:37:08.236Z"
       },
       "murlok": {
         "raid": {},
@@ -927,15 +649,14 @@
             250051
           ],
           "NECK": [
-            249368,
+            251142,
             268291
           ],
           "SHOULDER": [
             250049
           ],
           "CHEST": [
-            250054,
-            268284
+            250054
           ],
           "WAIST": [
             239664
@@ -945,103 +666,104 @@
           ],
           "FEET": [
             250053,
+            251137,
             268282
           ],
           "WRIST": [
             239648,
-            249315,
-            250047
+            239660
           ],
           "HANDS": [
-            151300,
-            250052,
-            251172
+            250052
           ],
           "FINGER": [
             249920,
             251093,
+            251136,
             251217,
             268290
           ],
           "TRINKET": [
             249343,
-            249346
+            249346,
+            273796
           ],
           "BACK": [
             239656,
-            249370
+            239661,
+            250046
           ],
           "MAINHAND": [
-            249283,
+            193761,
             251201
           ],
           "OFFHAND": [
-            249922
+            245769
           ]
         },
         "mythicplusUrl": "https://murlok.io/priest/shadow/m+",
-        "scrapedAt": "2026-07-08T10:50:26.121Z"
+        "scrapedAt": "2026-08-19T10:37:29.532Z"
       },
       "method": {
         "raid": {},
         "mythicplus": {},
         "overall": {
           "HEAD": [
-            250051
+            271555
           ],
           "NECK": [
-            250247
+            268265
           ],
           "SHOULDER": [
-            250049
+            239045
           ],
           "BACK": [
-            249370
+            268253
           ],
           "CHEST": [
-            268284
+            271558
           ],
           "WRIST": [
-            251108
+            239648
           ],
           "HANDS": [
-            250052
+            271556
           ],
           "WAIST": [
-            249376
+            268257
           ],
           "LEGS": [
-            250050
+            271554
           ],
           "FEET": [
-            268282
+            268255
           ],
           "FINGER": [
-            249920,
-            249919
+            252258,
+            268249
           ],
           "TRINKET": [
-            249343,
-            249346
+            270164,
+            250215
           ],
           "MAINHAND": [
-            249283
+            271092
           ],
           "OFFHAND": [
-            249922
+            245769
           ]
         },
         "raidUrl": "https://www.method.gg/guides/shadow-priest/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/shadow-priest/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/shadow-priest/gearing#overall_table",
-        "scrapedAt": "2026-07-08T10:50:31.675Z"
+        "scrapedAt": "2026-08-19T10:37:35.128Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-07-08T10:50:37.485Z"
+        "scrapedAt": "2026-08-19T10:37:41.207Z"
       }
     }
   }
