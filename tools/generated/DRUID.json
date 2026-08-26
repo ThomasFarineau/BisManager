@@ -52,19 +52,88 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/druid/balance/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-08-19T10:37:03.763Z"
+        "scrapedAt": "2026-08-26T10:41:18.911Z"
       },
       "archon": {
         "raid": {},
         "mythicplus": {},
-        "raidUrl": "https://www.archon.gg/wow/builds/balance/druid/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/balance/druid/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-08-19T10:37:08.185Z"
+        "scrapedAt": "2026-08-26T10:41:26.654Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
-        "scrapedAt": "2026-08-19T10:37:29.526Z"
+        "mythicplus": {
+          "HEAD": [
+            250024,
+            271528
+          ],
+          "NECK": [
+            251142,
+            251173,
+            251234,
+            273781
+          ],
+          "SHOULDER": [
+            250022,
+            271526
+          ],
+          "CHEST": [
+            250027,
+            271531
+          ],
+          "WAIST": [
+            159301,
+            159317,
+            251235,
+            268227
+          ],
+          "LEGS": [
+            250023,
+            271527
+          ],
+          "FEET": [
+            159304,
+            159327,
+            251153,
+            268261
+          ],
+          "WRIST": [
+            244576,
+            251135,
+            251183,
+            268240
+          ],
+          "HANDS": [
+            159337,
+            250025,
+            271529
+          ],
+          "FINGER": [
+            158366,
+            162544,
+            251136,
+            252258,
+            273792
+          ],
+          "TRINKET": [
+            250214,
+            270164,
+            270167,
+            273796
+          ],
+          "BACK": [
+            251132,
+            251190
+          ],
+          "MAINHAND": [
+            245770,
+            273778
+          ],
+          "OFFHAND": [
+            245769
+          ]
+        },
+        "mythicplusUrl": "https://murlok.io/druid/balance/m+",
+        "scrapedAt": "2026-08-26T10:41:52.039Z"
       },
       "method": {
         "raid": {
@@ -205,14 +274,14 @@
         "raidUrl": "https://www.method.gg/guides/balance-druid/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/balance-druid/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/balance-druid/gearing#overall_table",
-        "scrapedAt": "2026-08-19T10:37:35.121Z"
+        "scrapedAt": "2026-08-26T10:41:57.768Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-08-19T10:37:41.174Z"
+        "scrapedAt": "2026-08-26T10:42:03.514Z"
       }
     },
     "FERAL": {
@@ -263,19 +332,90 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/druid/feral/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-08-19T10:37:03.763Z"
+        "scrapedAt": "2026-08-26T10:41:18.911Z"
       },
       "archon": {
         "raid": {},
         "mythicplus": {},
-        "raidUrl": "https://www.archon.gg/wow/builds/feral/druid/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/feral/druid/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-08-19T10:37:08.185Z"
+        "scrapedAt": "2026-08-26T10:41:26.654Z"
       },
       "murlok": {
         "raid": {},
-        "mythicplus": {},
-        "scrapedAt": "2026-08-19T10:37:29.527Z"
+        "mythicplus": {
+          "HEAD": [
+            250024,
+            271528
+          ],
+          "NECK": [
+            251142,
+            251173,
+            251234,
+            268291
+          ],
+          "SHOULDER": [
+            250022,
+            271526
+          ],
+          "CHEST": [
+            250027,
+            271531
+          ],
+          "WAIST": [
+            159301,
+            159317,
+            251235,
+            268286
+          ],
+          "LEGS": [
+            250023,
+            271527
+          ],
+          "FEET": [
+            159304,
+            159327,
+            244569,
+            251153
+          ],
+          "WRIST": [
+            244576,
+            251135,
+            251183
+          ],
+          "HANDS": [
+            250025,
+            271529
+          ],
+          "FINGER": [
+            158366,
+            159459,
+            162544,
+            251136,
+            252258,
+            268290,
+            272147,
+            273792
+          ],
+          "TRINKET": [
+            193701,
+            250214,
+            250228,
+            273796
+          ],
+          "BACK": [
+            159288,
+            193763,
+            239656,
+            251132,
+            251190
+          ],
+          "MAINHAND": [
+            237847,
+            251149,
+            273783
+          ]
+        },
+        "mythicplusUrl": "https://murlok.io/druid/feral/m+",
+        "scrapedAt": "2026-08-26T10:41:52.039Z"
       },
       "method": {
         "raid": {},
@@ -315,14 +455,14 @@
         "raidUrl": "https://www.method.gg/guides/feral-druid/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/feral-druid/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/feral-druid/gearing#overall_table",
-        "scrapedAt": "2026-08-19T10:37:35.121Z"
+        "scrapedAt": "2026-08-26T10:41:57.768Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-08-19T10:37:41.174Z"
+        "scrapedAt": "2026-08-26T10:42:03.514Z"
       }
     },
     "GUARDIAN": {
@@ -373,78 +513,91 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/druid/guardian/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-08-19T10:37:03.764Z"
+        "scrapedAt": "2026-08-26T10:41:18.912Z"
       },
       "archon": {
         "raid": {},
         "mythicplus": {},
-        "raidUrl": "https://www.archon.gg/wow/builds/guardian/druid/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/guardian/druid/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-08-19T10:37:08.232Z"
+        "scrapedAt": "2026-08-26T10:41:26.654Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
+            193751,
             250024,
-            268283
+            271528,
+            273791
           ],
           "NECK": [
             251173,
-            268291,
             273781
           ],
           "SHOULDER": [
-            250022,
-            273774
+            251223,
+            271526
           ],
           "CHEST": [
-            250027
+            251159,
+            251226,
+            271531
           ],
           "WAIST": [
             159301,
-            268286
+            159317,
+            251189,
+            251235
           ],
           "LEGS": [
-            250023
+            159313,
+            159329,
+            271527
           ],
           "FEET": [
             159304,
             244569,
-            251210
+            251153
           ],
           "WRIST": [
+            159300,
             244576,
+            251135,
             251183
           ],
           "HANDS": [
-            250025
+            159337,
+            250025,
+            271529
           ],
           "FINGER": [
-            151311,
-            249920,
+            159459,
+            251136,
+            251148,
             252258,
-            268290
+            268290,
+            273792
           ],
           "TRINKET": [
-            249343,
-            250256,
-            260235,
-            268292,
+            250214,
+            250215,
+            250228,
+            250245,
+            270165,
             273796
           ],
           "BACK": [
+            159288,
             193763,
-            239656
+            251190
           ],
           "MAINHAND": [
-            193723,
-            249278,
-            258529
+            237847,
+            245771,
+            273783
           ]
         },
         "mythicplusUrl": "https://murlok.io/druid/guardian/m+",
-        "scrapedAt": "2026-08-19T10:37:29.527Z"
+        "scrapedAt": "2026-08-26T10:41:52.040Z"
       },
       "method": {
         "raid": {
@@ -579,14 +732,14 @@
         "raidUrl": "https://www.method.gg/guides/guardian-druid/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/guardian-druid/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/guardian-druid/gearing#overall_table",
-        "scrapedAt": "2026-08-19T10:37:35.122Z"
+        "scrapedAt": "2026-08-26T10:41:57.768Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-08-19T10:37:41.175Z"
+        "scrapedAt": "2026-08-26T10:42:03.514Z"
       }
     },
     "RESTORATION": {
@@ -640,14 +793,12 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/druid/restoration/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-08-19T10:37:03.764Z"
+        "scrapedAt": "2026-08-26T10:41:18.912Z"
       },
       "archon": {
         "raid": {},
         "mythicplus": {},
-        "raidUrl": "https://www.archon.gg/wow/builds/restoration/druid/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/restoration/druid/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-08-19T10:37:08.232Z"
+        "scrapedAt": "2026-08-26T10:41:26.655Z"
       },
       "murlok": {
         "raid": {},
@@ -657,70 +808,73 @@
             271528
           ],
           "NECK": [
+            251142,
+            251173,
             268291
           ],
           "SHOULDER": [
-            250022
+            244572,
+            250022,
+            271526
           ],
           "CHEST": [
             250027,
-            251159,
-            251216
+            271531
           ],
           "WAIST": [
-            244573,
-            250021,
-            268286
+            159301,
+            159317,
+            251235
           ],
           "LEGS": [
             250023,
             271527
           ],
           "FEET": [
-            244569,
-            250026,
-            251210
+            159304,
+            159327,
+            251153
           ],
           "WRIST": [
-            244576
+            244576,
+            251135,
+            251183
           ],
           "HANDS": [
             250025,
             271529
           ],
           "FINGER": [
-            249920,
+            159459,
             251093,
-            251115,
+            251194,
             252258,
-            268290
+            268290,
+            273792,
+            279010
           ],
           "TRINKET": [
             249343,
-            249346,
             249809,
-            250256,
-            268292
+            250214,
+            270167
           ],
           "BACK": [
-            239656,
-            249370,
-            250019,
+            159288,
+            193763,
             251190
           ],
           "MAINHAND": [
-            249283,
-            251156,
-            251201,
+            159636,
+            245770,
             273778
           ],
           "OFFHAND": [
-            245769,
-            249922
+            245769
           ]
         },
         "mythicplusUrl": "https://murlok.io/druid/restoration/m+",
-        "scrapedAt": "2026-08-19T10:37:29.527Z"
+        "scrapedAt": "2026-08-26T10:41:52.040Z"
       },
       "method": {
         "raid": {},
@@ -775,14 +929,14 @@
         "raidUrl": "https://www.method.gg/guides/restoration-druid/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/restoration-druid/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/restoration-druid/gearing#overall_table",
-        "scrapedAt": "2026-08-19T10:37:35.122Z"
+        "scrapedAt": "2026-08-26T10:41:57.769Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-08-19T10:37:41.175Z"
+        "scrapedAt": "2026-08-26T10:42:03.514Z"
       }
     }
   }

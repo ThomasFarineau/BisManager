@@ -50,78 +50,83 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/beast-mastery/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-08-19T10:37:03.765Z"
+        "scrapedAt": "2026-08-26T10:41:18.913Z"
       },
       "archon": {
         "raid": {},
         "mythicplus": {},
-        "raidUrl": "https://www.archon.gg/wow/builds/beast-mastery/hunter/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/beast-mastery/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-08-19T10:37:08.233Z"
+        "scrapedAt": "2026-08-26T10:41:26.656Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
-            249988
+            249988,
+            271492
           ],
           "NECK": [
-            268291
+            251234,
+            268291,
+            273781
           ],
           "SHOULDER": [
-            151323,
-            193704,
-            249986
+            249986,
+            271490
           ],
           "CHEST": [
-            249991
+            249991,
+            271495
           ],
           "WAIST": [
             244581,
-            244611,
-            249371,
-            251155
+            251155,
+            251228
           ],
           "LEGS": [
-            249987
+            249987,
+            271491
           ],
           "FEET": [
+            159371,
             159388,
-            244610,
-            249990,
-            268287
+            251145
           ],
           "WRIST": [
+            159380,
             244584,
-            249304,
             251200
           ],
           "HANDS": [
-            249989
+            193752,
+            249989,
+            271493
           ],
           "FINGER": [
             158366,
-            193708,
-            249920,
-            268290
+            162544,
+            251136,
+            251194,
+            252258
           ],
           "TRINKET": [
+            159617,
             193701,
-            249343,
-            249806,
-            250215
+            250214,
+            250215,
+            270165,
+            273796
           ],
           "BACK": [
-            239656
+            193763,
+            251132,
+            251190
           ],
           "MAINHAND": [
-            249279,
-            251174,
-            273784
+            265337
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/beast-mastery/m+",
-        "scrapedAt": "2026-08-19T10:37:29.528Z"
+        "scrapedAt": "2026-08-26T10:41:52.041Z"
       },
       "method": {
         "raid": {
@@ -256,14 +261,14 @@
         "raidUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/beast-mastery-hunter/gearing#overall_table",
-        "scrapedAt": "2026-08-19T10:37:35.123Z"
+        "scrapedAt": "2026-08-26T10:41:57.769Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-08-19T10:37:41.175Z"
+        "scrapedAt": "2026-08-26T10:42:03.515Z"
       }
     },
     "MARKSMANSHIP": {
@@ -314,78 +319,73 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/marksmanship/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-08-19T10:37:03.765Z"
+        "scrapedAt": "2026-08-26T10:41:18.914Z"
       },
       "archon": {
         "raid": {},
         "mythicplus": {},
-        "raidUrl": "https://www.archon.gg/wow/builds/marksmanship/hunter/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/marksmanship/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-08-19T10:37:08.233Z"
+        "scrapedAt": "2026-08-26T10:41:26.656Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
-            249988
+            271492
           ],
           "NECK": [
-            251173,
-            251234,
-            268291
+            251234
           ],
           "SHOULDER": [
-            193704,
-            249986
+            271490
           ],
           "CHEST": [
-            244609,
-            249991
+            271495
           ],
           "WAIST": [
             244581,
-            244611
+            251155
           ],
           "LEGS": [
-            249987
+            249987,
+            271491
           ],
           "FEET": [
-            244610,
-            249990,
-            251125,
-            268287
+            159388,
+            251125
           ],
           "WRIST": [
-            244584,
-            249304
+            244584
           ],
           "HANDS": [
-            249989
+            271493
           ],
           "FINGER": [
             158366,
-            193708,
-            249336,
-            249919,
-            251217,
-            268290
+            251136,
+            251148
           ],
           "TRINKET": [
-            193701,
-            252420,
-            260235
+            159617,
+            250214,
+            250215,
+            250228,
+            260235,
+            270173,
+            273796
           ],
           "BACK": [
             159288,
-            239656
+            193763,
+            251132
           ],
           "MAINHAND": [
-            249279,
-            249288
+            265337,
+            271680,
+            273784
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/marksmanship/m+",
-        "scrapedAt": "2026-08-19T10:37:29.528Z"
+        "scrapedAt": "2026-08-26T10:41:52.041Z"
       },
       "method": {
         "raid": {
@@ -520,14 +520,14 @@
         "raidUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/marksmanship-hunter/gearing#overall_table",
-        "scrapedAt": "2026-08-19T10:37:35.123Z"
+        "scrapedAt": "2026-08-26T10:41:57.770Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-08-19T10:37:41.176Z"
+        "scrapedAt": "2026-08-26T10:42:03.515Z"
       }
     },
     "SURVIVAL": {
@@ -582,98 +582,85 @@
           ]
         },
         "overallUrl": "https://www.wowhead.com/guide/classes/hunter/survival/bis-gear#tab-bis-items-overall-bis",
-        "scrapedAt": "2026-08-19T10:37:03.766Z"
+        "scrapedAt": "2026-08-26T10:41:18.914Z"
       },
       "archon": {
         "raid": {},
         "mythicplus": {},
-        "raidUrl": "https://www.archon.gg/wow/builds/survival/hunter/raid/gear-and-tier-set/mythic/all-bosses",
-        "mythicplusUrl": "https://www.archon.gg/wow/builds/survival/hunter/mythic-plus/gear-and-tier-set/10/all-dungeons/this-week",
-        "scrapedAt": "2026-08-19T10:37:08.234Z"
+        "scrapedAt": "2026-08-26T10:41:26.656Z"
       },
       "murlok": {
         "raid": {},
         "mythicplus": {
           "HEAD": [
-            249988
+            249988,
+            271492
           ],
           "NECK": [
-            268291,
+            251142,
+            251173,
+            251234,
             273781
           ],
           "SHOULDER": [
-            239049,
-            249986,
-            277774
+            271490
           ],
           "CHEST": [
-            239034,
-            249991
+            249991,
+            271495
           ],
           "WAIST": [
-            159369,
-            244611,
-            249371,
-            249985,
-            257018
+            244581,
+            251155,
+            251228,
+            268254
           ],
           "LEGS": [
             249987,
             271491
           ],
           "FEET": [
-            159371,
             159388,
-            244610,
-            249990,
-            277778
+            251145,
+            268258,
+            272248
           ],
           "WRIST": [
             244584,
-            249304,
-            273775,
-            277772
+            251200
           ],
           "HANDS": [
-            193752,
             249989,
-            251165
+            271493
           ],
           "FINGER": [
-            151308,
             158366,
-            159459,
-            249920,
             251136,
-            251217,
+            251194,
             252258,
-            268290
+            268290,
+            273792
           ],
           "TRINKET": [
             193701,
             249343,
-            260235,
-            264507,
-            273796,
-            274496,
-            280123
+            249806,
+            250215,
+            270165,
+            273796
           ],
           "BACK": [
-            239656,
-            251190,
-            276040
+            193763,
+            251132,
+            251190
           ],
           "MAINHAND": [
-            159642,
-            244679,
-            277806
-          ],
-          "OFFHAND": [
-            249925
+            237837,
+            237847
           ]
         },
         "mythicplusUrl": "https://murlok.io/hunter/survival/m+",
-        "scrapedAt": "2026-08-19T10:37:29.529Z"
+        "scrapedAt": "2026-08-26T10:41:52.041Z"
       },
       "method": {
         "raid": {
@@ -808,14 +795,14 @@
         "raidUrl": "https://www.method.gg/guides/survival-hunter/gearing#raid_table",
         "mythicplusUrl": "https://www.method.gg/guides/survival-hunter/gearing#dungeon_table",
         "overallUrl": "https://www.method.gg/guides/survival-hunter/gearing#overall_table",
-        "scrapedAt": "2026-08-19T10:37:35.124Z"
+        "scrapedAt": "2026-08-26T10:41:57.770Z"
       },
       "icyveins": {
         "raid": {},
         "mythicplus": {},
         "presets": {},
         "presetUrls": {},
-        "scrapedAt": "2026-08-19T10:37:41.206Z"
+        "scrapedAt": "2026-08-26T10:42:03.515Z"
       }
     }
   }
